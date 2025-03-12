@@ -1,0 +1,69 @@
+﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+  <!-- METAS -->
+    <title>Los CEO más rentables: Ing. Marcelo Santillana es reconocido en el ranking top ten de Semana Económica | PODEROSA</title>
+    <!-- Basic HTML Meta Tags -->
+    <meta name='title' content='Los CEO más rentables: Ing. Marcelo Santillana es reconocido en el ranking top ten de Semana Económica | PODEROSA' />
+    <meta name='description' content='El Ing. Marcelo Santillana, Gerente General de PODEROSA,fue reconocido anoche en el evento "Los CEO más rentables", distinción entregada por la revista Semana Económica. El Ing. Santillana fue distinguido con el primer puesto en la categoría Minería y el quinto puesto en el ranking top 25.' />
+    <meta name='url' content='http://www.poderosa.com.pe/noticias/los-ceo-mas-rentables-ing-marcelo-santillana-es-reconocido-en-el-ranking-top-ten-de-semana-economica/' />
+    <meta name='keywords' content='Poderosa, CEO más rentables, Semana Económica, Ing. Marcelo Santillana' />
+    <!-- OpenGraph Meta Tags -->
+    <meta property='og:type' content='website' />
+    <meta property='og:title' content='Los CEO más rentables: Ing. Marcelo Santillana es reconocido en el ranking top ten de Semana Económica | PODEROSA' />
+    <meta property='og:description' content='El Ing. Marcelo Santillana, Gerente General de PODEROSA, fue reconocido anoche en el evento "Los CEO más rentables", distinción entregada por la revista Semana Económica. El Ing. Santillana fue distinguido con el primer puesto en la categoría Minería y el quinto puesto en el ranking top 25.' />
+    <meta property='og:url' content='http://www.poderosa.com.pe/noticias/los-ceo-mas-rentables-ing-marcelo-santillana-es-reconocido-en-el-ranking-top-ten-de-semana-economica/' />
+    <meta property='og:image' content='http://www.poderosa.com.pe/Content/noticias/los-ceo-mas-rentables-ing-marcelo-santillana-es-reconocido-en-el-ranking-top-ten-de-semana-economica/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+                <img class="object-fit-cover" src="~/Content/noticias/los-ceo-mas-rentables-ing-marcelo-santillana-es-reconocido-en-el-ranking-top-ten-de-semana-economica/banner.jpg" alt="imagen">
+
+                <div class="h6 mayuscula mt-4">27 de Setiembre de 2018</div>
+                <h1 class="h3 dorado">Los CEO más rentables: Ing. Marcelo Santillana es reconocido en el ranking top ten de Semana Económica</h1>
+
+                @Html.Partial("~/Views/Shared/_redes.cshtml")
+                <br />
+
+                <p>El Ing. Marcelo Santillana, Gerente General de <strong>PODEROSA,</strong> fue reconocido anoche en el evento "Los CEO más rentables", distinción entregada por la revista Semana Económica. El Ing. Santillana fue distinguido con el primer puesto en la categoría Minería y el quinto puesto en el ranking top 25.</p>
+
+                <p>A la ceremonia asistió la familia del Ing. Marcelo Santillana, Eva Arias, Presidenta de Directorio, Ing. Walter Sologuren, Jimena Sologuren, Sub Gerente de Responsabilidad Social y Comunicaciones, Ing. Diego Sologuren, Coordinador Ejecutivo de Desarrollo Estratégico, Ing. Fausto Cueva, Gerente de Geología y Exploraciones, Ing. Walter Díaz, Gerente del SIG y RS, Ing. Daniel Torres, Gerente de Operaciones, José Elejalde, Gerente de Administración y Finanzas y Comercialización, miembros del Directorio y colaboradores de <strong>PODEROSA.</strong></p>
+
+                <p>Este evento se realizó en el JW Marriott de Miraflores a las 7:30 p.m. donde asistieron CEO de importantes empresas del< país y representantes del ámbito empresarial.</p>
+
+                <h2 class="h5 dorado">Dato</h2>
+                <p>El ranking de Semana Económica "Los CEO más rentables", que llega a la tercera edición (2014, 2016 y 2018), reconoce a los CEO más importantes del Perú, cuyo trabajo ha hecho que sus empresas logren el mejor desempeño financiero en los últimos años.</p>
+
+                <p>El ranking reconoce la gestión y liderazgo de los CEO que han hecho posible el crecimiento de sus empresas para convertirlas en líderes de su sector, y agregar mayor valor para sus accionistas.</p>
+
+                <p>Las categorías premiadas son: Banca y Finanzas, Industrial, Construcción, Minería, Crecimiento Eficiente, la CEO más rentable, el CEO rentable más joven y desarrollo sostenible, y el premio el CEO más rentable.</p>
+
+                <div class="row mt-4">
+                    <div class="col-sm-auto">
+                        @Html.Partial("~/Views/Shared/_redes.cshtml")
+                    </div>
+
+                    <div class="col-sm-auto ml-sm-auto mt-3 mt-sm-0">
+                        <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

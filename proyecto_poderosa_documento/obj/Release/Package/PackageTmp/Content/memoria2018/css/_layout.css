@@ -1,0 +1,204 @@
+/* #################################################################################################### */
+/* LAYOUT */
+/* #################################################################################################### */
+
+/* -------------------------------------------------- */
+/* FOOTER SIEMPRE ABAJO */
+/* -------------------------------------------------- */
+html,
+body{
+    height: 100%;
+}
+body{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+main {
+    /*flex-shrink: 0;*/
+}
+/*main > *:first-child{
+    margin-top: .5rem;
+}*/
+footer{
+    /*margin-top: auto;*/
+}
+/* -------------------------------------------------- */
+
+
+
+
+
+/* -------------------------------------------------- */
+/* CONTAINER */
+/* -------------------------------------------------- */
+.container--xxl{
+    max-width: 1366px;
+    /*max-width: 100%;*/
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* MEDIA QUERYS */
+@media(min-width: 1200px){
+    /*.container--xxl{
+        max-width: 90%;
+    }*/
+}
+/* -------------------------------------------------- */
+
+
+
+
+
+/* -------------------------------------------------- */
+/* MARGIN Y PADDING GENERAL PARA LAS SECCIONES */
+/* -------------------------------------------------- */
+.my-seccion{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.py-seccion{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+/* MEDIA QUERYS */
+@media(min-width: 576px){
+    
+}
+@media(min-width: 768px){
+    .my-seccion{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .py-seccion{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+@media(min-width: 992px){
+    .my-seccion{
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+    .py-seccion{
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+}
+@media(min-width: 1200px){
+    .my-seccion{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    .py-seccion{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+/* -------------------------------------------------- */
+
+
+
+/* -------------------------------------------------- */
+/* SECCION FOOT */
+/* -------------------------------------------------- */
+.sec-foot{
+    text-align: center;
+    padding: 1rem 0 .5rem;
+}
+.sec-foot__flecha{
+    height: 2rem;
+}
+/* -------------------------------------------------- */
+
+
+
+/* -------------------------------------------------- */
+/* SECCION FOOT */
+/* -------------------------------------------------- */
+main > section > *{
+    position: relative;
+    z-index: 2;
+}
+.sec-foot{
+    z-index: 1;
+}
+
+
+
+.bg-sec{
+    position: relative;
+}
+.bg-sec:before,
+.bg-sec:after{
+    content: "";
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: cover;
+    
+    width: 100%;
+    height: 22vw;
+    display: block;
+
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    right: 0;
+}
+.bg-sec:before {
+    top: -3%;
+}
+.bg-sec:after{
+    bottom: -3%;
+}
+
+/* ESTADOS */
+.bg-sec--2:before {
+    background-image: url(../img/fondo-2-top.svg);
+}
+.bg-sec--2:after{
+    background-image: url(../img/fondo-2-bot.svg);
+}
+
+.bg-sec--4:before {
+    background-image: url(../img/fondo-4-top.svg);
+}
+.bg-sec--4:after{
+    background-image: url(../img/fondo-4-bot.svg);
+}
+
+/* MEDIA QUERYS */
+@media(min-width: 576px){
+    .bg-sec:before {
+        top: -6%;
+    }
+    .bg-sec:after{
+        bottom: -6%;
+    }
+}
+@media(min-width: 768px){
+    .bg-sec:before {
+        top: -8%;
+    }
+    .bg-sec:after{
+        bottom: -8%;
+    }
+}
+@media(min-width: 992px){
+    .bg-sec:before {
+        top: -11%;
+    }
+    .bg-sec:after{
+        bottom: -11%;
+    }
+}
+/* -------------------------------------------------- */
+
+/* #################################################################################################### */

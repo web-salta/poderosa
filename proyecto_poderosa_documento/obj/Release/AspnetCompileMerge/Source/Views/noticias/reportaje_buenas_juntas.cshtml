@@ -1,0 +1,67 @@
+﻿
+@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title>Reportaje buenas juntas | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='Reportaje buenas juntas | PODEROSA' />
+<meta name='description' content='Conoce cómo los pobladores del distrito de Pataz gracias a la ayuda de las Juntas Administradoras de Servicio de Saneamiento (JASS) han logrado organizarse para hacer frente a la gran problemática del agua potable. ' />
+<meta name='url' content='https://www.poderosa.com.pe/noticias/reportaje-buenas-juntas' />
+<meta name='keywords' content='Poderosa, reportajes, buenas, juntas' />
+<!-- OpenGraph Meta Tags -->
+<meta property='og:type' content='website' />
+<meta property='og:title' content='Reportaje emprendedores power | PODEROSA' />
+<meta property='og:description' content='Conoce cómo los pobladores del distrito de Pataz gracias a la ayuda de las Juntas Administradoras de Servicio de Saneamiento (JASS) han logrado organizarse para hacer frente a la gran problemática del agua potable.' />
+<meta property='og:url' content='https://www.poderosa.com.pe/noticias/reportaje-buenas-juntas' />
+<meta property='og:image' content='https://www.poderosa.com.pe/Content/noticias/reportaje-buenas-juntas/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+
+                <div class="h6 mayuscula mt-4">22 DE JUNIO DE 2022</div>
+                <h1 class="h3 dorado">Reportaje buenas juntas | Tierra adentro</h1>
+
+                @Html.Partial("~/Views/Shared/_redes.cshtml")
+                <br />
+
+                <div class="row justify-content-center mt-4 mb-2">
+                    <div class="col-lg-10">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/yyEIJo2Ia20"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <br /><br />
+
+                <div class="row mt-4">
+                    <div class="col-sm-auto">
+                        @Html.Partial("~/Views/Shared/_redes.cshtml")
+                    </div>
+
+                    <div class="col-sm-auto ml-sm-auto mt-3 mt-sm-0">
+                        <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

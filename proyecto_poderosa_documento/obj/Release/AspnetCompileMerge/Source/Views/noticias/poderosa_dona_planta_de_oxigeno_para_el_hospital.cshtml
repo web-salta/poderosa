@@ -1,0 +1,92 @@
+﻿
+@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title>PODEROSA dona planta de oxígeno para el Hospital Regional de Trujillo | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='PODEROSA dona planta de oxígeno para el Hospital Regional de Trujillo | PODEROSA' />
+<meta name='description' content='Como parte de sus acciones en apoyo a la lucha contra la Covid-19 en la región La Libertad, Poderosa donó una planta generadora de oxígeno medicinal al Hospital Regional de Trujillo, equipada con un sistema de llenado de balones y valorizada en más de 600 mil soles.' />
+<meta name='url' content='http://www.poderosa.com.pe/noticias/poderosa-dona-planta-de-oxigeno-para-el-hospital' />
+<meta name='keywords' content='PODEROSA, dona, planta, Hospital Regional de Trujillo' />
+<!-- OpenGraph Meta Tags -->
+<meta property='og:type' content='website' />
+<meta property='og:title' content='PODEROSA dona planta de oxígeno para el Hospital Regional de Trujillo | PODEROSA' />
+<meta property='og:description' content='Como parte de sus acciones en apoyo a la lucha contra la Covid-19 en la región La Libertad, Poderosa donó una planta generadora de oxígeno medicinal al Hospital Regional de Trujillo, equipada con un sistema de llenado de balones y valorizada en más de 600 mil soles.' />
+<meta property='og:url' content='http://www.poderosa.com.pe/noticias/poderosa-dona-planta-de-oxigeno-para-el-hospital' />
+<meta property='og:image' content='http://www.poderosa.com.pe/Content/noticias/poderosa-dona-planta-de-oxigeno-para-el-hospital/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+                <img class="object-fit-cover" src="~/Content/noticias/poderosa-dona-planta-de-oxigeno-para-el-hospital/banner.jpg" alt="imagen">
+
+                <div class="h6 mayuscula mt-4">28 de Mayo de 2020, Trujillo</div>
+                <h1 class="h3 dorado">PODEROSA dona planta de oxígeno para el Hospital Regional de Trujillo</h1>
+
+                @Html.Partial("~/Views/Shared/_redes.cshtml")
+                <br />
+
+
+
+                <p>Como parte de sus acciones en apoyo a la lucha contra la Covid-19 en la región La Libertad, Poderosa donó una planta generadora de oxígeno medicinal al Hospital Regional de Trujillo, equipada con un sistema de llenado de balones y valorizada en más de 600 mil soles.</p>
+
+                <p>La planta fue instalada dentro del nosocomio y cuenta con tecnología PSA, que permite filtrar el aire del ambiente para producir oxígeno medicinal de alta pureza, superior al 93% requerido para la atención de pacientes de coronavirus.</p>
+
+                <p>La donación fue entregada a través de Asociación Pataz, junto a un compresor de oxígeno (Booster), válvulas, entre otros implementos que harán posible la recarga de hasta 20 cilindros de 10 m3 al día. El valor total de estos equipos es de 615 mil soles.</p>
+
+                <p>La planta fue recibida este viernes por el director ejecutivo del hospital, el doctor César Fernández Sánchez, en una ceremonia en la que también estuvieron presentes el gobernador regional de La Libertad, Manuel Llempén Coronel; la gerente de Salud de La Libertad, Kerstyn Morote García; y representantes de Poderosa.</p>
+
+                <p>Fernández Sánchez agradeció el constante apoyo de Poderosa a la lucha contra la pandemia de Covid-19 e indicó que el oxígeno que producirá esta planta servirá de soporte para los pacientes de Emergencia y triaje en carpa. Además, señaló que “también se proyecta que llegue al área de UCI pediátrica, porque debemos estar preparados para atender a todos los grupos etarios”.</p>
+
+                <p> A su vez, el gobernador regional destacó que, desde el inicio de la emergencia sanitaria, Poderosa ha colaborado con la población liberteña. “Primero, con balones [de oxígeno], una cantidad considerable de mascarillas y pruebas rápidas. Después, con plantas de oxígeno y, en el proceso de vacunación, al prestar los servicios de una avioneta para llevar a la brevedad dosis a Pataz. Tienen mi agradecimiento y reconocimiento”, dijo Llempén Coronel.</p>
+
+                <p>Vale precisar que el pasado 15 de abril, Poderosa entregó 60 kits de oxigenoterapia de flujo adulto, así como 6 reguladores de flujo de oxígeno (Wayrachis), dispositivos que funcionan como alternativas de soporte ventilatorio, que han salvado la vida de decenas de pacientes en el Hospital Regional de Trujillo.</p>
+
+                <div class="row justify-content-center my-4">
+                    <div class="col-lg-8">
+                        <div class="owl-carousel    js-owl-carousel-fotos   owl-carousel--no-nav    dots-gris">
+                            <div class="">
+                                <img class="img-fluid w-100" src="~/Content/noticias/poderosa-dona-planta-de-oxigeno-para-el-hospital/01.jpg" alt="imagen">
+                            </div>
+
+                            <div class="">
+                                <img class="img-fluid w-100" src="~/Content/noticias/poderosa-dona-planta-de-oxigeno-para-el-hospital/02.jpg" alt="imagen">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-sm-auto">
+                        @Html.Partial("~/Views/Shared/_redes.cshtml")
+                    </div>
+
+                    <div class="col-sm-auto ml-sm-auto mt-3 mt-sm-0">
+                        <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>
+
+

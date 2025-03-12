@@ -1,0 +1,103 @@
+﻿
+@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title>Premio Desarrollo Sostenible 2020 | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='Premio Desarrollo Sostenible 2020 | PODEROSA' />
+<meta name='description' content='SNMPE reconoce aporte en reactivación económica de la sierra de La Libertad gracias a producción de papa.' />
+<meta name='url' content='http://www.poderosa.com.pe/noticias/premio-desarrollo-sostenible-2020/' />
+<meta name='keywords' content='Proyectos, reactivación, económica, sierra, producción,papa' />
+<!-- OpenGraph Meta Tags -->
+<meta property='og:type' content='website' />
+<meta property='og:title' content='Premio Desarrollo Sostenible 2020 | PODEROSA' />
+<meta property='og:description' content='SNMPE reconoce aporte en reactivación económica de la sierra de La Libertad gracias a producción de papa.' />
+<meta property='og:url' content='http://www.poderosa.com.pe/noticias/premio-desarrollo-sostenible-2020/' />
+<meta property='og:image' content='http://www.poderosa.com.pe/Content/noticias/premio-desarrollo-sostenible-2020/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+                <img class="object-fit-cover" src="~/Content/noticias/premio-desarrollo-sostenible-2020/banner.jpg" alt="imagen">
+
+                <div class="h6 mayuscula mt-4">14 DE DICIEMBRE DE 2020</div>
+                <h1 class="h3 dorado">Premio Desarrollo Sostenible 2020 | SNMPE reconoce aporte en reactivación económica de la sierra de La Libertad gracias a producción de papa
+                </h1>
+
+                @Html.Partial("~/Views/Shared/_redes.cshtml")
+                <br />
+
+                <p> El trabajo articulado entre más de 2500 productores de papa, el Centro Internacional de la Papa (CIP), el Instituto Nacional de Innovación Agraria (INIA), 
+                la Municipalidad Distrital de Chugay (provincia Sánchez Carrión) y PODEROSA (a través de Asociación Pataz); fue reconocido con el Premio Desarrollo Sostenible 
+                2020 de la Sociedad Nacional de Minería y Petróleo (SNMPE), segundo puesto en la categoría: Juntos contra el Covid 19, Premio Reactivación Económica (sector minero) 
+                por el Proyecto Papa Resiliente. El primer puesto fue para el proyecto Plataforma Quellaveco (Anglo American).</p>
+
+                <p>Pese a que la pandemia puso en peligro lo avanzado en el proyecto, se logró que la producción no se detuviera, salvaguardando la seguridad y salud de los beneficiarios y
+                   técnicos del proyecto; para ello se implementó una plataforma web <a href="https://investigacionagrariaap.com" target="_blank">(https://investigacionagrariaap.com)</a> para asegurar la asistencia técnica a los productores de papa. 
+                    Esta web ha conseguido a la fecha más de 33 mil visitas.</p>
+
+                <p>Gracias a este trabajo articulado se ha logrado cosechar con éxito más de 140 hectáreas de papa, contribuyendo en la reactivación económica local en momentos en que el país
+                     vive una crisis económica que afecta al país.</p>
+
+                <p>El Premio destaca que las innovaciones agrícolas y nutricionales son el elemento clave para mejorar la seguridad alimentaria, el empoderamiento de los sistemas de producción 
+                    de las zonas alto andinas; el objetivo es desarrollar variedades de papa resiliente al cambio climático para consumo directo y para procesamiento.</p>
+
+                <p>Este año participaron 69 proyectos con iniciativas en las distintas categorías. El jurado calificador estuvo conformado por representantes de la sociedad civil, sector público, 
+                    empresa privada, la prensa y academia; quienes evaluaron innovación, sostenibilidad, compromiso de la población y alineamiento con los Objetivos de Desarrollo 
+                Sostenible de las Naciones Unidas.</p>
+
+
+                <p>
+                    El “Premio Desarrollo Sostenible” reconoce los esfuerzos de Gestión Ambiental y Gestión Social de las empresas asociadas de la SNMPE. Esta décimo quinta edición incorporó la categoría:
+                    Juntos contra el Covid 19, que tiene dos premios: Sumando Esfuerzos y Reactivación Económica.
+                </p>
+
+                <p> La premiación se realizó el 11 de diciembre a través de una ceremonia virtual que se difundía vía Facebook Live.</p>
+
+
+
+                <div class="row justify-content-center my-4">
+                    <div class="col-lg-8">
+                        <div class="owl-carousel    js-owl-carousel-fotos   owl-carousel--no-nav    dots-gris">
+                            <div class="">
+                                <img class="img-fluid w-100" src="~/Content/noticias/premio-desarrollo-sostenible-2020/01.jpg" alt="imagen">
+                            </div>
+
+                            <div class="">
+                                <img class="img-fluid w-100" src="~/Content/noticias/premio-desarrollo-sostenible-2020/02.jpg" alt="imagen">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-auto">
+                        @Html.Partial("~/Views/Shared/_redes.cshtml")
+                    </div>
+
+                    <div class="col-sm-auto ml-sm-auto mt-3 mt-sm-0">
+                        <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

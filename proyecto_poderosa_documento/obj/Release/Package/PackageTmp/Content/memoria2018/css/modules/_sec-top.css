@@ -1,0 +1,100 @@
+/* #################################################################################################### */
+/* SECCION TOP */
+/* #################################################################################################### */
+
+
+.sec-banner{
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	min-height: calc(100vh - (var(--nav-pri-v1) + var(--nav-pri-v2)));
+
+	margin-top: calc( var(--nav-pri-v1) + var(--nav-pri-v2) );
+}
+.sec-banner__body{
+	/*display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-pack: center;
+	justify-content: center;*/
+	-ms-flex: 1 1 auto;
+	    flex: 1 1 auto;
+
+	/*height: 100%;
+	background-image: url(../../img/bg-sec-banner.png);
+	background-repeat: no-repeat;
+	background-position: center 100%;
+	background-size: cover;*/
+}
+.sec-banner__carrusel{
+	position: absolute !important;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.sec-banner__carrusel-item{
+	display: -ms-flexbox !important;
+	display: flex !important;
+	-ms-flex-align: center;
+	align-items: center;
+	height: 100%;
+
+	background-repeat: no-repeat;
+	background-position: center 0%;
+	background-size: cover;
+}
+.sec-banner__carrusel-item--1{
+	background-image: url(../../img/banner/1.jpg);	
+}
+.sec-banner__carrusel-item--2{
+	background-image: url(../../img/banner/2.jpg);	
+}
+.sec-banner__carrusel-item--3{
+	background-image: url(../../img/banner/3.jpg);	
+}
+
+.sec-banner__carrusel .slick-list,
+.sec-banner__carrusel .slick-track{
+	height: 100%;
+}
+
+.sec-banner__body-over{
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	bottom: -1px;
+	left: 0;
+	right: 0;
+
+	background-image: url(../../img/bg-sec-banner-mask.png);
+	background-repeat: no-repeat;
+	background-position: center 100%;
+	background-size: 100%;
+}
+.sec-banner__body-over-int{
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	height: 100%;
+}
+
+/* MEDIA QUERYS */
+@media(min-width: 576px){
+	
+}
+@media(min-width: 768px){
+	
+}
+@media(min-width: 992px){
+	
+}
+@media(min-width: 1200px){
+	
+}
+
+/* #################################################################################################### */

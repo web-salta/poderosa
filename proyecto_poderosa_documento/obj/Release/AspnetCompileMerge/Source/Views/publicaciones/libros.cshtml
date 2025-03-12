@@ -1,0 +1,184 @@
+﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title>Libros | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='Libros | PODEROSA' />
+<meta name='description' content='Libros' />
+<meta name='url' content='http://www.poderosa.com.pe/publicaciones/libros' />
+<meta name='keywords' content='libros' />
+<!-- OpenGraph Meta Tags -->
+<meta property='og:type' content='website' />
+<meta property='og:title' content='Libros | PODEROSA' />
+<meta property='og:description' content='Libros' />
+<meta property='og:url' content='http://www.poderosa.com.pe/publicaciones/libros' />
+<meta property='og:image' content='http://www.poderosa.com.pe/Content/img/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">LIBROS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-seccion">
+            <div class="container">
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">PUBLICACIONES</li>
+                        <li class="breadcrumb-item active">LIBROS</li>
+                    </ol>
+                </nav>
+
+                <div class="publicaciones_pagination">
+                    
+                    <div>
+                        <div class="row">
+                            <div class="col-sm-4 mb-3 mb-sm-0 text-center">
+                                <a href="~/Content/descargas/libros/historia-de-la-quina-y-la-quinina.pdf" target="_blank">
+                                    <div class="border    zoom">
+                                        <img class="img-fluid w-100 zoom__img" src="~/Content/descargas/libros/historia-de-la-quina-y-la-quinina.jpg" alt="imagen">
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-sm-8">
+                                <h3 class="dorado">La historia de la quina y la quinina</h3>
+                                <h4 class="dorado fuente-2">de Chugay, La Libertad - Perú</h4>
+
+                                <p>Este catálogo de variedades de papa nativa del distrito de Chugay, provincia de Sánchez Carrión, región La Libertad, constituye una muestra de la diversidad genética de las papas nativas que los agricultores del lugar mantienen en sus campos, y de los conocimientos que ello implica sobre su preservación y mantenimiento, lo que demuestra una vasta cultura ancestral y un aporte valioso al conocimiento científico.</p>
+                                <div class="text-right boton-abajo-derecho">
+                                    <a class="boton-icono boton-icono--dorado" href="~/Content/descargas/libros/historia-de-la-quina-y-la-quinina.pdf" target="_blank">
+                                        <span class="boton-icono__txt">Descargar</span>
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-flecha-descargar.svg" alt="ico">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="hr-color-gris-claro my-5">
+                    </div>
+
+
+                    <div>
+                        <div class="row">
+                            <div class="col-sm-4 mb-3 mb-sm-0 text-center">
+                               <a  href="@Url.Action("landing", "libro_rio_abiseo")" target="_blank">
+                                <div class="border    zoom">
+                                    <img class="img-fluid w-100 zoom__img" src="~/Content/descargas/libros/parque-nacional-del-rio-abiseo.jpg" alt="imagen">
+                                </div>
+                                </a>
+                            </div>
+
+                            <div class="col-sm-8">
+                                <h3 class="dorado">Parque Nacional del RÍO ABISEO</h3>
+                                <h4 class="dorado fuente-2">Memoria viva del paisaje cultural andino amazónico</h4>
+
+                                <p>El trabajo es fruto del esfuerzo conjunto de instituciones públicas, empresa privada, organismos internacionales, pobladores de Pataz, investigadores y comunicadores; que presenta los primeros resultados del proyecto integral para el desarrollo de la investigación y puesta en valor del Parque Nacional del Río Abiseo, sitio mixto de Patrimonio Mundial y Reserva de Biósfera declarada por UNESCO.</p>
+                                <div class="text-right boton-abajo-derecho">
+                                    <a class="boton-icono boton-icono--dorado" href="@Url.Action("landing", "libro_rio_abiseo")" target="_blank">
+                                        <span class="boton-icono__txt">Comprar</span>
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/flecha-derecha.svg" alt="ico">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="hr-color-gris-claro my-5">
+                    </div>
+
+                    <div>
+                        <div class="row">
+                            <div class="col-sm-4 mb-3 mb-sm-0 text-center">
+                                <a href="~/Content/descargas/libros/catalogo-de-variedades-de-papa-nativa.pdf" target="_blank">
+                                    <div class="border    zoom">
+                                        <img class="img-fluid w-100 zoom__img" src="~/Content/descargas/libros/catalogo-de-variedades-de-papa-nativa.jpg" alt="imagen">
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-sm-8">
+                                <h3 class="dorado">Catálogo de variedades de papa nativa</h3>
+                                <h4 class="dorado fuente-2">de Chugay, La Libertad - Perú</h4>
+
+                                <p>Este catálogo de variedades de papa nativa del distrito de Chugay, provincia de Sánchez Carrión, región La Libertad, constituye una muestra de la diversidad genética de las papas nativas que los agricultores del lugar mantienen en sus campos, y de los conocimientos que ello implica sobre su preservación y mantenimiento, lo que demuestra una vasta cultura ancestral y un aporte valioso al conocimiento científico.</p>
+                                <div class="text-right boton-abajo-derecho">
+                                    <a class="boton-icono boton-icono--dorado" href="~/Content/descargas/libros/catalogo-de-variedades-de-papa-nativa.pdf" target="_blank">
+                                        <span class="boton-icono__txt">Descargar</span>
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-flecha-descargar.svg" alt="ico">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="hr-color-gris-claro my-5">
+                    </div>
+
+                    <div>
+                        <div class="row">
+                            <div class="col-sm-4 mb-3 mb-sm-0 text-center">
+                                <a href="~/Content/descargas/libros/la-mamita-de-otuzco.pdf" target="_blank">
+                                    <div class="border    zoom">
+                                        <img class="img-fluid w-100 zoom__img" src="~/Content/descargas/libros/la-mamita-de-otuzco.jpg" alt="imagen">
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-sm-8">
+                                <h3 class="dorado">La Mamita de Otuzco</h3>
+
+                                <p>No hay mejor forma de acercarse a una celebración religiosa que la que ofrece un libro ilustrado, donde las imágenes transmiten rostros y cuerpos en movimiento, así como el detalle de lo que viste y adorna a las imágenes. Con estas ventajas abrimos las páginas de esta obra.</p>
+                                <div class="text-right boton-abajo-derecho">
+                                    <a class="boton-icono boton-icono--dorado" href="~/Content/descargas/libros/la-mamita-de-otuzco.pdf" target="_blank">
+                                        <span class="boton-icono__txt">Descargar</span>
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-flecha-descargar.svg" alt="ico">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="hr-color-gris-claro my-5">
+                    </div>
+
+                    <div>
+                        <div class="row">
+                            <div class="col-sm-4 mb-3 mb-sm-0 ">
+                                <a href="~/Content/descargas/libros/manual-del-cultivo-de-papa.pdf" target="_blank">
+                                    <div class="border    zoom">
+                                        <img class="img-fluid w-100 zoom__img" src="~/Content/descargas/libros/manual-del-cultivo-de-papa.jpg" alt="imagen">
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-sm-8">
+                                <h3 class="dorado">Manual del cultivo de papa</h3>
+                                <h4 class="dorado fuente-2">para pequeños productores en la Sierra Norte del Perú</h4>
+
+                                <p>La papa es el principal alimento de la población andina, aporta proteínas, energía, minerales y vitaminas; está adaptado a las condiciones y cultura del poblador de la sierra peruana.</p>
+                                <div class="text-right boton-abajo-derecho">
+                                    <a class="boton-icono boton-icono--dorado" href="~/Content/descargas/libros/manual-del-cultivo-de-papa.pdf" target="_blank">
+                                        <span class="boton-icono__txt">Descargar</span>
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-flecha-descargar.svg" alt="ico">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="hr-color-gris-claro my-5">
+                    </div>
+               </div>
+        </section>
+    </main>
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+
+<!-- SCRIPTS -->
+<script type="text/javascript" src="~/Content/js/pagination/jQuery.paginate.js"></script>
+<script>
+    $('.publicaciones_pagination').paginate({
+    	items_per_page: 6
+    });
+</script>
+</html>

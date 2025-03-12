@@ -1,0 +1,67 @@
+﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title>Lineamientos sobre regalos, atenciones y cortesías | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='Lineamientos sobre regalos, atenciones y cortesías | PODEROSA' />
+<meta name='description' content='Lineamientos sobre regalos, atenciones y cortesías.' />
+<meta name='url' content='https://www.poderosa.com.pe/noticias/lineamientos-sobre-regalos-atenciones-y-cortesias' />
+<meta name='keywords' content='Poderosa, lineamientos, regalos, cortesía' />
+<!-- OpenGraph Meta Tags -->
+<meta property='og:type' content='website' />
+<meta property='og:title' content='Lineamientos sobre regalos, atenciones y cortesías | PODEROSA' />
+<meta property='og:description' content='Poderosa, lineamientos, regalos, cortesía' />
+<meta property='og:url' content='https://www.poderosa.com.pe/noticias/lineamientos-sobre-regalos-atenciones-y-cortesias' />
+<meta property='og:image' content='https://www.poderosa.com.pe/Content/noticias/lineamientos-sobre-regalos-atenciones-y-cortesias/banner.png' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+                <img class="object-fit-cover" src="~/Content/noticias/lineamientos-sobre-regalos-atenciones/banner.png" alt="imagen">
+
+                <div class="h6 mayuscula mt-4">Lima, 20 de Diciembre de 2023</div>
+
+
+                <div class="d-flex justify-content-center justify-content-lg-start">
+                    @Html.Partial("~/Views/Shared/_redes.cshtml")
+                </div>
+
+                <br> <br>
+
+                <p>
+                    <b>Poderosa</b> no recibe ni entrega regalos, atenciones, favores u/o cualquier otro tipo de cortesía que pueda ser o parecer un beneficio laboral o comercial. De acuerdo, con nuestras políticas y código de ética, solo se podrá recibir o entregar productos considerados como merchandising que no superen el valor estimado de S/. 125.
+                </p>
+
+
+                <p class="text-right ">Atentamente,</p>
+                <p class="text-right "><strong>COMPAÑÍA MINERA PODEROSA S.A.</strong></p>
+
+                <div class="d-flex mt-5  flex-column flex-lg-row align-items-center align-items-lg-start justify-content-sm-center">
+                    <div class="flex-fill mb-4 mb-lg-0">
+                        @Html.Partial("~/Views/Shared/_redes.cshtml")
+                    </div>
+                    <div class="flex-fill text-center text-sm-right">
+                        <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

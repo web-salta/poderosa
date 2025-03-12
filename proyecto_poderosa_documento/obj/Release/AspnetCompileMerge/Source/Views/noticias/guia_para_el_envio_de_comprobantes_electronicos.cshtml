@@ -1,0 +1,68 @@
+﻿
+
+@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title>Guía para el envío de Comprobantes Electrónicos | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='Guía para el envío de Comprobantes Electrónicos | PODEROSA' />
+<meta name='description' content='Guía para el envío de Comprobantes Electrónicos' />
+<meta name='url' content='https://www.poderosa.com.pe/noticias/guia_para_el_envio_de_comprobantes_electronicos' />
+<meta name='keywords' content='Poderosa, Comprobantes Electrónicos, guía' />
+<!-- OpenGraph Meta Tags -->
+<meta property='og:type' content='website' />
+<meta property='og:title' content='Guía para el envío de Comprobantes Electrónicos | PODEROSA' />
+<meta property='og:description' content='Guía para el envío de Comprobantes Electrónicos' />
+<meta property='og:url' content='https://www.poderosa.com.pe/noticias/guia_para_el_envio_de_comprobantes_electronicos' />
+<meta property='og:image' content='https://www.poderosa.com.pe/Content/noticias/guia-para-el-envio-de-comprobantes-electronico/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+
+                <div class="h6 mayuscula mt-4">09 de Diciembre de 2020</div>
+                <h1 class="h3 dorado">Guía para el envío de Comprobantes Electrónicos</h1>
+
+                @Html.Partial("~/Views/Shared/_redes.cshtml")
+                <br />
+                <p>En el siguiente video te brindamos el paso a paso de cómo gestionar y enviar tus comprobantes electrónicos a Poderosa:</p>
+
+
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item borderOverflow" src="https://www.youtube.com/embed/FRi6gslw3uo" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+                </div>
+                <br /><br />
+
+                <div class="row mt-4">
+                    <div class="col-sm-auto">
+                        @Html.Partial("~/Views/Shared/_redes.cshtml")
+                    </div>
+
+                    <div class="col-sm-auto ml-sm-auto mt-3 mt-sm-0">
+                        <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

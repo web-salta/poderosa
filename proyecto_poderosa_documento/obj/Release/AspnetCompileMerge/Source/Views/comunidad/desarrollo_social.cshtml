@@ -1,0 +1,107 @@
+﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+  <!-- METAS -->
+    <title>Desarrollo social | PODEROSA</title>
+    <!-- Basic HTML Meta Tags -->
+    <meta name='title' content='Desarrollo social | PODEROSA' />
+    <meta name='description' content='En Poderosa, contribuimos de forma activa al desarrollo de nuestro país y a la disminución de la brecha de pobreza existente en las poblaciones de su ámbito, implementando, a través de Asociación Pataz y en cooperación con el Estado.' />
+    <meta name='url' content='http://www.poderosa.com.pe/comunidad/desarrollo-social' />
+    <meta name='keywords' content='desarrollo social, salud, educación, poderosa, asiciación pataz' />
+    <!-- OpenGraph Meta Tags -->
+    <meta property='og:type' content='website' />
+    <meta property='og:title' content='Desarrollo social | PODEROSA' />
+    <meta property='og:description' content='En Poderosa, contribuimos de forma activa al desarrollo de nuestro país y a la disminución de la brecha de pobreza existente en las poblaciones de su ámbito, implementando, a través de Asociación Pataz y en cooperación con el Estado.' />
+    <meta property='og:url' content='http://www.poderosa.com.pe/comunidad/desarrollo-social' />
+    <meta property='og:image' content='http://www.poderosa.com.pe/Content/img/comunidad/desarrollo-social/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+    <main>
+
+        <section>
+            <div class="banner-interno">
+                <img class="banner-interno__img" src="~/Content/img/comunidad/desarrollo-social/banner_desarollo-social.jpg" alt="banner">
+
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">DESARROLLO SOCIAL</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">COMUNIDAD</li>
+                        <li class="breadcrumb-item active">DESARROLLO SOCIAL</li>
+                    </ol>
+                </nav>
+
+                <p>En Poderosa, contribuimos de forma activa al desarrollo de nuestro país y a la disminución de la brecha de pobreza existente en las poblaciones de su ámbito, implementando, a través de Asociación Pataz y en cooperación con el Estado, organizaciones especializadas de prestigio y sociedad civil organizada, proyectos de salud y educación, orientados a los sectores más vulnerables de la población.        </p>
+            </div>
+        </section>
+
+        <div class="col-abs-seccion    my-seccion">
+            <div class="col-abs-8 col-abs-8--md col-abs-8--der col-abs-8--curva-marron-der">
+                <img class="object-fit-cover" src="~/Content/img/comunidad/desarrollo-social/salud.jpg">
+            </div>
+
+            <section class="py-seccion bg-marron blanco">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h2 class="dorado">SALUD</h2>
+                            <p>Pensamos que nuestros proyectos deben tener un enfoque integral del bienestar de las personas, por lo que trabajamos en mejorar la salud y nutrición, pero además por propiciar que las poblaciones tengan acceso a agua en cantidad y de la calidad adecuada. Trabajamos en el fortalecimiento de la Junta Administradora de Servicios de Saneamiento (JASS) para lograr una mejor administración del servicio de agua para consumo humano. Además apostamos por el fortalecimiento del Sistema de Vigilancia Comunal (SIVICO) uniendo a la comunidad con los establecimientos de salud.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="col-abs-seccion    my-seccion">
+            <div class="col-abs-8 col-abs-8--md col-abs-8--izq col-abs-8--curva-dorada-izq">
+                <img class="object-fit-cover" src="~/Content/img/comunidad/desarrollo-social/educacion.jpg">
+            </div>
+
+            <section class="py-seccion bg-dorado blanco">
+                <div class="container">
+                    <div class="row justify-content-end">
+                        <div class="col-md-4 text-md-right">
+                            <h2 class="blanco">EDUCACIÓN</h2>
+                            <p class="marron">
+                                Ya sea a través de nuestra oficina de Relaciones Comunitarias o de Asociación Pataz, apostamos por que los niños y niñas de la zona cuenten con una educación de calidad. Todos los años renovamos con convenio con la UGEL de Pataz para ayudar que hayan más docentes en la zona, y estos sean asumidos por el Estado paulatinamente. Apostamos por que los alumnos de primaria tengan acceso a la tecnología a través de telecentros educativos. Creemos que los estudiantes deben estudiar en condiciones adecuadas por lo que complementamos nuestro apoyo a la pedagogía con paquetes escolares y mobiliario. Además fomentamos la implementación del Sistema de Acompañamiento Comunal en Educación (SIACE) para integrar las instituciones educativas en una red distrital que permita el compartir experiencias.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="my-seccion">
+            <div class="container">
+                <div class="owl-carousel    js-owl-carousel-fotos   owl-carousel--no-nav">
+                    <div class="text-center">
+                        <img class="img-fluid w-100" src="~/Content/img/comunidad/desarrollo-social/slider/01.jpg">
+                    </div>
+
+                    <div class="text-center">
+                        <img class="img-fluid w-100" src="~/Content/img/comunidad/desarrollo-social/slider/02.jpg">
+                    </div>
+
+                    <div class="text-center">
+                        <img class="img-fluid w-100" src="~/Content/img/comunidad/desarrollo-social/slider/03.jpg">
+                    </div>
+
+                    <div class="text-center">
+                        <img class="img-fluid w-100" src="~/Content/img/comunidad/desarrollo-social/slider/04.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

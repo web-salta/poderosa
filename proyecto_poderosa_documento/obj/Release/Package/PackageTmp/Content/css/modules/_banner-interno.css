@@ -1,0 +1,189 @@
+
+.bannerInterno__small {
+  position: absolute;
+  z-index: 9;
+  bottom: 0;
+  right: -16%;
+  width: 145px;
+}
+
+.bannerInterno__texto {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 4%;
+  color: #fff;
+  width: 80%;
+}
+
+.bannerInterno__texto-largo {
+  position: absolute;
+  z-index: 3;
+  top: 45%;
+  left: 4%;
+  color: #fff;
+  width: 100%;
+  z-index: 10;
+}
+
+
+.bannerInterno__dorada {
+  position: absolute;
+  bottom: -222px;
+  left: -38px;
+  width: 91%;
+}
+
+
+.bannerInterno__contenedor{
+    overflow: hidden;
+    height:auto;
+    width:100%;
+    position: relative;
+   padding-top:5rem; 
+
+   
+  }
+
+  .bannerInterno__titulo{
+    font-size: 3.5rem;
+  }
+  .bannerInterno__titulo-largo{
+    font-size: 2.3rem;
+  }
+  
+  .bannerInterno__indice{
+    font-size: 1.5rem;
+  }
+ 
+
+
+
+  .bannerInterno__contenedor-largo{
+    overflow: hidden;
+    height:auto;
+    width:100%;
+    position: relative;
+   padding-top:5rem; 
+
+   
+  }
+
+
+
+
+
+/********************************************/
+/*               MEDIA QUERIES              */
+/*------------------------------------------*/
+/********************************************/
+
+@media(min-width:576px){
+  .bannerInterno__texto {
+    left: 2%;
+  }
+  
+  .bannerInterno__texto-largo {
+    left: 2%;
+    top: 40%;
+  }
+  
+  .bannerInterno__dorada {
+    bottom: -258px;
+    left: -38px;
+    width: 85%;
+}
+
+
+
+  }
+ 
+
+@media(min-width:768px){
+  .bannerInterno__contenedor img{
+    border-top-right-radius: 300px;
+    border-bottom-right-radius: 300px;
+  }
+  .bannerInterno__texto {
+    left: 4%;
+    top: 43%;
+    width: 70%;
+  }
+
+  .bannerInterno__texto-largo {
+    left: 4%;
+    top: 43%;
+    width: 75%;
+  }
+ 
+  .bannerInterno__dorada {
+    left: 4%;
+    width: 60%;
+}
+.bannerInterno__small {
+  right: 1%;
+  width: 98px;
+}
+
+.bannerInterno__contenedor {
+  padding-top: 3rem;
+}
+
+
+  }
+ 
+ @media(min-width:992px){
+  .bannerInterno__contenedor {
+    padding-top: 5rem;
+  }
+  .bannerInterno__dorada {
+    width: 45%;
+}
+ }
+
+ @media(min-width:1200px){
+  .bannerInterno__dorada {
+    width: 40%;
+    bottom: -260px;
+}
+ }
+ @media(min-width:1320px){
+  .bannerInterno__texto {
+
+   left: 6%;
+  }
+
+  .bannerInterno__texto-largo { 
+    left: 6%;
+  
+  }
+  
+  .bannerInterno__dorada {
+    width: 38%;
+    bottom: -290px;
+}
+.bannerInterno__small {
+  right: -1%;
+
+}
+
+.bannerInterno__titulo-largo{
+  font-size: 3rem;
+}
+ }
+
+ @media(min-width:1600px){
+  .bannerInterno__dorada {
+   max-width: 40%;
+    bottom: -400px;
+}
+.bannerInterno__texto {
+  left: 15%;
+ }
+ .bannerInterno__texto-largo { 
+  left: 15%;
+
+}
+ }
+
+

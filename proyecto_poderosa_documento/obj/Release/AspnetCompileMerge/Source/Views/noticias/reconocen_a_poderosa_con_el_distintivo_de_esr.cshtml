@@ -1,0 +1,82 @@
+﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+    <!-- METAS -->
+    <title>Reconocen a PODEROSA con el Distintivo de ESR® | PODEROSA</title>
+    <!-- Basic HTML Meta Tags -->
+    <meta name='title' content='Reconocen a PODEROSA con el Distintivo de ESR® | PODEROSA' />
+    <meta name='description' content='En una concurrida ceremonia realizada en Lima, PODEROSA recibió el Distintivo de Empresa Socialmente Responsable (ESR®), por sexto año consecutivo por sus prácticas a su gestión socialmente responsable.' />
+    <meta name='url' content='https://www.poderosa.com.pe/noticias/reconocen-a-poderosa-con-el-distintivo-de-esr/' />
+    <meta name='keywords' content='Poderosa, Distintivo de Empresa Socialmente Responsable' />
+    <!-- OpenGraph Meta Tags -->
+    <meta property='og:type' content='website' />
+    <meta property='og:title' content='Reconocen a PODEROSA con el Distintivo de ESR® | PODEROSA' />
+    <meta property='og:description' content='En una concurrida ceremonia realizada en Lima, PODEROSA recibió el Distintivo de Empresa Socialmente Responsable (ESR®), por sexto año consecutivo por sus prácticas a su gestión socialmente responsable.' />
+    <meta property='og:url' content='https://www.poderosa.com.pe/noticias/reconocen-a-poderosa-con-el-distintivo-de-esr/' />
+<meta property='og:image' content='https://www.poderosa.com.pe/Content/noticias/reconocen-a-poderosa-con-el-distintivo-de-esr/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+                <img class="object-fit-cover" src="~/Content/noticias/reconocen-a-poderosa-con-el-distintivo-de-esr/banner.jpg" alt="imagen">
+                <div class="h6 mayuscula mt-4">27 de Abril de 2018</div>
+                <h1 class="dorado h3">Reconocen a PODEROSA con el Distintivo de ESR®</h1>
+
+                @Html.Partial("~/Views/Shared/_redes.cshtml")
+                <br />
+
+                <p>En una concurrida ceremonia realizada en Lima, PODEROSA recibió el Distintivo de Empresa Socialmente Responsable (ESR®), por sexto año consecutivo por sus prácticas a su gestión socialmente responsable.</p>
+
+                <p>Distintivo Empresa Socialmente Responsable es una herramienta que busca que las empresas mejoren su gestión de sostenibilidad. Asimismo, desarrollen indicadores con el fin de tener un mayor impacto con sus grupos de interés.</p>
+
+                <p>En la VII Edición del Distintivo ESR® participaron 69 empresas, en la cual resaltó PODEROSA recibiendo este galardón otorgado por asumir el compromiso de aplicar buenas prácticas empresariales dentro de la cultura de responsabilidad social y desarrollar a través de sus políticas y su actuación cotidiana, una gestión orientada a la competitividad sustentable y responsable.</p>
+
+                <p>En el proceso calificación, se consideraron nuevos indicadores, los cuales se dividieron en generales y sectoriales agrupándose por temas y sub-temas para facilitar el requerimiento de las evidencias a las distintas áreas involucradas de la organización y tener claridad en el indicador. Para cada indicador se presentaron evidencias que sustentaron el trabajo de la empresa.</p>
+
+                <p>Este reconocimiento fue recibido por Jimena Sologuren, Subgerente de Responsabilidad Social y Comunicaciones. En la ceremonia también participó Daniel Torres, Gerente de Operaciones; Mariano Pacheco, Jefe de Propiedades de PODEROSA y Ricardo Barrios del área legal.</p>
+
+                <p>La ceremonia de distinción se llevó anoche en el Swissotel en la ciudad de Lima, donde asistieron representantes de las empresas ganadoras del Distintivo ESR®.</p>
+
+                <div class="row justify-content-center mt-4 mb-2">
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <div class="col-sm-6 mb-3">
+                                <img class="img-fluid w-100" src="~/Content/noticias/reconocen-a-poderosa-con-el-distintivo-de-esr/01.jpg" alt="imagen">
+                            </div>
+
+                            <div class="col-sm-6 mb-3">
+                                <img class="img-fluid w-100" src="~/Content/noticias/reconocen-a-poderosa-con-el-distintivo-de-esr/02.jpg" alt="imagen">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-sm-auto">
+                        @Html.Partial("~/Views/Shared/_redes.cshtml")
+                    </div>
+
+                    <div class="col-sm-auto ml-sm-auto mt-3 mt-sm-0">
+                        <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

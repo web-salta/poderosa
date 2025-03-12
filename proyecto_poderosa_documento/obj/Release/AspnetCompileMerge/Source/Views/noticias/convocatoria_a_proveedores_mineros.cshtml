@@ -1,0 +1,93 @@
+﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title>Convocatoria a Proveedores Mineros | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='Convocatoria a Proveedores Mineros | PODEROSA' />
+<meta name='description' content='En Compañía Minera Poderosa, a través de nuestra área de Administración de Contratos , nos encontramos en la búsqueda de empresas contratistas mineras para los servicios de Labores mineras de avance y rotura de forma convencional y trackless de acuerdo con los estándares y procedimientos establecidos.' />
+<meta name='url' content='https://www.poderosa.com.pe/noticias/convocatoria-a-proveedores-mineros' />
+<meta name='keywords' content='Poderosa, convocatoria, proveedores, minería, contrato, empresas, servicio' />
+<!-- OpenGraph Meta Tags -->
+<meta property='og:type' content='website' />
+<meta property='og:title' content='Convocatoria a Proveedores Mineros | PODEROSA' />
+<meta property='og:description' content='En Compañía Minera Poderosa, a través de nuestra área de Administración de Contratos , nos encontramos en la búsqueda de empresas contratistas mineras para los servicios de Labores mineras de avance y rotura de forma convencional y trackless de acuerdo con los estándares y procedimientos establecidos.' />
+<meta property='og:url' content='https://www.poderosa.com.pe/noticias/convocatoria-a-proveedores-mineros' />
+<meta property='og:image' content='https://www.poderosa.com.pe/Content/noticias/convocatoria-a-proveedores-mineros/banner.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+                <img class="object-fit-cover" src="~/Content/noticias/convocatoria-a-proveedores-mineros/banner.jpg" alt="imagen">
+
+                <div class="h6 mayuscula mt-4">Lima, 06 de Setiembre de 2023</div>
+
+                <h1 class="h3 dorado">
+                    Convocatoria a Proveedores Mineros
+                </h1>
+
+                <div class="d-flex justify-content-center justify-content-lg-start">
+                    @Html.Partial("~/Views/Shared/_redes.cshtml")
+                </div>
+
+                <p class="mt-4">
+                    En Compañía Minera Poderosa, a través de nuestra área de Administración de Contratos
+                    , nos encontramos en la búsqueda de empresas contratistas mineras para los servicios de
+                    <strong>
+                        Labores mineras de avance y rotura de forma convencional y trackless de acuerdo con los
+                        estándares y procedimientos establecidos.
+                    </strong>
+                </p>
+                <br />
+
+                <h2 class="h5 dorado">Requisitos indispensables:</h2>
+
+                <ul>
+                    <li class="marron">
+                        Experiencia mínima de 05 años en minería subterránea realizando labores mineras para la exploración,
+                        desarrollo y explotación de los recursos minerales con el método convencional y trackless.
+                    </li>
+                    <li class="marron">Tener una buena calificación en Centrales de Riesgo (Sentinel).</li>
+                    <li class="marron">Contar con declaración jurada de la Sunat de los últimos tres años.</li>
+                    <li class="marron">Contar con certificaciones ISO.</li>
+                    <li class="marron">Contar con Registro de Empresa Contratista Minera.</li>
+                </ul>
+
+                <p>
+                    Solo se tomarán en cuenta para esta convocatoria a las empresas que cumplan con los requisitos antes mencionados.
+                </p>
+                <p>
+                    Los interesados en participar en la <strong>pre-evaluación</strong> que antecede al cualquier proceso de licitación,
+                    deben remitir su brochure al correo <a href="https://www.poderosa.com.pe/">www.poderosa.com.pe</a> hasta el miércoles 06 de
+                    setiembre 2023.
+                </p>
+
+                <div class="d-flex mt-4  flex-column flex-sm-row align-items-center align-items-md-start justify-content-sm-center">
+                    <div class="flex-fill mb-4 mb-sm-0">
+                        @Html.Partial("~/Views/Shared/_redes.cshtml")
+
+                    </div>
+                    <div class="flex-fill text-center text-sm-right">
+                        <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

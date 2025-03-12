@@ -1,0 +1,160 @@
+﻿@model Model.ViewDocumento
+@{
+    Layout = null;
+}
+@using (Html.BeginForm("save", "documento", FormMethod.Post, new { enctype = "multipart/form-data", id = "popupForm" }))
+{   
+    if (Model != null && Model.id > 0)
+    {
+        @Html.HiddenFor(a => a.id);
+        <input type="hidden" name="anoId" id="anoId" value="@Model.ano">
+        @Html.HiddenFor(a => a.trimestre);
+        @Html.HiddenFor(a => a.categoriaId);
+    }
+    else
+    {
+        <input type="hidden" name="anoId" id="anoId">
+        <input type="hidden" name="trimestre" id="trimestre">
+        <input type="hidden" name="categoriaId" id="categoriaId">
+
+        <script>
+            var anoId = $("#seccion_cmb").val();
+            var ano_text = $("#seccion_cmb option:selected").text();
+            var trimestreId = $("#trimestre_cmb").val();
+            var categoriaId = $("#categoria_cmb").val();
+            var categoria_text = $("#categoria_cmb option:selected").text();
+            var trimestre_text = $("#trimestre_cmb option:selected").text();
+
+            /*SETTEANDO LOS VALORES A LOS TEXTBOX*/
+            $("#anoId").val(anoId);
+            $("#trimestre").val(trimestreId);
+            $("#categoriaId").val(categoriaId);
+
+
+            $("#ano_texto").text(ano_text);
+            $("#trimestre_texto").text(trimestre_text);
+            $("#categoria_texto").text(categoria_text);
+        </script>
+    }
+    //DateTime Hoy = DateTime.Today;
+    DateTime Hoy = DateTime.Now;
+    // @Html.HiddenFor(x => x.fecha, new { @Value = Hoy.ToString("dd/MM/yyyy"), @type = "hidden" })
+    @Html.HiddenFor(x => x.fecha, new { @Value = DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss"), @type = "hidden" })
+    <div class="popupWindow">
+        <div class="margin-bottom">
+            <div class="header-poput">
+                @if (Model != null && Model.id > 0)
+                {
+                    <div class="div-inline" style="width:50%">Año:&nbsp;@Model.valor_ano </div>
+                    <div class="div-inline">Trimestre:&nbsp;
+                        @switch (Model.trimestre)
+                        {
+                            case 1:
+                                <text>Trimestre 1</text>
+                                break;
+                            case 2:
+                                <text>Trimestre 2</text>
+                                break;
+                            case 3:
+                                <text>Trimestre 3</text>
+                                break;
+                            case 4:
+                                <text>Trimestre 4</text>
+                                break;
+                            case 5:
+                                <text>Otros</text>
+                                break;
+                            default:
+                                <text>Por favor comuniquese con el adminitrador</text>
+                                break;
+                        }                
+                     </div>
+                    <div>Categoría: @Model.valor_categoria</div>
+                }
+                else
+                {
+                    <div class="div-inline" style="width:50%">Año:&nbsp;<span id="ano_texto"></span></div>
+                    <div class="div-inline">Trimestre:&nbsp;<span id="trimestre_texto"></span></div>
+                    <div >Categoría:&nbsp;<span id="categoria_texto"></span></div>
+                }
+            </div>
+        </div>
+        <div class="row margin-bottom">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <b>Título Archivo</b> <br />
+                    @Html.TextBoxFor(x => x.titulo_archivo, new { @class = "form-control" })
+                </div>
+            </div>
+        </div>
+        <div class="row margin-bottom">
+            <div class="col-sm-12">
+                <div class="form-group">                          
+                    <b>Nombre Archivo</b><br /><br />
+                    <div class="mensaje-alert alert alert-info">El tamaño del documento permitido es de 4mb o menor.<br/> Las extesiones permitidas docx,doc,pdf,xls,xlsx </div><br />
+                    <div><label>Archivo:&nbsp;&nbsp;</label>@if (Model != null && Model.id > 0) {@Model.nombre_archivo}</div>
+                    <input type="hidden" name="txt_nombre_archivo" id="txt_nombre_archivo" value="@if (Model != null && Model.id > 0) {@Model.nombre_archivo}"/>
+                    <input type="file" name="nombre_archivo" id="nombre_archivo">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <b>Descripción Archivo</b> <br />
+                    @Html.TextAreaFor(x => x.descripcion_archivo, new { rows = 2, columns = 10, @class = "form-control" })                   
+                </div>
+            </div>
+        </div>         
+        <div class="modal-footer">
+            <input id="limpiar" type="button" class="btn btn-custom" value="Limpiar" />
+            <input id="btnpopupForm" type="submit" class="btn btn-custom" value="Guardar" />
+        </div>
+    </div>
+}
+<div id="imgContainerdetalleseccion_fotoespanol"></div>
+<div id="imgContainerdetalleseccion_fotoingles"></div>
+<script>
+
+    $("#limpiar").click(function () {
+        $("#titulo_archivo").val("");
+        $("#descripcion_archivo").val("");
+        var control = jQuery('#nombre_archivo');
+        control.replaceWith(control = control.val('').clone(true));
+    })
+
+    $('#popupForm').validate({
+        required: true,
+        ignore: [],
+        rules: {
+            titulo_archivo: {
+                required: true,
+            },
+            nombre_archivo: {
+                required: function () {
+                    if ($("#txt_nombre_archivo").val() != "") {                       
+                        return false;
+                    } else {
+                        return true;
+                    }
+                },
+                extension: "docx,doc,pdf,xls,xlsx",
+                filesizemb: {
+                    size: 4194304, /*BITS*/
+                    kb: 4096, /*4mb*/
+                        
+                }
+            },
+            descripcion_archivo: {
+                required: true,
+            }
+        },
+        errorPlacement: function (error, element) {
+            error.insertBefore(element);
+        }
+    });
+
+$.validator.addMethod('filesizemb', function (value, element, params) {
+                        return this.optional(element) || (element.files[0].size <= params.size)
+}, function (params) { return 'El documento debe tener un tamaño menor o igual a 4 mb'.replace('{0}', params.size).replace('{1}', params.kb); });
+</script>

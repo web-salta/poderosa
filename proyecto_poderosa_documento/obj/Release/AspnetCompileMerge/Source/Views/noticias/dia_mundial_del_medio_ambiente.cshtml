@@ -1,0 +1,64 @@
+﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+  <!-- METAS -->
+    <title>Día Mundial del Medio Ambiente | PODEROSA</title>
+    <!-- Basic HTML Meta Tags -->
+    <meta name='title' content='Día Mundial del Medio Ambiente | PODEROSA' />
+    <meta name='description' content='Día Mundial del Medio Ambiente' />
+    <meta name='url' content='http://www.poderosa.com.pe/noticias/dia-mundial-del-medio-ambiente' />
+    <meta name='keywords' content='Poderosa, Día Mundial del Medio Ambiente' />
+    <!-- OpenGraph Meta Tags -->
+    <meta property='og:type' content='website' />
+    <meta property='og:title' content='Día Mundial del Medio Ambiente | PODEROSA' />
+    <meta property='og:description' content='Día Mundial del Medio Ambiente' />
+    <meta property='og:url' content='http://www.poderosa.com.pe/noticias/dia-mundial-del-medio-ambiente' />
+    <meta property='og:image' content='http://www.poderosa.com.pe/Content/noticias/dia-mundial-del-medio-ambiente/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+
+                <div class="h6 mayuscula mt-4">5 de Junio de 2018</div>
+                <h1 class="h3 dorado">Día Mundial del Medio Ambiente</h1>
+
+                @Html.Partial("~/Views/Shared/_redes.cshtml")
+                <br />
+
+                <div class="row justify-content-center mt-4 mb-2">
+                    <div class="col-lg-8">
+                        <img class="img-fluid w-100" src="~/Content/noticias/dia-mundial-del-medio-ambiente/resumen.jpg" alt="imagen">
+                    </div>
+                </div>
+
+
+                <div class="row mt-4">
+                    <div class="col-sm-auto">
+                        @Html.Partial("~/Views/Shared/_redes.cshtml")
+                    </div>
+
+                    <div class="col-sm-auto ml-sm-auto mt-3 mt-sm-0">
+                        <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

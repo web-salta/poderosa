@@ -1,0 +1,59 @@
+﻿@model Model.categoria
+<br /><br />
+
+@using (Html.BeginForm("save", "categoria", FormMethod.Post, new { id = "formulario_categoria" }))
+{   
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="text-right">
+                        <!--<button class="btn btn-primary">Guardar</button> data-ajax="true"-->
+                        <button type="submit" class="btn btn-custom" role="button">
+                            <span class="ui-button-text"><i class="ace-icon fa fa-save bigger-110"></i>&nbsp; Guardar Categoría</span>
+                        </button>
+                    </div>
+                    <br />
+
+                    <ol class="breadcrumb breadcrumb-custom">
+                        <li><a href="~/admin/categoria/index">Categoría</a></li>
+                        <li class="active"><b>Agregar Categoría</b></li>
+                    </ol>
+                    @if (ViewBag.mensaje != null)
+                    {
+                    <div class="alert alert-warning">@ViewBag.mensaje</div>
+                    <br />
+                    }
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.id, "Nombre de Categoría")
+                        @Html.TextBoxFor(x => x.nombre, new { @class = "form-control" })
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<script>
+    function mostrar_trimestre(cellvalue) {
+        switch (cellvalue) {
+            case 1:
+                return "Trimestre 1"
+                break;
+            case 2:
+                return "Trimestre 2"
+                break;
+            case 3:
+                return "Trimestre 3"
+                break;
+            case 4:
+                return "Trimestre 4"
+                break;
+            case 5:
+                return "Otros"
+                break;
+            default:
+        }
+    }
+
+    </script>

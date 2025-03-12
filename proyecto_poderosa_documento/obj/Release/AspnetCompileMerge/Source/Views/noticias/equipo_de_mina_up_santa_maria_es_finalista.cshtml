@@ -1,0 +1,76 @@
+﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title>Equipo de Mina U.P. Santa María es finalista en VII Concurso Internacional de Mejores Prácticas de Seguridad | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='Equipo de Mina U.P. Santa María es finalista en VII Concurso Internacional de Mejores Prácticas de Seguridad | PODEROSA' />
+<meta name='description' content='PODEROSA fue evaluado por un equipo evaluador AOTS Perú como parte de su participación en el Premio Nacional 5S 2021 ' />
+<meta name='url' content='https://www.poderosa.com.pe/noticias/equipo-de-mina-up-santa-maria-es-finalista/' />
+<meta name='keywords' content='Poderosa, primer seguimiento, certificacion, normas' />
+<!-- OpenGraph Meta Tags -->
+<meta property='og:type' content='website' />
+<meta property='og:title' content='Equipo de Mina U.P. Santa María es finalista en VII Concurso Internacional de Mejores Prácticas de Seguridad | PODEROSA' />
+<meta property='og:description' content='PODEROSA fue evaluado por un equipo evaluador AOTS Perú como parte de su participación en el Premio Nacional 5S 2021 ' />
+<meta property='og:url' content='https://www.poderosa.com.pe/noticias/equipo-de-mina-up-santa-maria-es-finalista/' />
+<meta property='og:image' content='https://www.poderosa.com.pe/Content/noticias/equipo-de-mina-up-santa-maria-es-finalista/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+                <img class="object-fit-cover" src="~/Content/noticias/equipo-de-mina-up-santa-maria-es-finalista/banner.jpg" alt="imagen">
+                <div class="h6 mayuscula mt-4">16 de Marzo de 2022</div>
+                <h1 class="h3 dorado">Equipo de Mina U.P. Santa María es finalista en VII Concurso Internacional de Mejores Prácticas de Seguridad   </h1>
+
+                @Html.Partial("~/Views/Shared/_redes.cshtml")
+                <br />
+
+                <p>Pataz, marzo 16, 2022. PODEROSA felicita al equipo de Mina U.P. Santa María por haber sido seleccionado como uno de los 7 finalistas de 59 trabajos presentados en el VII Concurso Internacional de Mejores Prácticas de Seguridad y Salud Ocupacional en la industria minera.</p>
+
+                <p> equipo de Mina U.P. Santa María presentó el proyecto: Reducir los riesgos y costos por descarga de material, mediante la implementación de las tolvas metálicas, en la U.P. Santa María - Cía. Minera Poderosa, que fue evaluado por un comité de especialistas.</p>
+
+                <p>Esta buena práctica se presenta en el XXIV Seminario Internacional de Seguridad Minera, donde se reconocerá las tres buenas prácticas ganadoras. La exposición del equipo de Mina U.P. Santa María está programada para el día viernes 08 de abril, de manera presencial, en las instalaciones del hotel Sheraton, Lima.</p>
+
+                
+                <h5 class="dorado">Trabajo en equipo</h5>
+                <p>El Ing. Miguel Calcine, Superintendente de Unidad de Producción Santa María, comparte la satisfacción de ser finalistas en este certamen internacional.<strong> “Felicito y agradezco al equipo de trabajo integrado por Servicios Mina y la contrata Soldán, que diseñaron e implementaron este proyecto en la U.P. Santa María. Este proyecto responde a la mejora continua que practicamos en nuestras labores. Este sistema de tolvas ya está operativo desde hace año y medio y se cuenta con 8 sistemas operativos”.</strong></p>
+
+                <p>Explica también que este proyecto permite un ahorro de costos importante en el uso de madera, al contar con una tolva metálica se alarga la vida útil hasta en 10 años con un buen mantenimiento, también se evita la exposición del trabajador al riesgo, ahora está más seguro en una plataforma y escalera a distancia para accionar la tolva con un control.</p>
+
+
+                <div class="row justify-content-center mt-4 mb-2">
+                    <div class="col-lg-8">
+                        <img class="img-fluid w-100" src="~/Content/noticias/equipo-de-mina-up-santa-maria-es-finalista/01.jpg" alt="imagen">
+                    </div>
+                </div>
+                <br />
+
+                <div class="row">
+                    <div class="col-sm-auto">
+                        @Html.Partial("~/Views/Shared/_redes.cshtml")
+                    </div>
+
+                    <div class="col-sm-auto ml-sm-auto mt-3 mt-sm-0">
+                        <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

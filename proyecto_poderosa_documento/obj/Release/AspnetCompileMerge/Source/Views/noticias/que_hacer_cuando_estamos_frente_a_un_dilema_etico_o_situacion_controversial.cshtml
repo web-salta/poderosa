@@ -1,0 +1,83 @@
+﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title>¿Qué hacer cuando estamos frente a un dilema ético o situación controversial? | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='¿Qué hacer cuando estamos frente a un dilema ético o situación controversial? | PODEROSA' />
+<meta name='description' content='Como colaboradores debemos conocer los diferentes medios del Canal de Ética; ¿cuántos de nosotros tenemos guardado el número telefónico? ¿cuántos tenemos guardada la dirección electrónica?, ¿alguna vez hemos accedido a la página web?, es importante mantener esta información a la mano para poder reportar oportunamente.' />
+<meta name='url' content='https://www.poderosa.com.pe/noticias/que-hacer-cuando-estamos-frente-a-un-dilema-etico-o-situacion-controversial/' />
+<meta name='keywords' content='Poderosa, beca a estudiantes, desarrollo académica, excelencia académica, convenio con PODEROSA, convenio con Patronato de la Universidad Nacional de Ingeniería' />
+<!-- OpenGraph Meta Tags -->
+<meta property='og:type' content='website' />
+<meta property='og:title' content='¿Qué hacer cuando estamos frente a un dilema ético o situación controversial? | PODEROSA' />
+<meta property='og:description' content='Como colaboradores debemos conocer los diferentes medios del Canal de Ética; ¿cuántos de nosotros tenemos guardado el número telefónico? ¿cuántos tenemos guardada la dirección electrónica?, ¿alguna vez hemos accedido a la página web?, es importante mantener esta información a la mano para poder reportar oportunamente.' />
+<meta property='og:url' content='https://www.poderosa.com.pe/noticias/que-hacer-cuando-estamos-frente-a-un-dilema-etico-o-situacion-controversial/' />
+<meta property='og:image' content='https://www.poderosa.com.pe/Content/noticias/que-hacer-cuando-estamos-frente-a-un-dilema-etico-o-situacion-controversial/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+                <img class="object-fit-cover" src="~/Content/noticias/que-hacer-cuando-estamos-frente-a-un-dilema-etico-o-situacion-controversial/banner.jpg" alt="imagen">
+
+                <div class="h6 mayuscula mt-4">21 de Marzo de 2022</div>
+                <h1 class="h3 dorado">Canal de Ética | ¿Qué hacer cuando estamos frente a un dilema ético o situación controversial? </h1>
+
+                @Html.Partial("~/Views/Shared/_redes.cshtml")
+                <br />
+
+                <p>Lima, marzo 21, 2022. En <strong>PODEROSA</strong> mantenemos el compromiso de luchar contra la corrupción actuando de manera honesta y ética, trabajamos decididamente para implementar los diversos mecanismos basados en tres pilares fundamentales: prevenir, detectar y reportar.</p>
+
+                <p>Como colaboradores debemos conocer los diferentes medios del Canal de Ética; ¿cuántos de nosotros tenemos guardado el número telefónico? ¿cuántos tenemos guardada la dirección electrónica?, ¿alguna vez hemos accedido a la página web?, es importante mantener esta información a la mano para poder reportar oportunamente.</p>
+
+                <p>Recordemos que el Canal de Ética es administrado de manera externa para garantizar la transparencia y confidencialidad de los datos registrados, toda denuncia debe regirse por principios de buena fe y debida lealtad a la empresa.</p>
+
+                <p><strong>PODEROSA</strong> garantiza que no habrá ninguna represalia para los colaboradores o terceros que realicen denuncias por incumplimiento o sospecha de incumplimiento del Código de Ética y Conducta, Manual de PLAFT, DDHH y cualquier otra conducta que se aleje de un adecuado comportamiento; así también, se compromete a mantener confidencialidad y anonimato de las comunicaciones.</p>
+                
+                <p>Recuerda siempre la siguiente información:</p>
+
+                <ul>
+                    <li>Página web: <a href="https://www5.bdolineaetica.com/poderosa" target="_blank">www.bdolineaetica.com/poderosa</a></li>
+                    <li>Línea gratuita: 0800-00626</li>
+                    <li>Teléfono fijo: (511) 6223103</li>
+                    <li>Correo electrónico: lineaetica@bdo.com.pe</li>
+                    <li>Atención personal previa cita: Av. Antonio Miró Quesada N° 425 piso 10, oficina 1005 Magdalena del Mar, Lima 17.</li>
+                </ul>
+
+
+                <div class="row justify-content-center my-4">
+                    <div class="col-lg-9">
+                        <img src="~/Content/noticias/que-hacer-cuando-estamos-frente-a-un-dilema-etico-o-situacion-controversial/01.jpg"  />
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-sm-auto">
+                        @Html.Partial("~/Views/Shared/_redes.cshtml")
+                    </div>
+
+                    <div class="col-sm-auto ml-sm-auto mt-3 mt-sm-0">
+                        <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

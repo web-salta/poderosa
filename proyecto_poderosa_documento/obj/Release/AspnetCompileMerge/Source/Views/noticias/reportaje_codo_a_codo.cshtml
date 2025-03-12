@@ -1,0 +1,67 @@
+﻿
+@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title>Reportaje codo a codo | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='Reportaje codo a codo | PODEROSA' />
+<meta name='description' content='Los invitamos a conocer al Comité de Desarrollo Comunal (Codeco) del distrito de Pataz. Una iniciativa de la Municipalidad Distrital de Pataz y Minera Poderosa implementada a través de Asociación Pataz que mediante el uso de fondos concursables logran proyectos que facilitan la reducción de brechas sociales.' />
+<meta name='url' content='https://www.poderosa.com.pe/noticias/reportaje-codo-a-codo' />
+<meta name='keywords' content='Poderosa, reportajes, codo, comité, desarrollo, comunal' />
+<!-- OpenGraph Meta Tags -->
+<meta property='og:type' content='website' />
+<meta property='og:title' content='Reportaje codo a codo | PODEROSA' />
+<meta property='og:description' content='Los invitamos a conocer al Comité de Desarrollo Comunal (Codeco) del distrito de Pataz. Una iniciativa de la Municipalidad Distrital de Pataz y Minera Poderosa implementada a través de Asociación Pataz que mediante el uso de fondos concursables logran proyectos que facilitan la reducción de brechas sociales. ' />
+<meta property='og:url' content='https://www.poderosa.com.pe/noticias/reportaje-codo-a-codo' />
+<meta property='og:image' content='https://www.poderosa.com.pe/Content/noticias/reportaje-codo-a-codo/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+
+                <div class="h6 mayuscula mt-4">15 DE JUNIO DE 2022</div>
+                <h1 class="h3 dorado">Reportaje codo a codo | Tierra adentro</h1>
+
+                @Html.Partial("~/Views/Shared/_redes.cshtml")
+                <br />
+
+                <div class="row justify-content-center mt-4 mb-2">
+                    <div class="col-lg-10">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tpY4oLiUNyk"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <br /><br />
+
+                <div class="row mt-4">
+                    <div class="col-sm-auto">
+                        @Html.Partial("~/Views/Shared/_redes.cshtml")
+                    </div>
+
+                    <div class="col-sm-auto ml-sm-auto mt-3 mt-sm-0">
+                        <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

@@ -1,0 +1,85 @@
+﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title>PODEROSA primera minera con certificación ISO 37001 | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='PODEROSA primera minera con certificación ISO 37001 | PODEROSA' />
+<meta name='description' content='El lunes 13 de mayo a las 9:00 am, en la reunión del Comité de Gerencia de PODEROSA, nuestro Gerente General, Ing. Marcelo Santillana Salas, recibió el certificado que acredita que PODEROSA cumple con los requisitos exigidos en la Norma Internacional ISO 37001:2016 Sistema de Gestión Antisoborno' />
+<meta name='url' content='http://www.poderosa.com.pe/noticias/poderosa_primera_minera_con_certificacion_iso_37001/' />
+<meta name='keywords' content='Poderosa, certificación ISO 37001,primera minera' />
+<!-- OpenGraph Meta Tags -->
+<meta property='og:type' content='website' />
+<meta property='og:title' content='PODEROSA primera minera con certificación ISO 37001 | PODEROSA' />
+<meta property='og:description' content='El lunes 13 de mayo a las 9:00 am, en la reunión del Comité de Gerencia de PODEROSA, nuestro Gerente General, Ing. Marcelo Santillana Salas, recibió el certificado que acredita que PODEROSA cumple con los requisitos exigidos en la Norma Internacional ISO 37001:2016 Sistema de Gestión Antisoborno' />
+<meta property='og:url' content='http://www.poderosa.com.pe/noticias/poderosa_primera_minera_con_certificacion_iso_37001/' />
+<meta property='og:image' content='http://www.poderosa.com.pe/Content/noticias/poderosa_primera_minera_con_certificacion_iso_37001/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+                <img class="object-fit-cover" src="~/Content/noticias/poderosa_primera_minera_con_certificacion_iso_37001/banner.jpg" alt="imagen">
+
+                <div class="h6 mayuscula mt-4">LIMA DE MAYO 14 DE 2019</div>
+                <h1 class="h3 dorado">PODEROSA primera minera con certificación ISO 37001</h1>
+
+                @Html.Partial("~/Views/Shared/_redes.cshtml")
+                <br />
+
+                <p>El lunes 13 de mayo a las 9:00 am, en la reunión del Comité de Gerencia de <strong>PODEROSA</strong>, nuestro Gerente General, <strong>Ing. Marcelo Santillana Salas,</strong> recibió el certificado que acredita que <strong>PODEROSA</strong> cumple con los requisitos exigidos en la Norma Internacional ISO 37001:2016 Sistema de Gestión Antisoborno.</p>
+
+                <p><em>“A nombre de la Alianza Empresarial para un Comercio Seguro BASC PERÚ, es para nosotros motivo de especial satisfacción poder certificar a la Compañía Minera Poderosa, <strong>como la primera empresa del sector minero</strong> que cumple con los requisitos establecidos en la Norma ISO 37001, versión 2016. Evidenciando que, en vuestra organización, se cumple el Sistema de Gestión Antisoborno, implementado”,</em> explicó <strong>el Ing. Cesar Venegas Núñez,</strong> Gerente General de BASC PERÚ al entregar el certificado ISO 37001:2016 a <strong>PODEROSA.</strong></p>
+
+                <p>El <strong>Ing. Walter Diaz Meyzan,</strong> Gerente del SIG y RS, explicó los pilares en los cuales se basa el sistema de gestión antisoborno ISO 37001, los cuales son la prevención, detección y mitigación de actos corruptos.</p>
+                <p> Ing. Santillana manifestó su complacencia con este logro empresarial que nos permite trabajar con mayor transparencia. También resaltó la importancia de ser la primera minera en el Perú que maneja estos estándares para evitar malas prácticas. Asimismo, instó a todos los colaboradores al mantenimiento del sistema.</p>
+                <p>Cabe señalar que el otorgamiento de la certificación es por 3 años, periodo en el cual se tendrán dos auditorías de mantenimiento, y al finalizar el periodo se deberá pasar por una auditoría de recertificación.</p>
+
+
+                <div class="row justify-content-center my-4">
+                    <div class="col-lg-8">
+                        <div class="owl-carousel    js-owl-carousel-fotos   owl-carousel--no-nav    dots-gris">
+                            <div class="">
+                                <img class="img-fluid w-100" src="~/Content/noticias/poderosa_primera_minera_con_certificacion_iso_37001/01.jpg" alt="imagen">
+                            </div>
+
+                            <div class="">
+                                <img class="img-fluid w-100" src="~/Content/noticias/poderosa_primera_minera_con_certificacion_iso_37001/02.jpg" alt="imagen">
+                            </div>
+
+                            <div class="">
+                                <img class="img-fluid w-100" src="~/Content/noticias/poderosa_primera_minera_con_certificacion_iso_37001/03.jpg" alt="imagen">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-auto">
+                        @Html.Partial("~/Views/Shared/_redes.cshtml")
+                    </div>
+
+                    <div class="col-sm-auto ml-sm-auto mt-3 mt-sm-0">
+                        <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

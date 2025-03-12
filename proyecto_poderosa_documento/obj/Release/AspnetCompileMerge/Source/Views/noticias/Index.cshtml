@@ -1,0 +1,1860 @@
+﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+  <!-- METAS -->
+    <title>Noticias | PODEROSA</title>
+    <!-- Basic HTML Meta Tags -->
+    <meta name='title' content='Noticias | PODEROSA' />
+    <meta name='description' content='Conoce nuestras últimas noticias.' />
+    <meta name='url' content='https://www.poderosa.com.pe/noticias/index' />
+    <meta name='keywords' content='noticias, poderosa' />
+    <!-- OpenGraph Meta Tags -->
+    <meta property='og:type' content='website' />
+    <meta property='og:title' content='Noticias | PODEROSA' />
+    <meta property='og:description' content='Conoce nuestras últimas noticias.' />
+    <meta property='og:url' content='https://www.poderosa.com.pe/noticias/index' />
+    <meta property='og:image' content='https://www.poderosa.com.pe/Content/img/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion publicaciones">
+            <div class="container">
+                <div class="publicaciones_pagination row">
+
+                    <!--<div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+        <a href="@Url.Action("poderosa_convoca_a_la_junta_general_obligatoria_anual", "noticias")">
+            <article class="noticia-resumen">
+                <div class="zoom">
+                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/poderosa-convoca-a-la-junta-general/resumen.jpg" />
+                </div>
+                <div class="noticia-resumen__fecha">24 DE FEBRERO DE 2021</div>
+                <h2 class="noticia-resumen__h">
+                    PODEROSA convoca a la Junta General Obligatoria Anual de Accionista no presencial
+                </h2>
+                <div class="text-right mt-2 mt-auto">
+                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                    </span>
+                </div>
+            </article>
+        </a>
+    </div>-->
+                    <!--  <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+        <a href="@Url.Action("convocatoria_a_proveedores_mineros", "noticias")">
+            <article class="noticia-resumen">
+                <div class="zoom">
+                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/convocatoria-a-proveedores-mineros/resumen.jpg" />
+                </div>
+                <div class="noticia-resumen__fecha">
+                    06 DE SETIEMBRE de 2023
+                </div>
+                <h2 class="noticia-resumen__h">
+                    Convocatoria a Proveedores Mineros
+                </h2>
+                <div class="text-right mt-2 mt-auto">
+                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                    </span>
+                </div>
+            </article>
+        </a>
+    </div>-->
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("quinta-edicion-del-premio-hub-norte-facilitacion-de-conexiones-y-recursos", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <!--<img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/lamentamos-perdida-y-condenamos-violencia-criminal-en-pataz/resumen.jpg" />-->
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/quinta-edicion-del-premio-hub-norte-facilitacion-de-conexiones-y-recursos/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">
+                                    08 DE ABRIL de 2024
+                                </div>
+                                <h2 class="noticia-resumen__h">
+                                    Quinta edición del Premio Hub Norte: facilitación de conexiones y recursos para impulsar proyectos innovadores
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("poderosa-dona-terreno-a-la-fundacion-peruana-de-cancer", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <!--<img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/lamentamos-perdida-y-condenamos-violencia-criminal-en-pataz/resumen.jpg" />-->
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/poderosa-dona-terreno-a-la-fundacion-peruana-de-cancer/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">
+                                    08 DE ABRIL de 2024
+                                </div>
+                                <h2 class="noticia-resumen__h">
+                                    Poderosa dona terreno a la Fundación Peruana de Cáncer
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("nuevo-atentado-contra-poderosa-criminales-dinamitan-torres-de-electricidad", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <!--<img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/lamentamos-perdida-y-condenamos-violencia-criminal-en-pataz/resumen.jpg" />-->
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/nuevo-atentado-contra-poderosa-criminales/resumen2.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">
+                                    05 DE ABRIL de 2024
+                                </div>
+                                <h2 class="noticia-resumen__h">
+                                    NUEVO ATENTADO CONTRA PODEROSA: Criminales dinamitan torres de electricidad y toman dos galerías
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("mineros-ilegales-vuelven-a-atentar-contra-minera-poderosa", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <!--<img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/lamentamos-perdida-y-condenamos-violencia-criminal-en-pataz/resumen.jpg" />-->
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/mineros-ilegales-vuelven-a-atentar/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">
+                                    26 DE ENERO de 2024
+                                </div>
+                                <h2 class="noticia-resumen__h">
+                                    Mineros ilegales vuelven a atentar contra minera Poderosa
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("proyecto-nutribarra", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <!--<img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/lamentamos-perdida-y-condenamos-violencia-criminal-en-pataz/resumen.jpg" />-->
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/proyecto-nutribarra/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">
+                                    10 DE ENERO de 2024
+                                </div>
+                                <h2 class="noticia-resumen__h">
+                                    Empoderando a las comunidades de Pataz y Chugay: Nutribarra Andina previene anemia infantil
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("obras-por-impuestos", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <!--<img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/lamentamos-perdida-y-condenamos-violencia-criminal-en-pataz/resumen.jpg" />-->
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/obras-por-impuestos/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">
+                                    04 DE ENERO de 2024
+                                </div>
+                                <h2 class="noticia-resumen__h">
+                                    Obras por Impuestos: PODEROSA mejora la calidad de vida de más de 70
+                                    familias con importante inversión en agua y saneamiento
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("sistema_de_generacion_de_energia_renovable", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <!--<img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/lamentamos-perdida-y-condenamos-violencia-criminal-en-pataz/resumen.jpg" />-->
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/sistema-de-generacion-de-energia-renovable/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">
+                                    04 DE ENERO de 2024
+                                </div>
+                                <h2 class="noticia-resumen__h">
+                                    PODEROSA invierte más de 5.5 millones de dólares en sistema de generación de energía renovable
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("lineamientos-sobre-regalos-atenciones-y-cortesias", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <!--<img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/lamentamos-perdida-y-condenamos-violencia-criminal-en-pataz/resumen.jpg" />-->
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/lineamientos-sobre-regalos-atenciones/resumen.png" />
+                                </div>
+                                <div class="noticia-resumen__fecha">
+                                    20 DE DICIEMBRE de 2023
+                                </div>
+                                <h2 class="noticia-resumen__h">
+                                    Lineamientos sobre regalos, atenciones y cortesías
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+
+                    <!--<div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+        <a href="@Url.Action("cierre-contable-2023", "noticias")">
+            <article class="noticia-resumen">
+                <div class="zoom">
+                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/cierre-contable-2023/" />
+                </div>
+                <div class="noticia-resumen__fecha">
+                    07 DE AGOSTO de 2023
+                </div>
+                <h2 class="noticia-resumen__h">
+                    Cierre de Información Contable 2023
+                </h2>
+                <div class="text-right mt-2 mt-auto">
+                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                    </span>
+                </div>
+            </article>
+        </a>
+    </div>-->
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("informamos_al_mercado_el_levantamiento_del_bloqueo_las_vias_de_acceso_nuestra_unidad_minera", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <!--<img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/lamentamos-perdida-y-condenamos-violencia-criminal-en-pataz/resumen.jpg" />-->
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/informamos-al-mercado-el-levantamiento-del-bloqueo-las-vias/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">
+                                    07 DE AGOSTO de 2023
+                                </div>
+                                <h2 class="noticia-resumen__h">
+                                    Informamos al mercado el levantamiento del bloqueo a las vías de acceso a nuestra unidad minera
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("informamos_al_mercado_la_grave_situacion_de_inseguridad_y_peligrosidad_en_el_distrito_de_pataz", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <!--<img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/lamentamos-perdida-y-condenamos-violencia-criminal-en-pataz/resumen.jpg" />-->
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/informamos-al-mercado-la-grave-situacion-de-inseguridad-y-peligrosidad/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">
+                                    04 DE AGOSTO de 2023
+                                </div>
+                                <h2 class="noticia-resumen__h">
+                                    Informamos al mercado la grave situación de inseguridad y peligrosidad en el distrito de Pataz y la afectación a nuestras actividades productivas
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("peru_sostenible_reconoce_a_poderosa_como_empresa_con_gestion_sostenible_edicion_2022", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <!--<img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/lamentamos-perdida-y-condenamos-violencia-criminal-en-pataz/resumen.jpg" />-->
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/peru-sostenible-reconoce-a-poderosa-como-empresa-con-gestion-sostenible/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">
+                                    04 DE AGOSTO de 2023
+                                </div>
+                                <h2 class="noticia-resumen__h">
+                                    Perú Sostenible reconoce a PODEROSA como Empresa con Gestión Sostenible, edición 2022
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("poderosa_promueve_nueva_variedad_de_papa_resistente_a_las_heladas", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <!--<img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/lamentamos-perdida-y-condenamos-violencia-criminal-en-pataz/resumen.jpg" />-->
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/poderosa-promueve-nueva-variedad-de-papa-resistente-a-las-heladas/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">
+                                    26 DE JULIO de 2023
+                                </div>
+                                <h2 class="noticia-resumen__h">
+                                    Poderosa promueve nueva variedad de papa resistente a las heladas
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("concytec_entrego_reconocimiento_a_poderosa_por_tres_proyectos_innovadores", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <!--<img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/lamentamos-perdida-y-condenamos-violencia-criminal-en-pataz/resumen.jpg" />-->
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/concytec-entrego-reconocimiento-a-poderosa-por-tres-proyectos-innovadores/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">
+                                    19 DE JULIO de 2023
+                                </div>
+                                <h2 class="noticia-resumen__h">
+                                    Concytec entregó reconocimiento a PODEROSA por tres proyectos
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("mineros_ilegales_y_criminalidad_atentan_permanentemente_contra_pataz", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <!--<img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/lamentamos-perdida-y-condenamos-violencia-criminal-en-pataz/resumen.jpg" />-->
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/mineros-ilegales-y-criminalidad-atentan-contra-pataz/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">
+                                    10 DE JULIO de 2023
+                                </div>
+                                <h2 class="noticia-resumen__h">
+                                    Minería ilegal y criminalidad atentan permanentemente contra la población de Pataz
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("lamentamos_perdida_y_condenamos_violencia_criminal_en_pataz", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <!--<img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/lamentamos-perdida-y-condenamos-violencia-criminal-en-pataz/resumen.jpg" />-->
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/lamentamos-perdida-y-condenamos-violencia-criminal-en-pataz/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">
+                                    09 DE MAYO DE 2023
+                                </div>
+                                <h2 class="noticia-resumen__h">
+                                    Lamentamos pérdida y condenamos violencia criminal en Pataz
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("segunda-y-tercera-convocatoria-de-profesionales-para-proyectos-de-innovacion", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/segunda-y-tercera-convocatoria-de-profesionales/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">
+                                    27 DE FEBRERO DE 2023
+                                </div>
+                                <h2 class="noticia-resumen__h">
+                                    2da y 3ra convocatoria de profesionales para proyectos de innovación
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("amautas-mineros-recibe-reconocimiento-por-su-aporte-a-la-industria", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/amautas-mineros-recibe-reconocimiento-por-su-aporte-a-la-industria/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">01 DE FEBRERO DE 2023</div>
+                                <h2 class="noticia-resumen__h">
+                                    Amautas Mineros recibe reconocimiento por su aporte a la industria minera en alianza con el IIMP y la SNMPE
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("hacia-una-economia-circular-poderosa-cuenta-con-primer-diagnostico", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/hacia-una-economia-circular-poderosa-cuenta-con-primer-diagnostico/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">19 DE ENERO DE 2023</div>
+                                <h2 class="noticia-resumen__h">
+                                    Hacia una Economía Circular: PODEROSA cuenta con primer diagnóstico y traza ruta sostenible
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("ninos-de-trujillo-y-el-pais-disfrutan-de-vacaciones-utiles", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/ninos-de-trujillo-y-el-pais-disfrutan-de-vacaciones-utiles/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">13 DE ENERO DE 2023</div>
+                                <h2 class="noticia-resumen__h">
+                                    Niños de Trujillo y el país disfrutan de vacaciones útiles organizado por PODEROSA
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+
+
+
+
+
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("lima-y-ciudades-del-pais-lanzamiento-del-programa", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/lima-y-ciudades-del-pais-lanzamiento-del-programa/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">16 DE ENERO DE 2023</div>
+                                <h2 class="noticia-resumen__h">
+                                    Lima y ciudades del país: lanzamiento del Programa de Vacaciones Útiles
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("la-libertad-ocupa-el-primer-lugar-en-formalizacion-minera", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/la-libertad-ocupa-el-primer-lugar-en-formalizacion-minera/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">26 DE DICIEMBRE DE 2022</div>
+                                <h2 class="noticia-resumen__h">
+                                    La Libertad ocupa el primer lugar en formalización minera
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("equipo-de-geomecanica-pasa-con-exito-fiscalizacion-tecnica", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/equipo-de-geomecanica-pasa-con-exito-fiscalizacion-tecnica/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">14 DE NOVIEMBRE DE 2022</div>
+                                <h2 class="noticia-resumen__h">
+                                    Equipo de Geomecánica pasa con éxito fiscalización técnica de proyectos por parte de CONCYTEC
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("comunidad-campesina-andres-razuri", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/comunidad-campesina-andres-razuri/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">06 DE JULIO DE 2022</div>
+                                <h2 class="noticia-resumen__h">
+                                    Comunidad Campesina Andrés Rázuri Suyubamba y PODEROSA fortalecen relación
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("yo-innovo-por-el-peru-concytec-reconoce-proyecto-innovador", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/yo-innovo-por-el-peru-concytec-reconoce-proyecto-innovador/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">24 DE JUNIO DE 2022</div>
+                                <h2 class="noticia-resumen__h">
+                                    Yo innovo por el Perú: CONCYTEC reconoce proyecto innovador desarrollado por PODEROSA
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("esfuerzo-conjunto-poderosa-y-comunidad-campesina-de-pias", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/esfuerzo-conjunto-poderosa-y-comunidad-campesina-de-pias/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">23 DE JUNIO DE 2022</div>
+                                <h2 class="noticia-resumen__h">
+                                    Esfuerzo conjunto: PODEROSA y Comunidad Campesina de Pias consiguen cobertura de techo de losa deportiva
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("reportaje-buenas-juntas", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/reportaje-buenas-juntas/resumen.png" />
+                                </div>
+                                <div class="noticia-resumen__fecha">22 DE JUNIO DE 2022</div>
+                                <h2 class="noticia-resumen__h">
+                                    Reportaje buenas juntas
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("esfuerzo-conjunto-permite-entrega-de-losa-deportiva", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/esfuerzo-conjunto-permite-entrega-de-losa-deportiva/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">21 DE JUNIO DE 2022</div>
+                                <h2 class="noticia-resumen__h">
+                                    Esfuerzo conjunto permite entrega de losa deportiva para Uctubamba, Ongón
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("poderosa-obtiene-premio-en-la-categoria-plata-en-competencia-internacional", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/poderosa-obtiene-premio-en-la-categoria-plata-en-competencia-internacional/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">20 DE JUNIO DE 2022</div>
+                                <h2 class="noticia-resumen__h">
+                                    PODEROSA obtiene premio en la categoría Plata en Competencia Internacional de la Calidad de la PUCP
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("poderosa-obtiene-distintivo-empresa-socialmente-responsable", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/poderosa-obtiene-distintivo-empresa-socialmente-responsable/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">17 DE JUNIO DE 2022</div>
+                                <h2 class="noticia-resumen__h">
+                                    PODEROSA obtiene Distintivo Empresa Socialmente Responsable por mejores prácticas empresariales en sostenibilidad
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("la-libertad-mas-de-1000-personas-al-mes-seran-atendidas", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/la-libertad-mas-de-1000-personas-al-mes-seran-atendidas/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">15 DE JUNIO DE 2022</div>
+                                <h2 class="noticia-resumen__h">
+                                    La Libertad: más de 1.000 personas al mes serán atendidas con hemodiálisis en hospital regional
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("reportaje-codo-a-codo", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/reportaje-codo-a-codo/resumen.png" />
+                                </div>
+                                <div class="noticia-resumen__fecha">15 DE JUNIO DE 2022</div>
+                                <h2 class="noticia-resumen__h">
+                                    Reportaje codo a codo
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("reconocimiento-a-procesos-con-mejor-desempeno-ambiental", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/reconocimiento-a-procesos-con-mejor-desempeno-ambiental/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">14 DE JUNIO DE 2022</div>
+                                <h2 class="noticia-resumen__h">
+                                    Reconocimiento a procesos con mejor desempeño ambiental
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("reportaje-emprendedores-power", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/reportaje-emprendedores-power/resumen.png" />
+                                </div>
+                                <div class="noticia-resumen__fecha">08 DE JUNIO DE 2022</div>
+                                <h2 class="noticia-resumen__h">
+                                    Reportaje emprendedores power
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("reportaje-papa-super-poderosa", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/reportaje-papa-super-poderosa/resumen.png" />
+                                </div>
+                                <div class="noticia-resumen__fecha">01 DE JUNIO DE 2022</div>
+                                <h2 class="noticia-resumen__h">
+                                    Reportaje papa super poderosa
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("inicia-obra-de-agua-y-desague-para-5-anexos-de-la-comunidad", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/inicia-obra-de-agua-y-desague-para-5-anexos/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">10 DE MAYO DE 2022</div>
+                                <h2 class="noticia-resumen__h">
+                                    Inicia obra de agua y desagüe para 5 anexos de la Comunidad Campesina La Victoria ejecutado a través del mecanismo de Obras por Impuestos
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("cocreando-el-sistema-de-innovacion-de-pataz-cuando-un-actor-social-se-une-a-otro-se-hace-mas-poderoso", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/cocreando-el-sistema-de-innovacion-de-pataz/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">27 DE ABRIL DE 2022</div>
+                                <h2 class="noticia-resumen__h">
+                                    Cocreando el Sistema de Innovación de Pataz: “Cuando un actor social se une a otro se hace más poderoso"
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("premio-a-la-innovacion-tecnologica-2021", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/premio-a-la-innovacion-tecnologica-2021/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">05 DE ABRIL DE 2022</div>
+                                <h2 class="noticia-resumen__h">
+                                    ¡Premio a la innovación Tecnológica 2021!
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("que-hacer-cuando-estamos-frente-a-un-dilema-etico-o-situacion-controversial", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/que-hacer-cuando-estamos-frente-a-un-dilema-etico-o-situacion-controversial/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">21 DE MARZO DE 2022</div>
+                                <h2 class="noticia-resumen__h">
+                                    ¿Qué hacer cuando estamos frente a un dilema ético o situación controversial?
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("mujeres-mineras-que-inspiran-y-su-rol-en-el-desarrollo", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/mujeres-mineras-que-inspiran-y-su-rol-en-el-desarrollo/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">17 DE MARZO DE 2022</div>
+                                <h2 class="noticia-resumen__h">
+                                    Mujeres mineras que inspiran y su rol en el desarrollo de la industria minera moderna y sostenible
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("equipo-de-mina-up-santa-maria-es-finalista", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/equipo-de-mina-up-santa-maria-es-finalista/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">16 DE MARZO DE 2022</div>
+                                <h2 class="noticia-resumen__h">
+                                    Equipo de Mina U.P. Santa María es finalista en VII Concurso Internacional de Mejores Prácticas de Seguridad
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("premio-a-la-innovacion-tecnologica-2021-proyecto-sustentable-y-ecologico", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/premio-a-la-innovacion-tecnologica-2021-proyecto-sustentable-y-ecologico/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">14 DE MARZO DE 2022</div>
+                                <h2 class="noticia-resumen__h">
+                                    Premio a la Innovación Tecnológica 2021: proyecto sustentable y ecológico de PODEROSA logra reconocimiento
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("camara-de-comercio-la-libertad-mujeres-lideres-que-inspiran", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/camara-de-comercio-la-libertad-mujeres-lideres-que-inspiran/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">10 DE MARZO DE 2022</div>
+                                <h2 class="noticia-resumen__h">
+                                    Cámara de Comercio La Libertad: mujeres líderes que inspiran
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("poderosa-concluye-con-exito-primer-seguimiento", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/poderosa-concluye-con-exito-primer-seguimiento/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">16 DE FEBRERO DE 2022</div>
+                                <h2 class="noticia-resumen__h">
+                                    PODEROSA concluye con éxito primer seguimiento de certificación de las Normas ISO 9001, 14001 y 45001
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("periodismo-responsable-y-construccion-de-la-reputacion", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/periodismo-responsable-y-construccion-de-la-reputacion/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">17 DE FEBRERO DE 2022</div>
+                                <h2 class="noticia-resumen__h">
+                                    Esfuerzo conjunto: Periodismo responsable y construcción de la reputación
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("pataz-camino-a-ser-el-distrito-mas-innovador", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/pataz-camino-a-ser-el-distrito-mas-innovador/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">15 DE FEBRERO DE 2022</div>
+                                <h2 class="noticia-resumen__h">
+                                    Pataz camino a ser el distrito más innovador
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("premio-nacional-5s", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/premio-nacional-5s/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">02 DE FEBRERO DE 2022</div>
+                                <h2 class="noticia-resumen__h">
+                                    Premio Nacional 5S 2021: AOTS Perú evalúa a PODEROSA
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("el-poder-del-esfuerzo-conjunto-nueva-infraestructura", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/el-poder-del-esfuerzo-conjunto-nueva-infraestructura/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">01 DE FEBRERO DE 2022</div>
+                                <h2 class="noticia-resumen__h">
+                                    El poder del esfuerzo conjunto: nueva infraestructura para Hospital de Tayabamba
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("poderosa-dona-planta-de-oxigeno-para-el-hospital", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/poderosa-dona-planta-de-oxigeno-para-el-hospital/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">28 DE MAYO DE 2021</div>
+                                <h2 class="noticia-resumen__h">
+                                    PODEROSA dona planta de oxígeno para el Hospital Regional de Trujillo
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("gestion-social-en-mineria-el-poder-del-esfuerzo-conjunto", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/gestion-social-en-mineria-el-poder-del-esfuerzo-conjunto/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">28 DE MAYO DE 2021</div>
+                                <h2 class="noticia-resumen__h">
+                                    Gestión Social en Minería: el poder del esfuerzo conjunto, de Reto a Misiones
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+
+
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("codecos-de-chagual-vijus-y-pueblo-nuevo-ganan-ix-concurso", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/codecos-de-chagual-vijus-y-pueblo/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">15 DE DICIEMBRE DE 2020</div>
+                                <h2 class="noticia-resumen__h">
+                                    Codecos de Chagual, Vijus y Pueblo Nuevo ganan IX Concurso de Fondo Concursable convocado por Asociación Pataz
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("premio-desarrollo-sostenible-2020", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/premio-desarrollo-sostenible-2020/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">14 DE DICIEMBRE DE 2020</div>
+                                <h2 class="noticia-resumen__h">
+                                    Premio Desarrollo Sostenible 2020
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("guia-para-el-envio-de-comprobantes-electronicos", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/guia-para-el-envio-de-comprobantes-electronico/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">09 DE DICIEMBRE DE 2020</div>
+                                <h2 class="noticia-resumen__h">
+                                    Guía para el envío de Comprobantes Electrónicos
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("cierre_contable_2020_poderosa", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/cierre-contable-2020-poderosa/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">30 DE NOVIEMBRE DE 2020</div>
+                                <h2 class="noticia-resumen__h">
+                                    Cierre contable 2020 - Poderosa
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("poderosa_no_exige_ningun_pago_en_sus_procesos_de_seleccion", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/poderosa-no-exige-ningun-pago/resumen.png" />
+                                </div>
+                                <div class="noticia-resumen__fecha">15 DE OCTUBRE DE 2020</div>
+                                <h2 class="noticia-resumen__h">
+                                    PODEROSA no exige ningún pago en sus procesos de selección
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("minera-poderosa-informa", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/minera-poderosa-informa/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">17 DE SETIEMBRE DE 2020</div>
+                                <h2 class="noticia-resumen__h">
+                                    Minera Poderosa Informa
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("ganadores-del-distintivo-empresa-socialmente-responsable", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/ganadores-del-distintivo/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">02 DE JULIO DE 2020</div>
+                                <h2 class="noticia-resumen__h">
+                                    Ganadores del Distintivo Empresa Socialmente Responsable IX
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("seamos-responsables-juntos-contra-el-covid-19", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/seamos-responsables-juntos-contra-el-covid-19/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">10 DE JUNIO DE 2020</div>
+                                <h2 class="noticia-resumen__h">
+                                    Seamos responsables juntos contra el COVID-19
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("distanciamiento-social-inteligente-asegura-cosecha-de-valiosos", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/distanciamiento-social-inteligente-asegura-cosecha-de-valiosos/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">10 DE JUNIO DE 2020</div>
+                                <h2 class="noticia-resumen__h">
+                                    Distanciamiento social inteligente asegura cosecha de valiosos experimentos de papa en La Libertad
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("proyectos-de-investigacion-en-papa-y-maiz-morado", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/proyectos-de-investigacion-en-papa-y-maiz-morado/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">04 DE JUNIO DE 2020</div>
+                                <h2 class="noticia-resumen__h">
+                                    Proyectos de investigación en papa y maíz morado ganan Premio Caral 2020
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("saludo-dia-de-la-papa", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/saludo-dia-de-la-papa/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">22 DE MAYO DE 2020</div>
+                                <h2 class="noticia-resumen__h">
+                                    Saludo día de la Papa
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("feliz-aniversario-poderosa", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/feliz-aniversario-poderosa/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">06 DE MAYO DE 2020</div>
+                                <h2 class="noticia-resumen__h">
+                                    Feliz Aniversario PODEROSA
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("gracias-por-tu-compromiso-con-la-salud-y-la-prevencion", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/gracias-por-tu-compromiso-con-la-salud-y-la-prevencion/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">02 DE ABRIL DE 2020</div>
+                                <h2 class="noticia-resumen__h">
+                                    PODEROSA agradece a todos sus colaboradores y contratistas por su compromiso al sumarse a la prevención para detener el Covid-19.
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("recepcion-de-facturas-electronicas-en-la-unidad-minera", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/recepcion-de-facturas-electronicas-en-la-unidad-minera/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">25 DE MARZO DE 2020</div>
+                                <h2 class="noticia-resumen__h">
+                                    PODEROSA informa que, por la coyuntura que atraviesa el país y mientras dure el estado de emergencia, se seguirá el siguiente procedimiento para recibir facturas electrónicas.
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("mujeres-mejoran-ingresos-gracias-a-comercializacion-de-hongo", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/mujeres-mejoran-ingresos-gracias-a-comercializacion-de-hongo/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">05 DE MARZO DE 2020</div>
+                                <h2 class="noticia-resumen__h">
+                                    Chugay: mujeres mejoran ingresos gracias a comercialización de hongo de gran demanda en mercado internacional
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("finalizaron-vacaciones-utiles-en-la-ie-inmaculada", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/finalizaron-vacaciones-utiles-en-la-ie-inmaculada/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">11 DE FEBRERO DE 2020</div>
+                                <h2 class="noticia-resumen__h">
+                                    Finalizaron vacaciones útiles en la I.E Inmaculada Concepción De Pataz
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("empresarios-por-la-integridad-otorga-certificacion-a-poderosa", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/empresarios-por-la-integridad-otorga-certificacion-a-poderosa/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">03 DE FEBRERO DE 2020</div>
+                                <h2 class="noticia-resumen__h">
+                                    Empresarios por la integridad otorga certificación a PODEROSA
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("quina-el-arbol-nacional-de-peru-libra-una-batalla-para-sobrevivir", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/quina-el-arbol-nacional-de-peru-libra-una-batalla-para-sobrevivir/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">23 DE DICIEMBRE DE 2019</div>
+                                <h2 class="noticia-resumen__h">
+                                    Quina: el árbol nacional de Perú libra una batalla para sobrevivir
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("empieza-construccion-de-moderna-e-innovadora-biblioteca-en-distrito-de-pataz", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/empieza-construccion-de-moderna-e-innovadora-biblioteca-en-distrito-de-pataz/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">17 DE SETIEMBRE DE 2019</div>
+                                <h2 class="noticia-resumen__h">
+                                    Empieza construcción de moderna e innovadora biblioteca en distrito de Pataz
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("descubre_como_hicimos_el_libro_del_rio_abiseo", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/descubre-como-hicimos-el-libro-del-rio-abiseo/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">21 de Agosto de 2019</div>
+                                <h2 class="noticia-resumen__h">
+                                    Descubre cómo hicimos el libro del Río Abiseo
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("poderosa_es_reconocida_por_concytec_como_empresa_lider_en_innovacion", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/poderosa-es-reconocida-por-concytec-como-empresa-lider-en-innovacion/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">15 de Agosto de 2019</div>
+                                <h2 class="noticia-resumen__h">
+                                    Poderosa es reconocida por Concytec como empresa lider en innovación
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("asociacion_pataz_cientos_de_escolares_del_distrito_de_pataz_se_benefician_con_renovacion_de_computadoras_para_mejora_de_telecentros", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/asociacion-pataz-cientos-de-escolares-del-distrito-de-pataz-se-benefician-con-renovacion-de-computadoras-para-mejora-de-telecentros/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">27 de Mayo de 2019</div>
+                                <h2 class="noticia-resumen__h">
+                                    Asociación Pataz: cientos de escolares del distrito de Pataz se benefician con renovación de computadoras para mejora de Telecentros
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("poderosa_primera_minera_con_certificacion_iso_37001", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/poderosa_primera_minera_con_certificacion_iso_37001/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">14 de Mayo de 2019</div>
+                                <h2 class="noticia-resumen__h">
+                                    PODEROSA primera minera con certificación ISO 37001
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("pataz-trabajo-conjunto-en-forestacion-de-100-mil-plantones-de-pino", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/pataz-trabajo-conjunto-en-forestacion-de-100-mil-plantones-de-pino/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">12 de Abril de 2019</div>
+                                <h2 class="noticia-resumen__h">
+                                    Pataz: trabajo conjunto en forestación de 100 mil plantones de pino
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("ven-a-descubrir-la-asociacion-pataz-una-ong-pensada-para-promover-el-desarrollo-integral-de-las-poblaciones", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/ven-a-descubrir-la-asociacion-pataz-una-ong-pensada-para-promover-el-desarrollo-integral-de-las-poblaciones/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">01 de Marzo de 2019</div>
+                                <h2 class="noticia-resumen__h">
+                                    Ven a descubrir la Asociación Pataz. Una ONG pensada para promover el desarrollo integral de las poblaciones
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("guardaparques-del-parque-nacional-del-rio-abiseo-son-capacitados-en-manejo-y-control", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/guardaparques-del-parque-nacional-del-rio-abiseo-son-capacitados-en-manejo-y-control/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">18 de Febrero de 2019</div>
+                                <h2 class="noticia-resumen__h">
+                                    Guardaparques del Parque Nacional del Río Abiseo son capacitados en manejo y control de incendios forestales
+                                </h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("presentacion-de-libro-en-trujillo", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/presentacion-de-libro-en-trujillo/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">16 de Enero de 2019</div>
+                                <h2 class="noticia-resumen__h">Presentación de libro en Trujillo</h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("obras-por-impuestos-anexo-chuquitambo-recibe-sistema-de-riego-tecnificado-operativo", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/obras-por-impuestos-anexo-chuquitambo-recibe-sistema-de-riego-tecnificado-operativo/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">07 de Enero de 2019</div>
+                                <h2 class="noticia-resumen__h">Obras por Impuestos: anexo Chuquitambo recibe sistema de riego tecnificado operativo</h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("poderosa-recibe-a-practicantes-2019", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/poderosa-recibe-a-practicantes-2019/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">07 de Enero de 2019</div>
+                                <h2 class="noticia-resumen__h">PODEROSA recibe a practicantes 2019</h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("premios-proactivo-2018-asociacion-pataz-con-apoyo-de-minera-poderosa-preserva-y-fortalece-calidad-de-papas-nativas", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/premios-proactivo-2018-asociacion-pataz-con-apoyo-de-minera-poderosa-preserva-y-fortalece-calidad-de-papas-nativas/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">12 de Noviembre de 2018</div>
+                                <h2 class="noticia-resumen__h">Premios ProActivo 2018: Asociación Pataz con apoyo de minera PODEROSA preserva y fortalece calidad de papas nativas</h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("poderosa_obtiene_premio_nacional_5s_2018", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/poderosa-obtiene-premio-nacional-5s-2018/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">07 de Noviembre de 2018</div>
+                                <h2 class="noticia-resumen__h">PODEROSA obtiene Premio Nacional 5S 2018</h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("poderosa-reafirma-su-compromiso-con-la-equidad-de-genero", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/poderosa-reafirma-su-compromiso-con-la-equidad-de-genero/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">10 de octubre de 2018</div>
+                                <h2 class="noticia-resumen__h">PODEROSA reafirma su compromiso con la equidad de género</h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("saludo-por-el-dia-del-periodista", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/saludo-por-el-dia-del-periodista/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">01 de Octubre de 2018</div>
+                                <h2 class="noticia-resumen__h">Saludo por el Día del Periodista</h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("los-ceo-mas-rentables-ing-marcelo-santillana-es-reconocido-en-el-ranking-top-ten-de-semana-economica", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/los-ceo-mas-rentables-ing-marcelo-santillana-es-reconocido-en-el-ranking-top-ten-de-semana-economica/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">27 de Setiembre de 2018</div>
+                                <h2 class="noticia-resumen__h">Los CEO más rentables: Ing. Marcelo Santillana es reconocido en el ranking top ten de Semana Económica</h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("mineria-de-todos-informate-sobre-la-mineria-responsable-del-peru", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/mineria-de-todos-informate-sobre-la-mineria-responsable-del-peru/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">20 de Setiembre de 2018</div>
+                                <h2 class="noticia-resumen__h">Minería de todos: infórmate sobre la minería responsable del Perú</h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("presentan-libro-parque-nacional-del-rio-abiseo-memoria-viva-del-paisaje-cultural-andino-amazonico", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/presentan-libro-parque-nacional-del-rio-abiseo-memoria-viva-del-paisaje-cultural-andino-amazonico/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">16 de Agosto de 2018</div>
+                                <h2 class="noticia-resumen__h">Presentan Libro: Parque Nacional del Río Abiseo Memoria viva del paisaje cultural andino amazónico</h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("dia-mundial-del-medio-ambiente", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/dia-mundial-del-medio-ambiente/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">05 de Junio de 2018</div>
+                                <h2 class="noticia-resumen__h">Día Mundial del Medio Ambiente</h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("reconocen-a-poderosa-con-el-distintivo-de-esr", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/reconocen-a-poderosa-con-el-distintivo-de-esr/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">27 de Abril de 2018</div>
+                                <h2 class="noticia-resumen__h">Reconocen a PODEROSA con el Distintivo de ESR®</h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("poderosa-otorga-beca-a-estudiantes", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/poderosa-otorga-beca-a-estudiantes/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">25 de Abril de 2018</div>
+                                <h2 class="noticia-resumen__h">PODEROSA otorga beca a estudiantes</h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="@Url.Action("poderosa-recibe-distintivo-empresa-socialmente-responsable-esr-de-peru-2021", "noticias")">
+                            <article class="noticia-resumen">
+                                <div class="zoom">
+                                    <img class="noticia-resumen__img    zoom__img" src="~/Content/noticias/poderosa-recibe-distintivo-empresa-socialmente-responsable-esr-de-peru-2021/resumen.jpg" />
+                                </div>
+                                <div class="noticia-resumen__fecha">21 de Junio de 2017</div>
+                                <h2 class="noticia-resumen__h">PODEROSA recibe Distintivo Empresa Socialmente Responsable (ESR®) de Perú 2021</h2>
+                                <div class="text-right mt-2 mt-auto">
+                                    <span class="boton-icono boton-icono--sm boton-icono--dorado mt-auto">
+                                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-ver-mas.svg" alt="ico">
+                                    </span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                </div>
+                </div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+
+<!-- SCRIPTS -->
+<script type="text/javascript" src="~/Content/js/pagination/jQuery.paginate.js"></script>
+<script>
+    $('.publicaciones_pagination').paginate({
+    	items_per_page: 16
+    });
+</script>
+</html>

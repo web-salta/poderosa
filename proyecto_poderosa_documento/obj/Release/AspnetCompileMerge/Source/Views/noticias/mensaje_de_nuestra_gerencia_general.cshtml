@@ -1,0 +1,70 @@
+﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title>Comunicado a la opinión pública | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='Comunicado a la opinión pública | PODEROSA' />
+<meta name='description' content='Poderosa informa a la opinión pública que el sábado 2 de diciembre de 2023 sufrimos un atentado criminal en nuestras labores mineras.' />
+<meta name='url' content='https://www.poderosa.com.pe/noticias/comunicado-a-la-opinion-publica' />
+<meta name='keywords' content='Poderosa, ,comunicado, opinión, pública, atentando, criminal, trabajador, seguridad, minera, asesinato' />
+<!-- OpenGraph Meta Tags -->
+<meta property='og:type' content='website' />
+<meta property='og:title' content='Comunicado a la opinión pública | PODEROSA' />
+<meta property='og:description' content='Poderosa informa a la opinión pública que el sábado 2 de diciembre de 2023 sufrimos un atentado criminal en nuestras labores mineras.' />
+<meta property='og:url' content='https://www.poderosa.com.pe/noticias/comunicado-a-la-opinion-publica' />
+<meta property='og:image' content='https://www.poderosa.com.pe/Content/noticias/comunicado-a-la-opinion-publica/lightbox.png' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+                <img class="object-fit-cover" src="~/Content/noticias/comunicado-a-la-opinion-publica/banner.png" alt="imagen">
+
+                <div class="h6 mayuscula mt-4">Lima, 02 de Diciembre de 2023</div>
+
+                <div class="d-flex justify-content-center justify-content-lg-start">
+                    @Html.Partial("~/Views/Shared/_redes.cshtml")
+                </div>
+                <br />
+
+                <p><b>Poderosa</b> informa a la opinión pública que el sábado 2 de diciembre de 2023 sufrimos un atentado criminal en nuestras labores mineras con la fatal consecuencia de 9 trabajadores de seguridad asesinados, 10 heridos de gravedad y 3 con heridas leves. </p>
+
+                <p>Lamentamos la pérdida de nuestros colaboradores y hacemos llegar nuestras condolencias a sus familiares, quienes cuentan con todo nuestro apoyo y respaldo para afrontar este difícil momento. </p>
+
+                <p>Estos trágicos sucesos no se dan de manera aislada, sino que responden a una espiral de deterioro de las condiciones de seguridad en la zona, consecuencia del crecimiento exponencial de la minería ilegal, ahora coludida con la criminalidad organizada, que ha venido operando con la más total y absoluta impunidad, amparada en el manto de protección que le otorga el REINFO (Registro Integral de Formalización Minera).<p>
+
+                <p>Con anterioridad, los ataques de las bandas criminales, que incluyen a mineros ilegales, han resultado en la muerte de otros 7 colaboradores. Adicionalmente, hemos registrado la voladura de 10 torres de alta tensión, destrucción de infraestructura, maquinarias y equipos de la empresa. </p>
+
+                <p>Pedimos al Estado peruano, a través del Ministerio del Interior, la Policía Nacional, el Ministerio Público y otras autoridades involucradas, redoblen sus esfuerzos para combatir la criminalidad y minería ilegal que ha invadido Pataz, se salvaguarde la integridad de las personas y se respete el derecho al trabajo formal.</p>
+
+                <p class="text-right mb-2"><strong>COMPAÑÍA MINERA PODEROSA S.A.</strong></p>
+                <p class="text-right ">Pataz, 2 de diciembre de 2023.</p><br />
+
+                <div class="d-flex mt-5  flex-column flex-lg-row align-items-center align-items-lg-start justify-content-sm-center">
+                    <div class="flex-fill mb-4 mb-lg-0">
+                        @Html.Partial("~/Views/Shared/_redes.cshtml")
+                    </div>
+                    <div class="flex-fill text-center text-sm-right">
+                        <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

@@ -1,0 +1,96 @@
+﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+ <!-- METAS -->
+    <title>PODEROSA recibe a practicantes 2019  | PODEROSA</title>
+    <!-- Basic HTML Meta Tags -->
+    <meta name='title' content='PODEROSA recibe a practicantes 2019 | PODEROSA' />
+    <meta name='description' content='Como todos los años PODEROSA realizó la convocatoria al programa de prácticas 2019: Desarrollando Jóvenes Talento, brindando oportunidad a estudiantes de todo el país que deseaban conocer el mundo de la minería.' />
+    <meta name='url' content='http://www.poderosa.com.pe/noticias/poderosa-recibe-a-practicantes-2019/' />
+    <meta name='keywords' content='Poderosa, practicantes 2019, convocatoria, programa de prácticas 2019' />
+    <!-- OpenGraph Meta Tags -->
+    <meta property='og:type' content='website' />
+    <meta property='og:title' content='PODEROSA recibe a practicantes 2019 | PODEROSA' />
+    <meta property='og:description' content='Como todos los años PODEROSA realizó la convocatoria al programa de prácticas 2019: Desarrollando Jóvenes Talento, brindando oportunidad a estudiantes de todo el país que deseaban conocer el mundo de la minería.' />
+    <meta property='og:url' content='http://www.poderosa.com.pe/noticias/poderosa-recibe-a-practicantes-2019/' />
+    <meta property='og:image' content='http://www.poderosa.com.pe/Content/noticias/poderosa-recibe-a-practicantes-2019/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+                <img class="object-fit-cover" src="~/Content/noticias/poderosa-recibe-a-practicantes-2019/banner.jpg" alt="imagen">
+
+                <div class="h6 mayuscula mt-4">07 de Enero 07 de 2019</div>
+                <h1 class="h3 dorado">PODEROSA recibe a practicantes 2019</h1>
+
+                @Html.Partial("~/Views/Shared/_redes.cshtml")
+
+                <br />
+
+                <p>Como todos los años <strong>PODEROSA</strong> realizó la convocatoria al programa de prácticas 2019: Desarrollando Jóvenes Talento, brindando oportunidad a estudiantes de todo el país que deseaban conocer el mundo de la minería.</p>
+
+                <p>Es así que muy emocionados y con muchas expectativas llegaron el viernes 04 de enero a <strong>PODEROSA</strong> 58 jóvenes que desarrollarán sus prácticas pre profesionales junto a nosotros por un periodo de tres meses.</p>
+
+                <p>Este año el programa de prácticas está enfocado en reforzar tres ejes: competencias técnicas, competencias de empleabilidad y competencias personales permitiendo preparar a los practicantes en habilidades blandas y técnicas; así como el mentorado Poderoso, que consiste en el acompañamiento de un responsable directo que orientará al practicante en el desarrollo de su proyecto final.</p>
+
+                <p>La recepción de los jóvenes practicantes, estuvo a cargo del personal de Recursos Humanos quienes saludaron y les dieron las primeras indicaciones para su instalación en las diferentes unidades mineras, recomendaciones que estuvieron a cargo de <strong>Israel Evangelista,</strong> Analista de Desarrollo Humano.</p>
+
+                <p>Por su parte <strong>Eduardo Silva,</strong> Superintendente (i) de Recursos Humanos, brindó unas palabras de bienvenida, destacando que este tiempo en <strong>PODEROSA</strong> será una experiencia para crecer profesionalmente y que les ayudará a aprender del mundo de la minería.</p>
+
+                <p>Resaltó también que la seguridad es muy importante para <strong>PODEROSA,</strong> y que deben cumplir con todas las normas y procedimientos de seguridad en nuestras instalaciones.</p>
+
+                <p>Durante el proceso de inducción se les capacitó sobre los diferentes procesos como: gestión ambiental, salud y seguridad, además de instruirlos con nuestra: Misión, visión y Valores corporativos, y la cultura COLPA. Esto se realizó en la sala CMC de Paraíso, finalizada la inducción, se instalaron en sus campamentos asignados en las unidades de Vijus, Paraíso y Santa María.</p>
+
+                <div class="row justify-content-center my-4">
+                    <div class="col-lg-8">
+                        <div class="owl-carousel    js-owl-carousel-fotos   owl-carousel--no-nav    dots-gris">
+                            <div class="">
+                                <img class="img-fluid w-100" src="~/Content/noticias/poderosa-recibe-a-practicantes-2019/01.jpg" alt="imagen">
+                            </div>
+
+                            <div class="">
+                                <img class="img-fluid w-100" src="~/Content/noticias/poderosa-recibe-a-practicantes-2019/02.jpg" alt="imagen">
+                            </div>
+
+                            <div class="">
+                                <img class="img-fluid w-100" src="~/Content/noticias/poderosa-recibe-a-practicantes-2019/03.jpg" alt="imagen">
+                            </div>
+
+                            <div class="">
+                                <img class="img-fluid w-100" src="~/Content/noticias/poderosa-recibe-a-practicantes-2019/04.jpg" alt="imagen">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-auto">
+                        @Html.Partial("~/Views/Shared/_redes.cshtml")
+                    </div>
+
+                    <div class="col-sm-auto ml-sm-auto mt-3 mt-sm-0">
+                        <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

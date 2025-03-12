@@ -1,0 +1,29 @@
+﻿label.error {
+	display: block;
+    color: red;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+input.error {
+	/*border: 2px solid red;*/
+}
+
+div.field input[type="text"].error, div.field select[type="select"].error,div.field select.error, div.errorRow div.field input,div.errorRow div.field select ,div.field textarea.error{
+	border: 2px solid red;
+	background-color: #FFEDF1;
+	margin: 0px;
+	color: red;
+}
+
+
+div.error {
+	color: red;
+}
+
+div.error a {
+	color: #336699;
+	font-size: 12px;
+	text-decoration: underline
+}

@@ -1,0 +1,332 @@
+.publicaciones-fondo{
+    background-color: var(--dorado-claro-1);
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    padding-top: 5rem;
+   
+
+}
+
+#reportes .btn-descarga{
+    width: 100%;
+}
+#ult-coleccionables .btn-descarga{
+       width: 100%;
+}
+#ult-coleccionables p{
+    width: 100%;
+}
+.publicaciones-bloque{
+    padding-top: 5rem;
+}
+.publicaciones-contenedor{
+    margin-top: -2rem;
+    padding: 4rem 0rem 0rem 0rem;
+}
+
+.publicaciones-batolitos__contenido{
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+
+} 
+
+.publicaciones-bloque__contenido{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+}
+
+.publicaciones-bloque__contenido .button-flecha{
+    margin-top: 2rem;
+}
+.publicaciones-libros .btn-descarga{
+    width: 80%;
+
+}
+.publicaciones-libros{
+    padding: 0rem 2rem;
+}
+#publicaciones .btn-descarga{
+
+    width: 100%;
+}
+@media(min-width:768px){
+    #publicaciones .btn-descarga{
+        width: 75%;
+      } 
+
+      #ult-coleccionables .btn-descarga{
+        width: 65%;
+ }
+ #ult-coleccionables p{
+    width: 70%;
+}
+}
+@media(min-width:992px){
+    #reportes .btn-descarga{
+        width: 80%;
+    }
+    #publicaciones .btn-descarga{
+      width: 100%;
+    }
+    .publicaciones-libros .btn-descarga{
+        width: 60%;
+    
+    }
+    #ult-coleccionables .btn-descarga{
+        width: 100%;
+ 
+    }
+}
+@media(min-width:1200px){
+    #publicaciones .btn-descarga{
+     width: 85%;
+    }
+    #ult-coleccionables .btn-descarga{
+        width: 85%;
+ 
+    }
+}
+
+@media(min-width:1200px){
+    #ult-coleccionables .btn-descarga{
+        width: 75%;
+ 
+    }
+}
+
+/********************************************************************************************/
+/************************BORDAR-IMAGEN-COLECCIONABLE*****************************************/
+/********************************************************************************************/
+
+.border-coleccionables{
+    border: 1px solid #cacaca;
+    padding: 5px; 
+    display: inline-block; 
+
+}
+
+.zoom-img {
+    transition: transform 0.5s ease-in-out; 
+}
+.zoom-img:hover {
+    transform: scale(1.05); 
+}
+
+/********************************************************************************************/
+/************************LIBROS***************************************************/
+/********************************************************************************************/
+#libros .btn-descarga{
+    width: 70%;
+}
+.libros-texto{
+    padding-bottom: 2rem;
+}
+
+#libros .libros-img img{
+    width: 80%;
+}
+#libros .contendor {
+  margin-bottom: 5rem;
+}
+
+@media(min-width:768px){
+    #libros .btn-descarga{
+        width: 80%;
+    }
+    .libros-texto{
+        padding-bottom: 1rem;
+    }
+    #libros .libros-img img{
+        width: 100%;
+    }
+  
+}
+
+@media(min-width: 992px){
+    #libros .btn-descarga{
+        width: 60%;
+    }  
+    .libros-texto{
+        padding-bottom: 3rem;
+    }
+}
+
+
+@media(min-width:1200px){
+     #libros .btn-descarga{
+        width: 40%;
+    }  
+    .libros-texto{
+        padding-bottom: 4rem;
+    }
+}
+
+@media(min-width:1320px){
+    #libros .libros-img img{
+        width: 90%;
+    }
+}
+
+/********************************************************************************************/
+/************************REPORTE DE SOSTENIBILIDAD*******************************************/
+/********************************************************************************************/
+.my-seccion-reporte{
+    padding: 3rem 0rem;
+}
+#reporte-sostenibilidad .btn-descarga{
+   
+    font-size: 14px;
+    padding: 16px 70px 16px 30px;
+    width: 100%;
+    
+}
+.space-reporte{
+    padding-top: 10rem;
+}
+#reporte-sostenibilidad.publicaciones-bloque {
+    padding: 0rem 0rem;
+}
+
+#reporte-sostenibilidad .btn-descarga-icon {
+	padding: 18.5px;
+  } 
+
+  #reporte-sostenibilidad .btn-descarga-space {
+    padding: 25px;
+  } 
+
+  @media(min-width:768px){
+    #reporte-sostenibilidad .btn-descarga{
+        width: 60%; 
+    }
+  }
+@media(min-width:992px){
+    .reporte-img{
+        padding-top: 0rem;
+    }
+    #reporte-sostenibilidad .btn-descarga{
+        width: 100%;
+        font-size: 14px;  
+    }
+
+    #reporte-sostenibilidad .btn-descarga-icon {
+        padding: 19px;
+      } 
+
+      #reporte-sostenibilidad .btn-descarga-space {
+        padding: 25px;
+      } 
+      
+}
+
+@media(min-width:1200px){
+    #reporte-sostenibilidad .btn-descarga{
+        font-size: 16px;
+
+    }
+    #reporte-sostenibilidad .btn-descarga-space {
+        padding: 27px;
+      } 
+
+}
+
+@media(min-width:1320px){
+    #reporte-sostenibilidad .btn-descarga-icon {
+        padding: 22px;
+      } 
+
+
+}
+/********************************************************************************************/
+/************************BATOLITOS********************************************************/
+/********************************************************************************************/
+#batolitos .img-icon{
+    width: 25px;
+    height: 25px;
+}
+#batolitos .border-coleccionables {
+    padding: 35px;
+ 
+}
+
+#batolitos .btn-link {
+    font-size: 14px;
+}
+
+ .publicaciones-bloque {
+    padding-top: 0rem; 
+}
+
+/********************************************************************************************/
+/************************BATOLITOS-COMUNITARIO********************************************************/
+/********************************************************************************************/
+#batolitos-comunitario .btn-descarga {
+    width: 90%;
+}
+
+@media(min-width:768px){
+    #batolitos-comunitario .btn-descarga {
+        width: 60%;
+    }
+} 
+/************************ @media*****************************************/
+/* @media(max-width:1320px){
+  
+} 
+
+@media(max-width:1140px){
+  
+}
+@media(max-width:960px){
+  
+    .publicaciones-bloque__contenido .button-flecha{
+        margin-top: 0rem;
+    }
+    
+    .publicaciones-batolitos__contenido{
+        padding: 0rem 1rem;
+        
+        } 
+
+}
+@media(max-width:720px){
+
+    .publicaciones-batolitos{
+        padding: 0rem 2rem;
+        
+        } 
+    .publicaciones-bloque{
+        padding: 0rem 2rem;
+    }
+}
+
+@media(max-width: 540px){
+
+ 
+    .publicaciones-bloque__contenido{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+  
+    
+    }
+
+    .publicaciones-batolitos{
+        padding: 0rem 2rem ;
+        
+        } 
+
+        .publicaciones-bloque{
+            padding-top: 5rem;
+        }
+}
+ */

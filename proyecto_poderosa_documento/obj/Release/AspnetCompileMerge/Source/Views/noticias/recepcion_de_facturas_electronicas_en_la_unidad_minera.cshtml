@@ -1,0 +1,105 @@
+﻿
+@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title>Recepción de facturas electrónicas en la unidad minera | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='Recepción de facturas electrónicas en la unidad minera | PODEROSA' />
+<meta name='description' content='PODEROSA informa que, por la coyuntura que atraviesa el país y mientras dure el estado de emergencia, se seguirá el siguiente procedimiento para recibir facturas electrónicas.' />
+<meta name='url' content='http://www.poderosa.com.pe/noticias/recepcion-de-facturas-electronicas-en-la-unidad-minera' />
+<meta name='keywords' content='facturas electrónicas, unidad minera,, Poderosa' />
+<!-- OpenGraph Meta Tags -->
+<meta property='og:type' content='website' />
+<meta property='og:title' content='Recepción de facturas electrónicas en la unidad minera | PODEROSA' />
+<meta property='og:description' content='PODEROSA informa que, por la coyuntura que atraviesa el país y mientras dure el estado de emergencia, se seguirá el siguiente procedimiento para recibir facturas electrónicas.' />
+<meta property='og:url' content='http://www.poderosa.com.pe/noticias/recepcion-de-facturas-electronicas-en-la-unidad-minera' />
+<meta property='og:image' content='http://www.poderosa.com.pe/Content/noticias/recepcion-de-facturas-electronicas-en-la-unidad-minera/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+                <img class="object-fit-cover" src="~/Content/noticias/recepcion-de-facturas-electronicas-en-la-unidad-minera/banner.jpg" alt="imagen">
+
+                <div class="h6 mayuscula mt-4">25 de Marzo de 2020</div>
+                <h1 class="h3 dorado"></h1>
+
+                @Html.Partial("~/Views/Shared/_redes.cshtml")
+                <br />
+
+                <p><strong>PODEROSA</strong> informa que, por la coyuntura que atraviesa el país y mientras dure el estado de emergencia, se seguirá el siguiente procedimiento para recibir facturas electrónicas.</p>
+
+                <ol>
+                    <li>Enviar las facturas y/o recibos por honorarios electrónicos adjuntando los archivos PDF, XML, CDR y los documentos de sustento: Orden de Compra, Guía de Remisión, Orden de Trabajo, Orden de Servicio, Liquidaciones y/o informes, los cuales deben contar con la autorizados con firma electrónica y/o correo electrónico, según se requiera.</li>
+
+                    <li>
+                        Los archivos y documentos deben enviarse a las siguientes direcciones electrónicas:
+                        <ul>
+                            <li>   <a href="mailto:mpoderosa@ecomprobantes.pe">mpoderosa@ecomprobantes.pe</a></li>
+                            <li>   <a href="mailto:facturaelectronica@poderosa.com.pe">facturaelectronica@poderosa.com.pe</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        Adicionalmente, según sea el caso:
+                        <p><strong>a.  Compra de bienes y contratistas de servicios.</strong></p>
+                        <ul>
+                            <li>   <a href="mailto:lvalderrama@poderosa.com.pe">lvalderrama@poderosa.com.pe</a></li>
+                            <li>   <a href="mailto:evaliente@poderosa.com.pe">evaliente@poderosa.com.pe</a> </li>
+                        </ul>
+                        <br />
+  
+                        <p><strong>b.  Minería artesanal.</strong></p>
+                        <ul>
+                            <li>   <a href="mailto:ebaca@poderosa.com.pe">ebaca@poderosa.com.pe</a></li>
+                            <li>   <a href="mailto:lvalderrama@poderosa.com.pe">lvalderrama@poderosa.com.pe</a> </li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <p>
+                    Si tiene alguna consulta, puede contactarse con:
+                    <ul>
+                        <li>   Elena Valiente:      <a href="mailto:evaliente@poderosa.com.pe">evaliente@poderosa.com.pe</a> </li>
+                        <li>   Anais Valderrama:    <a href="mailto:lvalderrama@poderosa.com.pe">lvalderrama@poderosa.com.pe</a></li>
+                    </ul>
+                </p>
+
+
+
+                <p class="text-right">Pataz, 25 de marzo del 2020</p>
+
+                <p class="text-center"><strong>Gerencia de Administración, Finanzas & Comercialización.</strong></p>
+
+
+
+                <div class="row">
+                    <div class="col-sm-auto">
+                        @Html.Partial("~/Views/Shared/_redes.cshtml")
+                    </div>
+
+                    <div class="col-sm-auto ml-sm-auto mt-3 mt-sm-0">
+                        <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>
+

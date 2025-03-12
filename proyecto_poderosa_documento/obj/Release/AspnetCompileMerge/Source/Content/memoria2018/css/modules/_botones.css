@@ -1,0 +1,103 @@
+/* #################################################################################################### */
+/* BOTONES */
+/* #################################################################################################### */
+
+/* -------------------------------------------------- */
+/* BOTON POR DEFECTO */
+/* -------------------------------------------------- */
+.boton{
+	background-color: var(--color-negro);
+	color: var(--color-blanco);
+	font-family: var(--fuente-2);
+	text-align: center;
+	
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-ms-flex-align: center;
+	align-items: center;
+
+	padding: .7rem 1.7rem;
+	border-radius: .5em;
+	
+	border: 0;
+	width: auto !important;
+	cursor: pointer;
+}
+.boton:hover{
+	text-decoration: none;
+
+	background-color: var(--color-negro);
+	color: var(--color-blanco);
+	opacity: 0.5;
+}
+
+/* ESTADOS */
+.boton--sm{
+	font-size: .85rem;
+}
+.boton--lg{
+	font-size: 1.15rem;
+}
+.boton--xl{
+	font-size: 1.3rem;
+}
+.boton--xxl{
+	font-size: 1.45rem;
+}
+
+.boton--o{
+	border-radius: 1.5em;
+}
+
+.boton--1{
+	background-color: var(--color-1);
+}
+.boton--2{
+	background-color: var(--color-2);
+}
+.boton--3{
+	background-color: var(--color-3);
+}
+.boton--4{
+	background-color: var(--color-4);
+}
+.boton--5{
+	background-color: var(--color-5);
+}
+.boton--6{
+	background-color: var(--color-6);
+	color: var(--color-4);
+}
+.boton--7{
+	background-color: var(--color-7);
+}
+
+/* MEDIA QUERYS */
+@media(min-width: 576px){
+	.boton--sm{
+		font-size: .75rem;
+	}
+	.boton--lg{
+		font-size: 1.25rem;
+	}
+	.boton--xl{
+		font-size: 1.5rem;
+	}
+	.boton--xxl{
+		font-size: 1.75rem;
+	}
+}
+@media(min-width: 768px){
+	
+}
+@media(min-width: 992px){
+	
+}
+@media(min-width: 1200px){
+	
+}
+/* -------------------------------------------------- */
+
+/* #################################################################################################### */

@@ -1,0 +1,88 @@
+﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title>2da y 3ra convocatoria de profesionales para proyectos de innovación | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='2da y 3ra convocatoria de profesionales para proyectos de innovación | PODEROSA' />
+<meta name='description' content='En el marco de la adjudicación de fondos que obtuvo Minera Poderosa en el Concurso de Proyectos Colaborativos
+                    de Innovación.' />
+<meta name='url' content='https://www.poderosa.com.pe/noticias/segunda-y-tercera-convocatoria-de-profesionales-para-proyectos-de-innovacion' />
+<meta name='keywords' content='Poderosa, profesionales, proyectos, innovación ' />
+<!-- OpenGraph Meta Tags -->
+<meta property='og:type' content='website' />
+<meta property='og:title' content='segunda-y-tercera-convocatoria-de-profesionales-para-proyectos-de-innovacion | PODEROSA' />
+<meta property='og:description' content='En el marco de la adjudicación de fondos que obtuvo Minera Poderosa en el Concurso de Proyectos Colaborativos
+                    de Innovación.' />
+<meta property='og:url' content='https://www.poderosa.com.pe/noticias/segunda-y-tercera-convocatoria-de-profesionales-para-proyectos-de-innovacion' />
+
+<meta property='og:image' content='https://www.poderosa.com.pe/Content/noticias/segunda-y-tercera-convocatoria-de-profesionales/resumen.jpg' />
+</head>
+<body>
+
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+
+                <div class="h6 mayuscula mt-4">27 de Febrero de 2023</div>
+                <h1 class="h3 dorado">2da y 3ra convocatoria de profesionales para proyectos de innovación</h1>
+
+                <div class="d-flex justify-content-center justify-content-sm-start">
+                    @Html.Partial("~/Views/Shared/_redes.cshtml")          
+                </div>
+
+                <br />
+
+                <p>
+                    En el marco de la adjudicación de fondos que obtuvo Minera Poderosa en el Concurso de Proyectos Colaborativos
+                    de Innovación Categoría 2: Innovación Abierta de Proinnóvate, se abre la convocatoria para 2 procesos de
+                    contratación que se alinean con los objetivos trazados por la compañía en innovación abierta.
+                </p>
+
+                <p>Los invitamos a revisar todas las condiciones y participar de este proceso en los siguientes links:</p>
+
+                <p>
+                   <b>
+                        SERVICIO DE ANÁLISIS DE LA INFORMACIÓN CIENTÍFICA, TECNOLÓGICA E IDENTIFICACIÓN DEL NIVEL DE MADUREZ TECNOLÓGICO
+                        
+                   </b> <br />Descarga toda la información
+                    <a href="~/Content/descargas/noticias/segunda-y-tercera-convocatoria/servicio-vigilancia/servicio-vigilancia.zip" target="_blank"> AQUÍ.</a>
+                </p>
+                <p>
+                    <b>
+                        SERVICIOS DE MERCADEO, COMUNICACIONES Y GENERACIÓN DE CONTENIDO.
+                      
+                    </b><br />Descarga toda la información<a href="~/Content/descargas/noticias/segunda-y-tercera-convocatoria/servicio-de-mercadeo/terminos-de-referencia-servicios-de-mercadeo.pdf" target="_blank"> AQUÍ.</a>
+                </p>
+
+
+                 <div class="d-flex mt-4  flex-column flex-sm-row align-items-center align-items-md-start justify-content-sm-center">
+                    <div class="flex-fill mb-4 mb-sm-0">
+                     @Html.Partial("~/Views/Shared/_redes.cshtml") 
+                    
+                    </div>
+                    <div class="flex-fill text-center text-sm-right">
+                        <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

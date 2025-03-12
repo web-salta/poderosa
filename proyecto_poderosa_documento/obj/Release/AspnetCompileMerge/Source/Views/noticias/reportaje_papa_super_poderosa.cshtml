@@ -1,0 +1,67 @@
+﻿
+@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title>Reportaje papa super poderosa | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='Reportaje papa super poderosa | PODEROSA' />
+<meta name='description' content='Conoce más de nuestras tres nuevas variedades de papa: Pollera, Watia y Crocante, las cuales son fruto de un trabajo conjunto de Minera Poderosa, a través de Asociación Pataz, el International Potato Center y el apoyo de Concytec Perú.' />
+<meta name='url' content='https://www.poderosa.com.pe/noticias/reportaje-papa-super-poderosa' />
+<meta name='keywords' content='Poderosa, reportajes, papa, super, poderosa' />
+<!-- OpenGraph Meta Tags -->
+<meta property='og:type' content='website' />
+<meta property='og:title' content='Reportaje papa super poderosa | PODEROSA' />
+<meta property='og:description' content='Conoce más de nuestras tres nuevas variedades de papa: Pollera, Watia y Crocante, las cuales son fruto de un trabajo conjunto de Minera Poderosa, a través de Asociación Pataz, el International Potato Center y el apoyo de Concytec Perú.' />
+<meta property='og:url' content='https://www.poderosa.com.pe/noticias/reportaje-papa-super-poderosa' />
+<meta property='og:image' content='https://www.poderosa.com.pe/Content/noticias/reportaje-papa-super-poderosa/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+
+                <div class="h6 mayuscula mt-4">01 DE JUNIO DE 2022</div>
+                <h1 class="h3 dorado">Reportaje papa super poderosa | Tierra adentro</h1>
+
+                @Html.Partial("~/Views/Shared/_redes.cshtml")
+                <br />
+
+                <div class="row justify-content-center mt-4 mb-2">
+                    <div class="col-lg-10">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/U3WuVQbsc_U"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <br /><br />
+
+                <div class="row mt-4">
+                    <div class="col-sm-auto">
+                        @Html.Partial("~/Views/Shared/_redes.cshtml")
+                    </div>
+
+                    <div class="col-sm-auto ml-sm-auto mt-3 mt-sm-0">
+                        <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

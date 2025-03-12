@@ -1,0 +1,84 @@
+﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+    <!-- METAS -->
+    <title>Guardaparques del Parque Nacional del Río Abiseo son capacitados en manejo y control de incendios forestales | PODEROSA</title>
+    <!-- Basic HTML Meta Tags -->
+    <meta name='title' content='Guardaparques del Parque Nacional del Río Abiseo son capacitados en manejo y control de incendios forestales | PODEROSA' />
+    <meta name='description' content='Fortaleciendo las capacidades del personal del Servicio Nacional de Áreas Naturales Protegidas por el Estado (SERNANP) para asegurar una rápida respuesta ante una emergencia, 13 guardaparques del Parque Nacional del Río Abiseo (San Martín) participaron de un taller de capacitación sobre prevención, manejo y control de incendios forestales.' />
+    <meta name='url' content='http://www.poderosa.com.pe/noticias/guardaparques-del-parque-nacional-del-rio-abiseo-son-capacitados-en-manejo-y-control' />
+    <meta name='keywords' content='Guardaparques, Parque Nacional del Río Abiseo, capacidades, personal, Servicio Nacional de Áreas Naturales Protegidas' />
+    <!-- OpenGraph Meta Tags -->
+    <meta property='og:type' content='website' />
+    <meta property='og:title' content='Guardaparques del Parque Nacional del Río Abiseo son capacitados en manejo y control de incendios forestales | PODEROSA' />
+    <meta property='og:description' content='Fortaleciendo las capacidades del personal del Servicio Nacional de Áreas Naturales Protegidas por el Estado (SERNANP) para asegurar una rápida respuesta ante una emergencia, 13 guardaparques del Parque Nacional del Río Abiseo (San Martín) participaron de un taller de capacitación sobre prevención, manejo y control de incendios forestales.' />
+    <meta property='og:url' content='http://www.poderosa.com.pe/noticias/guardaparques-del-parque-nacional-del-rio-abiseo-son-capacitados-en-manejo-y-control' />
+    <meta property='og:image' content='http://www.poderosa.com.pe/Content/noticias/guardaparques-del-parque-nacional-del-rio-abiseo-son-capacitados-en-manejo-y-control/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+                <img class="object-fit-cover" src="~/Content/noticias/guardaparques-del-parque-nacional-del-rio-abiseo-son-capacitados-en-manejo-y-control/banner.jpg" alt="imagen">
+
+                <div class="h6 mayuscula mt-4">18 de Febrero de 2019</div>
+                <h1 class="h3 dorado">Guardaparques del Parque Nacional del Río Abiseo son capacitados en manejo y control de incendios forestales</h1>
+
+                @Html.Partial("~/Views/Shared/_redes.cshtml")
+                <br />
+
+                <p>Fortaleciendo las capacidades del personal del Servicio Nacional de Áreas Naturales Protegidas por el Estado (SERNANP) para asegurar una rápida respuesta ante una emergencia, 13 guardaparques del Parque Nacional del Río Abiseo (San Martín) participaron de un taller de capacitación sobre prevención, manejo y control de incendios forestales.</p>
+
+                <p>Como parte del taller se realizó una jornada teórica-práctica sobre el adecuado manejo de las herramientas que se utilizan para el control y liquidación de incendios forestales, desarrollada por especialistas del área de seguridad de la compañía minera Poderosa.</p>
+
+                <p>El objetivo de la capacitación es fortalecer las acciones de conservación del ecosistema de páramo que caracteriza al sector occidente del Parque.</p>
+
+                <p>El taller se llevó a cabo en el marco del convenio de cooperación entre el SERNANP, la Asociación Pataz y la Poderosa S.A, para la conservación y desarrollo sostenible de esta área natural protegida.</p>
+
+                <p>De esta manera, ellos se sumarán al equipo de guardaparques bomberos forestales del SERNANP quienes conforman la primera línea de defensa contra incendios forestales en áreas naturales protegidas como el Santuario Histórico de Machupicchu, el Parque Nacional Huascarán, el Refugio de Vida Silvestre Laquipampa y el Santuario Histórico Cosque de Pómac.</p>
+
+                <p><small>Fuente SERNANP</small></p>
+
+                <div class="row justify-content-center mt-4 mb-2">
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <div class="col-sm-6 mb-3">
+                                <img class="img-fluid w-100" src="~/Content/noticias/guardaparques-del-parque-nacional-del-rio-abiseo-son-capacitados-en-manejo-y-control/01.jpg" alt="imagen">
+                            </div>
+
+                            <div class="col-sm-6 mb-3">
+                                <img class="img-fluid w-100" src="~/Content/noticias/guardaparques-del-parque-nacional-del-rio-abiseo-son-capacitados-en-manejo-y-control/02.jpg" alt="imagen">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-sm-auto">
+                        @Html.Partial("~/Views/Shared/_redes.cshtml")
+                    </div>
+
+                    <div class="col-sm-auto ml-sm-auto mt-3 mt-sm-0">
+                        <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

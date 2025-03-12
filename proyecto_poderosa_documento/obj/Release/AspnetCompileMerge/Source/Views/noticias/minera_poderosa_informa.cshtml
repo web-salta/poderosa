@@ -1,0 +1,66 @@
+﻿
+
+@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title>Minera Poderosa Informa | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='Minera Poderosa Informa | PODEROSA' />
+<meta name='description' content='Minera Poderosa Informa' />
+<meta name='url' content='http://www.poderosa.com.pe/noticias/minera-poderosa-informa' />
+<meta name='keywords' content='Poderosa, Minera Poderosa Informa' />
+<!-- OpenGraph Meta Tags -->
+<meta property='og:type' content='website' />
+<meta property='og:title' content='Minera Poderosa Informa | PODEROSA' />
+<meta property='og:description' content='Minera Poderosa Informa' />
+<meta property='og:url' content='http://www.poderosa.com.pe/noticias/minera-poderosa-informa' />
+<meta property='og:image' content='http://www.poderosa.com.pe/Content/noticias/minera-poderosa-informa/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+
+                <div class="h6 mayuscula mt-4">17 de Setiembre de 2020</div>
+                <h1 class="h3 dorado">Minera Poderosa Informa</h1>
+
+                @Html.Partial("~/Views/Shared/_redes.cshtml")
+                <br />
+
+                <div class="row justify-content-center mt-4 mb-2">
+                    <div class="col-lg-8">
+                        <img class="img-fluid w-100" src="~/Content/noticias/minera-poderosa-informa/poderosa-informa.png" alt="imagen">
+                    </div>
+                </div>
+
+
+                <div class="row mt-4">
+                    <div class="col-sm-auto">
+                        @Html.Partial("~/Views/Shared/_redes.cshtml")
+                    </div>
+
+                    <div class="col-sm-auto ml-sm-auto mt-3 mt-sm-0">
+                        <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

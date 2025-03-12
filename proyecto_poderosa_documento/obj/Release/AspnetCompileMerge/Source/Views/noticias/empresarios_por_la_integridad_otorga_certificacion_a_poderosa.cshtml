@@ -1,0 +1,82 @@
+﻿
+@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title>Empresarios por la integridad otorga certificación a PODEROSA | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='Empieza construcción de moderna e innovadora biblioteca en distrito de Pataz | PODEROSA' />
+<meta name='description' content='En reconocimiento a sus políticas de prevención contra la corrupción, la Asociación de Empresarios por la Integridad otorgó la certificación "Empresa Certificada Antisoborno" a PODEROSA' />
+<meta name='url' content='http://www.poderosa.com.pe/noticias/empresarios-por-la-integridad-otorga-certificacion-a-poderosa' />
+<meta name='keywords' content='Certificación, integridad, PODEROSA, Empresarios' />
+<!-- OpenGraph Meta Tags -->
+<meta property='og:type' content='website' />
+<meta property='og:title' content='Empieza construcción de moderna e innovadora biblioteca en distrito de Pataz | PODEROSA' />
+<meta property='og:description' content='En reconocimiento a sus políticas de prevención contra la corrupción, la Asociación de Empresarios por la Integridad otorgó la certificación "Empresa Certificada Antisoborno" a PODEROSA' />
+<meta property='og:url' content='http://www.poderosa.com.pe/noticias/empresarios-por-la-integridad-otorga-certificacion-a-poderosa' />
+<meta property='og:image' content='http://www.poderosa.com.pe/Content/noticias/empresarios-por-la-integridad-otorga-certificacion-a-poderosa/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+                <img class="object-fit-cover" src="~/Content/noticias/empresarios-por-la-integridad-otorga-certificacion-a-poderosa/banner.jpg" alt="imagen">
+
+                <div class="h6 mayuscula mt-4">03 de Febrero de 2020</div>
+                <h1 class="h3 dorado">Empresarios por la integridad otorga certificación a PODEROSA</h1>
+
+                @Html.Partial("~/Views/Shared/_redes.cshtml")
+                <br />
+
+                <p><strong>Reforzamos sistema de prevención antisoborno</strong></p>
+                <p><strong>En reconocimiento a sus políticas de prevención contra la corrupción, la Asociación de Empresarios por la Integridad otorgó la certificación "Empresa Certificada Antisoborno" a PODEROSA, por haber implementado el modelo de prevención anti soborno a nivel nacional el cual fue auditado por la empresa SGS del Perú.</strong></p>
+                <p>Para lograr dicha certificación, PODEROSA identificó  los riesgos de corrupción en cada uno de sus procesos y luego, implementó políticas de prevención, un canal de denuncia, protocolos de respuesta; así como la adopción de un código de ética y el más firme compromiso de sus directivos de no tolerar ningún acto de corrupción.</p>
+
+                <p>La Presidente del Directorio de PODEROSA, Sra. Eva Arias, recibió  el certificado a nombre de nuestra empresa. Agradeció el reconocimiento que se suma a la certificación ISO 37001, que acredita las buenas prácticas y estándares anti soborno.</p>
+                <p> Es importante mencionar que es la primera empresa del sector minero que cumple con los requisitos establecidos en la Norma ISO 37001, versión 2016. Ello evidencia el cumplimiento del Sistema de Gestión Antisoborno, implementado y el compromiso de los directivos con esta norma. Esta nueva certificación refuerza el trabajo que venimos realizando.</p>
+                <p>La ceremonia, que contó con la participación de los principales directivos de las empresas recientemente certificadas, se llevó a cabo el miércoles 15 de enero de 2020, en el Salón Imperial del hotel Country Club Lima en San Isidro.</p>
+
+
+                 <div class="row justify-content-center my-4">
+                        <div class="col-lg-8">
+                            <div class="owl-carousel    js-owl-carousel-fotos   owl-carousel--no-nav    dots-gris">
+                                <div class="">
+                                    <img class="img-fluid w-100" src="~/Content/noticias/empresarios-por-la-integridad-otorga-certificacion-a-poderosa/01.jpg" alt="imagen">
+                                </div>
+
+                                <div class="">
+                                    <img class="img-fluid w-100" src="~/Content/noticias/empresarios-por-la-integridad-otorga-certificacion-a-poderosa/02.jpg" alt="imagen">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-auto">
+                            @Html.Partial("~/Views/Shared/_redes.cshtml")
+                        </div>
+
+                        <div class="col-sm-auto ml-sm-auto mt-3 mt-sm-0">
+                            <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                        </div>
+                    </div>
+
+</div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

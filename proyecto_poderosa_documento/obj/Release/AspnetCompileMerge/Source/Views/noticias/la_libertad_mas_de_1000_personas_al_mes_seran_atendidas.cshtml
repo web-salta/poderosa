@@ -1,0 +1,88 @@
+﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title>La Libertad: más de 1.000 personas al mes serán atendidas con hemodiálisis en hospital regional | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='La Libertad: más de 1.000 personas al mes serán atendidas con hemodiálisis en hospital regional | PODEROSA' />
+<meta name='description' content='El Hospital Regional Docente de Trujillo (HRDT) iniciará las atenciones a más de 1.000 pacientes al mes en la Unidad de Hemodiálisis y también podrá hacer operaciones quirúrgicas en el área de Urología con rayos láser. ' />
+<meta name='url' content='https://www.poderosa.com.pe/noticias/la-libertad-mas-de-1000-personas-al-mes-seran-atendidas/' />
+<meta name='keywords' content='Poderosa, Distintivo de Empresa Socialmente Responsable' />
+<!-- OpenGraph Meta Tags -->
+<meta property='og:type' content='website' />
+<meta property='og:title' content='La Libertad: más de 1.000 personas al mes serán atendidas con hemodiálisis en hospital regional | PODEROSA' />
+<meta property='og:description' content='El Hospital Regional Docente de Trujillo (HRDT) iniciará las atenciones a más de 1.000 pacientes al mes en la Unidad de Hemodiálisis y también podrá hacer operaciones quirúrgicas en el área de Urología con rayos láser. ' />
+<meta property='og:url' content='https://www.poderosa.com.pe/noticias/la-libertad-mas-de-1000-personas-al-mes-seran-atendidas/' />
+<meta property='og:image' content='https://www.poderosa.com.pe/Content/noticias/la-libertad-mas-de-1000-personas-al-mes-seran-atendidas/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+                <img class="object-fit-cover" src="~/Content/noticias/la-libertad-mas-de-1000-personas-al-mes-seran-atendidas/banner.jpg" alt="imagen">
+                <div class="h6 mayuscula mt-4">15 de Junio de 2022</div>
+                <h1 class="dorado h3">La Libertad: más de 1.000 personas al mes serán atendidas con hemodiálisis en hospital regional</h1>
+
+                @Html.Partial("~/Views/Shared/_redes.cshtml")
+                <br />
+
+                <p> El Hospital Regional Docente de Trujillo (HRDT) iniciará las atenciones a más de 1.000 pacientes al mes en la Unidad de Hemodiálisis y también podrá hacer operaciones quirúrgicas en el área de Urología con rayos láser. Así lo anunció el gobernador regional de La Libertad, Manuel Llempén.</p>
+
+                <p>
+                    <i>“Más de 1.000 personas al mes serán atendidas en la Unidad de Hemodiálisis del HRDT con las 10 máquinas que fueron donadas por la <strong>Compañía Minera Poderosa,</strong> la fundación alemana Malteser y el Rotary Club Internacional. Estos equipos están valorizados en un millón de soles",</i> indicó Llempén.</p>
+                <p>
+                    Resaltó el hecho de que el trabajo articulado entre la empresa privada y el Gobierno Regional permitirán que más liberteños puedan realizarse una diálisis sin tener que ir a una clínica.</p>
+
+                <p>
+                   <i>“Hay también una donación de 30 equipos y accesorios de urología láser valorizados en 220.000 euros. En una semana y media, estaría llegando un arco en C, que nos permitirá atender a pacientes de urología, cardiología y traumatología",</i> detalló la autoridad regional.</p>
+
+                <p>
+                    Por su parte, el director del HRDT, César Fernández Sánchez, refirió que antes con dos máquinas de hemodiálisis solo podían atender a 150 personas al mes.</p>
+
+                <p>
+                    <i>“No teníamos los equipos para cubrir la demanda, así que designábamos de cuatro a siete millones de soles al privado para que nuestros pacientes sean atendidos oportunamente, pero hoy vamos a poder atender a más personas. En tanto, el dinero será utilizado para mejorar otras deficiencias de nuestro hospital",</i> acotó.</p>
+
+                <p><strong>Fuente La República</strong></p>
+                 
+                <div class="row justify-content-center my-4">
+                    <div class="col-lg-8">
+                        <div class="owl-carousel    js-owl-carousel-fotos   owl-carousel--no-nav    dots-gris">
+                            <div class="">
+                                <img class="img-fluid w-100" src="~/Content/noticias/la-libertad-mas-de-1000-personas-al-mes-seran-atendidas/01.jpg" alt="imagen">
+                            </div>
+
+                            <div class="">
+                                <img class="img-fluid w-100" src="~/Content/noticias/la-libertad-mas-de-1000-personas-al-mes-seran-atendidas/02.jpg" alt="imagen">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-sm-auto">
+                        @Html.Partial("~/Views/Shared/_redes.cshtml")
+                    </div>
+
+                    <div class="col-sm-auto ml-sm-auto mt-3 mt-sm-0">
+                        <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

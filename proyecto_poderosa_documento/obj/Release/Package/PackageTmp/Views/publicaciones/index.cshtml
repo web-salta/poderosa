@@ -1,0 +1,544 @@
+﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title>Publicaciones | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='Publicaciones | PODEROSA' />
+<meta name='description' content='Publicaciones' />
+<meta name='url' content='https://www.poderosa.com.pe/publicaciones/index' />
+<meta name='keywords' content='minera poderosa, asociación pataz' />
+<!-- OpenGraph Meta Tags -->
+<meta property='og:type' content='website' />
+<meta property='og:title' content='Publicaciones | PODEROSA' />
+<meta property='og:description' content='' />
+<meta property='og:url' content='https://www.poderosa.com.pe/publicaciones/index' />
+<meta property='og:image' content='https://www.poderosa.com.pe/Content/img/compartir.jpg' />
+</head>
+<body>
+    <div class="menuSecuVelo"></div>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+
+    <div class="pt-4 ">
+        <div class="bannerInterno__contenedor">
+            <img src="~/Content/publicaciones/banner-home.png" class="img-fluid  w-100 d-none  d-lg-block" alt="">
+            <img src="~/Content/publicaciones/banner-home-tablet.jpg" class="img-fluid  d-none d-md-block d-sm-none d-lg-none" alt="">
+            <img src="~/Content/publicaciones/banner-home-movil.jpg" class="img-fluid  d-block d-md-none d-lg-none" alt="">
+            <img src="~/Content/img/pagina-interna/forma-dorada-transparente.png" class="img-fluid bannerInterno__dorada" alt="...">
+            <div class="bannerInterno__texto">
+                <!--     <h3 class="bannerInterno__indice fuente-5">Gestión de Cumplimiento</h3>  -->
+                <h1 class="bannerInterno__titulo fuente-3">
+                    Publicaciones
+                </h1>
+            </div>
+            <img src="~/Content/img/pagina-interna/forma-dorada.png" class="img-fluid bannerInterno__small" alt="">
+        </div>
+
+        <section class="bg-dorado-claro-1" id="reportes">
+            <div class="container">
+
+                <div class="publicaciones-bloque">
+                    <div class=" py-5 ">
+                        <div class="contenedor-noticias-titulo pb-5">
+                            <h1 class="fuente-3 dorado">
+                                Últimas Memorias
+                            </h1>
+                            <a href="@Url.Action("memorias", "publicaciones", new { accion = "" })" class="fuente-5 button-ver-mas">
+                                Ver todos <span class="icono"><img src="~/Content/img/home/icono.svg" alt="" class="img-fluid"></span>
+                            </a>
+                        </div>
+
+                        <div class="row g-5 py-4">
+                            <div class="col-md-6 pb-5 ">
+
+                                <div class="publicaciones-bloque__contenido ">
+                                    <a href="~/Content/descargas/memorias/reporte-sostenibilidad-2023.pdf" target="_blank">
+                                        <img src="~/Content/descargas/memorias/informe-anual-de-sostenibilidad-2023-home.png" alt="" class="img-fluid zoom-img border-coleccionables">
+                                    </a>
+                                    <div class="w-100">
+                                        <h5><strong class="fuente-3">Reporte de Sostenibilidad 2023</strong></h5>
+                                        <p class="fuente-4">
+                                            Seguridad y Resilencia
+                                        </p>
+                                        <div class="d-flex flex-column">
+                                            <a href="~/Content/descargas/memorias/reporte-sostenibilidad-2023.pdf" class="btn-descarga" target="_blank">
+                                                Descargar
+                                                <span class="btn-descarga-icon btn-descarga-dorado">
+                                                    <img src="~/Content/img/icon-descarga.png" alt="Descargar" class="img-icon">
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 pb-5 ">
+
+                                <div class="publicaciones-bloque__contenido ">
+                                    <a href="~/Content/descargas/memorias/reporte-sostenibilidad-2022.pdf" target="_blank">
+                                        <img src="~/Content/descargas/memorias/informe-anual-de-sostenibilidad-2022-home.jpg" alt="" class="img-fluid zoom-img border-coleccionables">
+                                    </a>
+                                    <div class="w-100">
+                                        <h5><strong class="fuente-3">Reporte de Sostenibilidad 2022</strong></h5>
+                                        <p class="fuente-4">
+                                            Enfocados
+                                            en la innovación
+                                        </p>
+                                        <div class="d-flex flex-column">
+                                            <a href="~/Content/descargas/memorias/reporte-sostenibilidad-2022.pdf" class="btn-descarga" target="_blank">
+                                                Descargar
+                                                <span class="btn-descarga-icon btn-descarga-dorado">
+                                                    <img src="~/Content/img/icon-descarga.png" alt="Descargar" class="img-icon">
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class=" pt-5" id="publicaciones">
+            <div class="container">
+                <div class="contenedor-noticias-titulo pb-5">
+                    <h1 class="fuente-3 marron-oscuro">
+                        Últimos BATOLITOS
+                    </h1>
+                    <a href="@Url.Action("batolito", "publicaciones", new { accion = "" })" class="fuente-5 button-ver-mas">
+                        Ver todos <span class="icono"><img src="~/Content/img/home/icono.svg" alt="" class="img-fluid"></span>
+                    </a>
+                </div>
+                <div class="row   ">
+                    <div class="col-lg-3 col-md-6 col-6 pb-5">
+
+                        <a href="~/Content/descargas/batolito/Batolito_56.pdf" target="_blank">
+                            <img src="~/Content/descargas/batolito/Batolito_56-principal.jpg" alt="Batolito 60" class="img-fluid zoom-img border-coleccionables">
+                        </a>
+                        <p class="fuente-4 mb-0 py-3">
+                            Batolito 56<br>
+                            Jun 2022
+                        </p>
+
+                        <div class="d-flex flex-column ">
+
+                            <a href="~/Content/descargas/batolito/Batolito_56.pdf" class="btn-descarga" target="_blank">
+                                Descargar
+                                <span class="btn-descarga-icon btn-descarga-dorado">
+                                    <img src="~/Content/img/icon-descarga.png" alt="Descargar" class="img-icon">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-6 pb-5">
+                        <a href="~/Content/descargas/batolito/Batolito_55.pdf" target="_blank">
+                            <img src="~/Content/descargas/batolito/Batolito_55-principal.jpg" alt="Batolito 60" class="img-fluid zoom-img border-coleccionables">
+                        </a>
+                        <p class="fuente-4 mb-0 py-3">
+                            Batolito 55<br>
+                            Dic 2021
+                        </p>
+
+                        <div class="d-flex flex-column ">
+
+                            <a href="~/Content/descargas/batolito/Batolito_55.pdf" class="btn-descarga" target="_blank">
+                                Descargar
+                                <span class="btn-descarga-icon btn-descarga-dorado">
+                                    <img src="~/Content/img/icon-descarga.png" alt="Descargar" class="img-icon">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6 pb-5">
+
+                        <a href="~/Content/descargas/batolito/Batolito_54.pdf" target="_blank">
+                            <img src="~/Content/descargas/batolito/Batolito_54-principal.jpg" alt="Batolito 60" class="img-fluid zoom-img border-coleccionables">
+                        </a>
+                        <p class="fuente-4 mb-0 py-3">
+                            Batolito 54<br>
+                            Set 2021
+                        </p>
+
+                        <div class="d-flex flex-column ">
+
+                            <a href="~/Content/descargas/batolito/Batolito_54.pdf" class="btn-descarga" target="_blank">
+                                Descargar
+                                <span class="btn-descarga-icon btn-descarga-dorado">
+                                    <img src="~/Content/img/icon-descarga.png" alt="Descargar" class="img-icon">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6 pb-5">
+
+                        <a href="~/Content/descargas/batolito/Batolito_53.pdf" target="_blank">
+                            <img src="~/Content/descargas/batolito/Batolito_53-principal.jpg" alt="Batolito 60" class="img-fluid zoom-img border-coleccionables">
+                        </a>
+                        <p class="fuente-4 mb-0 py-3">
+                            Batolito 53<br>
+                            Jul 2021
+                        </p>
+
+                        <div class="d-flex flex-column ">
+
+                            <a href="~/Content/descargas/batolito/Batolito_53.pdf" class="btn-descarga" target="_blank">
+                                Descargar
+                                <span class="btn-descarga-icon btn-descarga-dorado">
+                                    <img src="~/Content/img/icon-descarga.png" alt="Descargar" class="img-icon">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class=" pt-5" id="publicaciones">
+            <div class="container">
+                <div class="contenedor-noticias-titulo pb-5">
+                    <h1 class="fuente-3 marron-oscuro">
+                        Últimos BATOLITOS COMUNITARIOS
+                    </h1>
+                    <a href="@Url.Action("batolito_comunitario", "publicaciones", new { accion = "" })" class="fuente-5 button-ver-mas">
+                        Ver todos <span class="icono"><img src="~/Content/img/home/icono.svg" alt="" class="img-fluid"></span>
+                    </a>
+                </div>
+                <div class="row   ">
+                    <div class="col-lg-3 col-md-6 col-6 pb-5">
+
+                        <a href="~/Content/descargas/batolito-comunitario/61-BatolitoComunitario.pdf" target="_blank">
+                            <img src="~/Content/descargas/batolito-comunitario/61-BatolitoComunitario-principal.jpg" alt="Batolito 60" class="img-fluid zoom-img border-coleccionables">
+                        </a>
+                        <p class="fuente-4 mb-0 py-3">
+                            Batolito Comunitario Nº 61<br>
+                            Setiembre 2023 / Enero 2024
+                        </p>
+
+                        <div class="d-flex flex-column ">
+
+                            <a href="~/Content/descargas/batolito-comunitario/61-BatolitoComunitario.pdf" class="btn-descarga" target="_blank">
+                                Descargar
+                                <span class="btn-descarga-icon btn-descarga-dorado">
+                                    <img src="~/Content/img/icon-descarga.png" alt="Descargar" class="img-icon">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-6 pb-5">
+                        <a href="~/Content/descargas/batolito-comunitario/60-BatolitoComunitario.pdf" target="_blank">
+                            <img src="~/Content/descargas/batolito-comunitario/60-BatolitoComunitario-principal.jpg" alt="Batolito 60" class="img-fluid zoom-img border-coleccionables">
+                        </a>
+                        <p class="fuente-4 mb-0 py-3">
+                            Batolito Comunitario Nº 60<br>
+                            Setiembre / Agosto 2023
+                        </p>
+
+                        <div class="d-flex flex-column ">
+
+                            <a href="~/Content/descargas/batolito-comunitario/60-BatolitoComunitario.pdf" class="btn-descarga" target="_blank">
+                                Descargar
+                                <span class="btn-descarga-icon btn-descarga-dorado">
+                                    <img src="~/Content/img/icon-descarga.png" alt="Descargar" class="img-icon">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6 pb-5">
+
+                        <a href="~/Content/descargas/batolito-comunitario/59-BatolitoComunitario.pdf" target="_blank">
+                            <img src="~/Content/descargas/batolito-comunitario/60-BatolitoComunitario-principal.jpg" alt="Batolito 59" class="img-fluid zoom-img border-coleccionables">
+                        </a>
+                        <p class="fuente-4 mb-0 py-3">
+                            Batolito Comunitario Nº 59<br>
+                            Noviembre 2022 /  Febrero 2023
+                        </p>
+
+                        <div class="d-flex flex-column ">
+
+                            <a href="~/Content/descargas/batolito-comunitario/59-BatolitoComunitario.pdf" class="btn-descarga" target="_blank">
+                                Descargar
+                                <span class="btn-descarga-icon btn-descarga-dorado">
+                                    <img src="~/Content/img/icon-descarga.png" alt="Descargar" class="img-icon">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6 pb-5">
+
+                        <a href="~/Content/descargas/batolito-comunitario/58-BatolitoComunitario.pdf" target="_blank">
+                            <img src="~/Content/descargas/batolito-comunitario/58-BatolitoComunitario-principal.jpg" alt="Batolito 60" class="img-fluid zoom-img border-coleccionables">
+                        </a>
+                        <p class="fuente-4 mb-0 py-3">
+                            Batolito Comunitario Nº 58<br>
+                            Agosto / Octubre 2022
+                        </p>
+
+                        <div class="d-flex flex-column ">
+
+                            <a href="/Content/descargas/batolito-comunitario/58-BatolitoComunitario.pdf" class="btn-descarga" target="_blank">
+                                Descargar
+                                <span class="btn-descarga-icon btn-descarga-dorado">
+                                    <img src="~/Content/img/icon-descarga.png" alt="Descargar" class="img-icon">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="py-5">
+            <div class="container pt-4">
+                <div class="contenedor-noticias-titulo pb-5">
+                    <h1 class="fuente-3 marron-oscuro">
+                        Libros y otras publicaciones
+                    </h1>
+                    <a href="@Url.Action("libros", "publicaciones", new { accion = "" })" class="fuente-5 button-ver-mas">
+                        Ver todos <span class="icono"><img src="~/Content/img/home/icono.svg" alt="" class="img-fluid"></span>
+                    </a>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="col-md-5 pb-5">
+                        <a href="~/Content/descargas/libros/historia-de-la-quina-y-la-quinina.pdf" target="_blank">
+                            <img src="~/Content/descargas/libros/historia-de-la-quina-y-la-quinina-home.jpg" alt="" class="img-fluid zoom-img border-coleccionables">
+                        </a>
+                        <h5 class="py-3 mb-0">
+                            <strong class="fuente-3">La historia de la quina y la quinina</strong>
+                        </h5>
+                        <p>
+                            Este libro está dedicado a los niños y jóvenes.
+                        </p>
+                        <div class="d-flex flex-column">
+                            <a href="~/Content/descargas/libros/historia-de-la-quina-y-la-quinina.pdf" class="btn-descarga" target="_blank">
+                                Descargar
+                                <span class="btn-descarga-icon btn-descarga-dorado">
+                                    <img src="~/Content/img/icon-descarga.png" alt="Descargar" class="img-icon">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-5 pb-5">
+                        <a href="https://www.poderosa.com.pe/libro-rio-abiseo/landing" target="_blank">
+                            <img src="~/Content/descargas/libros/parque-nacional-del-rio-abiseo-home.jpg" alt="Parque Nacional del Río Abiseo" class="img-fluid zoom-img border-coleccionables">
+                        </a>
+                        <h5 class="py-3 mb-0">
+                            <strong class="fuente-3">Parque Nacional del RÍO ABISEO</strong>
+                        </h5>
+                        <p>
+                            Memoria viva del paisaje cultural andino amazónico.
+
+                        </p>
+                        <div class="d-flex flex-column">
+                            <a href="https://www.poderosa.com.pe/libro-rio-abiseo/landing" class="btn-descarga" target="_blank">
+                                Descargar
+                                <span class="btn-descarga-icon btn-descarga-dorado">
+                                    <img src="~/Content/img/icon-descarga.png" alt="Descargar" class="img-icon">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class=" pt-5" id="ult-coleccionables">
+            <div class="container">
+                <div class="contenedor-noticias-titulo pb-5">
+                    <h1 class="fuente-3 marron-oscuro">
+                        Últimos COLECCIONABLES
+                    </h1>
+                    <a href="@Url.Action("coleccionables", "publicaciones", new { accion = "" })" class="fuente-5 button-ver-mas">
+                        Ver todos <span class="icono"><img src="~/Content/img/home/icono.svg" alt="" class="img-fluid"></span>
+                    </a>
+                </div>
+                <div class="row   ">
+                    <div class="col-lg-3 col-md-6 col-6 pb-5">
+
+                        <a href="~/Content/publicaciones/07-coleccionables/manual-de-prevencion-de-tormentas-electricas.pdf" target="_blank">
+                            <img src="~/Content/publicaciones/07-coleccionables/manual-de-prevencion-de-tormentas-electricas.jpg" alt="" class="img-fluid zoom-img border-coleccionables">
+                        </a>
+                        <p class="fuente-4 mb-0 py-3">
+                            Prevención de tormentas
+                        </p>
+
+                        <div class="d-flex flex-column ">
+
+                            <a href="~/Content/publicaciones/07-coleccionables/manual-de-prevencion-de-tormentas-electricas.pdf" class="btn-descarga" target="_blank">
+                                Descargar
+                                <span class="btn-descarga-icon btn-descarga-dorado">
+                                    <img src="~/Content/img/icon-descarga.png" alt="Descargar" class="img-icon">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-6 pb-5">
+
+                        <a href="i~/Content/publicaciones/07-coleccionables/stickers-104x104.pdf" target="_blank">
+                            <img src="~/Content/publicaciones/07-coleccionables/stickers-104x104.jpg" alt="" class="img-fluid zoom-img border-coleccionables">
+                        </a>
+                        <p class="fuente-4 mb-0 py-3">
+                            Stickers Prevención de tormentas
+                        </p>
+
+                        <div class="d-flex flex-column ">
+
+                            <a href="~/Content/publicaciones/07-coleccionables/stickers-104x104.pdf" class="btn-descarga" target="_blank">
+                                Descargar
+                                <span class="btn-descarga-icon btn-descarga-dorado">
+                                    <img src="~/Content/img/icon-descarga.png" alt="Descargar" class="img-icon">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6 pb-5">
+
+                        <a href="~/Content/publicaciones/07-coleccionables/tips-de-prevencion-104x104.jpg" target="_blank">
+                            <img src="~/Content/publicaciones/07-coleccionables/tips-de-prevencion-104x104.jpg" alt="" class="img-fluid zoom-img border-coleccionables">
+                        </a>
+                        <p class="fuente-4 mb-0 py-3">
+                            Tips de prevención tormentas
+                        </p>
+
+                        <div class="d-flex flex-column ">
+
+                            <a href="~/Content/publicaciones/07-coleccionables/tips-de-prevencion-104x104.jpg" class="btn-descarga" target="_blank">
+                                Descargar
+                                <span class="btn-descarga-icon btn-descarga-dorado">
+                                    <img src="~/Content/img/icon-descarga.png" alt="Descargar" class="img-icon">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6 pb-5">
+
+                        <a href="~/Content/publicaciones/07-coleccionables/coleccionable-08-huaycos.pdf" target="_blank">
+                            <img src="~/Content/publicaciones/07-coleccionables/coleccionable-08-huaycos.jpg" alt="" class="img-fluid zoom-img border-coleccionables">
+                        </a>
+                        <p class="fuente-4 mb-0 py-3">
+                            Coleccionable 08 | Huaycos
+                        </p>
+
+                        <div class="d-flex flex-column ">
+
+                            <a href="~/Content/publicaciones/07-coleccionables/coleccionable-08-huaycos.pdf" class="btn-descarga" target="_blank">
+                                Descargar
+                                <span class="btn-descarga-icon btn-descarga-dorado">
+                                    <img src="~/Content/img/icon-descarga.png" alt="Descargar" class="img-icon">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class=" pt-5" id="ult-coleccionables">
+            <div class="container">
+                <div class="contenedor-noticias-titulo pb-5">
+                    <h1 class="fuente-3 marron-oscuro">
+                        Últimos BOLETINES INFORMATIVOS
+                    </h1>
+                    <a href="@Url.Action("boletines_informativos", "publicaciones", new { accion = "" })" class="fuente-5 button-ver-mas">
+                        Ver todos <span class="icono"><img src="~/Content/img/home/icono.svg" alt="" class="img-fluid"></span>
+                    </a>
+                </div>
+                <div class="row   ">
+                    <div class="col-lg-3 col-md-6 col-6 pb-5">
+
+                        <a href="~/Content/descargas/boletines-informativos/salud-vida-ley.pdf" target="_blank">
+                            <img src="~/Content/descargas/boletines-informativos/seguro-vida-ley.jpg" alt="" class="img-fluid zoom-img border-coleccionables">
+                        </a>
+                        <p class="fuente-4 mb-0 py-3">
+                            Salud y Bienestar: Seguro Vida Ley
+                        </p>
+
+                        <div class="d-flex flex-column ">
+
+                            <a href="~/Content/descargas/boletines-informativos/salud-vida-ley.pdf" class="btn-descarga" target="_blank">
+                                Descargar
+                                <span class="btn-descarga-icon btn-descarga-dorado">
+                                    <img src="~/Content/img/icon-descarga.png" alt="Descargar" class="img-icon">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-6 pb-5">
+
+                        <a href="~/Content/descargas/boletines-informativos/salud-mas-vida.pdf" target="_blank">
+                            <img src="~/Content/descargas/boletines-informativos/seguro-mas-vida.jpg" alt="" class="img-fluid zoom-img border-coleccionables">
+                        </a>
+                        <p class="fuente-4 mb-0 py-3">
+                            Salud y Bienestar: Seguro + Vida
+                        </p>
+
+                        <div class="d-flex flex-column ">
+
+                            <a href="~/Content/descargas/boletines-informativos/salud-mas-vida.pdf" class="btn-descarga" target="_blank">
+                                Descargar
+                                <span class="btn-descarga-icon btn-descarga-dorado">
+                                    <img src="~/Content/img/icon-descarga.png" alt="Descargar" class="img-icon">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6 pb-5">
+
+                        <a href="~/Content/descargas/boletines-informativos/salud-manejo-de-estres.pdf" target="_blank">
+                            <img src="~/Content/descargas/boletines-informativos/manejo-del-estres.jpg" alt="" class="img-fluid zoom-img border-coleccionables">
+                        </a>
+                        <p class="fuente-4 mb-0 py-3">
+                            Salud y Bienestar: Manejo del estrés
+                        </p>
+
+                        <div class="d-flex flex-column ">
+
+                            <a href="~/Content/descargas/boletines-informativos/salud-manejo-de-estres.pdf" class="btn-descarga" target="_blank">
+                                Descargar
+                                <span class="btn-descarga-icon btn-descarga-dorado">
+                                    <img src="~/Content/img/icon-descarga.png" alt="Descargar" class="img-icon">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6 pb-5">
+
+                        <a href="~/Content/descargas/boletines-informativos/salud-eps-pacifico.pdf" target="_blank">
+                            <img src="~/Content/descargas/boletines-informativos/eps-pacifico.jpg" alt="" class="img-fluid zoom-img border-coleccionables">
+                        </a>
+                        <p class="fuente-4 mb-0 py-3">
+                            Salud y Bienestar: EPS Pacífico
+                        </p>
+
+                        <div class="d-flex flex-column ">
+
+                            <a href="~/Content/descargas/boletines-informativos/salud-eps-pacifico.pdf" class="btn-descarga" target="_blank">
+                                Descargar
+                                <span class="btn-descarga-icon btn-descarga-dorado">
+                                    <img src="~/Content/img/icon-descarga.png" alt="Descargar" class="img-icon">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        @Html.Partial("~/Views/Shared/_footer.cshtml")
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+<!-- SCRIPTS -->
+<script type="text/javascript" src="~/Content/js/pagination/jQuery.paginate.js"></script>
+<script>
+    $('.publicaciones_pagination').paginate({
+        items_per_page: 18
+    });
+</script>
+

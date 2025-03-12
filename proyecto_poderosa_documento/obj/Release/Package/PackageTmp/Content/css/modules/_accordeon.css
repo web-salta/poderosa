@@ -1,0 +1,334 @@
+
+/* ################################################## */
+/* AUTOR: Elizabeth */
+/* DESCRIPCIÓN: Acordeon */
+/* PÁGINAS: presentación.php */
+
+
+.container-custom2{
+	max-width: 100%;
+	padding-right: 1.2rem;
+    padding-left: 1.2rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .container-custom2{
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container-custom2{
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container-custom2 {
+        max-width: 960px;
+        width: 100%;
+	    padding-right: 1.2rem;
+	    padding-left: 1.2rem;
+	    margin-right: auto;
+	    margin-left: auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-custom2 {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container-custom2{
+		max-width: 100%;
+	    padding-right: 0;
+	    padding-left: 0;
+	}
+}
+
+#accordion-politicas .card {
+	margin-bottom: 1rem;	
+
+	border: 0; 
+    border-radius: 0;
+}	
+    
+#accordion-politicas .card-header {
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    background-color: #494941;
+    padding: 0 1rem;
+    
+    border-radius: 0;
+}
+
+#accordion-politicas [data-toggle="collapse"]:after {  
+	content: "";
+	float: right;
+	width: 27px;
+	height:16px;
+
+	/*border-width: 0 25px 25px;
+	border-style: solid;
+	border-color: transparent transparent var(--dorado);*/
+	background-image:  url("../../img/web/flecha-lineal-blanca-arriba.svg");
+}
+
+#accordion-politicas [data-toggle="collapse"].collapsed:after {
+	float: right;
+	width: 27px;
+	height:16px;
+
+	/*border-width: 25px 25px 0;
+	border-style: solid;
+	border-color: var(--dorado) transparent transparent;*/
+	background-image:  url("../../img/web/flecha-lineal-blanca-abajo.svg");
+	
+}
+
+#accordion-politicas .card-body {
+    padding: 1.25rem 1.2rem;
+    background-color: #F2E1AA;
+}
+
+#accordion-politicas .accordionToggle[data-toggle="collapse"]{
+	cursor: pointer;
+	font-family: 'HelveticaLTStd-BoldCond';
+}
+
+#accordion-politicas .accordionToggle[data-toggle="collapse"]:hover{
+	color: rgb(var(--naranja));
+}
+
+#accordion-politicas .accordionToggle{
+	padding: 1rem 0;
+}
+
+
+
+
+
+#accordion-2 .card{
+	background-color: transparent;
+	border:0;
+	border-top: 2px solid #fff;
+	border-radius: 0;
+}
+
+#accordion-2 .card:last-child{
+	border-bottom: 2px solid #fff;
+}
+
+#accordion-2 .card-header {
+    background-color: transparent; 
+    border-bottom: none;
+    text-transform: uppercase;
+    padding-left: 0;
+}
+
+#accordion-2 [data-toggle="collapse"]:after {  
+	content: "";
+	float: right;
+	width: 27px;
+	height:16px;
+
+	/*border-width: 0 25px 25px;
+	border-style: solid;
+	border-color: transparent transparent var(--blanco);*/
+	background-image:  url("../../img/web/flecha-lineal-blanca-arriba.svg");
+}
+
+#accordion-2 [data-toggle="collapse"].collapsed:after {
+	float: right;
+	width: 27px;
+	height:16px;
+
+	/*border-width: 25px 25px 0;
+	border-style: solid;
+	border-color: var(--blanco) transparent transparent;*/
+
+	background-image:  url("../../img/web/flecha-lineal-blanca-abajo.svg");
+}
+
+#accordion-2 .card-body {
+   padding: 0.2rem 0;
+   padding-bottom: 1rem;
+   color: var(--blanco);
+}
+
+#accordion-2 ul li, #accordion-2 ul li p{
+    color: var(--blanco);
+}
+
+#accordion-2 .accordionToggle[data-toggle="collapse"]{
+	cursor: pointer;
+	font-family: 'HelveticaLTStd-BoldCond';
+}
+
+
+
+
+
+#accordion-3 .card{
+	background-color: transparent;
+	border:0;
+	border-top: 2px solid var(--gris);
+	border-radius: 0;
+}
+
+#accordion-3 .card:last-child{
+	border-bottom: 2px solid var(--gris);
+}
+
+#accordion-3 .card-header {
+    background-color: transparent; 
+    border-bottom: none;
+    text-transform: uppercase;
+    padding-left: 0;
+}
+
+#accordion-3 [data-toggle="collapse"]:after {  
+	content: "";
+	float: right;
+	width: 27px;
+	height:16px;
+
+	/*border-width: 0 25px 25px;
+	border-style: solid;*/
+	/*border-color: transparent transparent var(--dorado);*/
+	background-image:  url("../../img/web/flecha-lineal-dorada-arriba.svg");
+}
+
+#accordion-3 [data-toggle="collapse"].collapsed:after {
+	float: right;
+	width: 27px;
+	height:16px;
+
+	/*border-width: 25px 25px 0;
+	border-style: solid;
+	border-color: var(--dorado) transparent transparent;*/
+
+	background-image:  url("../../img/web/flecha-lineal-dorada-abajo.svg");
+}
+
+#accordion-3 .card-body {
+   padding: 0.2rem 0;
+   padding-bottom: 1rem;
+   color: var(--gris);
+}
+
+#accordion-3 ul li{
+    color: var(--dorado);
+}
+
+#accordion-3 ul li p{
+    color: var(--gris);
+}
+
+#accordion-3 .accordionToggle[data-toggle="collapse"]{
+	cursor: pointer;
+	font-family: 'HelveticaLTStd-BoldCond';
+}
+
+
+
+/* ######################ACCORDION NUEVA############################ */
+
+#accordion-4 {
+   
+    --bs-accordion-border-color: transparent !important;
+    --bs-accordion-border-color: var(--bs-border-color);
+};
+
+#accordion-4  .accordion-button{
+    background-color: grey;
+    font-family: var(--fuente-gothan);
+    border-radius: 0 !important;
+}
+
+#accordion-4 .accordion-button {
+    padding-left:3rem; 
+    padding-right: 8rem;
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    font-size: 1.2rem;
+    color:#474c53;
+    padding-right: 15%;
+}
+#accordion-4 .accordion-item:first-of-type>.accordion-header .accordion-button {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#accordion-4  .accordion-item:last-of-type>.accordion-header .accordion-button.collapsed {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#accordion-4 .accordion-item {
+    border: transparent !important; 
+}
+
+#accordion-4 .accordion-header{
+	font-family: var(--fuente-gothan)  !important;	
+
+}
+
+#accordion-4 .accordion__numero{
+	font-family: var(--fuente-gothan);
+	font-size: 4.5rem;
+	text-align: center;
+	color: var(--marron-oscuro) !important;
+	margin-top: -1rem;
+}
+
+#accordion-4 .accordion-body{
+	padding: 2rem;
+	font-family: var(--fuente-Book);
+	color:#453f3f;
+}
+
+#accordion-4 .accordion-button::after{
+	background-image:  url("../../img/flecha-no-desplegada.png");
+}   
+
+#accordion-4 .accordion-button:not(.collapsed)::after {
+    transform: rotate(-90deg);
+}
+
+
+	   
+/* ################################################## */
+
+
+/************************************/
+/* MEDIA QUERYS */
+/************************************/
+ /*   @media(max-width: 1320px){
+    	#accordion-4 .accordion-button{
+	      padding-right: 15%;
+	    }
+
+	    #accordion-4 .accordion__numero {
+	        font-size: 4rem;
+	   }    
+   }
+
+   @media(max-width: 1140px){
+	   	#accordion-4 .accordion__numero {
+	        font-size: 3.2rem;
+	   }	   
+   }
+
+
+   @media(max-width: 720px){
+   }
+
+   @media(max-width: 540px){   
+   }
+  */

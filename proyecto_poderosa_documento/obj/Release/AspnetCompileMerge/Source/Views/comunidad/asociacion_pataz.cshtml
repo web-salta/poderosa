@@ -1,0 +1,66 @@
+﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+  <!-- METAS -->
+    <title>Asociación Pataz | PODEROSA</title>
+    <!-- Basic HTML Meta Tags -->
+    <meta name='title' content='Asociación Pataz | PODEROSA' />
+    <meta name='description' content='Inicia actividades el 20 de agosto del 2006 con el objetivo de propiciar y fomentar el desarrollo sostenible integral de poblaciones y comunidades campesinas del departamento La Libertad y demás departamentos del Perú, mediante la participación selectiva en programas, proyectos y actividades sostenibles.' />
+    <meta name='url' content='http://www.poderosa.com.pe/comunidad/asociacion-pataz' />
+    <meta name='keywords' content='actividades, desarrollo sostenible integral, poblaciones, comunidades campesinas, La Libertad, departamentos del Perú, participación selectiva, programas, proyectos, actividades sostenibles, poderosa, asociacion pataz' />
+    <!-- OpenGraph Meta Tags -->
+    <meta property='og:type' content='website' />
+    <meta property='og:title' content='Asociación Pataz | PODEROSA' />
+    <meta property='og:description' content='Inicia actividades el 20 de agosto del 2006 con el objetivo de propiciar y fomentar el desarrollo sostenible integral de poblaciones y comunidades campesinas del departamento La Libertad y demás departamentos del Perú, mediante la participación selectiva en programas, proyectos y actividades sostenibles.' />
+    <meta property='og:url' content='http://www.poderosa.com.pe/comunidad/asociacion-pataz' />
+    <meta property='og:image' content='http://www.poderosa.com.pe/Content/img/comunidad/asociacion-pataz/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+    <main>
+
+        <section>
+            <div class="banner-interno">
+                <img class="banner-interno__img" src="~/Content/img/comunidad/asociacion-pataz/banner-pataz.jpg" alt="banner">
+
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">ASOCIACIÓN PATAZ</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-seccion    sec-img-texto">
+            <div class="container">
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">COMUNIDAD</li>
+                        <li class="breadcrumb-item active">ASOCIACIÓN PATAZ</li>
+                    </ol>
+                </nav>
+
+                <div class="row align-items-center">
+                    <div class="col-sm-4 order-2 order-sm-1 mt-4 mt-sm-0">
+                        <div class="owl-carousel    js-owl-carousel-fotos    owl-carousel--no-nav">
+                            <div class="text-center">
+                                <img class="sec-img-texto__img" src="~/Content/img/comunidad/asociacion-pataz/slider/01.png" alt="imagen">
+                            </div>
+
+                            <div class="text-center">
+                                <img class="sec-img-texto__img" src="~/Content/img/comunidad/asociacion-pataz/slider/02.png" alt="imagen">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-8 order-1 order-sm-2">
+                        <p>Inicia actividades el 20 de agosto del 2006 con el objetivo de propiciar y fomentar el desarrollo sostenible integral de poblaciones y comunidades campesinas del departamento La Libertad y demás departamentos del Perú, mediante la participación selectiva en programas, proyectos y actividades sostenibles.</p>
+                        <p>Visita su web para conocer las actividades y proyectos que Poderosa financia a través de <a class="a--link" target="_blank" href="http://www.asociacionpataz.org.pe/">Asociación Pataz.</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

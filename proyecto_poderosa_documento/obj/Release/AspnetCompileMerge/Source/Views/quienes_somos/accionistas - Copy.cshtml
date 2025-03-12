@@ -1,0 +1,273 @@
+﻿<!---model List<Model.documento>-->
+@model IEnumerable<Model.ViewDocumento>
+@{
+    var myQuery =
+            from item in Model
+            group item by item.valor_ano into g
+            orderby g.Key descending
+            select new
+            {
+                ano = g.Key,
+                        //g.Key,
+                        // valor = g.Key.valor_ano,
+                        trimestres =
+                    from o in g
+                    group o by o.trimestre into d
+                    orderby d.Key ascending
+                    select new
+                    {
+                        trimestre = d.Key,
+                        Values = from p in d
+                                 group p by p.valor_categoria into m
+                                 orderby m.Key ascending
+                                 select new
+                                 {
+                                     categoria = m.Key,
+                                     Values = m
+                                 }
+                    }
+            };
+}
+    @Html.Partial("~/Views/Shared/_head.cshtml")
+
+    <!------------------------------------TABS---------------------------------------------->
+    <link href="~/Content/tabs/css/easy-responsive-tabs.css" rel="stylesheet" />
+    <!------------------------------------FN TABS------------------------------------------->
+     <!-- METAS -->
+    <title>Accionistas | PODEROSA</title>
+    <!-- Basic HTML Meta Tags -->
+    <meta name='title' content='Accionistas | PODEROSA' />
+    <meta name='description' content='Desde el 27 de enero del 2005, Poderosa tiene inscritas las acciones representativas de su capital social en el Registro Público del Mercado de Valores y la Bolsa de Valores de Lima.' />
+    <meta name='url' content='http://www.poderosa.com.pe/quienes-somos/accionistas' />
+    <meta name='keywords' content='accionistas, estructura accionarial, reporte Anual de sostenibilidad, estatuto social, reporte cumplimiento del código de buen gobierno corporativo, Certificado OHSAS 18001 2007, Certificado ISO 9001 2015, Certificado ISO 14001 2015, Distintivo Empresa Socialmente Responsable, documentación, estados financieros, poderosa' />
+    <!-- OpenGraph Meta Tags -->
+    <meta property='og:type' content='website' />
+    <meta property='og:title' content='Accionistas | PODEROSA' />
+    <meta property='og:description' content='Desde el 27 de enero del 2005, Poderosa tiene inscritas las acciones representativas de su capital social en el Registro Público del Mercado de Valores y la Bolsa de Valores de Lima.' />
+    <meta property='og:url' content='http://www.poderosa.com.pe/quienes-somos/accionistas' />
+    <meta property='og:image' content='http://www.poderosa.com.pe/Content/img/quienes-somos/accionistas/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+    <main>
+
+        <section>
+            <div class="
+                 ">
+                <img class="banner-interno__img" src="~/Content/img/quienes-somos/accionistas/banner-accionistas.jpg" alt="banner">
+
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">ACCIONISTAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-seccion">
+            <div class="container">
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">QUIÉNES SOMOS</li>
+                        <li class="breadcrumb-item active">ACCIONISTAS</li>
+                    </ol>
+                </nav>
+
+                <h2 class="dorado">ESTRUCTURA ACCIONARIAL</h2>
+
+                <p>Desde el 27 de enero del 2005, Poderosa tiene inscritas las acciones representativas de su capital social en el Registro Público del Mercado de Valores y la Bolsa de Valores de Lima. </p>
+                <p>Para mayor información, revise el capítulo 1 de nuestro <a href="~/Content/descargas/memorias/2017.pdf" target="_blank">Reporte Anual de Sostenibilidad.</a> </p>
+            </div>
+        </section>
+
+        <section class="my-seccion  mb-4">
+            <div class="fondo-imagen-detalle-imagen">
+                <img class="object-fit-cover position__3" src="~/Content/img/quienes-somos/accionistas/bg-estatuto.jpg" alt="imagen" >
+                <div class="fondo-imagen-detalle-imagen__velo"></div>
+                <div class="container fondo-imagen-detalle-imagen__detalle d-flex align-items-center justify-content-end">
+                    <a target="_blank" href="~/Content/descargas/accionistas/estatuto-social-poderosa.pdf">
+                        <div class="fondo-imagen-detalle-image__detalle-container fondo-imagen-detalle-image__detalle-container--alto">
+                            <img src="~/Content/img/web/circulo-dorado.svg" class="img-fluid">
+
+                            <div class="fondo-imagen-detalle-imagen__contenido">
+                                <div class="fondo-imagen-detalle-imagen__texto2">
+                                    CONOCE A<br> DETALLE NUESTRO<br> <div>ESTATUTO</div>
+                                </div>
+                                <span class="boton-icono boton-icono--marron mt-3">
+                                    <img class="boton-icono__img svg" src="~/Content/img/web/ico-flecha-descargar.svg" alt="ico">
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion  mt-0">
+            <div class="fondo-imagen-detalle-imagen">
+                <img class="object-fit-cover position__4" src="~/Content/img/quienes-somos/accionistas/bg-reporte.jpg" alt="imagen" >
+                <div class="fondo-imagen-detalle-imagen__velo"></div>
+                <div class="container fondo-imagen-detalle-imagen__detalle d-flex align-items-center justify-content-left">
+                    <a target="_blank" href="~/Content/descargas/accionistas/reporte-cumplimiento-del-codigo-de-buen-gobierno-corporativo-poderosa-2017.pdf">
+                        <div class="fondo-imagen-detalle-image__detalle-container fondo-imagen-detalle-image__detalle-container--alto">
+                            <img src="~/Content/img/web/circulo-dorado.svg" class="img-fluid" />
+
+                            <div class="fondo-imagen-detalle-imagen__contenido">
+                                <div class="fondo-imagen-detalle-imagen__texto3">
+                                    REPORTE <br>CUMPLIMIENTO DEL <br>CÓDIGO DE BUEN <br>GOB. CORPORATIVO
+                                </div>
+                                <span class="boton-icono boton-icono--blanco mt-3">
+                                    <img class="boton-icono__img svg" src="~/Content/img/web/ico-flecha-descargar.svg" alt="ico">
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-seccion mt-0 bg-gris-claro">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-md-3">
+                        <h3 class="h6">Certificado OHSAS <br>18001 2007</h3>
+                        <img class="img-fluid w-100" src="~/Content/img/quienes-somos/accionistas/certificado-1.jpg" />
+                        <div class="text-right mt-3">
+                            <a class="boton-icono boton-icono--dorado" href="~/Content/descargas/accionistas/certificado-OHSAS-18001_2007.pdf" target="_blank">
+                                <span class="boton-icono__txt">Descargar</span>
+                                <img class="boton-icono__img svg" src="~/Content/img/web/ico-flecha-descargar.svg" alt="ico">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <h3 class="h6">Certificado ISO <br>9001 2015</h3>
+                        <img class="img-fluid w-100" src="~/Content/img/quienes-somos/accionistas/certificado-2.jpg" />
+                        <div class="text-right mt-3">
+                            <a class="boton-icono boton-icono--dorado" href="~/Content/descargas/accionistas/certificado-ISO-9001_2015.pdf" target="_blank">
+                                <span class="boton-icono__txt">Descargar</span>
+                                <img class="boton-icono__img svg" src="~/Content/img/web/ico-flecha-descargar.svg" alt="ico">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <h3 class="h6">Certificado ISO <br>14001 2015</h3>
+                        <img class="img-fluid w-100" src="~/Content/img/quienes-somos/accionistas/certificado-3.jpg" />
+                        <div class="text-right mt-3">
+                            <a class="boton-icono boton-icono--dorado" href="~/Content/descargas/accionistas/certificado-ISO-14001_2015.pdf" target="_blank">
+                                <span class="boton-icono__txt">Descargar</span>
+                                <img class="boton-icono__img svg" src="~/Content/img/web/ico-flecha-descargar.svg" alt="ico">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <h3 class="h6">Distintivo Empresa <br>Socialmente Responsable</h3>
+                        <img class="img-fluid w-100" src="~/Content/img/quienes-somos/accionistas/certificado-4.jpg" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-seccion    bg-dorado ">
+            <div class="container">
+                <h2 class="blanco">DOCUMENTACIÓN</h2>
+
+                <div id="parentHorizontalTab2">
+                    <ul class="resp-tabs-list hor_1">
+                        @{ var j = 0;}
+                        @foreach (var item in myQuery)
+                        {
+                            <li>@item.ano</li>
+                            j = j + 1;
+                        }
+                    </ul>
+
+                    <input type="hidden" id="cantidad_ano" value="@j" />
+                    <div class="resp-tabs-container hor_1">
+                        @{ var i = 1;}
+                        @foreach (var item in myQuery)
+                        {
+                            <div>
+                                <!--vertical Tabs-->
+                                <div id="ChildVerticalTab2_@i">
+                                    <ul class="resp-tabs-list ver_@i item">
+                                        @foreach (var trimestre in item.trimestres)
+                                        {
+                                            <li>
+                                                @switch (trimestre.trimestre)
+                                                {
+                                                    case 1:
+                                                        <text>Trimestre 1</text>
+                                                        break;
+                                                    case 2:
+                                                        <text>Trimestre 2</text>
+                                                        break;
+                                                    case 3:
+                                                        <text>Trimestre 3</text>
+                                                        break;
+                                                    case 4:
+                                                        <text>Trimestre 4</text>
+                                                        break;
+                                                    case 5:
+                                                        <text>Otros</text>
+                                                        break;
+                                                    default:
+                                                        <text>Por favor comuniquese con el adminitrador</text>
+                                                        break;
+                                                }
+                                            </li>
+                                        }
+                                    </ul>
+                                    <div class="resp-tabs-container ver_@i">
+                                        @foreach (var trimestre in item.trimestres)
+                                        {
+                                            <div>
+                                                @foreach (var det in trimestre.Values)
+                                                {   
+                                                    <div class="mb-4">                                               
+                                                        <h3 class="marron mb-2">@det.categoria </h3>
+                                                        @foreach (var detcategoria in det.Values)
+                                                        {
+                                                        <div class="media align-items-end">
+                                                            <div class="media-body">
+                                                                <p class="fuente-2">
+                                                                    <strong>@detcategoria.titulo_archivo / </strong>
+                                                                    <span class="d-block d-lg-inline"> @detcategoria.descripcion_archivo / </span>
+                                                                    @detcategoria.fecha
+                                                                </p>
+                                                            </div>
+                                                            <a class="boton-icono boton-icono--marron" href="../Documentos/@detcategoria.nombre_archivo" target="_blank">
+                                                                <img class="boton-icono__img svg" src="~/Content/img/web/ico-flecha-descargar.svg" alt="ico">
+                                                            </a>
+                                                        </div>
+                                                        <hr>
+                                                        }
+                                                    </div>
+                                                  <!--  <br />-->
+                                                }
+                                            </div>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                            i = i + 1;
+                        }
+                        <!----->
+                    </div>
+                </div>
+            </div>
+        </section>
+                
+    </main>
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+
+<!------------------------------------TABS---------------------------------------------->
+<script src="~/Content/tabs/js/easyResponsiveTabs.js"></script>
+<script src="~/Content/tabs/js/main.js"></script>
+<!------------------------------------FN TABS---------------------------------------------->
+</html>
+
+

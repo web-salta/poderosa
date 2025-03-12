@@ -1,0 +1,57 @@
+:root{
+	/* FUENTES */
+	--fuente-1: 'Calibri';
+	--fuente-1-italic: 'Calibri-Italic';
+	--fuente-1-bold: 'Calibri-Bold';
+	--fuente-1-bold-italic: 'Calibri-BoldItalic';
+
+	--fuente-2: 'HelveticaLTStd-Cond';
+	--fuente-2-bold: 'HelveticaLTStd-BoldCond';
+
+	--fuente-3: 'Gotham-Ultra';
+
+	/* COLORES SÓLIDOS */
+	--transparente: transparent;
+	--blanco: #fff;
+	--negro: #000;
+	--gris: #777;
+	--gris-claro: #dededc;
+	--gris-clarito:#dededc;
+	--gris-oscuro-1: #c9c9c7;
+	--gris-oscuro-2: #9a9a95;
+
+	--dorado: #d8a400;
+	--dorado-oscuro: #a07302;
+	--marron: #494941;
+	--marron-oscuro: #3d3d35;
+    --naranjado: #e44212;
+    --durazno:#e6be82ad;
+
+	
+
+	/* COLORES TRANSPARENTES */
+	--blanco-90: rgba(255,255,255,.9);
+	--blanco-40: rgba(255,255,255,.4);
+	--negro-30: rgba(0,0,0,.3);
+	--gris-claro-50: rgba(222,222,222,.5);
+	--marron-20: rgba(49,49,41,.2);
+	--marron-80: rgba(49,49,41,.8);
+}
+
+
+/*
+:root{
+	--RGB-blanco: 255,255,255;
+	--RGB-negro: 0,0,0;
+
+	--RGB-azul: 0,51,160;
+	--RGB-amarillo: 224,224,33;
+
+	--RGB-gris80: 51,51,51;
+	--RGB-gris60: 102,102,102;
+	--RGB-gris40: 153,153,153;
+	--RGB-gris20: 204,204,204;
+	--RGB-gris10: 229,229,229;
+	--RGB-gris5: 242,242,242;
+}
+*/

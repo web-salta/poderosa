@@ -1,0 +1,82 @@
+﻿
+@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title>Cierre contable 2020 | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='Cierre contable 2020 | PODEROSA' />
+<meta name='description' content='Cierre contable 2020' />
+<meta name='url' content='http://www.poderosa.com.pe/noticias/cierre_contable_2020_poderosa' />
+<meta name='keywords' content='Poderosa, Cierre contable 2020' />
+<!-- OpenGraph Meta Tags -->
+<meta property='og:type' content='website' />
+<meta property='og:title' content='Cierre contable 2020 | PODEROSA' />
+<meta property='og:description' content='Cierre contable 2020' />
+<meta property='og:url' content='http://www.poderosa.com.pe/noticias/cierre_contable_2020_poderosa' />
+<meta property='og:image' content='http://www.poderosa.com.pe/Content/noticias/cierre-contable-2020-poderosa/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+
+                <div class="h6 mayuscula mt-4">30 de Noviembre de 2020</div>
+                <h1 class="h3 dorado">Cierre contable 2020 - Poderosa</h1>
+
+                @Html.Partial("~/Views/Shared/_redes.cshtml")
+                <br />
+                <p>Por encargo de la Gerencia de Administración, Finanzas y Comercialización, emitimos los siguientes comunicados para nuestros proveedores y contratistas:</p>
+                <div class="row justify-content-center mt-4 mb-2">
+                    
+                    <div class="col-lg-6 text-right">
+                        <img class="img-fluid w-100" src="~/Content/noticias/cierre-contable-2020-poderosa/cierre-contable-2020-.jpg" alt="imagen">
+
+                        <a class="boton-icono boton-icono--dorado" href="~/Content/noticias/cierre-contable-2020-poderosa/cierre-contable-2020.pdf" target="_blank">
+                            <span class="boton-icono__txt">Descargar</span>
+                            <img class="boton-icono__img svg" src="~/Content/img/web/ico-flecha-descargar.svg" alt="ico">
+                        </a>
+                    </div>
+
+                    <div class="col-lg-6 text-right">
+                        <img class="img-fluid w-100" src="~/Content/noticias/cierre-contable-2020-poderosa/cierre-contable-mina-2020-.jpg" alt="imagen">
+
+                        <a class="boton-icono boton-icono--dorado" href="~/Content/noticias/cierre-contable-2020-poderosa/cierre-contable-mina-2020.pdf" target="_blank">
+                            <span class="boton-icono__txt">Descargar</span>
+                            <img class="boton-icono__img svg" src="~/Content/img/web/ico-flecha-descargar.svg" alt="ico">
+                        </a>
+                    </div>
+                </div>
+
+                <br />
+
+
+                <div class="row mt-4">
+                    <div class="col-sm-auto">
+                        @Html.Partial("~/Views/Shared/_redes.cshtml")
+                    </div>
+
+                    <div class="col-sm-auto ml-sm-auto mt-3 mt-sm-0">
+                        <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

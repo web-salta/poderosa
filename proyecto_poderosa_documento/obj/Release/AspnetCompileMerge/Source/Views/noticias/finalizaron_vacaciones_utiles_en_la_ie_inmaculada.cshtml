@@ -1,0 +1,78 @@
+﻿
+@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title>Finalizaron vacaciones útiles en la I.E Inmaculada Concepción De Pataz | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='Finalizaron vacaciones útiles en la I.E Inmaculada Concepción De Pataz | PODEROSA' />
+<meta name='description' content='Estudiantes del nivel secundario asistieron durante un mes al programa vacaciones útiles.' />
+<meta name='url' content='http://www.poderosa.com.pe/noticias/finalizaron-vacaciones-utiles-en-la-ie-inmaculada' />
+<meta name='keywords' content='vacaciones útiles, PODEROSA, Inmaculada Concepción De Pataz' />
+<!-- OpenGraph Meta Tags -->
+<meta property='og:type' content='website' />
+<meta property='og:title' content='Finalizaron vacaciones útiles en la I.E Inmaculada Concepción De Pataz | PODEROSA' />
+<meta property='og:description' content='Estudiantes del nivel secundario asistieron durante un mes al programa vacaciones útiles.' />
+<meta property='og:url' content='http://www.poderosa.com.pe/noticias/finalizaron-vacaciones-utiles-en-la-ie-inmaculada' />
+<meta property='og:image' content='http://www.poderosa.com.pe/Content/noticias/finalizaron-vacaciones-utiles-en-la-ie-inmaculada/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+                <img class="object-fit-cover" src="~/Content/noticias/finalizaron-vacaciones-utiles-en-la-ie-inmaculada/banner.jpg" alt="imagen">
+
+                <div class="h6 mayuscula mt-4">11 de Febrero de 2020</div>
+                <h1 class="h3 dorado">Finalizaron vacaciones útiles en la I.E Inmaculada Concepción De Pataz</h1>
+
+                @Html.Partial("~/Views/Shared/_redes.cshtml")
+                <br />
+
+                
+                <p><strong>Santa María, febrero 11, 2020.</strong> 56 estudiantes del nivel secundario asistieron durante un mes al programa vacaciones útiles. Los encargados de este programa fueron: Jorge Carrión, Carlos Moreno, Lorena Osorno y Angely Vega miembros de la ONG América Solidaria.</p>
+
+                <p>Los estudiantes presentaron diferentes proyectos de mejora para el distrito de Pataz, los cuales, fueron evaluados por el jurado calificador conformado por: Juan Carlos La Rosa, alcalde de Pataz; María Ganoza, coordinadora de monitoreo de Asociación Pataz y Maribel Torres Vera Directora de I.E Inmaculada Concepción</p>
+
+                <p>En la ceremonia de clausura el alcalde de Pataz, Juan Carlos La Rosa; felicitó a los responsables de este programa: “La esperanza y el futuro son los niños y los jóvenes que son los semilleros de las futuras generaciones", además mencionó que seguirá apoyando e invirtiendo en la educación de Pataz."</p>
+
+                <p>Maribel Torres, Directora de I.E Inmaculada Concepción; dijo agradezco a Poderosa y Asociación Pataz por seguir apostando en la educación de los jóvenes".</p>
+
+                <p>El proyecto ganador fue"Family Fun Fest“, el cual está enfocado en  la unión familiar y el control excesivo de alcohol. Los estudiantes trabajarán juntos con la municipalidad y el alcalde de Pataz para poder ejecutar este proyecto.</p>
+
+                <p>John Bocanegra, miembro de Family Fun Fest;  mencionó que gracias a este programa vacacional aprendió a trabajar en equipo y a desenvolverse mejor.</p>
+
+                <p>
+                    Cabe mencionar que la ONG América Solidaria otorgó un reconocimiento a Cristian Agüero, coordinador de proyectos sociales; de Asociación Pataz. Para finalizar la ceremonia se entregó un certificado a los estudiantes que participaron de estas vacaciones útiles.
+                </p>
+
+
+                    <div class="row">
+                        <div class="col-sm-auto">
+                            @Html.Partial("~/Views/Shared/_redes.cshtml")
+                        </div>
+
+                        <div class="col-sm-auto ml-sm-auto mt-3 mt-sm-0">
+                            <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                        </div>
+                    </div>
+
+</div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>
+

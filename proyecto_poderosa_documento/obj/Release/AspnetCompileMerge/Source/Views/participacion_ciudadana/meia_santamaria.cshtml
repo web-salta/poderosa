@@ -1,0 +1,116 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+    <!-- METAS -->
+    <title>Participación Ciudadana | PODEROSA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Basic HTML Meta Tags -->
+    <meta name='title' content='Participación Ciudadana | PODEROSA' />
+    <meta name='description' content='' />
+    <meta name='url' content='https://www.poderosa.com.pe/participacion_ciudadana/meia_santamaria/index' />
+    <meta name='keywords' content='participación, ciudadana, público, material, informativo' />
+    <!-- OpenGraph Meta Tags -->
+    <meta property='og:type' content='website' />
+    <meta property='og:title' content='Participación Ciudadana | PODEROSA' />
+    <meta property='og:description' content='Es un proceso público, dinámico y flexible en el cual, a través de la ejecución de diversos mecanismos se debe informar de manera oportuna y transparente a la población respecto a las actividades del proyecto minero.' />
+    <meta property='og:url' content='https://www.poderosa.com.pe/participacion_ciudadana/meia_santamaria/index' />
+    <meta property='og:image' content='https://www.poderosa.com.pe/Content/participacion_ciudadana/img/banner-pc.jpg' />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="~/Content/img/web/favicon.ico">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/Content/participacion_ciudadana/css/bootstrap.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="~/Content/participacion_ciudadana/css/main.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-61351657-1"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  
+    @Html.Partial("~/Views/Shared/_analyticstracking.cshtml")
+</head>
+<body>
+    <header class="js-header  js-header-fixed-top ">
+        <nav class="navbar navbar-expand-lg    nav-pri    js-nav-pri">
+            <div class="navbar-logos ">
+                <a href="#section-1">
+                    <img class="img-fluid" width="180" src="~/Content/participacion_ciudadana/img/logo-poderosa-chico.jpg" alt="logo">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="section-1">
+        <div class="banner-interno__img">
+            <img src="~/Content/participacion_ciudadana/img/banner-pc.jpg" alt="" class="img-fluid">
+        </div>
+
+        <div class="banner-interno__img__movil">
+            <img src="~/Content/participacion_ciudadana/img/banner-movil.jpg" alt="" class="img-fluid">
+        </div>
+    </section>
+
+    <section class="py-seccion text-center" id="section-5">
+        <div class="container">
+            <div class="linea_dorada"></div>
+            <h1 class="titulo ">MATERIAL INFORMATIVO</h1>
+
+            <p>Descargue aquí y comparta el material informativo de la SEGUNDA MEIA-I Santa María – Etapa Antes de la Elaboración.</p>
+
+            <p>  Registra tus Consulta y Aportes sobre la SEGUNDA MEIA-I Santa María – Etapa Antes de la Elaboración</p>
+
+            <div class="text-center mt-4">
+                <a class="boton boton--verde  boton--verde mb-2" data-toggle="modal" data-target=".bd-example-modal-md" target="_blank" href="#">DESCARGAR TRÍPTICO</a>
+                <a class="boton boton--verde--oscuro" target="_blank" href="https://forms.office.com/r/FZyZAx7Un4">FORMULARIO DE CONSULTAS</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-seccion text-center  bg-marron text-white">
+        <div class="container">
+            <p>Compañía Minera Poderosa - Todos los derechos reservados 2023 <br>Volver a <a href="https://www.poderosa.com.pe/" target="_blank">www.poderosa.com.pe</a></p>
+        </div>
+    </footer>
+
+    <div class="modal fade bd-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title h4 mb-0" id="mySmallModalLabel">DESCARGA AQUÍ EL TRÍPTICO INFORMATIVO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body mx-auto">                   
+                    <div id="html_element"></div><br>
+                        <div class="text-center">
+
+                            <button id="click" type="button" name="count_click" class="boton boton--verde--oscuro">
+                                Descargar
+                            </button>
+                            <p>Veces que se ha descargado este material: <span id="count_click"></span></p>
+                        </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- bootstrap - INICIO -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="~/Content/participacion_ciudadana/js/jquery.min.js"></script>
+    <script src="~/Content/participacion_ciudadana/js/bootstrap.min.js"></script>
+    <script src="~/Content/participacion_ciudadana/js/polyfills/css-vars-ponyfill.min.js"></script>
+    <script>
+        cssVars({});
+    </script>
+    <!-- css-vars-ponyfill - FIN -->
+
+    <script src="~/Content/participacion_ciudadana/js/main.js"></script>
+    <!-- <script src="~/Content/participacion_ciudadana/js/jquery.redirect.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>-->
+</body>
+</html>

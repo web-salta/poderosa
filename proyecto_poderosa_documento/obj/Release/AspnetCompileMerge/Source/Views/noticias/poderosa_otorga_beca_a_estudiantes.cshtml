@@ -1,0 +1,83 @@
+﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+     <!-- METAS -->
+    <title>PODEROSA otorga beca a estudiantes | PODEROSA</title>
+    <!-- Basic HTML Meta Tags -->
+    <meta name='title' content='PODEROSA otorga beca a estudiantes | PODEROSA' />
+    <meta name='description' content='Con la finalidad de contribuir al desarrollo y excelencia académica de las nuevas generaciones, <strong>PODEROSA</strong> estableció mediante un convenio entre PODEROSA y el Patronato de la Universidad Nacional de Ingeniería, la beca "Jesús Arias Dávila", en homenaje a la memoria de nuestro fundador, esto para contribuir a solventar los gastos de los últimos ciclos de la carrera de estudiantes universitarios.' />
+    <meta name='url' content='http://www.poderosa.com.pe/noticias/poderosa-otorga-beca-a-estudiantes/' />
+    <meta name='keywords' content='Poderosa, beca a estudiantes, desarrollo académica, excelencia académica, convenio con PODEROSA, convenio con Patronato de la Universidad Nacional de Ingeniería' />
+    <!-- OpenGraph Meta Tags -->
+    <meta property='og:type' content='website' />
+    <meta property='og:title' content='PODEROSA otorga beca a estudiantes | PODEROSA' />
+    <meta property='og:description' content='Con la finalidad de contribuir al desarrollo y excelencia académica de las nuevas generaciones, <strong>PODEROSA</strong> estableció mediante un convenio entre PODEROSA y el Patronato de la Universidad Nacional de Ingeniería, la beca "Jesús Arias Dávila", en homenaje a la memoria de nuestro fundador, esto para contribuir a solventar los gastos de los últimos ciclos de la carrera de estudiantes universitarios.' />
+    <meta property='og:url' content='http://www.poderosa.com.pe/noticias/poderosa-otorga-beca-a-estudiantes/' />
+    <meta property='og:image' content='http://www.poderosa.com.pe/Content/noticias/poderosa-otorga-beca-a-estudiantes/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+                <img class="object-fit-cover" src="~/Content/noticias/poderosa-otorga-beca-a-estudiantes/banner.jpg" alt="imagen">
+
+                <div class="h6 mayuscula mt-4">25 de Abril de 2018</div>
+                <h1 class="h3 dorado">PODEROSA otorga beca a estudiantes</h1>
+
+                @Html.Partial("~/Views/Shared/_redes.cshtml")
+                <br />
+
+                <p>Con la finalidad de contribuir al desarrollo y excelencia académica de las nuevas generaciones, <strong>PODEROSA</strong> estableció mediante un convenio entre PODEROSA y el Patronato de la Universidad Nacional de Ingeniería, la beca "Jesús Arias Dávila", en homenaje a la memoria de nuestro fundador, esto para contribuir a solventar los gastos de los últimos ciclos de la carrera de estudiantes universitarios.</p>
+
+                <p>La beca Jesús Arias Dávila se encuentra dirigido a alumnos de pre-grado de la facultad de Ingeniería Geológica, Minera y Metalúrgica, seleccionados por Pro-UNI, a fin de solventar sus estudios durante los dos últimos años o cuatro últimos semestres de su carrera.</p>
+
+                <p>La beca integral consiste en asignar el equivalente a S/20,000 anuales, otorgados a través de ProUNI, por concepto de asignación mensual durante el año académico (abril – diciembre), para cubrir las necesidades básicas de alimentación, transporte, vestido, y por concepto de cursos de inglés intensivo, seminarios o congresos de especialización de la carrera.</p>
+
+                <p>Adicionalmente, otro de los beneficios otorgados es la realización de prácticas pre profesionales remuneradas en PODEROSA durante la vigencia de la beca.</p>
+
+                <p>Este programa de becas inició el 25 de marzo del año 2013 y hasta la fecha se ha otorgado: 14 becas integrales y de manera excepcional 5 medias beca. Adicionalmente se renovará la beca a 04 becarios del año 2017 que aún no terminan la carrera y que han mantenido su alto promedio ponderado.</p>
+
+                <div class="row justify-content-center my-4">
+                    <div class="col-lg-8">
+                        <div class="owl-carousel    js-owl-carousel-fotos   owl-carousel--no-nav    dots-gris">
+                            <div class="">
+                                <img class="img-fluid w-100" src="~/Content/noticias/poderosa-otorga-beca-a-estudiantes/01.jpg" alt="imagen">
+                            </div>
+
+                            <div class="">
+                                <img class="img-fluid w-100" src="~/Content/noticias/poderosa-otorga-beca-a-estudiantes/02.jpg" alt="imagen">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-sm-auto">
+                        @Html.Partial("~/Views/Shared/_redes.cshtml")
+                    </div>
+
+                    <div class="col-sm-auto ml-sm-auto mt-3 mt-sm-0">
+                        <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

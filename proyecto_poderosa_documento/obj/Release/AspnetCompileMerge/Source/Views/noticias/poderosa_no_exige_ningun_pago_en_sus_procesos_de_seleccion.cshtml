@@ -1,0 +1,86 @@
+﻿
+
+@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title>PODEROSA no exige ningún pago en sus procesos de selección | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='PODEROSA no exige ningún pago en sus procesos de selección | PODEROSA' />
+<meta name='description' content='PODEROSA informa a la opinión pública que personas inescrupulosas vienen realizando
+diferentes acciones para engañar a la ciudadanía con falsas promesas de trabajo.' />
+<meta name='url' content='http://www.poderosa.com.pe/noticias/poderosa_no_exige_ningun_pago_en_sus_procesos_de_seleccion' />
+<meta name='keywords' content='Poderosa, Minera Poderosa, procesos de selección,pago' />
+<!-- OpenGraph Meta Tags -->
+<meta property='og:type' content='website' />
+<meta property='og:title' content='PODEROSA no exige ningún pago en sus procesos de selección | PODEROSA' />
+<meta property='og:description' content='PODEROSA informa a la opinión pública que personas inescrupulosas vienen realizando
+diferentes acciones para engañar a la ciudadanía con falsas promesas de trabajo.' />
+<meta property='og:url' content='http://www.poderosa.com.pe/noticias/poderosa_no_exige_ningun_pago_en_sus_procesos_de_seleccion' />
+<meta property='og:image' content='http://www.poderosa.com.pe/Content/noticias/poderosa-no-exige-ningun-pago/compartir.png' />
+    </head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+
+                <div class="h6 mayuscula mt-4">15 DE OCTUBRE DE 2020</div>
+                <h1 class="h3 dorado">PODEROSA no exige ningún pago en sus procesos de selección</h1>
+
+                @Html.Partial("~/Views/Shared/_redes.cshtml")
+                <br />
+
+
+                <p><strong>PODEROSA</strong> informa a la opinión pública que personas inescrupulosas vienen realizando diferentes acciones para engañar a la ciudadanía con falsas promesas de trabajo.</p>
+                <ol>
+                    <li> Ofrecen puestos de trabajo en PODEROSA y otras empresas.</li>
+                    <li> Solicitan varios requisitos para postular a un puesto.</li>
+                    <li> Luego solicitan dinero para los trámites, obtención de certificados y/o evaluaciones.</li>
+                    <li> Finalmente, se quedan con el dinero recibido y no hay ningún puesto de trabajo.</li>
+                </ol>
+
+                <p>Ante estos hechos, desde <strong>PODEROSA</strong> advertimos a la ciudadanía sobre estas malas prácticas y reiteramos que en nuestros procesos de selección laboral:</p>
+
+                <ol>
+                    <li> Nuestras convocatorias se realizan solo desde correos oficiales: poderosa.com.pe. No usamos cuentas de gmail.com, hotmail.com o cualquier otro dominio.</li>
+                    <li> No solicitamos ningún pago por certificación, evaluación o trámite alguno.</li>
+                    <li> Ningún funcionario o trabajador de PODEROSA o alguna contrata vinculada está autorizado para solicitar dinero o favores a cambio de garantizar un puesto de trabajo.</li>
+                    <li> Nos regimos por estrictas normas de transparencia que garantizan a los postulantes igualdad de oportunidades y selección de acuerdo méritos profesionales.</li>
+                </ol>
+
+                <p>
+                    <strong>PODEROSA</strong> lamenta los daños que se han generado a diversas personas que han confiado en estos mensajes creyendo que corresponde a nuestra empresa. Alertamos a tomar la
+                    debida precaución con estos avisos y denunciarlo a las autoridades.
+                </p>
+
+                <p class="text-left mt-4 mb-4"><strong>Superintendencia de Recursos Humanos</strong></p>
+
+                <img class="img-fluid w-100 mx-auto" src="~/Content/noticias/poderosa-no-exige-ningun-pago/imagen.png" />
+                
+                <div class="row mt-4">
+                    <div class="col-sm-auto">
+                        @Html.Partial("~/Views/Shared/_redes.cshtml")
+                    </div>
+
+                    <div class="col-sm-auto ml-sm-auto mt-3 mt-sm-0">
+                        <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+

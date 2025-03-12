@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="290.574px" height="290.574px" viewBox="0 0 290.574 290.574" enable-background="new 0 0 290.574 290.574"
+	 xml:space="preserve">
+<g id="Capa_1">
+	<g>
+		<circle fill="#D8A400" cx="145.287" cy="145.287" r="145.287"/>
+		<g>
+			<g>
+				<circle fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" cx="145.287" cy="145.288" r="67.446"/>
+				<path fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" d="M190.976,145.288
+					c0,25.233-20.455,45.688-45.688,45.688c-25.236,0-45.689-20.455-45.689-45.688c0-25.234,20.453-45.688,45.689-45.688
+					C170.521,99.6,190.976,120.054,190.976,145.288z"/>
+				<path fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" d="M169.983,145.288
+					c0,13.641-11.054,24.696-24.695,24.696c-13.643,0-24.699-11.055-24.699-24.696c0-13.64,11.057-24.697,24.699-24.697
+					C158.929,120.591,169.983,131.648,169.983,145.288z"/>
+				<circle fill="#494941" cx="145.286" cy="145.288" r="9.16"/>
+				<g>
+					<g>
+						<rect x="140.624" y="56.18" fill="#494941" width="9.326" height="76.504"/>
+						<path fill="#D8A400" d="M147.45,58.68v71.504h-4.326V58.68H147.45 M152.45,53.68h-5h-4.326h-5v5v71.504v5h5h4.326h5v-5V58.68
+							V53.68L152.45,53.68z"/>
+					</g>
+					<g>
+						<rect x="140.624" y="157.89" fill="#494941" width="9.326" height="76.504"/>
+						<path fill="#D8A400" d="M147.45,160.39v71.504h-4.326V160.39H147.45 M152.45,155.39h-5h-4.326h-5v5v71.504v5h5h4.326h5v-5
+							V160.39V155.39L152.45,155.39z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<rect x="157.89" y="140.626" fill="#494941" width="76.506" height="9.324"/>
+						<path fill="#D8A400" d="M231.896,143.126v4.324H160.39v-4.324H231.896 M236.896,138.126h-5H160.39h-5v5v4.324v5h5h71.506h5v-5
+							v-4.324V138.126L236.896,138.126z"/>
+					</g>
+					<g>
+						<rect x="56.179" y="140.626" fill="#494941" width="76.506" height="9.324"/>
+						<path fill="#D8A400" d="M130.185,143.126v4.324H58.679v-4.324H130.185 M135.185,138.126h-5H58.679h-5v5v4.324v5h5h71.506h5v-5
+							v-4.324V138.126L135.185,138.126z"/>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+<g id="Guias" display="none">
+</g>
+<g id="bootstrap" display="none">
+</g>
+</svg>

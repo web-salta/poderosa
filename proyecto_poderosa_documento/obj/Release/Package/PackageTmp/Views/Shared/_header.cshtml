@@ -1,0 +1,262 @@
+﻿<header class="js-header    js-header-fixed-top">
+
+    <ul class="nav justify-content-end    nav-sec    js-nav-sec">
+        <li class="nav-item">
+            <a class="nav-link" href="#">Publicaciones</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="#">Intranet</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="#">Extranet</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://minerapoderosa.hiringroom.com/jobs">Trabaja con nosotros</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="#">Proveedores</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="#">Webmail</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://extranet.poderosa.com.pe/sesion/auth/login">Portal SST</a>
+        </li>
+    </ul>
+    <nav class="navbar_ navbar-expand-lg_  py-0_  navbar navbar-expand-lg  py-0    nav-pri    js-nav-pri py-2  py-md-2">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="img-fluid" width="220" src="~/Content/img/logo.svg" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+
+            <div class="collapse navbar-collapse js-navbar-collapse" id="navbarSupportedContent">
+                <ul id="lista" class="navbar-nav flex-row_ flex-wrap ms-md-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="@Url.Action("index", "home", new { accion = "" })">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="@Url.Action("quienes-somos", "home", new { accion = "" })">
+                            QUIÉNES SOMOS
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle menu-drow" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                            OPERACIONES<span class="puntero"></span>
+                        </a>
+                        <div class="MultiLevelMenu depth-2 bg-lg-marron blanco">
+                            <div class="container p-lg-4">
+                                <div class="row ">
+                                    <div class="col-4 col-lg-3 col-xl-4 d-none d-lg-block">
+                                        <img src="~/Content/img/imagen-header.png" class="img-fluid imagen-menu d-none d-md-block">
+                                    </div>
+                                    <div class="col col-lg-9 col-xl-8 d-flex align-items-start justify-content-center justify-content-lg-start" style="position: relative;">
+                                        <ul class="dropdown-menu  lista_menu">
+                                            <li><a class="dropdown-item" href="@Url.Action("gestion-estrategica", "operaciones", new { accion = "" })"><img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline"> GESTIÓN ESTRATÉGICA</a></li>
+                                            <li><a class="dropdown-item" href="@Url.Action("procesos", "operaciones", new { accion = "" })"><img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline"> PROCESOS</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle menu-drow" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                            SOSTENIBILIDAD<span class="puntero"></span>
+                        </a>
+                        <div class="MultiLevelMenu depth-2 bg-lg-marron blanco">
+                            <div class="container p-lg-4">
+
+                                <div class="row ">
+                                    <div class="col-4 col-lg-3 col-xl-4 d-none d-lg-block">
+                                        <img src="~/Content/img/imagen-header.png" class="img-fluid imagen-menu d-none d-md-block">
+                                    </div>
+                                    <div class="col col-lg-9 col-xl-8 d-flex align-items-start justify-content-center justify-content-lg-start" style="position: relative;">
+                                        <ul class="dropdown-menu  lista_menu">
+                                            <li class="dropend nav-item ">
+                                                <a href="#" class="dropdown-toggle-custom dropdown-item dropdown-toggle  d-flex align-items-center justify-content-center justify-content-lg-between" data-bs-toggle="dropdown">
+                                                    <span> <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline"> GESTIÓN AMBIENTAL</span>
+                                                    <span class="dropdown-linea"></span>
+
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a class="dropdown-item" href="@Url.Action("gestion_ambiental", "sostenibilidad", new { accion = "introduccion" })">
+                                                            Introducción
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="@Url.Action("gestion_ambiental", "sostenibilidad", new { accion = "uso-responsable-del-agua" })">
+                                                            Uso Responsable del agua
+                                                        </a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="@Url.Action("gestion_ambiental", "sostenibilidad", new { accion = "manejo-de-residuos" })"> Manejo de Residuos</a></li>
+                                                    <li><a class="dropdown-item" href="@Url.Action("gestion_ambiental", "sostenibilidad", new { accion = "monitoreo-ambiental" })"> Monitoreo Ambiental</a></li>
+                                                    <li><a class="dropdown-item" href="@Url.Action("gestion_ambiental", "sostenibilidad", new { accion = "forestacion" })"> Forestación</a></li>
+                                                    <li><a class="dropdown-item" href="@Url.Action("gestion_ambiental", "sostenibilidad", new { accion = "cierre-de-minas" })"> Cierre de Minas</a></li>
+                                                    <li><a class="dropdown-item" href="@Url.Action("gestion_ambiental", "sostenibilidad", new { accion = "compromiso-de-cero-emisiones" })"> Compromiso de cero emisiones</a></li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="dropend nav-item dropdown">
+                                                <a href="#" class="dropdown-toggle-custom  dropdown-item dropdown-toggle  d-flex align-items-center justify-content-center justify-content-lg-between" data-bs-toggle="dropdown">
+                                                    <span> <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline"> GESTIÓN DE LA ENERGÍA</span>
+                                                    <span class="dropdown-linea"></span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="@Url.Action("gestion_de_la_energia", "sostenibilidad", new { accion = "introduccion" })"> Introducción</a></li>
+                                                    <li><a class="dropdown-item" href="@Url.Action("gestion_de_la_energia", "sostenibilidad", new { accion = "matriz-electrica-de-poderosa-2023-al-2030" })"> Matriz Eléctrica de Poderosa 2023 al 2030</a></li>
+                                                    <li><a class="dropdown-item" href="@Url.Action("gestion_de_la_energia", "sostenibilidad", new { accion = "nuestros-avances-con-energias-limpias" })"> Nuestros avances con energías limpias</a></li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="dropend nav-item dropdown">
+                                                <a href="#" class="dropdown-toggle-custom  dropdown-item dropdown-toggle  d-flex align-items-center justify-content-center justify-content-lg-between" data-bs-toggle="dropdown">
+                                                    <span> <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline"> CUMPLIMIENTO</span>
+                                                    <span class="dropdown-linea"></span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="@Url.Action("cumplimiento", "sostenibilidad", new { accion = "introduccion" })"> Introducción </a></li>
+                                                    <li><a class="dropdown-item" href="@Url.Action("cumplimiento", "sostenibilidad", new { accion = "componentes-del-sistema-de-gestion-de-cumplimiento" })"> Componentes del Sistema de Gestión de Cumplimiento </a></li>
+                                                    <li><a class="dropdown-item" href="@Url.Action("cumplimiento", "sostenibilidad", new { accion = "canal-de-etica" })"> Canal de Ética</a></li>
+                                                    <li><a class="dropdown-item" href="@Url.Action("cumplimiento", "sostenibilidad", new { accion = "canal-de-consultas" })"> Canal de consultas </a></li>
+                                                    <li><a class="dropdown-item" href="@Url.Action("cumplimiento", "sostenibilidad", new { accion = "procedimientos-internos" })"> Procedimientos internos </a></li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="dropend nav-item dropdown">
+                                                <a href="#" class="dropdown-toggle-custom dropdown-item dropdown-toggle  d-flex align-items-center justify-content-center justify-content-lg-between" data-bs-toggle="dropdown">
+                                                    <span> <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline"> GESTIÓN DEL TALENTO</span>
+                                                    <span class="dropdown-linea"></span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="@Url.Action("gestion_de_talento", "sostenibilidad", new { accion = "introduccion" })"> Introducción </a></li>
+                                                    <li><a class="dropdown-item" href="@Url.Action("gestion_de_talento", "sostenibilidad", new { accion = "certificado-de-buen-empleador" })"> Certificado de buen empleador  </a></li>
+                                                    <li><a class="dropdown-item" href="@Url.Action("gestion_de_talento", "sostenibilidad", new { accion = "diversidad-y-inclusion" })"> Diversidad e Inclusión </a></li>
+                                                    <li><a class="dropdown-item" href="@Url.Action("gestion_de_talento", "sostenibilidad", new { accion = "derechos-humanos" })">  Derechos Humanos </a></li>
+                                                    <li><a class="dropdown-item" href="@Url.Action("gestion_de_talento", "sostenibilidad", new { accion = "capacitacion" })">  Capacitación </a></li>
+                                                    <li><a class="dropdown-item" href="@Url.Action("gestion_de_talento", "sostenibilidad", new { accion = "reclutamiento-y-seleccion" })"> Reclutamiento y Selección</a></li>
+                                                    <li><a class="dropdown-item" href="@Url.Action("gestion_de_talento", "sostenibilidad", new { accion = "programa-de-practicas-talentos-de-oro-poderosa" })"> Programa de prácticas: Talentos de oro Poderosa</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle menu-drow" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                            CALIDAD E INNOVACIÓN<span class="puntero"></span>
+                        </a>
+                        <div class="MultiLevelMenu depth-2 bg-lg-marron blanco">
+                            <div class="container p-lg-4">
+
+                                <div class="row ">
+                                    <div class="col-4 col-lg-3 col-xl-4 d-none d-lg-block">
+                                        <img src="~/Content/img/imagen-header.png" class="img-fluid imagen-menu d-none d-md-block">
+                                    </div>
+                                    <div class="col col-lg-9 col-xl-8 d-flex align-items-start justify-content-center justify-content-lg-start" style="position: relative;">
+                                        <ul class="dropdown-menu  lista_menu">
+
+                                            <li class="dropend nav-item ">
+                                                <a href="#" class="dropdown-toggle-custom dropdown-item dropdown-toggle  d-flex align-items-center justify-content-center justify-content-lg-between" data-bs-toggle="dropdown">
+                                                    <!--<img src="imagenes/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline"> GESTIÓN AMBIENTAL-->
+
+                                                    <span> <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline"> MEJORA CONTINUA </span>
+                                                    <span class="dropdown-linea"></span>
+
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a class="dropdown-item" href="@Url.Action("mejora_continua", "calidad_e_innovacion", new { accion = "metodologia-de-solucion-de-problemas"})">
+                                                            Metodología de Solución de problemas
+                                                        </a>
+                                                    </li>
+
+                                                    <li><a class="dropdown-item" href="@Url.Action("mejora_continua", "calidad_e_innovacion", new { accion = "trabajo-en-equipo-para-la-excelencia" })"> Trabajo en Equipo para la excelencia</a></li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="dropend nav-item dropdown">
+                                                <a href="#" class="dropdown-toggle-custom dropdown-item dropdown-toggle  d-flex align-items-center justify-content-center justify-content-lg-between" data-bs-toggle="dropdown">
+                                                    <span> <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline"> GESTIÓN DE CALIDAD</span>
+                                                    <span class="dropdown-linea"></span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="@Url.Action("gestion_de_calidad", "calidad_e_innovacion", new { accion = "semana-de-la-calidad-poderosa" })"> Semana de la Calidad Poderosa </a></li>
+                                                    <li><a class="dropdown-item" href="@Url.Action("gestion_de_calidad", "calidad_e_innovacion", new { accion = "semana-de-la-calidad-sociedad-nacional-de-industrias" })"> Semana de la Calidad – Sociedad Nacional de Industrias</a></li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="@Url.Action("gestion_de_calidad", "calidad_e_innovacion", new { accion = "premio-nacional-a-la-calidad-reconocimiento-mas-importante-en-peru" })"> Premio Nacional a la Calidad - Reconocimiento más importante en Perú</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="@Url.Action("gestion_de_calidad", "calidad_e_innovacion", new { accion = "gestion-de-las-isos" })"> Gestión de las ISOS </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="dropend nav-item dropdown">
+                                                <a href="#" class="dropdown-toggle-custom dropdown-item dropdown-toggle  d-flex align-items-center justify-content-center justify-content-lg-between" data-bs-toggle="dropdown">
+                                                    <span> <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline"> COLPA - 5S</span>
+                                                    <span class="dropdown-linea"></span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="@Url.Action("colpa_5s", "calidad_e_innovacion", new { accion = "estandar-colpa"})"> Estándar COLPA </a></li>
+                                                    <li><a class="dropdown-item" href="@Url.Action("colpa_5s", "calidad_e_innovacion", new { accion = "premio-nacional-kaizen-5s"})"> Premio Nacional kaizen - 5S </a></li>
+                                                    <br>
+                                                    <br>
+                                                </ul>
+                                            </li>
+
+
+                                            <li class="dropend nav-item dropdown">
+                                                <a href="#" class="dropdown-toggle-custom dropdown-item dropdown-toggle  d-flex align-items-center justify-content-center justify-content-lg-between" data-bs-toggle="dropdown">
+                                                    <span> <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline"> CALIDAD TOTAL</span>
+                                                    <span class="dropdown-linea"></span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+
+                                                    <li><a class="dropdown-item" href="@Url.Action("calidad_total", "calidad_e_innovacion", new { accion = "calidad-en-la-vida-de-las-personas" })"> Calidad en la vida de las personas </a></li>
+                                                    <li><a class="dropdown-item" href="@Url.Action("calidad_total", "calidad_e_innovacion", new { accion = "calidad-en-los-procesos"})"> Calidad en los procesos  </a></li>
+                                                    <br />
+                                                    <br />
+                                                    <br />
+                                                    <br />
+                                                </ul>
+                                            </li>
+
+                                            <li class="dropend nav-item dropdown">
+                                                <a href="#" class="dropdown-toggle-custom dropdown-item dropdown-toggle  d-flex align-items-center justify-content-center justify-content-lg-between" data-bs-toggle="dropdown">
+                                                    <span> <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline"> INNOVACIÓN</span>
+                                                    <span class="dropdown-linea"></span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="@Url.Action("innovacion", "calidad_e_innovacion", new { accion = "introduccion" })"> Introducción </a></li>
+                                                    <li><a class="dropdown-item" href="@Url.Action("innovacion", "calidad_e_innovacion", new { accion = "estrategias-para-el-cambio" })"> Estrategia para el cambio  </a></li>
+                                                    <li><a class="dropdown-item" href="@Url.Action("innovacion", "calidad_e_innovacion", new { accion = "nuestras-principales-iniciativas-en-innovacion" })"> Nuestras principales iniciativas en innovación </a></li>
+                                                    <li><a class="dropdown-item" href="@Url.Action("innovacion", "calidad_e_innovacion", new { accion = "ecosistema-de-innovacion" })"> Ecosistema de Innovación</a></li>
+                                                    <BR>
+                                                    <BR>
+                                                </ul>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("index", "noticias", new { accion = "" })">NOTICIAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("index", "publicaciones", new { accion = "" })">PUBLICACIONES</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>

@@ -1,0 +1,106 @@
+﻿
+@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title>Cierre contable 2023 | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='Cierre contable 2023 | PODEROSA' />
+<meta name='description' content='Cierre contable 2023' />
+<meta name='url' content='http://www.poderosa.com.pe/noticias/cierre_contable_2023' />
+<meta name='keywords' content='Poderosa, Cierre contable 2023' />
+<!-- OpenGraph Meta Tags -->
+<meta property='og:type' content='website' />
+<meta property='og:title' content='Cierre contable 2023 | PODEROSA' />
+<meta property='og:description' content='Cierre contable 2023' />
+<meta property='og:url' content='http://www.poderosa.com.pe/noticias/cierre_contable_2023' />
+<meta property='og:image' content='http://www.poderosa.com.pe/Content/noticias/cierre-contable-2023/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+
+                <div class="h6 mayuscula mt-4">01 de Diciembre de 2023</div>
+                <h1 class="h3 dorado">Cierre de Información Contable - EJERCICIO 2023
+                </h1>
+
+                @Html.Partial("~/Views/Shared/_redes.cshtml")
+                <br />
+               
+                <div class="row justify-content-center mt-4 mb-2">
+
+                    <div class="col-sm-12">
+
+                        <p><b>Compañía Minera Poderosa S.A. (PODEROSA)</b> comunica a sus proveedores y colaboradores lo siguiente sobre el cierre de información contable del año 2023:</p>
+
+
+                        <ul>
+                            <li class="mb-2"><p>Hasta las <b>13:00 horas del viernes 15 de diciembre de 2023</b> se recibirán en los operadores logísticos de Lima y Trujillo mercadería, materiales y otros suministros. La atención se reanudará el <b>martes 02 de enero de 2024 en Trujillo y el jueves 04 de enero de 2024 en Lima.</b></p></li>
+
+                            <li class="mb-2"><p>Hasta las <b>16:00 horas del jueves 04 de enero de 2024,</b> se recibirá la entrega de comprobantes de pago electrónicos correspondiente al año 2023, cuya fecha de envío a SUNAT, sea realizada conforme a lo establecido por las normas tributarias, hasta el tercer día calendario.</p></li>
+
+                            <p>Posterior a la fecha antes mencionada, los comprobantes electrónicos deberán ser emitidos con fecha de <b>enero del 2024.</b></p>
+
+                            <li class="mb-2"><p>Hasta las <b>16:00 horas del jueves 04 de enero de 2024</b> se recibirán las rendiciones de cuenta del personal correspondiente al año 2023.</li>
+
+                            <p class="mb-2">La presentación electrónica de los comprobantes de pago está sujeta al procedimiento de recepción documentaria. </p>
+
+                            <p class="mb-2">De no cumplirse con el procedimiento de recepción documentaria, el comprobante de pago <b>no será considerado como presentado.</b> </p>
+
+                            <li class="mb-2"><p>Posteriormente a esas fechas, <b>NO SE RECIBIRÁN</b> comprobantes de pago electrónicos <b>emitidos en el año 2023, incluso los relacionados con gastos del año 2023, si dichos comprobantes no cuentan previamente con documentos generados por PODEROSA (orden de compra, orden de trabajo, orden de servicios y liquidaciones). </b></p></li>
+
+                            <li class="mb-2"><p><b>El viernes 22 de diciembre del 2023</b> es el último día de pago a proveedores. <b>El viernes 05 de enero del 2024</b> se reanudará el proceso de pagos. </p></li>
+
+                            ´
+                            <p>Se recomienda tomar las precauciones del caso. </p>
+                        </ul>
+
+
+
+
+                        <p class="text-right "><b>GERENCIA DE ADMINISTRACIÓN, FINANZAS Y COMERCIALIZACIÓN </b></p>
+
+                        <p class="text-right ">Lima, 01 de diciembre 2023</p><br />
+
+                        <p class="text-right ">
+                            <a class="boton-icono boton-icono--dorado" href="~/Content/noticias/cierre-contable-2023/cierre-contable-2023.pdf" target="_blank">
+                                <span class="boton-icono__txt">Descargar</span>
+                                <img class="boton-icono__img svg" src="~/Content/img/web/ico-flecha-descargar.svg" alt="ico">
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <br />
+
+
+                <div class="row mt-4">
+                    <div class="col-sm-auto">
+                        @Html.Partial("~/Views/Shared/_redes.cshtml")
+                    </div>
+
+                    <div class="col-sm-auto ml-sm-auto mt-3 mt-sm-0">
+                        <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

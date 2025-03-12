@@ -1,0 +1,63 @@
+﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title>Descubre cómo hicimos el libro del Río Abiseo | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='Descubre cómo hicimos el libro del Río Abiseo | PODEROSA' />
+<meta name='description' content='Conoce a los autores y proceso que se llevo a cabo para la realización del libro Parque Nacional del Río Abiseo y un resumen de todo lo que podrás encontrar en esta maravillosa publicación' />
+<meta name='url' content='http://www.poderosa.com.pe/noticias/descubre-como-hicimos-el-libro-del-rio-abiseo/' />
+<meta name='keywords' content='Poderosa, libro del Río Abiseo' />
+<!-- OpenGraph Meta Tags -->
+<meta property='og:type' content='website' />
+<meta property='og:title' content='Descubre cómo hicimos el libro del Río Abiseo | PODEROSA' />
+<meta property='og:description' content='Conoce a los autores y proceso que se llevo a cabo para la realización del libro Parque Nacional del Río Abiseo y un resumen de todo lo que podrás encontrar en esta maravillosa publicación' />
+<meta property='og:url' content='http://www.poderosa.com.pe/noticias/descubre_como_hicimos_el_libro_del_rio_abiseo/' />
+<meta property='og:image' content='http://www.poderosa.com.pe/Content/noticias/descubre-como-hicimos-el-libro-del-rio-abiseo/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+
+                <div class="h6 mayuscula mt-4">LIMA DE AGOSTO 21 DE 2019</div>
+                <h1 class="h3 dorado">Descubre cómo hicimos el libro del Río Abiseo</h1>
+
+                @Html.Partial("~/Views/Shared/_redes.cshtml")
+                <br />
+
+                <p>Conoce a los autores y proceso que se llevo a cabo para la realización del libro <strong>Parque Nacional del Río Abiseo</strong> y un resumen de todo lo que podrás encontrar en esta maravillosa publicación.</p>
+
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DOS0g2xLfc8"></iframe>                  
+                </div>
+               
+                <div class="row mt-4">
+                    <div class="col-sm-auto">
+                        @Html.Partial("~/Views/Shared/_redes.cshtml")
+                    </div>
+
+                    <div class="col-sm-auto ml-sm-auto mt-3 mt-sm-0">
+                        <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

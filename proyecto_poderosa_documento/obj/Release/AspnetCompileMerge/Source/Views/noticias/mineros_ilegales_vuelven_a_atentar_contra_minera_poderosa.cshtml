@@ -1,0 +1,78 @@
+﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title> Mineros ilegales vuelven a atentar contra minera Poderosa | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='Mineros ilegales vuelven a atentar contra minera Poderosa  | PODEROSA' />
+<meta name='description' content='Criminales volaron una torre de alta tensión en el centro poblado de Piñuto. Se han reportado más de 10 ataques similares en el último año. ' />
+<meta name='url' content='http://www.poderosa.com.pe/noticias/mineros-ilegales-vuelven-a-atentar-contra-minera-poderosa/' />
+<meta name='keywords' content='Pataz, mineros, ilegales, torre, alta tensión' />
+<!-- OpenGraph Meta Tags -->
+<meta property='og:type' content='website' />
+<meta property='og:title' content='Mineros ilegales vuelven a atentar contra minera Poderosa | PODEROSA' />
+<meta property='og:description' content='Criminales volaron una torre de alta tensión en el centro poblado de Piñuto. Se han reportado más de 10 ataques similares en el último año. ' />
+<meta property='og:url' content='http://www.poderosa.com.pe/noticias/mineros-ilegales-vuelven-a-atentar-contra-minera-poderosa/' />
+<meta property='og:image' content='http://www.poderosa.com.pe/Content/noticias/mineros-ilegales-vuelven-a-atentar/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+                <img class="object-fit-cover" src="~/Content/noticias/mineros-ilegales-vuelven-a-atentar/banner.jpg" alt="imagen">
+                <div class="h6 mayuscula mt-4">Pataz, enero 26 de 2024</div>
+                <h1 class="h3 dorado">Mineros ilegales vuelven a atentar contra minera Poderosa</h1>
+
+                <div class="d-flex justify-content-center justify-content-sm-start">
+                    @Html.Partial("~/Views/Shared/_redes.cshtml")
+                </div>
+                <br />
+
+                <p> Criminales volaron una torre de alta tensión en el centro poblado de Piñuto. Se han reportado más de 10 ataques similares en el último año.</p>
+
+                <p>El jueves 25 de enero, a las 19:13 horas, criminales derribaron una torre de alta tensión que alimenta de energía las operaciones de Minera Poderosa en el distrito y provincia de Pataz. </p>
+
+                <p>Este ataque afectó específicamente la Torre 5 de la sala de interconexión SE 2190, perteneciente a nuestro proyecto BESS La Morena, generando una interrupción en el desarrollo de nuestras operaciones y poniendo en riesgo la seguridad de nuestros colaboradores. </p>
+
+                <p>El violento acto, perpetrado con tácticas terroristas, representa una amenaza tangible para nuestro personal. Cabe señalar que el año pasado denunciamos el ataque a 10 torres de alta tensión por parte de mineros ilegales. </p>
+
+                <p>Durante los últimos tres años, Minera Poderosa sufrió reiterados ataques por parte de mineros ilegales coludidos con bandas criminales nacionales y foráneas.  Recientemente, el 2 de diciembre de 2023, uno de estos grupos criminales intentó tomar parte de nuestras operaciones, asesinando a 9 agentes de seguridad, tras detonar varias cargas de anfo (explosivo de alta potencia) en una de las galerías subterráneas de la mina.    </p>
+
+                <p>La minería ilegal ha desplazado al narcotráfico como el principal generador de recursos ilícitos en el país.  Se trata de una actividad directamente relacionada a otros delitos como la trata de personas, contaminación ambiental, extorsión y sicariato.  
+
+                <p>Como se sabe, los mineros ilegales operan sin ningún tipo de sanción, bajo el manto protector del REINFO (Registro Integral de Formalización Minera), registro que dificulta la actuación policial y fiscal. </p>
+
+                <p>En atención a lo anterior, el Ejecutivo aprobó en diciembre de 2023, el DL 1607 que introduce importantes cambios a fin de evitar el mal uso del REINFO por parte de los mineros ilegales.   </p>
+
+                <p>Instamos al gobierno en que no cese en su lucha contra la minería ilegal, una de las principales amenazas a la seguridad del país. </p>
+
+                <br />
+
+                <div class="d-flex mt-4  flex-column flex-sm-row align-items-center align-items-md-start justify-content-sm-center">
+                    <div class="flex-fill mb-4 mb-sm-0">
+                        @Html.Partial("~/Views/Shared/_redes.cshtml")
+
+                    </div>
+                    <div class="flex-fill text-center text-sm-right">
+                        <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

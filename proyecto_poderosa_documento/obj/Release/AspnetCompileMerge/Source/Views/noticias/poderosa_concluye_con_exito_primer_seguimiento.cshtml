@@ -1,0 +1,105 @@
+﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title>PODEROSA concluye con éxito primer seguimiento de certificación de las Normas ISO 9001, 14001 y 45001 | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='PODEROSA concluye con éxito primer seguimiento de certificación de las Normas ISO 9001, 14001 y 45001 | PODEROSA' />
+<meta name='description' content='PODEROSA mantiene la certificación de las normas ISO 9001, 14001 y 45001 luego de la auditoría externa del primer seguimiento de certificación, realizada por la empresa certificadora SGS Perú.' />
+<meta name='url' content='http://www.poderosa.com.pe/noticias/poderosa-concluye-con-exito-primer-seguimiento/' />
+<meta name='keywords' content='Poderosa, primer seguimiento, certificacion, normas' />
+<!-- OpenGraph Meta Tags -->
+<meta property='og:type' content='website' />
+<meta property='og:title' content='PODEROSA concluye con éxito primer seguimiento de certificación de las Normas ISO 9001, 14001 y 45001 | PODEROSA' />
+<meta property='og:description' content='PODEROSA mantiene la certificación de las normas ISO 9001, 14001 y 45001 luego de la auditoría externa del primer seguimiento de certificación, realizada por la empresa certificadora SGS Perú.' />
+<meta property='og:url' content='http://www.poderosa.com.pe/noticias/poderosa-concluye-con-exito-primer-seguimiento/' />
+<meta property='og:image' content='http://www.poderosa.com.pe/Content/noticias/poderosa-concluye-con-exito-primer-seguimiento/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+                <img class="object-fit-cover" src="~/Content/noticias/poderosa-concluye-con-exito-primer-seguimiento/banner.jpg" alt="imagen">
+                <div class="h6 mayuscula mt-4">16 de Febrero de 2022</div>
+                <h1 class="h3 dorado">PODEROSA concluye con éxito primer seguimiento de certificación de las Normas ISO 9001, 14001 y 45001</h1>
+
+                @Html.Partial("~/Views/Shared/_redes.cshtml")
+                <br />
+
+                <p>
+                    Pataz, febrero 16, 2022. PODEROSA mantiene la certificación de las normas ISO 9001, 14001 y
+                    45001 luego de la auditoría externa del primer seguimiento de certificación, realizada por la
+                    empresa certificadora SGS Perú, quienes recomiendan la continuidad de la certificación luego
+                    de comprobar la conformidad de las normas, efectividad del proceso y la mejora continua de
+                    nuestra empresa.
+                </p>
+
+                <p>
+                    El equipo auditor estuvo conformado por Denis Hilario auditor (líder), Cecilia García, José Luis
+                    Loayza, Gina Espinoza, Paul Carrillo y José Flores. La auditoría se realizó del 8 al 10 de febrero.
+                </p>
+
+                <p>
+                    En el cierre de la auditoría el equipo auditor resaltó que el Sistema Integrado de Gestión de
+                    PODEROSA muestra su madurez destacando sus fortalezas y no haber encontrado un hallazgo
+                    crítico, solo una no conformidad menor al cual se debe atender un plan de acción para
+                    implementar y ser revisado en la próxima auditoría.
+                </p>
+
+                <p>
+                    El Ing. Marcelo Santillana, Gerente General, felicitó al equipo PODEROSA por el trabajo
+                    realizado por mantener la certificación.
+                </p>
+
+                <p>
+                    Esta auditoría externa se realizó de manera remota vía Microsoft Teams, teléfono, revisión de
+                    documentos y registros on line, WhatsApp y correo electrónico. Observación de actividades/
+                    Instalaciones a través de la cámara web del cliente (WhatsApp).
+                </p>
+
+                <p>
+                    Participaron en el inicio y cierre de la auditoría externa la Alta Gerencia, superintendentes,
+                    jefaturas y colaboradores de los distintos procesos.
+                </p>
+                <div class="row justify-content-center mt-4 mb-2">
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <div class="col-sm-6 mb-3">
+                                <img class="img-fluid w-100" src="~/Content/noticias/poderosa-concluye-con-exito-primer-seguimiento/01.jpg" alt="imagen">
+                            </div>
+
+                            <div class="col-sm-6 mb-3">
+                                <img class="img-fluid w-100" src="~/Content/noticias/poderosa-concluye-con-exito-primer-seguimiento/02.jpg" alt="imagen">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-auto">
+                        @Html.Partial("~/Views/Shared/_redes.cshtml")
+                    </div>
+
+                    <div class="col-sm-auto ml-sm-auto mt-3 mt-sm-0">
+                        <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

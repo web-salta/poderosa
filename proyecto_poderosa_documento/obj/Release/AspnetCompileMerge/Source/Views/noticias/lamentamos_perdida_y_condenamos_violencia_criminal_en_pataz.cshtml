@@ -1,0 +1,80 @@
+﻿
+@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title>Lamentamos pérdida y condenamos violencia criminal en Pataz | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='Lamentamos pérdida y condenamos violencia criminal en Pataz | PODEROSA' />
+<meta name='description' content='PODEROSA lamenta el fallecimiento de nuestro compañero Juan Gabriel Sánchez Ramos, supervisor de la empresa contratista Huayna, Seguridad y Vigilancia.' />
+<meta name='url' content='http://www.poderosa.com.pe/noticias/lamentamos-perdida-y-condenamos-violencia-criminal-en-pataz' />
+<meta name='keywords' content='Poderosa, condenamos violencia, Pataz' />
+<!-- OpenGraph Meta Tags -->
+<meta property='og:type' content='website' />
+<meta property='og:title' content='Lamentamos pérdida y condenamos violencia criminal en Pataz | PODEROSA' />
+<meta property='og:description' content='PODEROSA lamenta el fallecimiento de nuestro compañero Juan Gabriel Sánchez Ramos, supervisor de la empresa contratista Huayna, Seguridad y Vigilancia.' />
+<meta property='og:url' content='http://www.poderosa.com.pe/noticias/lamentamos-perdida-y-condenamos-violencia-criminal-en-pataz' />
+<meta property='og:image' content='http://www.poderosa.com.pe/Content/noticias/lamentamos-perdida-y-condenamos-violencia-criminal-en-pataz/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+                <img class="object-fit-cover" src="~/Content/noticias/lamentamos-perdida-y-condenamos-violencia-criminal-en-pataz/banner.jpg" alt="imagen">
+
+                <div class="h6 mayuscula mt-4">09 de Mayo de 2023</div>
+                <h1 class="h3 dorado">Lamentamos pérdida y condenamos violencia criminal en Pataz</h1>
+
+                <div class="d-flex justify-content-center justify-content-sm-start">
+                    @Html.Partial("~/Views/Shared/_redes.cshtml")          
+                </div>
+                <br />
+
+                <p><strong>Estimados colaboradores</strong> </p>
+
+                <p>Nuestro compañero <strong>Juan Gabriel</strong> fue víctima de la violencia criminal que azota a Pataz. El pasado 4 de mayo de 2023 delincuentes asaltaron y secuestraron a un grupo de trabajadores en la mina, nivel 2670, Santa María, y asesinaron a Juan Gabriel. Condenamos las acciones delictivas ocurridas en los últimos días, que atentan contra nuestra gente e instalaciones. </p>
+
+                <p>PODEROSA lamenta el fallecimiento de nuestro compañero Juan Gabriel Sánchez Ramos, supervisor de la empresa contratista Huayna, Seguridad y Vigilancia. Nos unimos en oración por el eterno descanso de Juan Gabriel y expresamos nuestras sentidas condolencias a su familia, quienes cuentan con todo nuestro apoyo y respaldo en este momento difícil.  </p>
+
+                <p>PODEROSA ratifica su voluntad de colaborar con las autoridades para detener el accionar de estos grupos criminales en el distrito de Pataz, e instamos a la Policía, Fiscalía y Poder Judicial a tomar las acciones pertinentes para que caiga el peso de la ley sobre los culpables. </p>
+
+                <p>PODEROSA expresa su compromiso de seguir trabajando para hacer una minería responsable y que acelere el desarrollo de las comunidades en la región y el Perú. </p>
+
+                <p>Asimismo, trabajamos permanentemente en reforzar las medidas de seguridad para garantizar el desarrollo de nuestras operaciones y la seguridad de nuestros trabajadores. La integridad de cada trabajador es lo más importante para nosotros. </p>
+
+
+                <p class="text-right">Pataz, 06 de mayo de 2023</p><br />
+
+                <p class="text-center"><strong>Ing. Marcelo Santillana Salas Gerente General</strong></p>
+
+
+
+                <div class="d-flex mt-4  flex-column flex-sm-row align-items-center align-items-md-start justify-content-sm-center">
+                    <div class="flex-fill mb-4 mb-sm-0">
+                     @Html.Partial("~/Views/Shared/_redes.cshtml") 
+                    
+                    </div>
+                    <div class="flex-fill text-center text-sm-right">
+                        <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

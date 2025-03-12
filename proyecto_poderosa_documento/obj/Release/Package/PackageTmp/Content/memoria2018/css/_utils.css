@@ -1,0 +1,392 @@
+/* #################################################################################################### */
+/* UTILS */
+/* #################################################################################################### */
+
+/* -------------------------------------------------- */
+/* FUENTES */
+/* -------------------------------------------------- */
+.fuente-1{
+	font-family: var(--fuente-1);
+}
+.fuente-2{
+	font-family: var(--fuente-2);
+}
+/* -------------------------------------------------- */
+
+
+
+/* -------------------------------------------------- */
+/* COLORES */
+/* -------------------------------------------------- */
+.color-transparente{
+	color: var(--color-transparente) !important;
+}
+.color-blanco{
+	color: var(--color-blanco) !important;
+}
+.color-negro{
+	color: var(--color-negro) !important;
+}
+.color-1{
+	color: var(--color-1) !important;
+}
+.color-2{
+	color: var(--color-2) !important;
+}
+.color-3{
+	color: var(--color-3) !important;
+}
+.color-4{
+	color: var(--color-4) !important;
+}
+.color-5{
+	color: var(--color-5) !important;
+}
+.color-6{
+	color: var(--color-6) !important;
+}
+.color-7{
+	color: var(--color-7) !important;
+}
+/* -------------------------------------------------- */
+
+
+
+/* -------------------------------------------------- */
+/* BG COLORES */
+/* -------------------------------------------------- */
+.bg-transparente{
+	background-color: var(--color-transparente) !important;
+}
+.bg-blanco{
+	background-color: var(--color-blanco) !important;
+}
+.bg-negro{
+	background-color: var(--color-negro) !important;
+}
+.bg-1{
+	background-color: var(--color-1) !important;
+}
+.bg-2{
+	background-color: var(--color-2) !important;
+}
+.bg-3{
+	background-color: var(--color-3) !important;
+}
+.bg-4{
+	background-color: var(--color-4) !important;
+}
+.bg-5{
+	background-color: var(--color-5) !important;
+}
+.bg-6{
+	background-color: var(--color-6) !important;
+}
+.bg-7{
+	background-color: var(--color-7) !important;
+}
+/* -------------------------------------------------- */
+
+
+
+/* -------------------------------------------------- */
+/* LINK DECORADO */
+/* -------------------------------------------------- */
+.a--link{
+    text-decoration: underline;
+}
+.a--link:hover{
+    text-decoration: none;
+}
+/* -------------------------------------------------- */
+
+
+
+/* -------------------------------------------------- */
+/* HR */
+/* -------------------------------------------------- */
+.hr--h{
+	/*margin-top: 1rem;
+	margin-bottom: 1rem;
+	border-top-width: 1px;
+	border-style: solid;*/
+	border-color: inherit;
+}
+.hr--v{
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	border: 0;
+	width: 0;
+	height: 100%;
+	border-left-width: 1px;
+	border-style: solid;
+	border-color: inherit;
+	/*RE-BOOTSTRAP*/
+	height: inherit;
+	padding: 0;
+}
+
+/* ESTADOS */
+.hr--w1{
+	border-width: 0.25rem;
+}
+.hr--w2{
+	border-width: 0.5rem;
+}
+.hr--w3{
+	border-width: 0.75rem;
+}
+.hr--w4{
+	border-width: 1rem;
+}
+
+.hr--c1{
+	border-color: var(--color-1);
+}
+.hr--c2{
+	border-color: var(--color-2);
+}
+.hr--c3{
+	border-color: var(--color-3);
+}
+.hr--c4{
+	border-color: var(--color-4);
+}
+.hr--c5{
+	border-color: var(--color-5);
+}
+/* -------------------------------------------------- */
+
+
+
+/* -------------------------------------------------- */
+/* HR - PATRÓN */
+/* -------------------------------------------------- */
+.hr-patron{
+	border: 0;
+	/*background-image: url(../img/patron-15x15.svg);*/
+	background-image: linear-gradient(135deg, #ffffff 12.50%, transparent 12.50%, transparent 50%, #ffffff 50%, #ffffff 62.50%, transparent 62.50%, transparent 100%);
+	background-size: 5.66px 5.66px;
+}
+
+/* ESTADOS */
+.hr-patron--1{
+	background-image: linear-gradient(135deg, var(--color-1) 12.50%, transparent 12.50%, transparent 50%, var(--color-1) 50%, var(--color-1) 62.50%, transparent 62.50%, transparent 100%);
+}
+.hr-patron--h{
+	height: 0.75rem;
+}
+.hr-patron--v{
+	margin-left: 1rem;
+	margin-right: 1rem;
+	padding: 0;
+	height: 0.75rem;
+}
+
+/* MEDIA QUERYS */
+@media(min-width: 992px){
+	.hr-patron--v{
+		margin: 0;
+		width: 0.75rem;
+		height: inherit;
+	}
+}
+/* -------------------------------------------------- */
+
+
+
+/* -------------------------------------------------- */
+/* TÍTULO */
+/* -------------------------------------------------- */
+.titulo-sec{
+	margin-bottom: 1.5rem;
+	color: var(--color-4);
+	font-family: var(--fuente-2);
+}
+
+.titulo-sec__fila{
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: end;
+	align-items: flex-end;
+}
+
+.titulo-sec__fila > *{
+	line-height: 0.7 !important;
+}
+.titulo-sec__ico{
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+
+	border-bottom: .2rem solid;
+	margin-left: 1rem;
+	margin-right: -15px;
+}
+.titulo-sec__ico img{
+	height: 4.25rem;
+}
+.titulo-sec__tab{
+	margin-left: 2.5rem;
+}
+.titulo-sec__h1{
+	font-size: 5.25rem;
+	line-height: 0.8;
+}
+.titulo-sec__h2{
+	font-size: 3.25rem;
+	line-height: 0.85;
+}
+.titulo-sec__h3{
+	font-size: 2.75rem;
+	line-height: 0.9;
+}
+.titulo-sec__h4{
+	font-size: 2.25rem;
+	line-height: 0.95;
+}
+.titulo-sec__h5{
+	font-size: 2rem;
+	line-height: 1;
+}
+.titulo-sec__h6{
+	font-size: 1.55rem;
+	line-height: 1;
+}
+
+/* MEDIA QUERYS */
+@media(min-width: 576px){
+	.titulo-sec{
+		margin-bottom: 2rem;
+	}
+	.titulo-sec__ico{
+		margin-right: calc(((100vw - 530px) / 2) * -1);
+	}
+	.titulo-sec__tab{
+		margin-left: 3.75rem;
+	}
+	.titulo-sec__h1{
+		font-size: 6.4rem;
+	}
+	.titulo-sec__h2{
+		font-size: 4.4rem;
+	}
+	.titulo-sec__h3{
+		font-size: 3.75rem;
+	}
+	.titulo-sec__h4{
+		font-size: 3.25rem;
+	}
+	.titulo-sec__h5{
+		font-size: 2.75rem;
+	}
+	.titulo-sec__h6{
+		font-size: 2.1rem;
+	}
+}
+@media(min-width: 768px){
+	.titulo-sec{
+		margin-bottom: 2.5rem;
+	}
+	.titulo-sec__ico{
+		margin-right: calc(((100vw - 720px) / 2) * -1);
+	}
+	.titulo-sec__tab{
+		margin-left: 4rem;
+	}
+	.titulo-sec__h1{
+		font-size: 6.75rem;
+	}
+	.titulo-sec__h2{
+		font-size: 4.75rem;
+	}
+	.titulo-sec__h3{
+		font-size: 4.1rem;
+	}
+	.titulo-sec__h4{
+		font-size: 3.5rem;
+	}
+	.titulo-sec__h5{
+		font-size: 3rem;
+	}
+	.titulo-sec__h6{
+		font-size: 2.3rem;
+	}
+}
+@media(min-width: 992px){
+	.titulo-sec__ico{
+		margin-right: calc(((100vw - 860px) / 2) * -1);
+	}
+}
+@media(min-width: 1200px){
+	.titulo-sec__ico{
+		margin-right: -245px;
+		margin-right: calc( ((100vw - 1110px) / 2) * -1 );
+	}
+}
+/* -------------------------------------------------- */
+
+
+
+/* -------------------------------------------------- */
+/* POSICIONES */
+/* -------------------------------------------------- */
+.pos-rel{
+	position: relative;
+}
+.pos-abs{
+	position: absolute;
+}
+.pos-abs-full{
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+/* -------------------------------------------------- */
+
+
+
+/* -------------------------------------------------- */
+/* SLICK */
+/* -------------------------------------------------- */
+.slider.slick-dotted.slick-slider{
+	margin-bottom: 2.75rem;
+}
+.slider .slick-dots{
+	bottom: -2rem;
+}
+.slider .slick-dots li{
+	width: 1.25rem;
+	height: 1.25rem;
+}
+.slider .slick-dots li button:before{
+	content: none;
+}
+.slider .slick-dots li button{
+	border: 0.1rem solid var(--color-blanco);
+	border-radius: 50%;
+	width: inherit;
+	height: inherit;
+}
+.slider .slick-dots li.slick-active button{
+	background-color: var(--color-blanco);
+}
+
+.slick-dots li:only-child{
+	display: none;
+}
+
+/* ESTADOS */
+.slider--5 .slick-dots li button{
+	border: 0.1rem solid var(--color-5);
+}
+.slider--5 .slick-dots li.slick-active button{
+	background-color: var(--color-5);
+}
+/* -------------------------------------------------- */
+
+/* #################################################################################################### */

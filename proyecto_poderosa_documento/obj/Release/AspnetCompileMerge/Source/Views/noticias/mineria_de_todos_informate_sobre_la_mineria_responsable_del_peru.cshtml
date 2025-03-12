@@ -1,0 +1,71 @@
+﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+    <!-- METAS -->
+    <title>Minería de todos: infórmate sobre la minería responsable del Perú</title>
+    <!-- Basic HTML Meta Tags -->
+    <meta name='title' content='Minería de todos: infórmate sobre la minería responsable del Perú | PODEROSA' />
+    <meta name='description' content='Somos parte de Minería de Todos, un espacio liderado por la Sociedad Nacional de Minería, Petróleo y Energía que promueve la minería responsable en el Perú.' />
+    <meta name='url' content='http://www.poderosa.com.pe/noticias/mineria-de-todos-informate-sobre-la-mineria-responsable-del-peru/' />
+    <meta name='keywords' content='Minería de todos, Minería responsable del Perú, Poderosa, Sociedad Nacional de Minería, Sociedad Nacional de Petróleo, Sociedad Nacional de Energía' />
+    <!-- OpenGraph Meta Tags -->
+    <meta property='og:type' content='website' />
+    <meta property='og:title' content='Minería de todos: infórmate sobre la minería responsable del Perú | PODEROSA' />
+    <meta property='og:description' content='Somos parte de Minería de Todos, un espacio liderado por la Sociedad Nacional de Minería, Petróleo y Energía que promueve la minería responsable en el Perú.' />
+    <meta property='og:url' content='http://www.poderosa.com.pe/noticias/mineria-de-todos-informate-sobre-la-mineria-responsable-del-peru/' />
+    <meta property='og:image' content='http://www.poderosa.com.pe/Content/noticias/mineria-de-todos-informate-sobre-la-mineria-responsable-del-peru/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+                <img class="object-fit-cover" src="~/Content/noticias/mineria-de-todos-informate-sobre-la-mineria-responsable-del-peru/banner.jpg" alt="imagen">
+
+                <div class="h6 mayuscula mt-4">20 de Setiembre de 2018</div>
+                <h1 class="h3 dorado">Minería de todos: infórmate sobre la minería responsable del Perú</h1>
+                
+                @Html.Partial("~/Views/Shared/_redes.cshtml")
+                <br />
+
+                <p>Somos parte de Minería de Todos, un espacio liderado por la Sociedad Nacional de Minería, Petróleo y Energía que promueve la minería responsable en el Perú.</p>
+
+                <p>En esta página se difunden las buenas prácticas que caracterizan a la minería formal agremiada y se busca un diálogo abierto que brinde información y responda a todo tipo de inquietudes sobre la actividad minera.</p>
+
+                <p>Te invitamos a informarte sobre <strong>Minería de Todos</strong> y seguir su página en Facebook, donde encontrarás un espacio para el intercambio de ideas y debate público. Actualmente, la página tiene 12,000 seguidores. La meta para finales de octubre es llegar a 40,000.</p>
+
+                <h2 class="dorado h5">Casas Abiertas</h2>
+                <p>A fin de contar con un espacio de diálogo abierto y transparente sobre la actividad minera formal en el país, la Sociedad Nacional de Minería y Petróleo y Energía, implementó Casas Abiertas en Arequipa, Cajamarca, Challhuahuacho, Huamachuco y Tambobamba entre marzo y mayo de 2018.</p>
+
+                <p>En ellas se presentaron videos e infografías que informaron sobre los procedimientos mineros, la gestión ambiental y del agua, oportunidades para la población y ámbitos de diálogo.</p>
+
+                <p>Hasta la fecha alrededor de 4600 personas dejaron 1813 opiniones y/o comentarios que quedaron registrados en sus murales de expresión. Asimismo, atendieron cerca de 4700 preguntas verbales y escritas que se viene difundiendo desde ya hace 3 semanas a través de su página web www.mineriadetodos.com.pe , allí podrá visualizar todos los materiales que se exhiben en las casas abiertas, asimismo las respuestas a todas las preguntas escritas recibidas. Cabe indicar que algunas preguntas fueron respondidas por voceros del gremio, representantes de empresas asociadas, a través de interacciones directas (videos).</p>
+
+                <p>Juntos podemos construir un país mejor. ¡Tú también puedes formar parte de <strong>#MINERÍADETODOS!.</strong></p>
+
+                <div class="row mt-4">
+                    <div class="col-sm-auto">
+                        @Html.Partial("~/Views/Shared/_redes.cshtml")
+                    </div>
+
+                    <div class="col-sm-auto ml-sm-auto mt-3 mt-sm-0">
+                        <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

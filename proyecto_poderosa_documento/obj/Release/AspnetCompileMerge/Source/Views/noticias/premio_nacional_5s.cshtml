@@ -1,0 +1,98 @@
+﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title>Premio Nacional 5S 2021: AOTS Perú evalúa a PODEROSA | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='Premio Nacional 5S 2021: AOTS Perú evalúa a PODEROSA | PODEROSA' />
+<meta name='description' content='PODEROSA fue evaluado por un equipo evaluador AOTS Perú como parte de su participación en el Premio Nacional 5S 2021 ' />
+<meta name='url' content='https://www.poderosa.com.pe/noticias/premio-nacional-5s/' />
+<meta name='keywords' content='Poderosa, primer seguimiento, certificacion, normas' />
+<!-- OpenGraph Meta Tags -->
+<meta property='og:type' content='website' />
+<meta property='og:title' content='Premio Nacional 5S 2021: AOTS Perú evalúa a PODEROSA | PODEROSA' />
+<meta property='og:description' content='PODEROSA fue evaluado por un equipo evaluador AOTS Perú como parte de su participación en el Premio Nacional 5S 2021 ' />
+<meta property='og:url' content='https://www.poderosa.com.pe/noticias/premio-nacional-5s/' />
+<meta property='og:image' content='https://www.poderosa.com.pe/Content/noticias/premio-nacional-5s/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+                <img class="object-fit-cover" src="~/Content/noticias/premio-nacional-5s/banner.jpg" alt="imagen">
+                <div class="h6 mayuscula mt-4">02 de Febrero de 2022</div>
+                <h1 class="h3 dorado">Premio Nacional 5S 2021: AOTS Perú evalúa a PODEROSA  </h1>
+
+                @Html.Partial("~/Views/Shared/_redes.cshtml")
+                <br />
+
+                <p>Pataz, febrero 02, 2022. <b>PODEROSA</b> fue evaluado por un equipo evaluador AOTS Perú como parte de su participación en el Premio Nacional 5S 2021. Participaron en el inicio y cierre de la evaluación la Alta Gerencia: Ing. Marcelo Santillana, Gerente General, Ing. Walter Díaz, Gerente SIG y RS, Ing. Daniel Torres, Gerente de Operaciones, Ing. Fausto Cueva, Gerente de Geología y Exploraciones; el equipo de Calidad y colaboradores de los distintos procesos. </p>
+                <p><b>El objetivo de la evaluación responde a:</b></p>
+                <ol>
+                        <li>Evaluar los criterios de cumplimento en las bases del Premio Nacional 5S 2021.</li>
+                        <li>Determinar el cumplimiento de las 5S, detalladas en los procedimientos internos de la empresa.</li> 
+                        <li>Verificar el cumplimiento de las 5S.</li> 
+                </ol>
+
+                <p>El equipo evaluador AOTS estuvo conformado por Julio Talaverano (líder), José Baylón y Katherine Chuco.</p>
+
+                <p><b>La evaluación comprendió:</b></p>
+                <ol>
+                    <li> Compromiso de la Alta Dirección.</li>
+                    <li> Organización.</li>
+                    <li>Implementación.</li>
+                    <li>Integración y Resultados.</li>
+                </ol>
+               
+
+                <p>El equipo evaluador destacó en la reunión de cierre el compromiso de los trabajadores y de la Alta Dirección en la mejora continua, además del alto estándar de PODEROSA en la aplicación de las 5S, constituyendo un referente de buena práctica para otras empresas.</p>
+
+                <p>Asimismo, resaltaron que la información recogida en la evaluación se entregará al Comité Evaluador y en función a los resultados se realizará la retroalimentación.</p>
+
+                <p>Las palabras de cierre estuvieron a cargo del Ing. Fausto Cueva, Gerente de Geología y Exploraciones, quien resaltó que las observaciones que surgen en la evaluación nos permite avanzar y mejorar en las 5s, la idea es siempre buscar la excelencia.</p>
+
+                <p>El alcance de la evaluación comprendió la Unidad de Producción Marañón y Santa María en procesos implementados con 5S. La evaluación se realizó el 29 de enero vía remota (Teams y WhatsApp).</p>
+
+
+                <div class="row justify-content-center mt-4 mb-2">
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <div class="col-sm-6 mb-3">
+                                <img class="img-fluid w-100" src="~/Content/noticias/premio-nacional-5s/01.jpg" alt="imagen">
+                            </div>
+
+                            <div class="col-sm-6 mb-3">
+                                <img class="img-fluid w-100" src="~/Content/noticias/premio-nacional-5s/02.jpg" alt="imagen">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-auto">
+                        @Html.Partial("~/Views/Shared/_redes.cshtml")
+                    </div>
+
+                    <div class="col-sm-auto ml-sm-auto mt-3 mt-sm-0">
+                        <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

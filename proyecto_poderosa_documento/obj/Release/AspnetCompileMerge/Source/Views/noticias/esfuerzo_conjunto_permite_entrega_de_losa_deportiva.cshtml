@@ -1,0 +1,82 @@
+﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title>Esfuerzo conjunto permite entrega de losa deportiva para Uctubamba, Ongón | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='Esfuerzo conjunto permite entrega de losa deportiva para Uctubamba, Ongón | PODEROSA' />
+<meta name='description' content='Gracias al esfuerzo conjunto entre la población del anexo Uctubamba, distrito de Ongón, provincia de Pataz, las autoridades locales, Asociación Pataz y PODEROSA.' />
+<meta name='url' content='https://www.poderosa.com.pe/noticias/esfuerzo-conjunto-permite-entrega-de-losa-deportiva/' />
+<meta name='keywords' content='Poderosa, Distintivo de Empresa Socialmente Responsable' />
+<!-- OpenGraph Meta Tags -->
+<meta property='og:type' content='website' />
+<meta property='og:title' content='Esfuerzo conjunto permite entrega de losa deportiva para Uctubamba, Ongón | PODEROSA' />
+<meta property='og:description' content='Gracias al esfuerzo conjunto entre la población del anexo Uctubamba, distrito de Ongón, provincia de Pataz, las autoridades locales, Asociación Pataz y PODEROSA.' />
+<meta property='og:url' content='https://www.poderosa.com.pe/noticias/esfuerzo-conjunto-permite-entrega-de-losa-deportiva/' />
+<meta property='og:image' content='https://www.poderosa.com.pe/Content/noticias/esfuerzo-conjunto-permite-entrega-de-losa-deportiva/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+                <img class="object-fit-cover" src="~/Content/noticias/esfuerzo-conjunto-permite-entrega-de-losa-deportiva/banner.jpg" alt="imagen">
+                <div class="h6 mayuscula mt-4">23 de Junio de 2022</div>
+                <h1 class="dorado h3">Esfuerzo conjunto permite entrega de losa deportiva para Uctubamba, Ongón</h1>
+
+                @Html.Partial("~/Views/Shared/_redes.cshtml")
+                <br />
+                <p>Gracias al esfuerzo conjunto entre la población del anexo Uctubamba, distrito de Ongón, provincia de Pataz, las autoridades locales, Asociación Pataz y PODEROSA; se realizó la entrega de una losa deportiva. Esto es posible gracias a un compromiso de PODEROSA con la población de Uctubamba.</p>
+
+                <p>La losa deportiva para la práctica de vóley consta de una cancha de concreto con medidas reglamentarias, e incluye implementos como net, parantes de metal y pelota. La inversión de la losa deportiva asciende a S/ 97 698.98 y beneficia a 500 personas (población aproximada de Uctubamba). Asociación Pataz financió la obra con fondos de PODEROSA.</p>
+
+                <p>Esta obra fue recepcionada el 7 de junio por autoridades locales de Uctubamba: agente municipal, teniente gobernador, presidente de la Ronda Campesina y pobladores, quienes expresaron su agradecimiento a PODEROSA por esta contribución que permite un espacio para que niños, jóvenes y adultos puedan aprovecharlo en la práctica del deporte.</p>
+
+                <p>Esta obra contó con el apoyo de la municipalidad de Ongón en la elaboración del expediente técnico. La empresa ejecutora fue la contratista Junta Marañón SAC, que contrató mano de obra local. La supervisión estuvo a cargo de la empresa Consorcio Bethania. La obra inició el 29 de abril.</p>
+
+                <p>Durante los trabajos constructivos, se mantuvo el diálogo y acercamiento con las autoridades locales, quienes apoyaron con la disponibilidad de personal no calificado y provisión de agregados de la zona.</p>
+
+
+                <div class="row justify-content-center my-4">
+                    <div class="col-lg-8">
+                        <div class="owl-carousel    js-owl-carousel-fotos   owl-carousel--no-nav    dots-gris">
+                            <div class="">
+                                <img class="img-fluid w-100" src="~/Content/noticias/esfuerzo-conjunto-permite-entrega-de-losa-deportiva/01.jpg" alt="imagen">
+                            </div>
+                            <div class="">
+                                <img class="img-fluid w-100" src="~/Content/noticias/esfuerzo-conjunto-permite-entrega-de-losa-deportiva/02.jpg" alt="imagen">
+                            </div>
+                            <div class="">
+                                <img class="img-fluid w-100" src="~/Content/noticias/esfuerzo-conjunto-permite-entrega-de-losa-deportiva/03.jpg" alt="imagen">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-sm-auto">
+                        @Html.Partial("~/Views/Shared/_redes.cshtml")
+                    </div>
+
+                    <div class="col-sm-auto ml-sm-auto mt-3 mt-sm-0">
+                        <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

@@ -1,0 +1,33 @@
+﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+  <!-- METAS -->
+    <title>prueba | PODEROSA</title>
+    <!-- Basic HTML Meta Tags -->
+    <meta name='title' content='Noticias | PODEROSA' />
+    <meta name='description' content='Conoce nuestras últimas noticias.' />
+    <meta name='url' content='https://www.poderosa.com.pe/noticias/index' />
+    <meta name='keywords' content='noticias, poderosa' />
+    <!-- OpenGraph Meta Tags -->
+    <meta property='og:type' content='website' />
+    <meta property='og:title' content='Noticias | PODEROSA' />
+    <meta property='og:description' content='Conoce nuestras últimas noticias.' />
+    <meta property='og:url' content='https://www.poderosa.com.pe/noticias/index' />
+    <meta property='og:image' content='https://www.poderosa.com.pe/Content/img/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    prueba
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+
+<!-- SCRIPTS -->
+<script type="text/javascript" src="~/Content/js/pagination/jQuery.paginate.js"></script>
+<script>
+    $('.publicaciones_pagination').paginate({
+    	items_per_page: 16
+    });
+</script>
+</html>

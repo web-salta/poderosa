@@ -1,0 +1,95 @@
+﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title>Pataz: trabajo conjunto en forestación de 100 mil plantones de pino | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='Pataz: trabajo conjunto en forestación de 100 mil plantones de pino | PODEROSA' />
+<meta name='description' content='Pataz: trabajo conjunto en forestación de 100 mil plantones de pino.' />
+<meta name='url' content='http://www.poderosa.com.pe/noticias/pataz-trabajo-conjunto-en-forestacion-de-100-mil-plantones-de-pino/' />
+<meta name='keywords' content='Pataz, forestación de 100 mil plantones, Municipalidad Provincial de Pataz' />
+<!-- OpenGraph Meta Tags -->
+<meta property='og:type' content='website' />
+<meta property='og:title' content='Pataz: trabajo conjunto en forestación de 100 mil plantones de pino | PODEROSA' />
+<meta property='og:description' content='Pataz: trabajo conjunto en forestación de 100 mil plantones de pino.' />
+<meta property='og:url' content='http://www.poderosa.com.pe/noticias/pataz-trabajo-conjunto-en-forestacion-de-100-mil-plantones-de-pinoo/' />
+<meta property='og:image' content='http://www.poderosa.com.pe/Content/noticias/pataz-trabajo-conjunto-en-forestacion-de-100-mil-plantones-de-pino/compartir.jpg' />
+
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="my-seccion">
+            <div class="container">
+                <img class="object-fit-cover" src="~/Content/noticias/pataz-trabajo-conjunto-en-forestacion-de-100-mil-plantones-de-pino/banner.jpg" alt="imagen">
+
+                <div class="h6 mayuscula mt-4">12 de Abril de 2019</div>
+                <h1 class="h3 dorado">Pataz: trabajo conjunto en forestación de 100 mil plantones de pino</h1>
+
+                @Html.Partial("~/Views/Shared/_redes.cshtml")
+                <br />
+
+                <p>La Municipalidad Provincial de Pataz, a través de la Gerencia de Desarrollo Económico Local, en convenio con Asociación Pataz y la compañía minera Poderosa; han iniciado la siembra de aproximadamente 100 mil plantones de pino; con la finalidad de generar colchones hídricos para conservar el agua y mejorar nuestro ecosistema.</p>
+
+                <p>La República se está realizando alrededor de la laguna Huascacocha, con la participación de los pobladores de la Comunidad Campesina de la Victoria, a través de brigadas por cada anexo.</p>
+
+                <h2 class="dorado h5">Dato</h2>
+
+                <p>Este proyecto tiene como meta forestar 1000 hectáreas.</p>
+
+                <p><small>Fuente Facebook Municipalidad Provincial de Pataz</small></p>
+
+                <div class="row justify-content-center my-4">
+                    <div class="col-lg-8">
+                        <div class="owl-carousel    js-owl-carousel-fotos   owl-carousel--no-nav    dots-gris">
+                            <div class="">
+                                <img class="img-fluid w-100" src="~/Content/noticias/pataz-trabajo-conjunto-en-forestacion-de-100-mil-plantones-de-pino/01.jpg" alt="imagen">
+                            </div>
+
+                            <div class="">
+                                <img class="img-fluid w-100" src="~/Content/noticias/pataz-trabajo-conjunto-en-forestacion-de-100-mil-plantones-de-pino/02.jpg" alt="imagen">
+                            </div>
+
+                            <div class="">
+                                <img class="img-fluid w-100" src="~/Content/noticias/pataz-trabajo-conjunto-en-forestacion-de-100-mil-plantones-de-pino/03.jpg" alt="imagen">
+                            </div>
+
+                            <div class="">
+                                <img class="img-fluid w-100" src="~/Content/noticias/pataz-trabajo-conjunto-en-forestacion-de-100-mil-plantones-de-pino/04.jpg" alt="imagen">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-auto">
+                        @Html.Partial("~/Views/Shared/_redes.cshtml")
+                    </div>
+
+                    <div class="col-sm-auto ml-sm-auto mt-3 mt-sm-0">
+                        <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

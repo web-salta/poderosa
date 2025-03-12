@@ -1,0 +1,101 @@
+﻿/* ####################PLANNER############################# */
+.link {
+    bottom: 2%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-decoration: underline;
+    display: block;
+    position: fixed;
+}
+
+.logo_historico_header{
+    text-align:center;
+}
+
+.lista__historico a{
+     color:#494941;
+     font-family:'HelveticaLTStd-BoldCond';
+     font-size: 1.2em;
+}
+
+.lista__historico a:hover {
+    color:#d8a400;
+}
+
+@media screen and (min-width: 768px) {
+    .logo_historico_header {
+        max-width: 35%;
+        margin:0 auto ;
+    }
+
+    .lista__historico {
+        padding-left: 32%;
+    }
+}
+
+.video-banner__background{
+    height: 100vh;
+    background: url("../img/fondo-video-movil.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.video-planner video {
+      width:75%;
+      margin:0 auto;
+      display: block;
+}
+
+.video-planner {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    align-items: center;
+}
+
+.video-planner div{
+   margin-top: -5%;
+ }   
+
+.video-banner__footer {
+     display: flex;
+    justify-content:center;
+    text-align:center;
+    align-content:center;
+    height:20%;
+}
+
+.video-planner img{
+    width:220px;
+}
+
+@media screen and (min-width: 768px) {
+     .video-planner div{
+      margin-top: 0;
+    }   
+
+    .video-banner__background{
+        background: url("../img/fondo-video.jpg") no-repeat center center fixed;
+    }
+
+    .video-planner video {
+       width:70%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .video-planner video {
+         width:70%;
+         margin:0 auto;
+         display: block;
+    }  
+}
+
+.planner__body {
+    padding: 0;
+    overflow-y: hidden;
+}

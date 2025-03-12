@@ -1,0 +1,70 @@
+﻿
+@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title> ¡Premio a la innovación Tecnológica 2021! | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='¡Premio a la innovación Tecnológica 2021! | PODEROSA' />
+<meta name='description' content='La Sociedad Nacional de Minería, Petróleo y Energía (SNMPE), a través del Comité de Tecnología e Innovación, otorgó el Premio a 10 proyectos mineros. En la categoría Académico Innovador, ganó el trabajo realizado en conjunto por PODEROSA y la Pontificia Universidad Católica del Perú (PUCP), denominado “Evaluación técnica del aprovechamiento de relaves auríferos como materiales de construcción prefabricados mediante geopolímeros”.  ' />
+<meta name='url' content='https://www.poderosa.com.pe/noticias/premio-a-la-innovacion-tecnologica-2021/' />
+<meta name='keywords' content='Proyectos, reactivación, económica, sierra, producción,papa' />
+<!-- OpenGraph Meta Tags -->
+<meta property='og:type' content='website' />
+<meta property='og:title' content='¡Premio a la innovación Tecnológica 2021! | PODEROSA' />
+<meta property='og:description' content='La Sociedad Nacional de Minería, Petróleo y Energía (SNMPE), a través del Comité de Tecnología e Innovación, otorgó el Premio a 10 proyectos mineros. En la categoría Académico Innovador, ganó el trabajo realizado en conjunto por PODEROSA y la Pontificia Universidad Católica del Perú (PUCP), denominado “Evaluación técnica del aprovechamiento de relaves auríferos como materiales de construcción prefabricados mediante geopolímeros”.  ' />
+<meta property='og:url' content='https://www.poderosa.com.pe/noticias/premio-a-la-innovacion-tecnologica-2021/' />
+<meta property='og:image' content='https://www.poderosa.com.pe/Content/noticias/premio-a-la-innovacion-tecnologica-2021/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+                <img class="object-fit-cover" src="~/Content/noticias/premio-a-la-innovacion-tecnologica-2021/banner.jpg" alt="imagen">
+
+                <div class="h6 mayuscula mt-4">05 DE ABRIL DE 2022</div>
+                <h1 class="h3 dorado">
+                    ¡Premio a la innovación Tecnológica 2021!
+                </h1>
+
+                @Html.Partial("~/Views/Shared/_redes.cshtml")
+                <br />
+
+                <p>Lima, abril 05, 2022. La Sociedad Nacional de Minería, Petróleo y Energía (SNMPE), a través del Comité de Tecnología e Innovación, otorgó el Premio a 10 proyectos mineros. En la categoría Académico Innovador, ganó el trabajo realizado en conjunto por <strong>PODEROSA</strong> y la Pontificia Universidad Católica del Perú (PUCP), denominado <em>“Evaluación técnica del aprovechamiento de relaves auríferos como materiales de construcción prefabricados mediante geopolímeros”.</em></p>
+
+                <p>Nos sentimos orgullosos de seguir creando proyectos sustentables y ecológicos que nos permitan una industria moderna y sostenible, a la vanguardia del desarrollo del país.</p>
+
+                <div class="row justify-content-center my-4">
+                    <div class="col-lg-9">
+                        <img class="img-fluid w-100" src="~/Content/noticias/premio-a-la-innovacion-tecnologica-2021/01.jpg" alt="imagen">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-auto">
+                        @Html.Partial("~/Views/Shared/_redes.cshtml")
+                    </div>
+
+                    <div class="col-sm-auto ml-sm-auto mt-3 mt-sm-0">
+                        <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

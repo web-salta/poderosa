@@ -1,0 +1,75 @@
+﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title>Inicio | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='Inicio | PODEROSA' />
+<meta name='description' content='Empresa minera aurífera ubicada en el distrito y provincia de Pataz, a casi 320 Km de la ciudad de Trujillo, a una altura que va entre los 1,250 y 3,000 m.s.n.m. en la región La Libertad, Perú. Con oficinas administrativas y almacenes en Lima y Trujillo.' />
+<meta name='url' content='https://www.poderosa.com.pe/home/quienes-somos' />
+<meta name='keywords' content='minera poderosa, asociación pataz' />
+<!-- OpenGraph Meta Tags -->
+<meta property='og:type' content='website' />
+<meta property='og:title' content='Inicio | PODEROSA' />
+<meta property='og:description' content='Empresa minera aurífera ubicada en el distrito y provincia de Pataz, a casi 320 Km de la ciudad de Trujillo, a una altura que va entre los 1,250 y 3,000 m.s.n.m. en la región La Libertad, Perú. Con oficinas administrativas y almacenes en Lima y Trujillo.' />
+<meta property='og:url' content='https://www.poderosa.com.pe/home/quienes-somos' />
+<meta property='og:image' content='https://www.poderosa.com.pe/Content/img/compartir.jpg' />
+</head>
+<body>
+
+    <div class="menuSecuVelo"></div>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <section class="pt-4 pb-5">
+        <div class="bannerInterno__contenedor">
+            <img src="~/Content/img/cabeceras/04-sostenibilidad/02-gestion-ambiental/01.png" class="img-fluid  w-100 d-none  d-lg-block" alt="">
+            <img src="~/Content/img/cabeceras/04-sostenibilidad/02-gestion-ambiental/01-tablet.jpg" class="img-fluid  d-none d-md-block d-sm-none d-lg-none" alt="">
+            <img src="~/Content/img/cabeceras/04-sostenibilidad/02-gestion-ambiental/01-movil.jpg" class="img-fluid  d-block d-md-none d-lg-none" alt="">
+            <img src="~/Content/img/pagina-interna/forma-dorada-transparente.png" class="img-fluid bannerInterno__dorada" alt="...">
+            <div class="bannerInterno__texto">
+                <h3 class="bannerInterno__indice fuente-5">Gestión Ambiental</h3>
+                <h1 class="bannerInterno__titulo fuente-3">Uso responsable del agua</h1>
+            </div>
+            <img src="~/Content/img/pagina-interna/forma-dorada.png" class="img-fluid bannerInterno__small" alt="">
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="fuente-4 text-center">
+                        <p>
+                            La conservación del agua es esencial para asegurar todas nuestras operaciones.  Por ello, contemplamos el uso eficiente recirculando y reutilizando el agua para reducir el consumo de agua fresca. Utilizamos tecnología avanzada para tratar agua de consumo, residual e industrial, de esta manera garantizamos su calidad.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="contenedor-mostaza">
+            <div class="row">
+                <div class="col-lg-6 ">
+                    <img src="~/Content/img/04-sostenibilidad/04-02-gestion-ambiental/04-02-03-uso-responsable-del-agua/01.jpg" alt="" class="img-fluid h-100">
+                </div>
+                <div class="col-lg-6 ">
+                    <div class="contenedor-mostaza_der">
+                        <div class="row  ">
+
+                            <div class="col-lg-12 d-flex justify-content-center align-items-center">
+                                <div class="contenedor-mostaza_text">
+                                    <p class="fuente-4">
+                                        En el año 2023, obtuvimos el Certificado Azul del programa Huella Hídrica del ANA, con nuestro proyecto de reducción del uso de agua y la implementación de un sistema de micromedición en el anexo de Vijus.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

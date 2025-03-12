@@ -1,0 +1,83 @@
+﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title>Esfuerzo conjunto: PODEROSA y Comunidad Campesina de Pias consiguen cobertura de techo de losa deportiva | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='Esfuerzo conjunto: PODEROSA y Comunidad Campesina de Pias consiguen cobertura de techo de losa deportiva | PODEROSA' />
+<meta name='description' content='Gracias al esfuerzo conjunto entre la Comunidad Campesina de Pias, Asociación Pataz y PODEROSA; se realizó la entrega de una moderna cobertura para el techo de la losa deportiva del distrito de Pias.' />
+<meta name='url' content='https://www.poderosa.com.pe/noticias/esfuerzo-conjunto-poderosa-y-comunidad-campesina-de-pias/' />
+<meta name='keywords' content='Poderosa, Distintivo de Empresa Socialmente Responsable' />
+<!-- OpenGraph Meta Tags -->
+<meta property='og:type' content='website' />
+<meta property='og:title' content='Esfuerzo conjunto: PODEROSA y Comunidad Campesina de Pias consiguen cobertura de techo de losa deportiva | PODEROSA' />
+<meta property='og:description' content='Gracias al esfuerzo conjunto entre la Comunidad Campesina de Pias, Asociación Pataz y PODEROSA; se realizó la entrega de una moderna cobertura para el techo de la losa deportiva del distrito de Pias.' />
+<meta property='og:url' content='https://www.poderosa.com.pe/noticias/esfuerzo-conjunto-poderosa-y-comunidad-campesina-de-pias/' />
+<meta property='og:image' content='https://www.poderosa.com.pe/Content/noticias/esfuerzo-conjunto-poderosa-y-comunidad-campesina-de-pias/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+                <img class="object-fit-cover" src="~/Content/noticias/esfuerzo-conjunto-poderosa-y-comunidad-campesina-de-pias/banner.jpg" alt="imagen">
+                <div class="h6 mayuscula mt-4">23 de Junio de 2022</div>
+                <h1 class="dorado h3">Esfuerzo conjunto: PODEROSA y Comunidad Campesina de Pias consiguen cobertura de techo de losa deportiva</h1>
+
+                @Html.Partial("~/Views/Shared/_redes.cshtml")
+                <br />
+                <p>Gracias al esfuerzo conjunto entre la Comunidad Campesina de Pias, Asociación Pataz y PODEROSA; se realizó la entrega de una moderna cobertura para el techo de la losa deportiva del distrito de Pias.</p>
+
+                <p>Esta obra es un compromiso de <strong>PODEROSA</strong> con la Comunidad Campesina de Pias. La inversión para el desarrollo de la obra asciende a S/ 386 415.00 y fue financiado por Asociación Pataz con fondos de <strong>PODEROSA</strong>.</p>
+
+                <p>La obra comprende la instalación de vigas de cimentación, pedestales de concreto, columnas metálicas, una moderna cobertura resistente a lluvias, implementación de instalaciones eléctricas, mejoramiento de graderías (capacidad 450 personas). La losa deportiva tiene un área de 665 m2 y se sitúa en el frontis de la casa comunal.</p>
+
+                <p>La moderna infraestructura permitirá el desarrollo de diferentes disciplinas deportivas y servirá también como punto de reunión para las asambleas comunales.</p>
+                <p>La entrega de obra se realizó el 17 de abril. La recepción de la obra la hizo Pablo Delgado, presidente de la Comunidad Campesina Pias, asistieron también el alcalde de Pias: Amaro Cueva, representantes de PODEROSA y Asociación Pataz; quienes reafirmaron el compromiso con el bienestar de la población.</p>
+
+                <p>El expediente técnico de la obra fue elaborado por <strong>PODEROSA</strong> y su ejecución estuvo a cargo de la empresa Junta Marañón SAC, quienes iniciaron trabajos en enero y culminaron la obra en un plazo de tres meses. La supervisión estuvo a cargo de la empresa Consorcio Bethania.</p>
+
+
+                    <div class="row justify-content-center my-4">
+                        <div class="col-lg-8">
+                            <div class="owl-carousel    js-owl-carousel-fotos   owl-carousel--no-nav    dots-gris">
+                                <div class="">
+                                    <img class="img-fluid w-100" src="~/Content/noticias/esfuerzo-conjunto-poderosa-y-comunidad-campesina-de-pias/01.jpg" alt="imagen">
+                                </div>
+                                <div class="">
+                                    <img class="img-fluid w-100" src="~/Content/noticias/esfuerzo-conjunto-poderosa-y-comunidad-campesina-de-pias/02.jpg" alt="imagen">
+                                </div>
+                                <div class="">
+                                    <img class="img-fluid w-100" src="~/Content/noticias/esfuerzo-conjunto-poderosa-y-comunidad-campesina-de-pias/03.jpg" alt="imagen">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-sm-auto">
+                            @Html.Partial("~/Views/Shared/_redes.cshtml")
+                        </div>
+
+                        <div class="col-sm-auto ml-sm-auto mt-3 mt-sm-0">
+                            <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                        </div>
+                    </div>
+</div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

@@ -1,0 +1,139 @@
+﻿<header class="js-header    js-header-fixed-top">
+    <ul class="nav justify-content-end    nav-sec    js-nav-sec">
+        <!-- <li class="nav-item">
+      <a class="nav-link active" href="#">MENÚ ACTIVO</a>
+    </li> -->
+        <li class="nav-item">
+            <a class="nav-link" href="@Url.Action("proveedores", "home")">PROVEEDORES</a>
+        </li>
+        <!-- <li class="nav-item">
+         <a class="nav-link" href="@Url.Action("contacto", "home")">CONTACTO</a>
+     </li>-->
+        <li class="nav-item">
+            <a class="nav-link" href="#" data-fancybox="" data-src="#trueModal" data-modal="true" href="javascript:;">WEBMAIL</a>
+
+            <div id="trueModal" class="p-5 text-center" style="display: none; max-width: 600px;">
+                <p>
+                    <a class="boton boton--dorado" target="_blank" href="https://mail.poderosa.com.pe/owa/">Lima</a>
+                </p>
+                <p>
+                    <a class="boton boton--dorado" target="_blank" href="https://mailmina.poderosa.com.pe/owa/">Mina</a>
+                </p>
+                <p>
+                    <a class="" data-fancybox-close href="#">Cerrar</a>
+                </p>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://minerapoderosa.hiringroom.com/jobs">TRABAJA CON NOSOTROS</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://extranet.poderosa.com.pe/sesion/auth/login">PORTAL SST</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://extranet.poderosa.com.pe/extranet/">EXTRANET</a>
+        </li>
+    </ul>
+
+    <nav class="navbar navbar-expand-lg    nav-pri    js-nav-pri">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerMenuPri" aria-controls="navbarTogglerMenuPri" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <a class="navbar-brand" href="@Url.Action("index", "home")">
+            <!-- <img class="img-fluid" src="http://placehold.it/220x60" alt="logo"> -->
+            <img class="img-fluid" width="220" src="~/Content/img/web/logo-poderosa-header.svg" alt="logo">
+        </a>
+
+        <div class="collapse navbar-collapse    js-navbar-collapse" id="navbarTogglerMenuPri">
+            <ul class="navbar-nav mr-auto mt-3 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="@Url.Action("index", "home")">INICIO</a>
+                </li>
+                <li class="nav-item   dropdown">
+                    <a class="nav-link   dropdown-toggle" href="#" data-toggle="dropdown">
+                        QUIÉNES SOMOS
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="@Url.Action("poderosa", "quienes-somos")">PODEROSA</a>
+                        <a class="dropdown-item" href="@Url.Action("nuestra-historia", "quienes-somos")">NUESTRA HISTORIA</a>
+                        <a class="dropdown-item" href="@Url.Action("directorio-y-gerencia", "quienes-somos")">DIRECTORIO Y GERENCIA</a>
+                        <a class="dropdown-item" href="@Url.Action("accionistas", "quienes-somos")">ACCIONISTAS</a>
+                        <a class="dropdown-item" href="@Url.Action("premios-y-reconocimientos", "quienes-somos")">PREMIOS Y RECONOCIMIENTOS</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                        OPERACIONES
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="@Url.Action("gestion-estrategica", "operaciones")">GESTIÓN ESTRATÉGICA</a>
+                        <a class="dropdown-item" href="@Url.Action("procesos", "operaciones")">PROCESOS</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                        MEDIO AMBIENTE
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="@Url.Action("nuestro-aporte", "medio_ambiente")">NUESTRO APORTE</a>
+                        <a class="dropdown-item" href="@Url.Action("permisos", "medio_ambiente")">PERMISOS</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                        CANAL DE ÉTICA
+                    </a>
+                    <div class="dropdown-menu">
+                        <!--<a class="dropdown-item" href="https://www5.bdolineaetica.com/poderosa" target="_blank">WEB DE DENUNCIA</a>-->
+                        <a class="dropdown-item" href="https://bdolineaetica.smartsys.com.pe/poderosa" target="_blank">WEB DE DENUNCIA</a>
+                        <a class="dropdown-item" target="_blank" href="~/Content/descargas/canal-de-etica/instructivo-para-registrar-una-denuncia-en-el-canal-de-etica.pdf">INSTRUCTIVO DE DENUNCIA</a>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                        COMUNIDAD
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="@Url.Action("poblaciones-vecinas", "comunidad")">POBLACIONES VECINAS</a>
+                        <!--<a class="dropdown-item" href="@Url.Action("desarrollo-economico", "comunidad")">DESARROLLO ECONÓMICO</a>-->
+                        <a class="dropdown-item" href="@Url.Action("desarrollo-social", "comunidad")">DESARROLLO SOCIAL</a>
+                        <a class="dropdown-item" href="@Url.Action("asociacion-pataz", "comunidad")">ASOCIACIÓN PATAZ</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                        COLABORADORES
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="@Url.Action("responsabilidad", "colaboradores")">RESPONSABILIDAD</a>
+                        <a class="dropdown-item" href="@Url.Action("gestion-de-cumplimiento", "colaboradores")">GESTIÓN DE CUMPLIMIENTO</a>
+                        <a class="dropdown-item" href="@Url.Action("gestion-de-calidad", "colaboradores")">GESTIÓN DE CALIDAD</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link    dorado" href="@Url.Action("index", "noticias")">NOTICIAS</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link    dorado dropdown-toggle" href="#" data-toggle="dropdown">PUBLICACIONES</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="@Url.Action("batolito", "publicaciones")">BATOLITO</a>
+                        <a class="dropdown-item" href="@Url.Action("batolito-comunitario", "publicaciones")">BATOLITO<br>COMUNITARIO</a>
+                        <a class="dropdown-item" href="@Url.Action("memorias", "publicaciones")">MEMORIAS</a>
+                        <a class="dropdown-item" href="@Url.Action("libros", "publicaciones")">LIBROS</a>
+                        <a class="dropdown-item" href="@Url.Action("publicaciones-no-periodicas", "publicaciones")">PUBLICACIONES<br> NO PERIÓDICAS</a>
+                        <a class="dropdown-item" href="@Url.Action("boletines-informativos", "publicaciones")">BOLETINES <br>INFORMATIVOS</a>
+                        <a class="dropdown-item" href="@Url.Action("coleccionables", "publicaciones")">COLECCIONABLES</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link    dorado" href="@Url.Action("contacto", "home")">CONTACTO</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>

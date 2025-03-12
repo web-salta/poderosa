@@ -1,0 +1,74 @@
+﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+    <!-- METAS -->
+    <title>PODEROSA recibe Distintivo Empresa Socialmente Responsable (ESR®) de Perú 2021 | PODEROSA</title>
+    <!-- Basic HTML Meta Tags -->
+    <meta name='title' content='PODEROSA recibe Distintivo Empresa Socialmente Responsable (ESR®) de Perú 2021 | PODEROSA' />
+    <meta name='description' content='En reconocimiento a su gestión sostenible, PODEROSA recibió por quinto año consecutivo el Distintivo Empresa Socialmente Responsable (ESR®), el cual es entregado por Perú 2021 a las empresas que desarrollan una cultura de Responsabilidad Social a través de sus políticas y acciones cotidianas.' />
+    <meta name='url' content='http://www.poderosa.com.pe/noticias/poderosa-recibe-distintivo-empresa-socialmente-responsable-esr-de-peru-2021/' />
+    <meta name='keywords' content='Poderosa, Distintivo Empresa Socialmente Responsable, Perú 2021, gestión sostenible, cultura de Responsabilidad Social' />
+    <!-- OpenGraph Meta Tags -->
+    <meta property='og:type' content='website' />
+    <meta property='og:title' content='PODEROSA recibe Distintivo Empresa Socialmente Responsable (ESR®) de Perú 2021 | PODEROSA' />
+    <meta property='og:description' content='En reconocimiento a su gestión sostenible, PODEROSA recibió por quinto año consecutivo el Distintivo Empresa Socialmente Responsable (ESR®), el cual es entregado por Perú 2021 a las empresas que desarrollan una cultura de Responsabilidad Social a través de sus políticas y acciones cotidianas.' />
+    <meta property='og:url' content='http://www.poderosa.com.pe/noticias/poderosa-recibe-distintivo-empresa-socialmente-responsable-esr-de-peru-2021/' />
+    <meta property='og:image' content='http://www.poderosa.com.pe/Content/noticias/poderosa-recibe-distintivo-empresa-socialmente-responsable-esr-de-peru-2021/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+                <img class="object-fit-cover" src="~/Content/noticias/poderosa-recibe-distintivo-empresa-socialmente-responsable-esr-de-peru-2021/banner.jpg" alt="imagen">
+
+                <div class="h6 mayuscula mt-4">21 de Junio de 2017</div>
+                <h1 class="h3 dorado">PODEROSA recibe Distintivo Empresa Socialmente Responsable (ESR®) de Perú 2021</h1>
+                
+                @Html.Partial("~/Views/Shared/_redes.cshtml")
+                <br />
+
+                <p>En reconocimiento a su gestión sostenible, <strong>PODEROSA</strong> recibió por quinto año consecutivo el Distintivo Empresa Socialmente Responsable (ESR®), el cual es entregado por Perú 2021 a las empresas que desarrollan una cultura de Responsabilidad Social a través de sus políticas y acciones cotidianas.</p>
+
+                <p>El reconocimiento fue recibido por Eva Arias, Presidenta de Directorio, estuvieron también presentes en la ceremonia, el Ing. Alejandro Tarazona, Gerente del SIG y Responsabilidad Social y Jimena Sologuren, Subgerente de Responsabilidad Social y Comunicaciones.</p>
+
+                <p>De esta manera, <strong>PODEROSA</strong> renueva su compromiso como Empresa Socialmente Responsable, a través de sus distintas actividades en su zona de influencia en La Libertad y a nivel nacional.</p>
+
+                <p>El evento se realizó el 15 de junio donde 58 empresas de 19 sectores económicos diferentes fueron reconocidas. Desde su primera edición en el Perú en el 2011, un total de 100 empresas han recibido dicha distinción por parte de la organización Perú 2021.</p>
+
+                <p>En la edición 2016–2017, el Distintivo ESR® evaluó tres ejes clave: valores y cultura organizacional, que evalúa factores como gobierno corporativo y ética del negocio; desarrollo del entorno, enfocado en indicadores relacionados a la cadena de valor responsable y el relacionamiento con las comunidades; finalmente, gestión de riesgos e impactos, que evalúa las prácticas y políticas de las empresas para prevenir el impacto y los riesgos de su operación.</p>
+
+                <h2 class="dorado h5">¿Qué es el Distintivo ESR®?</h2>
+
+                <p>El Distintivo ESR® - Empresa Socialmente Responsable es una herramienta de auto evaluación sustentada con evidencias, que tiene como objetivo fortalecer la cultura de la Responsabilidad Social Empresarial en las empresas.</p>
+
+                <p>El premio Distintivo Empresa Socialmente Responsable (ESR®) cumple este año su sexta edición.</p>
+
+                <div class="row mt-4">
+                    <div class="col-sm-auto">
+                        @Html.Partial("~/Views/Shared/_redes.cshtml")
+                    </div>
+
+                    <div class="col-sm-auto ml-sm-auto mt-3 mt-sm-0">
+                        <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

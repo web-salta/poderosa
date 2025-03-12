@@ -1,0 +1,109 @@
+﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title>Pataz camino a ser el distrito más innovador | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='Pataz camino a ser el distrito más innovador | PODEROSA' />
+<meta name='description' content='Centro de Innovación Social de Asociación Pataz y PODEROSA, convocan a líderes innovadores y emprendedores.' />
+<meta name='url' content='http://www.poderosa.com.pe/noticias/pataz-camino-a-ser-el-distrito-mas-innovador/' />
+<meta name='keywords' content='Pataz, distrito, innovador, poderosa ' />
+<!-- OpenGraph Meta Tags -->
+<meta property='og:type' content='website' />
+<meta property='og:title' content='Pataz camino a ser el distrito más innovador | PODEROSA' />
+<meta property='og:description' content='Centro de Innovación Social de Asociación Pataz y PODEROSA, convocan a líderes innovadores y emprendedores.' />
+<meta property='og:url' content='http://www.poderosa.com.pe/noticias/pataz-camino-a-ser-el-distrito-mas-innovador/' />
+<meta property='og:image' content='http://www.poderosa.com.pe/Content/noticias/pataz-camino-a-ser-el-distrito-mas-innovador/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+                <img class="object-fit-cover" src="~/Content/noticias/pataz-camino-a-ser-el-distrito-mas-innovador/banner.jpg" alt="imagen">
+                <div class="h6 mayuscula mt-4">15 de Febrero de 2022</div>
+                <h1 class="h3 dorado">Pataz camino a ser el distrito más innovador</h1>
+
+                @Html.Partial("~/Views/Shared/_redes.cshtml")
+                <br />
+
+                <p>
+                    Pataz, febrero 15, 2022. Rurana, Centro de Innovación Social de Asociación Pataz y PODEROSA,
+                    convocan a líderes innovadores y emprendedores de La Libertad a participar en sesión de
+                    trabajo virtual Kick off, el miércoles 16 de febrero desde las 4:30 p.m.
+                </p>
+
+                <p>
+                    Encuentro contará con la presencia de experta en diseño y puesta en marcha de Sistemas de
+                    Innovación de Colombia.
+                </p>
+
+                <p>
+                    Con el objetivo de consolidar el sistema de innovación del distrito liberteño de Pataz,
+                    Asociación Pataz, su Centro de Innovación Social RURANA y el respaldo de PODEROSA,
+                    organizan un encuentro con Indy Bedoya Botero, especialista de Ruta N Medellín (Colombia);
+                    quien compartirá avances de esta iniciativa a los actores e interesados en promover el
+                    ecosistema de innovación y emprendimiento regional.
+                </p>
+
+                <p>
+                    <em>“Queremos compartir este importante desafío de hacer del distrito de Pataz un distrito
+                    innovador. Es una tarea con todos y para todos, por ello es estratégico unir nuestras
+                    voluntades a través de la Consolidación del Sistema de Innovación de Pataz”</em>, destacó el Ing.
+                    Juan Miguel Pérez, Secretario Ejecutivo de Asociación Pataz-RURANA.
+                </p>
+
+                <p>
+                    RURANA promueve soluciones con Enfoque a Misiones que busca la aceleración en la
+                    adopción de prácticas innovadoras que generen una transformación y mejora en la calidad de
+                    vida de Pataz, convirtiéndolo en el distrito más innovador del Perú en los próximos 10 años.
+                </p>
+
+                <h2 class="dorado h5">SEPA MÁS</h2>
+                    <p>
+                        La sesión kick off será este miercoles 16 de Febrero, de 4:30 p.m. a 6:30 p.m., vía Zoom.
+                        Inscripciones en <a href="https://bit.ly/3LALMBy" target="_blank">https://bit.ly/3LALMBy</a>
+                        Informes al email <a href="mailto:aroncalla@asociacionpataz.org.pe">aroncalla@asociacionpataz.org.pe</a> y <a href="mailto:eflores@asociacionpataz.org.pe">eflores@asociacionpataz.org.pe</a>
+                    </p>
+                    <div class="row justify-content-center mt-4 mb-2">
+                        <div class="col-lg-8">
+                            <div class="row">
+                                <div class="col-sm-6 mb-3">
+                                    <img class="img-fluid w-100" src="~/Content/noticias/pataz-camino-a-ser-el-distrito-mas-innovador/01.jpg" alt="imagen">
+                                </div>
+
+                                <div class="col-sm-6 mb-3">
+                                    <img class="img-fluid w-100" src="~/Content/noticias/pataz-camino-a-ser-el-distrito-mas-innovador/02.jpg" alt="imagen">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <br />
+
+                    <div class="row">
+                        <div class="col-sm-auto">
+                            @Html.Partial("~/Views/Shared/_redes.cshtml")
+                        </div>
+
+                        <div class="col-sm-auto ml-sm-auto mt-3 mt-sm-0">
+                            <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                        </div>
+                    </div>
+</div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

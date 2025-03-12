@@ -1,0 +1,682 @@
+﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title>Inicio | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='Inicio | PODEROSA' />
+<meta name='description' content='Empresa minera aurífera ubicada en el distrito y provincia de Pataz, a casi 320 Km de la ciudad de Trujillo, a una altura que va entre los 1,250 y 3,000 m.s.n.m. en la región La Libertad, Perú. Con oficinas administrativas y almacenes en Lima y Trujillo.' />
+<meta name='url' content='http://www.poderosa.com.pe/home/index' />
+<meta name='keywords' content='minera poderosa, asociación pataz' />
+<!-- OpenGraph Meta Tags -->
+<meta property='og:type' content='website' />
+<meta property='og:title' content='Inicio | PODEROSA' />
+<meta property='og:description' content='Empresa minera aurífera ubicada en el distrito y provincia de Pataz, a casi 320 Km de la ciudad de Trujillo, a una altura que va entre los 1,250 y 3,000 m.s.n.m. en la región La Libertad, Perú. Con oficinas administrativas y almacenes en Lima y Trujillo.' />
+<meta property='og:url' content='http://www.poderosa.com.pe/home/index' />
+<meta property='og:image' content='http://www.poderosa.com.pe/Content/img/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+    <main>
+
+        <section>
+            <div class="video-banner">
+                <video width="100%" height="100%" autoplay muted loop playsinline>
+                    <source src="~/Content/videos/poderosa2.mp4" type="video/mp4" codecs="avc1.4D401E, mp4a.40.2">
+                    <p>Su navegador no soporta la etiqueta de vídeo.</p>
+                </video>
+
+                <!--<div class="container">
+                <a class="boton-icono" href="#">
+                    <img class="boton-icono__img" src="img/web/ico-flecha-abajo.svg" alt="ico">
+                </a>
+            </div>-->
+
+                <div class="video-banner__caja-texto     d-flex align-items-center">
+                    <div class="">
+                        <span class="video-banner__txt-1">SOMOS PARTE DEL</span>
+                        <br>
+                        <span class="video-banner__txt-2"><strong>CRECIMIENTO</strong></span>
+                        <br>
+                        <div class="d-flex align-items-start">
+                            <span class="video-banner__txt-3">QUE <strong>LIDERA</strong> EL</span>
+                            <span class="video-banner__txt-4"><strong>PAÍS</strong></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion ">
+            <!-- d-block d-md-none -->
+            <div class="container">
+                <h2 class="h2 dorado">ÚLTIMAS NOTICIAS</h2>
+
+                <div class="owl-carousel    js-owl-carousel-noticias-home   owl-carousel--no-nav owl-carousel--no-dots-md">
+
+
+                    <!--<div class="noticia-resumen-home noticia-resumen-home--1    zoom">
+       <a target="_blank" href="@Url.Action("poderosa-dona-planta-de-oxigeno-para-el-hospital", "noticias")">
+            <img class="noticia-resumen-home__img    zoom__img" src="~/Content/noticias/poderosa-dona-planta-de-oxigeno-para-el-hospital/resumen.jpg" alt="imagen">
+
+                <div class="noticia-resumen-home__caja-texto">
+                    <div class="noticia-resumen-home__fecha">28 DE MAYO DE 2021</div>
+                    <h2 class="noticia-resumen-home__h">PODEROSA dona planta de oxígeno para el Hospital Regional de Trujillo</h2>
+                    <div class="text-right">
+                        <img class="ico-mas" src="~/Content/img/web/ico-mas.svg" alt="ico">
+                    </div>
+                </div>
+            </a>
+    </div>
+
+    <div class="noticia-resumen-home noticia-resumen-home--1    zoom">
+        <a target="_blank"  href="@Url.Action("inicia-obra-de-agua-y-desague-para-5-anexos-de-la-comunidad", "noticias")">
+            <img class="noticia-resumen-home__img    zoom__img" src="~/Content/noticias/inicia-obra-de-agua-y-desague-para-5-anexos/resumen.jpg" alt="imagen">
+
+            <div class="noticia-resumen-home__caja-texto">
+                <div class="noticia-resumen-home__fecha">10 DE MAYO DE 2022</div>
+                <h2 class="noticia-resumen-home__h">Inicia obra de agua y desagüe para 5 anexos de la Comunidad Campesina La Victoria ejecutado a través del mecanismo de Obras por Impuestos
+                  </h2>
+                <div class="text-right">
+                    <img class="ico-mas" src="~/Content/img/web/ico-mas.svg" alt="ico">
+                </div>
+            </div>
+        </a>
+    </div>-->
+                    <!--    <div class="noticia-resumen-home noticia-resumen-home--1    zoom">
+        <a target="_blank" href="@Url.Action("yo-innovo-por-el-peru-concytec-reconoce-proyecto-innovador", "noticias")">
+            <img class="noticia-resumen-home__img    zoom__img" src="~/Content/noticias/yo-innovo-por-el-peru-concytec-reconoce-proyecto-innovador/resumen.jpg" alt="imagen">
+
+            <div class="noticia-resumen-home__caja-texto">
+                <div class="noticia-resumen-home__fecha">24 DE JUNIO DE 2022</div>
+                <h2 class="noticia-resumen-home__h">
+                    Yo innovo por el Perú: CONCYTEC reconoce proyecto innovador desarrollado por PODEROSA
+                </h2>
+                <div class="text-right">
+                    <img class="ico-mas" src="~/Content/img/web/ico-mas.svg" alt="ico">
+                </div>
+            </div>
+        </a>
+    </div>-->
+                    <!-- <div class="noticia-resumen-home noticia-resumen-home--1    zoom">
+        <a target="_blank" href="@Url.Action("lamentamos-perdida-y-condenamos-violencia-criminal-en-pataz", "noticias")">
+
+            <img class="noticia-resumen-home__img    zoom__img" src="~/Content/noticias/lamentamos-perdida-y-condenamos-violencia-criminal-en-pataz/resumen.jpg" alt="imagen">
+            <div class="noticia-resumen-home__caja-texto">
+                <div class="noticia-resumen-home__fecha">09 DE MAYO DE 2023</div>
+                <h2 class="noticia-resumen-home__h">
+                    Lamentamos pérdida y condenamos violencia criminal en Pataz
+                </h2>
+                <div class="text-right">
+                    <img class="ico-mas" src="~/Content/img/web/ico-mas.svg" alt="ico">
+                </div>
+            </div>
+        </a>
+    </div>
+
+                  <div class="noticia-resumen-home noticia-resumen-home--1    zoom">
+                      <a target="_blank" href="@Url.Action("lamentamos-perdida-y-condenamos-violencia-criminal-en-pataz", "noticias")">
+                          <img class="noticia-resumen-home__img    zoom__img" src="~/Content/noticias/yo-innovo-por-el-peru-concytec-reconoce-proyecto-innovador/resumen.jpg" alt="imagen">
+
+                          <div class="noticia-resumen-home__caja-texto">
+                              <div class="noticia-resumen-home__fecha">09 DE MAYO DE 2023</div>
+                              <h2 class="noticia-resumen-home__h">
+                                  Lamentamos pérdida y condenamos violencia criminal en Pataz
+                              </h2>
+                              <div class="text-right">
+                                  <img class="ico-mas" src="~/Content/img/web/ico-mas.svg" alt="ico">
+                              </div>
+                          </div>
+                      </a>
+                  </div>-->
+                    <!-- ant <div class="noticia-resumen-home noticia-resumen-home--1    zoom">
+        <a target="_blank" href="@Url.Action("lineamientos_sobre_regalos_atenciones_y_cortesias", "noticias")">
+            <img class="noticia-resumen-home__img    zoom__img" src="~/Content/noticias/lineamientos-sobre-regalos-atenciones/resumen.png" alt="imagen">
+
+            <div class="noticia-resumen-home__caja-texto">
+                <div class="noticia-resumen-home__fecha">20 DE DICIEMBRE de 2023</div>
+                <h2 class="noticia-resumen-home__h">
+                    Lineamientos sobre regalos, atenciones y cortesías
+                </h2>
+                <div class="text-right">
+                    <img class="ico-mas" src="~/Content/img/web/ico-mas.svg" alt="ico">
+                </div>
+            </div>
+        </a>
+    </div>-->
+
+                    <div class="noticia-resumen-home noticia-resumen-home--1    zoom">
+                        <a target="_blank" href="@Url.Action("nuevo-atentado-contra-poderosa-criminales-dinamitan-torres-de-electricidad", "noticias")">
+                            <img class="noticia-resumen-home__img    zoom__img" src="~/Content/noticias/nuevo-atentado-contra-poderosa-criminales/resumen2.jpg" alt="imagen">
+
+                            <div class="noticia-resumen-home__caja-texto">
+                                <div class="noticia-resumen-home__fecha">05 DE ABRIL de 2024</div>
+                                <h2 class="noticia-resumen-home__h">
+                                    NUEVO ATENTADO CONTRA PODEROSA: Criminales dinamitan torres de electricidad y toman dos galerías
+                                </h2>
+                                <div class="text-right">
+                                    <img class="ico-mas" src="~/Content/img/web/ico-mas.svg" alt="ico">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+
+
+
+                    <!--    <div class="noticia-resumen-home noticia-resumen-home--1    zoom">
+         <a target="_blank" href="https://www.desdeadentro.pe/2022/02/eva-arias-los-mineros-somo-resilientes/">
+             <img class="noticia-resumen-home__img    zoom__img" src="~/Content/noticias/eva-arias-los-mineros-somos-resilientes/resumen.jpg" alt="imagen">
+
+             <div class="noticia-resumen-home__caja-texto">
+                 <div class="noticia-resumen-home__fecha">14 DE FEBRERO DE 2022</div>
+                 <h2 class="noticia-resumen-home__h">Eva Arias: “Los mineros somos resilientes”</h2>
+                 <div class="text-right">
+                     <img class="ico-mas" src="~/Content/img/web/ico-mas.svg" alt="ico">
+                 </div>
+             </div>
+         </a>
+     </div>
+
+
+
+    <div class="noticia-resumen-home noticia-resumen-home--2    zoom">
+         <a target="_blank" href="@Url.Action("gestion-social-en-mineria-el-poder-del-esfuerzo-conjunto", "noticias")">
+             <img class="noticia-resumen-home__img    zoom__img" src="~/Content/noticias/gestion-social-en-mineria-el-poder-del-esfuerzo-conjunto/resumen.jpg" alt="imagen">
+
+             <div class="noticia-resumen-home__caja-texto">
+                 <div class="noticia-resumen-home__fecha">28 DE MAYO DE 2021</div>
+                 <h2 class="noticia-resumen-home__h">Gestión Social en Minería: el poder del esfuerzo conjunto, de Reto a Misiones</h2>
+                 <div class="text-right">
+                     <img class="ico-mas" src="~/Content/img/web/ico-mas.svg" alt="ico">
+                 </div>
+             </div>
+         </a>
+     </div>
+
+     <div class="noticia-resumen-home noticia-resumen-home--2    zoom">
+         <a target="_blank" href="@Url.Action("poderosa-concluye-con-exito-primer-seguimiento", "noticias")">
+             <img class="noticia-resumen-home__img    zoom__img" src="~/Content/noticias/poderosa-concluye-con-exito-primer-seguimiento/resumen.jpg" alt="imagen">
+
+             <div class="noticia-resumen-home__caja-texto">
+                 <div class="noticia-resumen-home__fecha">16 DE FEBRERO DE 2022</div>
+                 <h2 class="noticia-resumen-home__h">PODEROSA concluye con éxito primer seguimiento de certificación de las Normas ISO 9001, 14001 y 45001</h2>
+                 <div class="text-right">
+                     <img class="ico-mas" src="~/Content/img/web/ico-mas.svg" alt="ico">
+                 </div>
+             </div>
+         </a>
+     </div>
+     <div class="noticia-resumen-home noticia-resumen-home--2    zoom">
+         <a target="_blank" href="@Url.Action("cocreando-el-sistema-de-innovacion-de-pataz-cuando-un-actor-social-se-une-a-otro-se-hace-mas-poderoso", "noticias")">
+             <img class="noticia-resumen-home__img    zoom__img" src="~/Content/noticias/cocreando-el-sistema-de-innovacion-de-pataz/resumen.jpg" alt="imagen">
+
+             <div class="noticia-resumen-home__caja-texto">
+                 <div class="noticia-resumen-home__fecha">27 DE ABRIL DE 2022</div>
+                 <h2 class="noticia-resumen-home__h">Cocreando el Sistema de Innovación de Pataz: “Cuando un actor social se une a otro se hace más poderoso"</h2>
+                 <div class="text-right">
+                     <img class="ico-mas" src="~/Content/img/web/ico-mas.svg" alt="ico">
+                 </div>
+             </div>
+         </a>
+     </div>-->
+                    <!-- <div class="noticia-resumen-home noticia-resumen-home--2    zoom">
+        <a target="_blank" href="@Url.Action("esfuerzo-conjunto-poderosa-y-comunidad-campesina-de-pias", "noticias")">
+            <img class="noticia-resumen-home__img    zoom__img" src="~/Content/noticias/esfuerzo-conjunto-poderosa-y-comunidad-campesina-de-pias/resumen.jpg" alt="imagen">
+
+            <div class="noticia-resumen-home__caja-texto">
+                <div class="noticia-resumen-home__fecha">23 DE JUNIO DE 2022</div>
+                <h2 class="noticia-resumen-home__h">Esfuerzo conjunto: PODEROSA y Comunidad Campesina de Pias consiguen cobertura de techo de losa deportiva</h2>
+                <div class="text-right">
+                    <img class="ico-mas" src="~/Content/img/web/ico-mas.svg" alt="ico">
+                </div>
+            </div>
+        </a>
+    </div>-->
+                    <!--<div class="noticia-resumen-home noticia-resumen-home--3    zoom">
+        <a target="_blank" href="@Url.Action("reportaje-buenas-juntas", "noticias")">
+            <img class="noticia-resumen-home__img    zoom__img" src="~/Content/noticias/reportaje-buenas-juntas/resumen.png" alt="imagen">
+
+            <div class="noticia-resumen-home__caja-texto">
+                <div class="noticia-resumen-home__fecha">22 DE JUNIO DE 2022</div>
+                <h2 class="noticia-resumen-home__h">Reportaje buenas juntas</h2>
+                <div class="text-right">
+                    <img class="ico-mas" src="~/Content/img/web/ico-mas.svg" alt="ico">
+                </div>
+            </div>
+        </a>
+    </div>-->
+                    <!-- <div class="noticia-resumen-home noticia-resumen-home--2    zoom">
+        <a target="_blank" href="@Url.Action("informamos_al_mercado_el_levantamiento_del_bloqueo_las_vias_de_acceso_nuestra_unidad_minera", "noticias")">
+            <img class="noticia-resumen-home__img    zoom__img" src="~/Content/noticias/informamos-al-mercado-el-levantamiento-del-bloqueo-las-vias/resumen.jpg" alt="imagen">
+
+            <div class="noticia-resumen-home__caja-texto">
+                <div class="noticia-resumen-home__fecha">07 DE AGOSTO de 2023</div>
+                <h2 class="noticia-resumen-home__h">
+                    Informamos al mercado el levantamiento del bloqueo a las vías de acceso a nuestra unidad minera
+                </h2>
+                <div class="text-right">
+                    <img class="ico-mas" src="~/Content/img/web/ico-mas.svg" alt="ico">
+                </div>
+            </div>
+        </a>
+    </div>-->
+
+                    <div class="noticia-resumen-home noticia-resumen-home--2    zoom">
+                        <a target="_blank" href="@Url.Action("poderosa-dona-terreno-a-la-fundacion-peruana-de-cancer", "noticias")">
+                            <img class="noticia-resumen-home__img    zoom__img" src="~/Content/noticias/poderosa-dona-terreno-a-la-fundacion-peruana-de-cancer/resumen.jpg" alt="imagen">
+
+                            <div class="noticia-resumen-home__caja-texto">
+                                <div class="noticia-resumen-home__fecha">08 DE ABRIL de 2024</div>
+                                <h2 class="noticia-resumen-home__h">
+                                    Poderosa dona terreno a la Fundación Peruana de Cáncer
+                                </h2>
+                                <div class="text-right">
+                                    <img class="ico-mas" src="~/Content/img/web/ico-mas.svg" alt="ico">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="noticia-resumen-home noticia-resumen-home--3    zoom">
+                        <a target="_blank" href="@Url.Action("quinta-edicion-del-premio-hub-norte-facilitacion-de-conexiones-y-recursos", "noticias")">
+                            <img class="noticia-resumen-home__img    zoom__img" src="~/Content/noticias/quinta-edicion-del-premio-hub-norte-facilitacion-de-conexiones-y-recursos/resumen.jpg" alt="imagen">
+
+                            <div class="noticia-resumen-home__caja-texto">
+                                <div class="noticia-resumen-home__fecha">08 DE ABRIL de 2024</div>
+                                <h2 class="noticia-resumen-home__h">
+                                    Quinta edición del Premio Hub Norte: facilitación de conexiones y recursos para impulsar proyectos innovadores
+                                </h2>
+                                <div class="text-right">
+                                    <img class="ico-mas" src="~/Content/img/web/ico-mas.svg" alt="ico">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <!--<div class="noticia-resumen-home noticia-resumen-home--3    zoom">
+                        <a target="_blank" href="@Url.Action("obras-por-impuestos", "noticias")">
+                            <img class="noticia-resumen-home__img    zoom__img" src="~/Content/noticias/obras-por-impuestos/resumen.jpg" alt="imagen">
+
+                            <div class="noticia-resumen-home__caja-texto">
+                                <div class="noticia-resumen-home__fecha">04 DE ENERO de 2024</div>
+                                <h2 class="noticia-resumen-home__h">
+                                    Obras por Impuestos: PODEROSA mejora la calidad de vida de más de 70 familias con importante inversión en agua y saneamiento
+                                </h2>
+                                <div class="text-right">
+                                    <img class="ico-mas" src="~/Content/img/web/ico-mas.svg" alt="ico">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                       <div class="noticia-resumen-home noticia-resumen-home--2    zoom">
+                        <a target="_blank" href="@Url.Action("amautas-mineros-recibe-reconocimiento-por-su-aporte-a-la-industria", "noticias")">
+                            <img class="noticia-resumen-home__img    zoom__img" src="~/Content/noticias/amautas-mineros-recibe-reconocimiento-por-su-aporte-a-la-industria/resumen.jpg" alt="imagen">
+
+                            <div class="noticia-resumen-home__caja-texto">
+                                <div class="noticia-resumen-home__fecha">01 DE FEBRERO DE 2023</div>
+                                <h2 class="noticia-resumen-home__h">
+                                    Amautas Mineros recibe reconocimiento por su aporte a la industria minera en alianza con el IIMP y la SNMPE
+                                </h2>
+                                <div class="text-right">
+                                    <img class="ico-mas" src="~/Content/img/web/ico-mas.svg" alt="ico">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="noticia-resumen-home noticia-resumen-home--3    zoom">
+                        <a target="_blank" href="@Url.Action("hacia-una-economia-circular-poderosa-cuenta-con-primer-diagnostico", "noticias")">
+                            <img class="noticia-resumen-home__img    zoom__img" src="~/Content/noticias/hacia-una-economia-circular-poderosa-cuenta-con-primer-diagnostico/resumen.jpg" alt="imagen">
+
+                            <div class="noticia-resumen-home__caja-texto">
+                                <div class="noticia-resumen-home__fecha">19 DE ENERO DE 2023</div>
+                                <h2 class="noticia-resumen-home__h">
+                                    Hacia una Economía Circular: PODEROSA cuenta con primer diagnóstico y traza ruta sostenible
+                                </h2>
+                                <div class="text-right">
+                                    <img class="ico-mas" src="~/Content/img/web/ico-mas.svg" alt="ico">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+    <div class="noticia-resumen-home noticia-resumen-home--3    zoom">
+        <a target="_blank" href="@Url.Action("ninos-de-trujillo-y-el-pais-disfrutan-de-vacaciones-utiles", "noticias")">
+            <img class="noticia-resumen-home__img    zoom__img" src="~/Content/noticias/ninos-de-trujillo-y-el-pais-disfrutan-de-vacaciones-utiles/resumen.jpg" alt="imagen">
+
+            <div class="noticia-resumen-home__caja-texto">
+                <div class="noticia-resumen-home__fecha">13 DE ENERO DE 2023</div>
+                <h2 class="noticia-resumen-home__h">Niños de Trujillo y el país disfrutan de vacaciones útiles organizado por PODEROSA</h2>
+                <div class="text-right">
+                    <img class="ico-mas" src="~/Content/img/web/ico-mas.svg" alt="ico">
+                </div>
+            </div>
+        </a>
+    </div>-->
+
+
+                </div>
+
+                        <div class="text-center mt-4">
+                            <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                        </div>
+                </div>
+        </section>
+
+        <section class="my-seccion  py-seccion    bg-marron-20">
+            <div class="container">
+                <h2 class="dorado">ÚLTIMAS PUBLICACIONES</h2>
+
+                <div class="tab-contenedor">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" target="_blank" href="#memorias">MEMORIAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" target="_blank" href="#batolito">BATOLITO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" target="_blank" href="#batolito-comunitario">
+                                <span class="d-none d-sm-inline">BATOLITO</span>
+                                <span class="d-inline d-sm-none">B.</span>
+                                COMUNITARIO
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" target="_blank" href="#libros">LIBROS</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="memorias">
+                            <div class="row">
+
+                                <div class="col-sm-6 col-lg-4 mb-2">
+                                    <a target="_blank" href="~/Content/descargas/memorias/reporte-sostenibilidad-2022.pdf">
+                                        <div class="zoom">
+                                            <img class="img-fluid w-100    zoom__img" src="~/Content/descargas/memorias/informe-anual-de-sostenibilidad-2022-home.jpg" alt="imagen">
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-sm-6 col-lg-4 mb-2">
+                                    <a target="_blank" href="~/Content/descargas/memorias/reporte-sostenibilidad-2021.pdf">
+                                        <div class="zoom">
+                                            <img class="img-fluid w-100    zoom__img" src="~/Content/descargas/memorias/informe-anual-de-sostenibilidad-2021-home.jpg" alt="imagen">
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-sm-6 col-lg-4 mb-2">
+                                    <a target="_blank" href="~/Content/descargas/memorias/memoria-2020.pdf">
+                                        <div class="zoom">
+                                            <img class="img-fluid w-100    zoom__img" src="~/Content/descargas/memorias/informe-anual-de-sostenibilidad-2020-home.jpg" alt="imagen">
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <!--<div class="col-sm-6 col-lg-4 mb-2">
+            <a target="_blank" href="~/Content/descargas/memorias/memoria-2020.pdf">
+                <div class="zoom">
+                    <img class="img-fluid w-100    zoom__img" src="~/Content/descargas/memorias/2020-home.jpg" alt="imagen">
+                </div>
+            </a>
+        </div>
+
+            <div class="col-sm-6 col-lg-4 mb-2">
+          <a target="_blank" href="~/Content/descargas/memorias/2019-eng.pdf">
+              <div class="zoom">
+                  <img class="img-fluid w-100    zoom__img" src="~/Content/descargas/memorias/2019-eng-home.jpg" alt="imagen">
+              </div>
+          </a>
+      </div>
+
+    <div class="col-sm-6 col-lg-4 mb-2">
+          <a target="_blank" href="~/Content/descargas/memorias/2019.pdf">
+              <div class="zoom">
+                  <img class="img-fluid w-100    zoom__img" src="~/Content/descargas/memorias/2019-home.jpg" alt="imagen">
+              </div>
+          </a>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 mb-2">
+          <a target="_blank" href="~/Content/descargas/memorias/2018.pdf">
+              <div class="zoom">
+                  <img class="img-fluid w-100    zoom__img" src="~/Content/descargas/memorias/2018-home.jpg" alt="imagen">
+              </div>
+          </a>
+      </div>
+      <div class="col-sm-6 col-lg-4   d-none d-sm-block">
+          <a target="_blank" href="~/Content/descargas/memorias/2017.pdf">
+              <div class="zoom">
+                  <img class="img-fluid w-100    zoom__img" src="~/Content/descargas/memorias/2017-home.jpg" alt="imagen">
+              </div>
+          </a>
+      </div>-->
+                                <!--<div class="col-sm-6 col-lg-4   d-none d-lg-block">
+        <a target="_blank" href="~/Content/descargas/memorias/2016.pdf">
+            <div class="zoom">
+                <img class="img-fluid w-100    zoom__img" src="~/Content/descargas/memorias/2016-home.jpg" alt="imagen">
+            </div>
+        </a>
+    </div>-->
+                            </div>
+
+                            <div class="text-center mt-4">
+                                <a class="boton boton--dorado" target="_blank" href="@Url.Action("memorias", "publicaciones")">VER TODAS LAS MEMORIAS</a>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="batolito">
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-4 mb-2">
+                                    <a target="_blank" href="~/Content/descargas/batolito/Batolito_56.pdf">
+                                        <div class="zoom">
+                                            <img class="img-fluid w-100    zoom__img" src="~/Content/descargas/batolito/Batolito_56-home.jpg" alt="imagen">
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-sm-6 col-lg-4 mb-2">
+                                    <a target="_blank" href="~/Content/descargas/batolito/Batolito_55.pdf">
+                                        <div class="zoom">
+                                            <img class="img-fluid w-100    zoom__img" src="~/Content/descargas/batolito/Batolito_55-home.jpg" alt="imagen">
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-sm-6 col-lg-4 mb-2">
+                                    <a target="_blank" href="~/Content/descargas/batolito/Batolito_54.pdf">
+                                        <div class="zoom">
+                                            <img class="img-fluid w-100    zoom__img" src="~/Content/descargas/batolito/Batolito_54-home.jpg" alt="imagen">
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class="text-center mt-4">
+                                <a class="boton boton--dorado" target="_blank" href="@Url.Action("batolito", "publicaciones")">VER TODOS LOS BATOLITOS</a>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="batolito-comunitario">
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-4 mb-2">
+                                    <a target="_blank" href="~/Content/descargas/batolito-comunitario/61-BatolitoComunitario.pdf">
+                                        <div class="zoom">
+                                            <img class="img-fluid w-100    zoom__img" src="~/Content/descargas/batolito-comunitario/61-BatolitoComunitario-home.jpg" alt="imagen">
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-sm-6 col-lg-4 mb-2">
+                                    <a target="_blank" href="~/Content/descargas/batolito-comunitario/60-BatolitoComunitario.pdf">
+                                        <div class="zoom">
+                                            <img class="img-fluid w-100    zoom__img" src="~/Content/descargas/batolito-comunitario/60-BatolitoComunitario-home.jpg" alt="imagen">
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-sm-6 col-lg-4 mb-2">
+                                    <a target="_blank" href="~/Content/descargas/batolito-comunitario/59-BatolitoComunitario.pdf">
+                                        <div class="zoom">
+                                            <img class="img-fluid w-100    zoom__img" src="~/Content/descargas/batolito-comunitario/59-BatolitoComunitario-home.jpg" alt="imagen">
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--<div class="col-sm-6 col-lg-4 mb-2">
+                                    <a target="_blank" href="~/Content/descargas/batolito-comunitario/58-BatolitoComunitario.pdf">
+                                        <div class="zoom">
+                                            <img class="img-fluid w-100    zoom__img" src="~/Content/descargas/batolito-comunitario/58-BatolitoComunitario-home.jpg" alt="imagen">
+                                        </div>
+                                    </a>
+                                </div>-->
+                            </div>
+
+                            <div class="text-center mt-4">
+                                <a class="boton boton--dorado" target="_blank" href="@Url.Action("batolito-comunitario", "publicaciones")">VER TODOS LOS BATOLITOS COMUNITARIOS</a>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="libros">
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-4 mb-2">
+                                    <a target="_blank" href="~/Content/descargas/libros/historia-de-la-quina-y-la-quinina.pdf">
+                                        <div class="zoom">
+                                            <img class="img-fluid w-100    zoom__img" src="~/Content/descargas/libros/historia-de-la-quina-y-la-quinina.jpg" alt="imagen">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 mb-2">
+                                    <a target="_blank" href="@Url.Action("landing", "libro-rio-abiseo")">
+                                        <div class="zoom">
+                                            <img class="img-fluid w-100    zoom__img" src="~/Content/descargas/libros/parque-nacional-del-rio-abiseo.jpg" alt="imagen">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-sm-6 col-lg-4   d-none d-sm-block mb-2">
+                                    <a target="_blank" href="~/Content/descargas/libros/catalogo-de-variedades-de-papa-nativa.pdf">
+                                        <div class="zoom">
+                                            <img class="img-fluid w-100    zoom__img" src="~/Content/descargas/libros/catalogo-de-variedades-de-papa-nativa.jpg" alt="imagen">
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--<div class="col-sm-6 col-lg-4   d-none d-lg-block mb-2">
+                                 <a target="_blank" href="~/Content/descargas/libros/la-mamita-de-otuzco.pdf">
+                                     <div class="zoom">
+                                         <img class="img-fluid w-100    zoom__img" src="~/Content/descargas/libros/la-mamita-de-otuzco.jpg" alt="imagen">
+                                     </div>
+                                 </a>
+                             </div>-->
+                            </div>
+
+                            <div class="text-center mt-4">
+                                <a class="boton boton--dorado" target="_blank" href="@Url.Action("libros", "publicaciones")">VER TODOS LOS LIBROS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <a target="_blank" href="@Url.Action("poderosa", "quienes_somos")">
+                <div class="fondo-imagen-detalle-imagen    zoom">
+                    <img class="object-fit-cover    zoom__img position__1" src="~/Content/img/home/home-1.jpg" alt="imagen">
+                    <div class="fondo-imagen-detalle-imagen__velo"></div>
+                    <div class="container fondo-imagen-detalle-imagen__detalle d-flex align-items-center justify-content-end">
+                        <div class="fondo-imagen-detalle-image__detalle-container">
+                            <img src="~/Content/img/home/home-1_circulo.svg" class="img-fluid" />
+                            <div class="fondo-imagen-detalle-imagen__contenido">
+                                <div class="fondo-imagen-detalle-imagen__texto1">
+                                    QUIÉNES SOMOS
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </section>
+
+        <section>
+            <a target="_blank" href="http://www.asociacionpataz.org.pe/">
+                <div class="fondo-imagen-detalle-imagen    zoom">
+                    <img class="object-fit-cover    zoom__img position__2" src="~/Content/img/home/home-2.jpg" alt="imagen">
+                    <div class="fondo-imagen-detalle-imagen__velo"></div>
+                    <div class="container fondo-imagen-detalle-imagen__detalle d-flex align-items-center justify-content-left">
+                        <img src="~/Content/img/home/home-2_circulo.svg" class="img-fluid" />
+                    </div>
+                </div>
+            </a>
+        </section>
+
+        <!-- PARA EL LANDING DEL LIBRO ABISEO-->
+        <!--  <div id="landing" class="fancybox" style="display: none; max-width: 540px;">-->
+
+
+        <div id="landing" class="fancybox">
+        <div href="#" onclick="ir();" style="cursor:pointer;">
+            <!--<div href="#" id="popup">-->
+            <img class="img-fluid" src="~/Content/noticias/comunicado-recepcion-comprobantes-electronicos-lima-trujillo/lightbox.png" />
+        </div>
+        <!--<div href="#"  onclick="ir();"><img class="img-fluid" src="~/Content/noticias/post-publicaciones-falsas/lightbox.jpg" /></div>-->
+        <!--<div href="#"><img class="img-fluid" src="~/Content/mensaje_calma/mensaje-calma.jpg" /></div>-->
+        </div>
+
+        <!-- PARA EL LANDING DE LA PAPA
+    <div id="landing" class="fancybox" style="display: none; max-width: 600px;">
+        <div href="#"><img class="img-fluid" src="~/Content/landing_papa/modal-libro.jpg" /></div>
+    </div>-->
+
+
+    </main>
+
+
+
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+<script src="~/Content/libro_rio_abiseo/landing/js/jquery.cookie.min.js"></script>
+<script>
+
+    function ir() {
+       //window.open('https://www.poderosa.com.pe/Content/noticias/comunicado-para-realizar-negociaciones-via-factoring-o-confirming/comunicado-para-realizar-negociaciones-via-factoring-o-confirming.pdf')
+        window.open('https://www.poderosa.com.pe/Content/noticias/comunicado-recepcion-comprobantes-electronicos-lima-trujillo/comunicado-de-comprobantes-electronicos-en-oficinas-lima-y-trujillo.pdf', '_blank');
+    }
+    
+    $(document).ready(function () {
+        $(".fancybox").fancybox();
+        $(".fancybox").trigger('click');
+    });
+    /*PARA QUE FUNCIONE CON cookie*/
+    function openFancybox() {
+        $(".fancybox").fancybox();
+        $(".fancybox").trigger('click');
+    }
+
+    $(document).ready(function () {
+        var visited = $.cookie('visited2');
+        if (visited == 'yes') {
+            return false;
+        } else {
+            //openFancybox();
+        }
+        var date = new Date();
+        var minutes = 1440; //24*60 horas
+        date.setTime(date.getTime() + (minutes * 60 * 1000));
+        //alert(date);
+        $.cookie('visited2', 'yes', {
+            //en milisegundos
+            expires: date
+        });
+    });
+</script>
+</html>

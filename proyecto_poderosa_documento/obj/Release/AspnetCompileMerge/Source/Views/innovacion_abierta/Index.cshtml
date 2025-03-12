@@ -1,0 +1,461 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+    <!-- METAS -->
+    <title>Innovación Abierta | PODEROSA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Basic HTML Meta Tags -->
+    <meta name='title' content='Innovación Abierta  | PODEROSA' />
+    <meta name='description' content='PODEROSA' />
+    <meta name='url' content='https://www.poderosa.com.pe/innovacion_abierta/index' />
+    <meta name='keywords' content='innovación, poderosa, abierta, programa' />
+    <!-- OpenGraph Meta Tags -->
+    <meta property='og:type' content='website' />
+    <meta property='og:title' content='Innovación Abierta | PODEROSA' />
+    <meta property='og:description' content='DESAFÍO VETA PODEROSA es una iniciativa impulsada por Poderosa para promover la innovación abierta en la minería, generando alianzas con actores en busca de soluciones circulares colaborativas, innovadoras, y comprometidas con la sustentabilidad ambiental.' />
+    <meta property='og:url' content='https://www.poderosa.com.pe/innovacion_abierta/index' />
+    <meta property='og:image' content='https://www.poderosa.com.pe/Content/innovacion_abierta/img/banner-pc.jpg' />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="~/Content/img/web/favicon.ico">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/Content/innovacion_abierta/css/bootstrap.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="~/Content/innovacion_abierta/css/main.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    @Html.Partial("~/Views/Shared/_analyticstracking.cshtml")
+</head>
+<body>
+    <header class="js-header  js-header-fixed-top">
+        <nav class="navbar navbar-expand-lg    nav-pri    js-nav-pri">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerMenuPri" aria-controls="navbarTogglerMenuPri" aria-expanded="false" aria-label="Toggle navigation">
+                <!--<i class="fa-solid fa-bars"></i>-->
+                <img src="~/Content/innovacion_abierta/img/lineas.svg" width="13" />
+            </button>
+            <div class="navbar-logos">
+                <a>
+                    <img class="img-fluid" width="180px" src="~/Content/innovacion_abierta/img/logo-min-prod.jpg" alt="logo">
+                </a>
+                <a>
+                    <img class="img-fluid" width="150px" src="~/Content/innovacion_abierta/img/logo-pro-innovate.jpg" alt="logo">
+                </a>
+                <a href="#section-1">
+                    <img class="img-fluid" width="180px" src="~/Content/innovacion_abierta/img/logo-poderosa-chico.jpg" alt="logo">
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse    js-navbar-collapse" id="navbarTogglerMenuPri">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#desafios" class="nav-link">DESAFÍOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#requisitos">REQUISITOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cronograma">CRONOGRAMAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="~/Content/innovacion_abierta/descargas/bases-esp.pdf">BASES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="~/Content/innovacion_abierta/descargas/bases-ing.pdf">BASES OF THE CALL</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--
+    <section id="home">
+        <div class="banner-interno__img">
+            <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=hWo-txsvKEez7lz2Xzo1r5KxGHIrqTpMh5LXipMhiEpUMlBCSE4xTTlYUkxGM1JKVUU5VjNMVTZWQi4u" target="_blank"> <img src="~/Content/innovacion_abierta/img/banner-pc.jpg" alt="" class="img-fluid"></a>
+        </div>
+        <div class="banner-interno__img__movil">
+            <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=hWo-txsvKEez7lz2Xzo1r5KxGHIrqTpMh5LXipMhiEpUMlBCSE4xTTlYUkxGM1JKVUU5VjNMVTZWQi4u" target="/_blank"> <img src="~/Content/innovacion_abierta/img/banner-movil.jpg" alt="" class="img-fluid"></a>
+        </div>
+    </section>-->
+
+    <section id="home">
+        <div class="banner-interno__img">
+            <img src="~/Content/innovacion_abierta/img/banner-pc-2.jpg" alt="" class="img-fluid">
+            <div class="mt-5 banner-interno--btn ">
+                <div>
+                    <a class="boton-banner boton-banner--marron--oscuro" target="_blank" href="https://forms.office.com/Pages/ResponsePage.aspx?id=hWo-txsvKEez7lz2Xzo1r5KxGHIrqTpMh5LXipMhiEpUMlBCSE4xTTlYUkxGM1JKVUU5VjNMVTZWQi4u">POSTULA AQUÍ</a>
+                </div>
+                <div>
+                    <a class="boton-banner boton-banner--marron--oscuro" target="_blank" href="https://forms.office.com/Pages/ResponsePage.aspx?id=hWo-txsvKEez7lz2Xzo1r5KxGHIrqTpMh5LXipMhiEpUQkFIQ0NHN1JCMkxTWjQ2QlJRT0VCOTVFNy4u">APPLY HERE</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner-interno__img__movil">
+            <img src="~/Content/innovacion_abierta/img/banner-movil-2.jpg" alt="" class="img-fluid">
+            <div class="mt-5 banner-interno--btn_movil ">
+                <div>
+                    <a class="boton-banner boton-banner--marron--oscuro mb-2" target="_blank" href="https://forms.office.com/Pages/ResponsePage.aspx?id=hWo-txsvKEez7lz2Xzo1r5KxGHIrqTpMh5LXipMhiEpUMlBCSE4xTTlYUkxGM1JKVUU5VjNMVTZWQi4u">POSTULA AQUÍ</a>
+                </div>
+                <div>
+                    <a class="boton-banner boton-banner--marron--oscuro " target="_blank" href="https://forms.office.com/Pages/ResponsePage.aspx?id=hWo-txsvKEez7lz2Xzo1r5KxGHIrqTpMh5LXipMhiEpUQkFIQ0NHN1JCMkxTWjQ2QlJRT0VCOTVFNy4u">APPLY HERE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-seccion text-center  bg-marron text-white">
+        <div class="container">
+            <p><span class="h6 dorado">DESAFÍO VETA PODEROSA</span> es una iniciativa impulsada por Poderosa para promover la innovación abierta en la minería, generando alianzas con actores en busca de soluciones circulares colaborativas, innovadoras, y comprometidas con la sustentabilidad ambiental. </p>
+        </div>
+    </section>
+
+    <section class="py-seccion text-center">
+        <div class="container">
+            <h3 class="dorado">UNA VETA DE OPORTUNIDADES</h3>
+
+            <p>Startups, MYPEs innovadoras, PYMES universidades y otras entidades pueden ayudarnos a resolver estos desafíos que transformarán el sector minero del Perú. Los solucionadores seleccionados tendrán la oportunidad de:</p>
+
+            <div class="d-flex flex-column flex-md-row flex-nowrap mt-5 ">
+                <div class="flex-fill mb-4 contenedor_oportunidades px-3">
+                    <img class="img-fluid mb-3" src="~/Content/innovacion_abierta/img/fondos.png">
+                    <p><b>Cofinanciamiento</b> para ejecución de pilotos.</p>
+                </div>
+
+                <div class="flex-fill mb-4 contenedor_oportunidades px-3">
+                    <img class="img-fluid mb-3" src="~/Content/innovacion_abierta/img/red.png">
+                    <p>Conexión con <b>expertos internacionales</b> en economía circular e innovación abierta.</p>
+                </div>
+
+                <div class="flex-fill mb-4 contenedor_oportunidades px-3">
+                    <img class="img-fluid mb-3" src="~/Content/innovacion_abierta/img/desarrollo.png">
+                    <p>Desarrollo y <b>escalamiento</b> de la solución</p>
+                </div>
+
+                <div class="flex-fill mb-4 contenedor_oportunidades px-3">
+                    <img class="img-fluid mb-3" src="~/Content/innovacion_abierta/img/media.png">
+                    <p>Asesoría comunicacional mediante <b>media training</b> para visibilidad en medios.</p>
+                </div>
+
+                <div class="flex-fill mb-4 contenedor_oportunidades px-3">
+                    <img class="img-fluid mb-3" src="~/Content/innovacion_abierta/img/mineras.png">
+                    <p><b>Visibilidad</b> frente a potenciales aliados y clientes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+
+        <div id="desafios" class="container text-center">
+            <div class="linea_dorada"></div>
+            <h1 class="titulo">LOS DESAFÍOS</h1>
+        </div>
+        <div class="row no-gutters contenedor-desafios ">
+            <div class="col-lg-4  bg-marron-80 ">
+                <img src="~/Content/innovacion_abierta/img/01.jpg">
+                <div class="text-center contenedor-desafios-textos">
+                    <h2 class="dorado">
+
+                        ¿Cómo podríamos generar modelos de negocios sustentables e inclusivos utilizando los relaves con un enfoque de circularidad?
+                    </h2>
+                    <p class="blanco">
+                        Objetivo: Desarrollar una estrategia para dar valor a los relaves mediante la circularidad y así disminuir el pasivo ambiental.
+                    </p>
+
+                    <div class="text-center mt-4">
+                        <a class="boton boton--dorado mb-3 mr-sm-2" target="_blank" href="~/Content/innovacion_abierta/descargas/relaves/relaves-esp.pdf">MÁS INFORMACIÓN (ESP.)</a>
+                        <a class="boton boton--dorado" target="_blank" href="~/Content/innovacion_abierta/descargas/relaves/relaves-eng.pdf">MORE INFORMATION (ENG.)</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 bg-marron">
+                <img src="~/Content/innovacion_abierta/img/02.jpg">
+                <div class="text-center contenedor-desafios-textos">
+                    <h2 class="dorado">
+                        ¿Cómo podríamos generar modelos de negocio sustentables e inclusivos usando los residuos neumáticos con un enfoque de economía circular?
+                    </h2>
+                    <p class="blanco">
+                        Objetivo: Desarrollar una estrategia para dar valor a los neumáticos en desuso mediante la circularidad.
+                    </p>
+
+                    <div class="text-center mt-4">
+                        <a class="boton boton--dorado mb-3 mr-sm-2" target="_blank" href="~/Content/innovacion_abierta/descargas/neumaticos/neumaticos-esp.pdf">MÁS INFORMACIÓN (ESP.)</a>
+                        <a class="boton boton--dorado" target="_blank" href="~/Content/innovacion_abierta/descargas/neumaticos/neumaticos-eng.pdf">MORE INFORMATION (ENG.)</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 bg-marron-oscuro">
+                <img src="~/Content/innovacion_abierta/img/03.jpg">
+                <div class="text-center contenedor-desafios-textos">
+                    <h2 class="dorado">
+                        ¿Cómo podríamos generar agua para el consumo humano con el uso del efluente de la bocamina Estrella para el área de influencia de Poderosa?
+                    </h2>
+                    <p class="blanco">
+                        Objetivo: Aprovechar el agua de los efluentes mina, con el objetivo de reducir la dependencia del uso de agua de fuentes hídricas, y así cubrir la demanda hídrica para consumo humano dentro del área de influencia de Poderosa.
+                    </p>
+
+                    <div class="text-center mt-4">
+                        <a class="boton boton--dorado mb-3 mr-sm-2" target="_blank" href="~/Content/innovacion_abierta/descargas/efluentes/efluentes-esp.pdf">MÁS INFORMACIÓN (ESP.)</a>
+                        <a class="boton boton--dorado" target="_blank" href="~/Content/innovacion_abierta/descargas/efluentes/efluentes-eng.pdf">MORE INFORMATION (ENG.)</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="cronograma" class="py-seccion text-center">
+        <div class="container">
+            <div class="linea_dorada"></div>
+            <h1 class="titulo">PLANIFICA TU POSTULACIÓN</h1>
+            <div class="row">
+                <div class="col-12">
+                    <div class="owl-carousel    js-owl-carousel-fotos   owl-carousel--no-nav    dots-blanco mb-0 mt-4">
+                        <div class="item mb-3" data-hash="fecha1">
+                            <div class="mt-2 text-center">
+                                <h3 class="dorado">Lanzamiento de convocatoria y publicación de bases </h3>
+                                <!--<p>Lanzamiento de convocatoria y publicación de bases  </p>-->
+                            </div>
+                        </div>
+
+                        <div class="item mb-3" data-hash="fecha2">
+                            <div class="mt-2 text-center">
+
+                                <h3 class="dorado">Cierre de la convocatoria</h3>
+
+                            </div>
+                        </div>
+
+                        <div class="item mb-3" data-hash="fecha3">
+                            <div class="mt-2 text-center">
+
+                                <h3 class="dorado">Publicación de preseleccionados</h3>
+                                <!--<p>Publicación de preseleccionados</p>-->
+                            </div>
+                        </div>
+
+                        <div class="item mb-3" data-hash="fecha4">
+                            <div class="mt-2 text-center">
+
+                                <h3 class="dorado">Actividades con preseleccionados </h3>
+
+                            </div>
+                        </div>
+
+                        <div class="item mb-3" data-hash="fecha5">
+                            <div class="mt-2 text-center">
+
+                                <h3 class="dorado">Publicación de seleccionados</h3>
+                                <!--<p>Publicación de ganadores</p>-->
+                            </div>
+                        </div>
+                        <!--
+                                           <div class="item mb-3" data-hash="fecha6">
+                                                    <div class="mt-2 text-center">
+
+                                                        <h3 class="dorado">Publicación final de resultados</h3>
+                                                    </div>
+                                                </div>
+                         -->
+                        <!-- <div class="item mb-3" data-hash="fecha7">
+                             <div class="mt-2 text-center">
+
+                                 <h3 class="dorado">Publicación final de resultados</h3>
+                                 <p>Publicación de resultados detallados en documento oficial</p>
+                             </div>
+                         </div>-->
+                    </div>
+
+
+
+                    <div class=" js-owl-carousel-fotos--controles d-flex flex-column flex-md-row text-center justify-content-center">
+                        <!--<a class="border  p-3 pr-4 pt-0 mb-2 pb-sm-0 flex-fill" href="#fecha1">16<span class="d-sm-block"> DE MAYO DEL 2023</span></a>-->
+                        <!--<a class="border  p-3 pr-4 pt-0 mb-2 pb-md-0 flex-fill" href="#fecha1">16 DE MAYO<span class="d-md-block"> DEL 2023</span></a>
+                        <a class="border  p-3 pr-4 pt-0 mb-2 pb-md-0 flex-fill" href="#fecha2">HASTA EL 16 <span class="d-md-block">DE JUNIO 2023</span></a>
+                        <a class="border  p-3 pr-4 pt-0 mb-2 pb-md-0 flex-fill" href="#fecha3">HASTA EL 18 <span class="d-md-block">DE JUNIO 2023</span></a>
+                        <a class="border  p-3 pr-4 pt-0 mb-2 pb-md-0 flex-fill" href="#fecha4">HASTA EL 19 <span class="d-md-block">DE JUNIO 2023</span></a>
+                        <a class="border  p-3 pl-lg-0 pr-4 pt-0 mb-2 pb-md-0 flex-fill" href="#fecha5">20 DE JUNIO <span class="d-md-block">HASTA 11 DE</span><span class="d-sm-block"> JULIO DE 2023</span></a>
+                        <a class="border  p-3 pr-4 pt-0 mb-2 pb-md-0 flex-fill" href="#fecha6">11 DE JULIO <span class="d-md-block">DE 2023</span></a>
+                        <a class="border  p-3 pl-lg-0 ml-lg-4 pr-lg-2 pt-0 mb-2 pb-md-0 flex-fill" href="#fecha7">14 DE JULIO <span class="d-md-block">DE 2023</span></a>-->
+
+                        <a class="border  pt-3 pb-3 pl-4 pr-4 pt-0 mb-2 pb-md-0 flex-fill" href="#fecha1">16 DE MAYO<span class="d-md-block"> DEL 2023</span></a>
+                        <a class="border  pt-3 pb-3 pl-4 pr-4 pt-0 mb-2 pb-md-0 flex-fill" href="#fecha2">25 <span class="d-md-block">DE JULIO 2023</span></a>
+                        <a class="border  p-3 pr-4 pt-0 mb-2 pb-md-0 flex-fill" href="#fecha3">HASTA EL 31 <span class="d-md-block">DE JULIO 2023</span></a>
+                        <a class="border  p-3 pr-4 pt-0 mb-2 pb-md-0 flex-fill" href="#fecha4">31 DE JULIO HASTA 18 <span class="d-md-block">DE AGOSTO 2023</span></a>
+                        <a class="border  p-3 pl-lg-0 pr-4 pt-0 mb-2 pb-md-0 flex-fill" href="#fecha5">28 DE AGOSTO <span class="d-md-block">DEL 2023</span></a>
+                        <!--                         <a class="border  p-3 pr-4 pt-0 mb-2 pb-md-0 flex-fill" href="#fecha6">14 DE JULIO <span class="d-md-block">DE 2023</span></a> -->
+                        <!--   <a class="border  p-3 pl-lg-0 ml-lg-4 pr-lg-2 pt-0 mb-2 pb-md-0 flex-fill" href="#fecha7">14 DE JULIO <span class="d-md-block">DE 2023</span></a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+       </div>
+    </section>
+
+
+
+    <section>
+        <div class="col-abs-seccion">
+            <div class="col-abs-4 col-abs-4--md col-abs-4--izq col-abs-4--curva-dorada-izq">
+                <img class="object-fit-cover" src="~/Content/innovacion_abierta/img/home-1.jpg">
+            </div>
+
+            <section class="py-seccion bg-dorado blanco">
+                <div class="container">
+                    <div class="row justify-content-end">
+                        <div class="col-xl-8 col-lg-5 col-md-6 col-abs-seccion__texto">
+                            <h2 class="blanco">REQUISITOS PARA PARTICIPAR: </h2>
+
+                            <p class="marron">Son elegibles los startups, MYPEs, PYMES universidades, institutos de investigación y otras, con las siguientes características:</p>
+
+                            <ol class="col-abs-seccion__ol" type="a">
+                                <li class="marron">Contar con un grado de especialización en el área específica de su solución.</li>
+                                <li class="marron">Tener capacidad para desarrollar las soluciones propuestas en el marco de la economía circular.</li>
+                                <li class="marron">Tener capacidad para transferir conocimiento de forma táctica.</li>
+                                <li class="marron">Tener capacidad para producir o contar con una solución innovadora propia en un nivel de madurez tecnológica TRL 6.</li>
+                            </ol>
+                            <div class="mt-5 text-center text-sm-left">
+                                <a class="boton boton--marron--oscuro mb-2" target="_blank" href="~/Content/innovacion_abierta/descargas/bases-esp.pdf">DESCARGA LAS BASES</a>
+
+                                <a class="boton boton--marron--oscuro" target="_blank" href="~/Content/innovacion_abierta/descargas/bases-ing.pdf">CALL GUIDELINES</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+
+    <section id="requisitos" class="py-seccion my-0 text-center bg-marron">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="owl-carousel    js-owl-carousel-slider   owl-carousel--no-nav    dots-blanco--2 mb-0 mt-4">
+                        <div class="item mb-3" data-hash="fecha1">
+                            <div class="mt-2 text-center text-white">
+                                <h4 class="white">LA ECONOMÍA CIRCULAR</h4>
+                                <p>Podría generar </p>
+                                <h1 class="white">$700 Billones USD/año</h1>
+                                <p>en ahorro de materiales </p>
+                            </div>
+                        </div>
+
+                        <div class="item mb-3" data-hash="fecha1">
+                            <div class="row row no-gutters">
+                                <div class="col-sm-6 border-right border-right-xs-0 border-bottom border-bottom-sm-0 p-4">
+                                    <div class="mt-2 text-center text-white">
+                                        <h4 class="white">LA ECONOMÍA CIRCULAR</h4>
+                                        <p>genera</p>
+                                        <h1 class="white">4 empleos</h1>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 p-4">
+                                    <div class="mt-2 text-center text-white">
+                                        <h4 class="white">LA ECONOMÍA LINEAL</h4>
+                                        <p>genera</p>
+                                        <h1 class="white">1 empleo</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item mb-3" data-hash="fecha1">
+                            <div class="mt-2 text-center text-white">
+                                <p>Menos del </p>
+                                <h1 class="white">10%</h1>
+                                <p>De residuos mineros son reaprovechados en Latinoamérica </p>
+                            </div>
+                        </div>
+
+                        <div class="item mb-3" data-hash="fecha1">
+                            <div class="mt-2 text-center text-white">
+                                <p>Menos del </p>
+                                <h1 class="white">25%</h1>
+                                <p>De residuos son aprovechados en la minería y construcción </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="consultas" class="py-seccion text-center">
+        <div class="container">
+            <div class="linea_dorada"></div>
+            <h1 class="titulo">¿TIENES DUDAS SOBRE LOS DESAFÍOS O LA CONVOCATORIA?</h1>
+
+            <!--<p>Regístrate y podrás participar en uno de nuestros webinar informativos para conocer más sobre nuestros desafíos o puedes enviarnos tu consulta de manera directa.</p>-->
+
+            <div class="text-center mt-4">
+                <!--<a class="boton boton--dorado boton--dorado--text-blanco mb-2" target="_blank" href="https://forms.office.com/Pages/ResponsePage.aspx?id=hWo-txsvKEez7lz2Xzo1r5KxGHIrqTpMh5LXipMhiEpUMlBCSE4xTTlYUkxGM1JKVUU5VjNMVTZWQi4u">REGISTRARME AL WEBINAR</a>-->
+
+                <a class="boton boton--marron boton--dorado--text-blanco" target="_blank" href="https://forms.office.com/Pages/ResponsePage.aspx?id=hWo-txsvKEez7lz2Xzo1r5KxGHIrqTpMh5LXipMhiEpUMVg4WVVXVlg5STY0T0tZOVBJSEhLOVBFMS4u">ENVIAR CONSULTA</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-seccion text-center">
+        <div class="container text-center">
+            <p>Entidades promotoras:</p>
+
+            <div class="row mt-5 no-gutters">
+                <div class="col-md-4  px-2 mb-5  text-center text-md-right">
+                    <img class="img-fluid" width="300" src="~/Content/innovacion_abierta/img/logo-min-prod-grande.jpg" alt="logo">
+                </div>
+                <div class="col-md-4  px-2 mb-5  text-center">
+                    <img class="img-fluid" width="300" src="~/Content/innovacion_abierta/img/logo-pro-innovate-grande.jpg" alt="logo">
+                </div>
+                <div class="col-md-4  px-2 mb-5  text-center  text-md-left">
+                    <img class="img-fluid mb-3" width="300" src="~/Content/innovacion_abierta/img/logo-poderosa-grande.jpg">
+                </div>
+            </div>
+            <br /><br />
+            <p>Con el apoyo de:</p>
+
+            <div class="row mt-5">
+                <div class="col-sm-6 col-md-3  text-center">
+                    <img class="img-fluid mb-3" src="~/Content/innovacion_abierta/img/logo-rurana.jpg">
+                </div>
+                <div class="col-sm-6 col-md-3  text-center">
+                    <img class="img-fluid mb-3" src="~/Content/innovacion_abierta/img/logo-cam-com-lalibertad.jpg">
+                </div>
+                <div class="col-sm-6 col-md-3  text-center">
+                    <img class="img-fluid mb-3" src="~/Content/innovacion_abierta/img/logo-unt.jpg">
+                </div>
+                <div class="col-sm-6 col-md-3  text-center">
+                    <img class="img-fluid mb-3" src="~/Content/innovacion_abierta/img/logo-hub.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-seccion text-center  bg-marron text-white">
+        <div class="container">
+            <p>Compañía Minera Poderosa - Todos los derechos reservados 2023 <br>Volver a <a style="color:#d8a400 !important;" href="https://www.poderosa.com.pe/">www.poderosa.com.pe</a></p>
+        </div>
+    </section>
+
+    <!-- bootstrap - INICIO -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="~/Content/innovacion_abierta/js/jquery.min.js"></script>
+    <script src="~/Content/innovacion_abierta/js/bootstrap.min.js"></script>
+    <script src="~/Content/innovacion_abierta/js/polyfills/css-vars-ponyfill.min.js"></script>
+    <script>
+        cssVars({});
+    </script>
+    <!-- css-vars-ponyfill - FIN -->
+    <!-- owlcarousel - INICIO -->
+    <link rel="stylesheet" href="~/Content/innovacion_abierta/js/plugins/owlcarousel/assets/owl.carousel.min.css">
+    <script src="~/Content/innovacion_abierta/js/plugins/owlcarousel/owl.carousel.min.js"></script>
+    <!-- owlcarousel - FIN -->
+
+    <script src="~/Content/innovacion_abierta/js/main.js"></script>
+</body>
+</html>

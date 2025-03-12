@@ -1,0 +1,67 @@
+﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+   <!-- METAS -->
+    <title>PODEROSA reafirma su compromiso con la equidad de género | PODEROSA</title>
+    <!-- Basic HTML Meta Tags -->
+    <meta name='title' content='PODEROSA reafirma su compromiso con la equidad de género | PODEROSA' />
+    <meta name='description' content='PODEROSA brinda iguales oportunidades a todas las personas, sin discriminación por razón de género. El Ing. Marcelo Santillana Salas, Gerente General; firmó el compromiso por la igualdad que responde al objetivo 5 de Desarrollo Sostenible para una sociedad más justa y sana.' />
+    <meta name='url' content='http://www.poderosa.com.pe/noticias/poderosa-reafirma-su-compromiso-con-la-equidad-de-genero/' />
+    <meta name='keywords' content='PODEROSA, equidad de género, iguales oportunidades, mejores prácticas' />
+    <!-- OpenGraph Meta Tags -->
+    <meta property='og:type' content='website' />
+    <meta property='og:title' content='PODEROSA reafirma su compromiso con la equidad de género | PODEROSA' />
+    <meta property='og:description' content='PODEROSA brinda iguales oportunidades a todas las personas, sin discriminación por razón de género. El Ing. Marcelo Santillana Salas, Gerente General; firmó el compromiso por la igualdad que responde al objetivo 5 de Desarrollo Sostenible para una sociedad más justa y sana.' />
+    <meta property='og:url' content='http://www.poderosa.com.pe/noticias/poderosa-reafirma-su-compromiso-con-la-equidad-de-genero' />
+    <meta property='og:image' content='http://www.poderosa.com.pe/Content/noticias/poderosa-reafirma-su-compromiso-con-la-equidad-de-genero/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+                <img class="object-fit-cover" src="~/Content/noticias/poderosa-reafirma-su-compromiso-con-la-equidad-de-genero/banner.jpg" alt="imagen">
+
+                <div class="h6 mayuscula mt-4">10 de octubre 10 2018</div>
+                <h1 class="h3 dorado">PODEROSA reafirma su compromiso con la equidad de género</h1>
+
+                @Html.Partial("~/Views/Shared/_redes.cshtml")
+                <br />
+
+                <p><strong>PODEROSA</strong> brinda iguales oportunidades a todas las personas, sin discriminación por razón de género. El Ing. Marcelo Santillana Salas, Gerente General; firmó el compromiso por la igualdad que responde al objetivo 5 de Desarrollo Sostenible para una sociedad más justa y sana.</p>
+
+                <p><strong>PODEROSA</strong> cree en la equidad de género e implementa las mejores prácticas en responsabilidad social que contribuyen a eliminar la discriminación y violencia contra la mujer.</p>
+
+                <div class="row justify-content-center mt-4 mb-2">
+                    <div class="col-lg-8 text-center">
+                        <img class="img-fluid " src="~/Content/noticias/poderosa-reafirma-su-compromiso-con-la-equidad-de-genero/01.jpg" alt="imagen">
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-sm-auto">
+                        @Html.Partial("~/Views/Shared/_redes.cshtml")
+                    </div>
+
+                    <div class="col-sm-auto ml-sm-auto mt-3 mt-sm-0">
+                        <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

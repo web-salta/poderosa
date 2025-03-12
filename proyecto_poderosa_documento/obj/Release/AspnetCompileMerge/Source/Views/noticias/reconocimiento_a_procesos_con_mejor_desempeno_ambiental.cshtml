@@ -1,0 +1,92 @@
+﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title>Reconocimiento a procesos con mejor desempeño ambiental | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='Reconocimiento a procesos con mejor desempeño ambiental | PODEROSA' />
+<meta name='description' content='PODEROSA reconoció a los procesos que destacaron el 2021 por su desempeño ambiental y compromiso con la sostenibilidad. ' />
+<meta name='url' content='https://www.poderosa.com.pe/noticias/reconocimiento-a-procesos-con-mejor-desempeno-ambiental/' />
+<meta name='keywords' content='Poderosa, Distintivo de Empresa Socialmente Responsable' />
+<!-- OpenGraph Meta Tags -->
+<meta property='og:type' content='website' />
+<meta property='og:title' content='Reconocimiento a procesos con mejor desempeño ambiental | PODEROSA' />
+<meta property='og:description' content='PODEROSA reconoció a los procesos que destacaron el 2021 por su desempeño ambiental y compromiso con la sostenibilidad. ' />
+<meta property='og:url' content='https://www.poderosa.com.pe/noticias/reconocimiento-a-procesos-con-mejor-desempeno-ambiental/' />
+<meta property='og:image' content='https://www.poderosa.com.pe/Content/noticias/reconocimiento-a-procesos-con-mejor-desempeno-ambiental/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+                <img class="object-fit-cover" src="~/Content/noticias/reconocimiento-a-procesos-con-mejor-desempeno-ambiental/banner.jpg" alt="imagen">
+                <div class="h6 mayuscula mt-4">14 de Junio de 2022</div>
+                <h1 class="dorado h3">Reconocimiento a procesos con mejor desempeño ambiental</h1>
+
+                @Html.Partial("~/Views/Shared/_redes.cshtml")
+                <br />
+
+                <p>PODEROSA reconoció a los procesos que destacaron el 2021 por su desempeño ambiental y compromiso con la sostenibilidad. Saludamos el desempeño ambiental de nuestros procesos que refuerza nuestro compromiso con el cuidado del medio ambiente. Reconocimiento se realiza en el marco de la celebración del Día Mundial del Medio Ambiente.</p>
+                
+                <p>
+                    La evaluación del desempeño ambiental es realzada por el departamento de Gestión Ambiental, y se basa en los resultados promedio obtenidos de los siguientes programas en el año 2021:
+                </p>
+
+                <ul>
+                    <li class="gris">	Cumplimiento del Programa de Aspectos Ambientales Significativos (PGAAS).</li>
+                    <li class="gris">	Evaluación de cumplimiento de Compromisos Ambientales (CA).</li>
+                    <li class="gris">	Evaluación de cumplimiento de Requisitos Legales (RL).</li>
+                    <li class="gris">	Número de accidentes ambientales durante el 2021 (AA).</li>
+                </ul>
+
+                <h5 class="dorado">Procesos ganadores:</h5>                    
+                <ul>
+                    <li class="gris">Energía UP Marañón y UP Santa María.</li>
+                    <li class="gris">Mantenimiento UP Santa María.</li>
+                    <li class="gris">Geología UP Santa María.</li>
+                </ul>
+                    
+                <p>Los procesos ganadores se hicieron acreedores del Trofeo Sostenible, el cual ha sido diseñado con procesos de bajo impacto ambiental y elaborado con materiales reciclados como aglomerados de madera reciclada y madera natural recuperada, elaborado y pintado a mano con pigmentos naturales. Este reconocimiento ha sido diseñado por artistas plásticos de la Escuela Nacional de Bellas Artes del Perú.</p>
+
+                <div class="row justify-content-center my-4">
+                    <div class="col-lg-8">
+                        <div class="owl-carousel    js-owl-carousel-fotos   owl-carousel--no-nav    dots-gris">
+                            <div class="">
+                                <img class="img-fluid w-100" src="~/Content/noticias/reconocimiento-a-procesos-con-mejor-desempeno-ambiental/01.jpg" alt="imagen">
+                            </div>
+
+                            <div class="">
+                                <img class="img-fluid w-100" src="~/Content/noticias/reconocimiento-a-procesos-con-mejor-desempeno-ambiental/02.jpg" alt="imagen">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="row mt-4">
+                        <div class="col-sm-auto">
+                            @Html.Partial("~/Views/Shared/_redes.cshtml")
+                        </div>
+
+                        <div class="col-sm-auto ml-sm-auto mt-3 mt-sm-0">
+                            <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                        </div>
+                    </div>
+</div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>
