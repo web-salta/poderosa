@@ -1,0 +1,95 @@
+﻿
+
+@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+ <title>PODEROSA convoca a la Junta General Obligatoria Anual de Accionista no presencial | PODEROSA</title>
+ <!-- Basic HTML Meta Tags -->
+ <meta name='title' content='PODEROSA convoca a la Junta General Obligatoria Anual de Accionista no presencial | PODEROSA' />
+ <meta name='description' content='PODEROSA informa a los señores accionistas que la Junta General Obligatoria Anual de Accionistas no presencial se llevará a cabo en primera convocatoria el martes 09 de marzo de 2021' />
+ <meta name='url' content='http://www.poderosa.com.pe/noticias/poderosa_convoca_a_la_junta_general_obligatoria_anual' />
+ <meta name='keywords' content='Poderosa, Minera Poderosa, Junta General Obligatoria, Accionistas' />
+ <!-- OpenGraph Meta Tags -->
+ <meta property='og:type' content='website' />
+ <meta property='og:title' content='PODEROSA convoca a la Junta General Obligatoria Anual de Accionista no presencial | PODEROSA' />
+ <meta property='og:description' content='PODEROSA informa a los señores accionistas que la Junta General Obligatoria Anual de Accionistas no presencial se llevará a cabo en primera convocatoria el martes 09 de marzo de 2021' />
+ <meta property='og:url' content='http://www.poderosa.com.pe/noticias/poderosa_convoca_a_la_junta_general_obligatoria_anual' />
+ <meta property='og:image' content='http://www.poderosa.com.pe/Content/noticias/poderosa-convoca-a-la-junta-general/compartir.png' />
+ </head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+
+                <div class="h6 mayuscula mt-4">24 DE FEBRERO DE 2021</div>
+                <h1 class="h3 dorado">PODEROSA convoca a la Junta General Obligatoria Anual de Accionista no presencial</h1>
+
+                @Html.Partial("~/Views/Shared/_redes.cshtml")
+                <br />
+
+                <p>
+                    <strong>PODEROSA</strong> informa a los señores accionistas que la Junta General Obligatoria Anual de Accionistas no presencial se llevará a cabo en primera convocatoria el martes
+                    09 de marzo de 2021 a las 16:00 horas, en caso de no reunir el quorum  correspondiente, la junta se reunirá en segunda convocatoria el lunes 15 de marzo de 2021 a las 16:00 horas.
+                </p>
+
+                <p>
+                    En ese sentido y en cumplimiento del marco normativo establecido por la SMV para la realización de Juntas de Accionistas no presenciales, ponemos a disposición de los señores
+                    accionistas la siguiente información:
+                </p>
+
+
+                <ul>
+                    <li> <a href="~/Content/noticias/poderosa-convoca-a-la-junta-general/aviso-de-convocatoria.pdf" target="_blank">Aviso de convocatoria </a></li>
+                    <li> <a href="~/Content/noticias/poderosa-convoca-a-la-junta-general/documento-informativo.pdf" target="_blank">Documento Informativo  </a></li>
+                    <li> <a href="~/Content/noticias/poderosa-convoca-a-la-junta-general/eeff-auditados-2020.pdf" target="_blank">EE.FF. Auditados 2020 </a></li>
+                    <li> <a href="~/Content/noticias/poderosa-convoca-a-la-junta-general/memoria-anual-2020.pdf" target="_blank">Memoria anual 2020 </a></li>
+
+                    <li><a href="~/Content/noticias/poderosa-convoca-a-la-junta-general/reporte-sobre-el-cumplimiento-de-los-principios-de-buen-gobierno-a-d.pdf" target="_blank">Reporte sobre el cumplimiento de los Principios de Buen Gobierno Corporativo 2020 – Sección A y D</a></li>
+                    <li><a href="~/Content/noticias/poderosa-convoca-a-la-junta-general/reporte-sobre-el-cumplimiento-de-los-principios-de-buen-gobierno-b-c.pdf" target="_blank">Reporte sobre el cumplimiento de los Principios de Buen Gobierno Corporativo 2020 – Sección B y C</a></li>
+
+                    <li><a href="~/Content/noticias/poderosa-convoca-a-la-junta-general/reporte-de-sostenibilidad-2020.pdf" target="_blank">Reporte de Sostenibilidad 2020 </a></li>
+                    <li><a href="~/Content/noticias/poderosa-convoca-a-la-junta-general/carta-de-comunicacion.pdf" target="_blank">Carta de comunicación de hecho de importancia con la recomendación del Directorio respecto de la aplicación de resultados del ejercicio</a></li>
+                </ul>
+
+                <p>
+                    <a class="boton-icono boton-icono--dorado" href="~/Content/noticias/poderosa-convoca-a-la-junta-general/completo.zip" target="_blank">
+                        <span class="boton-icono__txt">Descargar todos los documentos</span>
+                        <img class="boton-icono__img svg" src="~/Content/img/web/ico-flecha-descargar.svg" alt="ico">
+                    </a>
+                </p>
+
+                <p class="text-left mt-4 mb-4"><h5><strong>El directorio</strong></h5></p>
+                <br />
+                <br />
+
+                <div class="row">
+                    <div class="col-sm-auto">
+                        @Html.Partial("~/Views/Shared/_redes.cshtml")
+                    </div>
+
+                    <div class="col-sm-auto ml-sm-auto mt-3 mt-sm-0">
+                        <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>
+
+

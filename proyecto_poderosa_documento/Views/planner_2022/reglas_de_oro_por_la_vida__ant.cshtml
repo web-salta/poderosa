@@ -1,0 +1,35 @@
+﻿<!
+@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title>Planner 2022 | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='Planner 2022 | PODEROSA' />
+<meta name='description' content='Planner 2022' />
+<meta name='url' content='http://www.poderosa.com.pe/planner-2022/index' />
+<link href="~/Content/planner/reglas-de-oro-por-la-vida/css/style.css" rel="stylesheet" />
+</head>
+<body class="planner__body">
+    <main>
+        <section>
+            <div class="video-banner__background">
+                <div class="video-planner">
+                    <div>
+                        <img src="~/Content/planner/reglas-de-oro-por-la-vida/img/logo-9-reglas-oro.png" class="img-fluid logo_header" />
+                        <!--muted loop playsinline-->
+                        <video width="auto" height="auto" muted autoplay controls loop playsinline>
+                            <source src="~/Content/planner/reglas-de-oro-por-la-vida/qr-seguridad.mp4" type="video/mp4" codecs="avc1.4D401E, mp4a.40.2">
+                            <p>Su navegador no soporta la etiqueta de vídeo.</p>
+                        </video>
+                        <img src="~/Content/planner/reglas-de-oro-por-la-vida/img/logo-poderosa.png" class="img-fluid logo_footer" />
+                        <a class="link" href="@Url.Action("historico", "planner_2022")">Ver anteriores</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>
+

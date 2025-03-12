@@ -1,0 +1,31 @@
+﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title>Planner 2022 | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='Planner 2022 | PODEROSA' />
+<meta name='description' content='Planner 2022' />
+<meta name='url' content='http://www.poderosa.com.pe/planner-2022/historico' />
+<link href="~/Content/planner/style.css" rel="stylesheet" />
+</head>
+<body class="planner__body">
+    <main>
+        <section class="container">
+            
+            <div class="mt-4 logo_historico_header">
+                <img src="~/Content/planner/logo-poderosa-header.svg"  />
+            </div>
+
+            <br />
+            <ul class="mt-4 lista__historico"> 
+                <li><a href="@Url.Action("index", "planner_2022")">Trabajo en Equipo</a></li>
+                <li><a href="@Url.Action("la-hora-del-planeta", "planner_2022")">La Hora del Planeta</a></li> 
+                <li><a href="@Url.Action("dia_de_la_mujer", "planner_2022")">Día de la Mujer</a></li>           
+                <li><a href="@Url.Action("reglas_de_oro_por_la_vida", "planner_2022")">9 Reglas de Oro por la Vida</a></li>    
+                <li><a href="@Url.Action("saludo_2022", "planner_2022")">Saludo 2022</a></li>            
+            </ul>
+           
+        </section>
+    </main>
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

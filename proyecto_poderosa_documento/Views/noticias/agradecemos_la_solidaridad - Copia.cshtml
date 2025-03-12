@@ -1,0 +1,74 @@
+﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title>Agradecemos la Solidaridad | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='Agradecemos la Solidaridad | PODEROSA' />
+<meta name='description' content='Poderosa agradece el respaldo y la solidaridad expresado por gremios empresariales, empresas, políticos, medios de comunicación, sindicatos, iglesia, autoridades, líderes de opinión y ciudadanos que han hecho pública su preocupación por el criminal ataque  que costó la vida de nueve colaboradores.' />
+<meta name='url' content='https://www.poderosa.com.pe/noticias/agradecemos-la-solidaridad' />
+<meta name='keywords' content='Poderosa, respaldo, solidaridad, gremios, empresariales, empresas, políticos' />
+<!-- OpenGraph Meta Tags -->
+<meta property='og:type' content='website' />
+<meta property='og:title' content='Agradecemos la Solidaridad | PODEROSA' />
+<meta property='og:description' content='Poderosa agradece el respaldo y la solidaridad expresado por gremios empresariales, empresas, políticos, medios de comunicación, sindicatos, iglesia, autoridades, líderes de opinión y ciudadanos que han hecho pública su preocupación por el criminal ataque  que costó la vida de nueve colaboradores.' />
+<meta property='og:url' content='https://www.poderosa.com.pe/noticias/agradecemos-la-solidaridad' />
+<meta property='og:image' content='https://www.poderosa.com.pe/Content/noticias/agradecemos-la-solidaridad/lightbox.png' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+                <img class="object-fit-cover" src="~/Content/noticias/agradecemos-la-solidaridad/banner.png" alt="imagen">
+
+                <div class="h6 mayuscula mt-4">Lima, 05 de Diciembre de 2023</div>
+
+                <div class="d-flex justify-content-center justify-content-lg-start">
+                    @Html.Partial("~/Views/Shared/_redes.cshtml")
+                </div>
+                <br />
+
+                <p><b>Poderosa</b>  agradece el respaldo y la solidaridad expresado por gremios empresariales, empresas, políticos, medios de comunicación, sindicatos, iglesia, autoridades, líderes de opinión y ciudadanos que han hecho pública su preocupación por el criminal ataque  que costó la vida de nueve colaboradores.</p>
+
+                <p>El respaldo y gestos solidarios mostrados nos ayudan a enfrentar la difícil situación que vive nuestra empresa en estos momentos.</p>
+
+                <p>Esta lamentable tragedia nos recuerda la importancia de la unidad y los valores que comparten una sociedad, valores que nos impulsan a superar estos momentos y fortalecernos como una familia empresarial.<p>
+
+                <p>Confiamos en el poder del esfuerzo conjunto para continuar aportando al desarrollo del país.</p>
+
+
+                
+                <p class="text-right ">Pataz, 5 de diciembre de 2023</p><br />
+
+                <p class="text-right mb-2">Marcelo Santillana Salas<br />Gerente General</p>
+                <p class="text-right mb-2"><strong>COMPAÑÍA MINERA PODEROSA S.A.</strong></p>                                                                      
+
+
+
+                <div class="d-flex mt-5  flex-column flex-lg-row align-items-center align-items-lg-start justify-content-sm-center">
+                    <div class="flex-fill mb-4 mb-lg-0">
+                        @Html.Partial("~/Views/Shared/_redes.cshtml")
+                    </div>
+                    <div class="flex-fill text-center text-sm-right">
+                        <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>
