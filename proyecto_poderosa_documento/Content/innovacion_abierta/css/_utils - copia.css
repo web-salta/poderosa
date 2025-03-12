@@ -1,0 +1,649 @@
+/* ################################################## */
+/* FUENTES */
+/* ################################################## */
+.fuente-2{
+	font-family: var(--fuente-2);
+}
+.fuente-2 strong{
+	font-family: var(--fuente-2-bold);
+}
+/* ################################################## */
+
+
+
+
+
+/* ################################################## */
+/* COLORES */
+/* ################################################## */
+.blanco{
+	color: var(--blanco) !important;
+}
+.negro{
+	color: var(--negro) !important;
+}
+.gris{
+	color: var(--gris) !important;
+}
+
+.dorado{
+	color: var(--dorado) !important;
+}
+.dorado-oscuro{
+	color: var(--dorado-oscuro) !important;
+}
+.marron{
+	color: var(--marron) !important;
+}
+.marron-oscuro{
+	color: var(--marron-oscuro) !important;
+}
+
+.durazno{
+	color: var(--durazno) !important;
+}
+/* ################################################## */
+
+
+
+
+
+/* ################################################## */
+/* BG COLORES */
+/* ################################################## */
+.bg-transparente{
+	background-color: var(--transparente) !important;
+}
+.bg-blanco{
+	background-color: var(--blanco) !important;
+}
+.bg-negro{
+	background-color: var(--negro) !important;
+}
+.bg-gris{
+	background-color: var(--gris) !important;
+}
+.bg-gris-claro{
+	background-color: var(--gris-claro) !important;
+}
+
+.bg-dorado{
+	background-color: var(--dorado) !important;
+}
+.bg-dorado-oscuro{
+	background-color: var(--dorado-oscuro) !important;
+}
+.bg-marron{
+	background-color: var(--marron) !important;
+}
+.bg-marron-oscuro{
+	background-color: var(--marron-oscuro) !important;
+}
+
+.bg-blanco-90{
+	background-color: var(--blanco-90) !important;
+}
+.bg-blanco-40{
+	background-color: var(--blanco-40) !important;
+}
+.bg-negro-30{
+	background-color: var(--negro-30) !important;
+}
+.bg-gris-claro-50{
+	background-color: var(--gris-claro-50) !important;
+}
+.bg-marron-20{
+	background-color: var(--marron-20) !important;
+}
+.bg-marron-80{
+	background-color: var(--marron-80) !important;
+}
+/* ################################################## */
+
+
+
+
+
+/* ################################################## */
+/* COLOR DE BORDE */
+/* ################################################## */
+
+.hr-color-gris-claro{
+	color: var(--gris-clarito);
+	border: 1px solid var(--gris-clarito);
+}
+
+.hr-color-dorado {
+    color: var(--dorado);
+    border: 2px solid var(--dorado);
+    width: 100%;
+}
+/* ################################################## */
+
+
+
+
+
+/* ################################################## */
+/* IMAGEN DE FONDO CON COVER */
+/* ################################################## */
+.bg-img-cover{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+/* ################################################## */
+
+
+
+
+
+/* ################################################## */
+/* HR VERTICAL */
+/* ################################################## */
+.hr-v{
+	margin-left: 1rem;
+	margin-right: 1rem;
+	border: 0;
+	border-left: 3px solid inherit;
+}
+/* ################################################## */
+
+
+
+
+
+/* ################################################## */
+/* LINK DECORADO */
+/* ################################################## */
+.a--link{
+    text-decoration: underline;
+}
+/*.a--link:hover{
+    text-decoration: none;
+}*/
+/* ################################################## */
+
+
+
+
+
+/* ################################################## */
+/* SUBRAYADO ESPECIAL */
+/* ################################################## */
+.u--especial{
+    border-bottom: 5px solid var(--dorado);
+}
+/* ################################################## */
+
+
+
+
+
+/* ################################################## */
+/* AJUSTE DE OBJETO */
+/* ################################################## */
+.object-fit-cover{
+	/*object-position: center;*/
+	/*display: block;*/
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	font-family: 'object-fit: cover';	/* lo necesita el polyfill: ofi.min.js */
+}
+/* ################################################## */
+
+
+
+
+
+/* ################################################## */
+/* ICO MAS GRIS CON FONDO BLANCO */
+/* ################################################## */
+.ico-mas{
+	display: inline-block !important;
+	width: 1.5rem !important;
+	height: 1.5rem !important;
+}
+/* ################################################## */
+
+
+
+
+
+/* ################################################## */
+/* boton LIBROS */
+/* ################################################## */
+@media(min-width: 768px){
+    .boton-abajo-derecho{
+		position: absolute;
+		bottom:0;
+		right:0;
+	}
+}
+/* ################################################## */
+
+
+
+
+
+
+/* ################################################## */
+/* borde bottom publicaciones */
+/* ################################################## */
+@media(min-width: 576px){
+    .publicaciones [class*="col-"] {
+    	border-bottom: 2px solid var(--gris-clarito); 
+    	padding-bottom: 1rem;
+	}
+}
+/* ################################################## */
+
+
+
+
+
+
+/* ################################################## */
+/* letras en mayusculas */
+/* ################################################## */
+.mayuscula{
+	text-transform: uppercase;
+}
+/* ################################################## */
+
+
+
+
+
+/* ################################################## */
+/* ico-contacto */
+/* ################################################## */
+.ico-contacto{
+	width: 6rem;
+	margin-top: -4.5rem
+}
+
+/* MEDIA QUERYS */
+@media(min-width: 576px){
+	/*.ico-contacto{
+		width: 6rem;
+		margin-top: -4.5rem
+	}*/
+}
+@media(min-width: 768px){
+	.ico-contacto{
+		width: 7rem;
+		margin-top: -5.5rem
+	}
+}
+@media(min-width: 992px){
+	.ico-contacto{
+		width: 8rem;
+		margin-top: -6.5rem
+	}
+}
+@media(min-width: 1200px){
+	.ico-contacto{
+		width: 9rem;
+		margin-top: -7.5rem
+	}
+}
+/* ################################################## */
+
+
+
+
+
+/* ################################################## */
+/* ROW COL BORDER DERECHA */
+/* ################################################## */
+/*.border-right
+.border-right--2px
+.border-right--marron*/
+
+.row-col-border-der > div:not(:last-child){
+	margin-bottom: 1rem;
+}
+
+
+/* ################################################## */
+/* CAJA FOOTER */
+/* ################################################## */
+/*#caja_footer {
+    overflow: hidden;
+    background-color: rgba(255,255,255,0.2);
+    padding: 7.5px 15px;
+    border-radius: 7px;
+}*/
+
+/* MEDIA QUERYS */
+@media(min-width: 576px){
+	
+}
+@media(min-width: 768px){
+	.row-col-border-der > div:not(:last-child){
+		border-right: 1px solid #dee2e6;
+		border-width: 2px;
+		border-color: var(--marron);
+
+		margin-bottom: 0;
+	}
+}
+@media(min-width: 992px){
+	
+}
+@media(min-width: 1200px){
+	
+}
+/* ################################################## */
+
+
+
+/* ################################################## */
+/* MIGA DE PAN */
+/* ################################################## */
+.breadcrumb{
+                display: -ms-inline-flexbox !important;
+                display: inline-flex !important;
+                background-color: transparent;
+                border-radius: 0;
+                border-bottom: 5px solid var(--dorado);
+                padding: 0 0 1rem;
+                margin-bottom: 2rem !important;
+}
+.breadcrumb-item{
+                font-family: var(--fuente-2);
+}
+.breadcrumb-item.active{
+                font-family: var(--fuente-2-bold);
+}
+/* ################################################## */
+
+
+
+/* ################################################## */
+/* IFRAME */
+/* ################################################## */
+ @media(min-width: 460px) and (max-width: 991px) {
+      iframe#valor{height: 90px;}
+ }
+/* ################################################## */
+
+
+
+/* ################################################## */
+/* PAGINATION */
+/* ################################################## */
+.publicaciones_pagination .pagination__controls{
+	width:100%;
+	text-align: center;
+}
+
+.publicaciones_pagination .pagination__controls .pagination{
+	justify-content: center;
+}
+
+.publicaciones_pagination .pagination>li>a, .publicaciones_pagination .pagination>li>span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #d8a502;
+    border: 1px solid #ffffff;
+}
+
+.publicaciones_pagination li.active a {
+    background-color: #494941;
+}
+
+.tab-contenedor-3 .publicaciones_pagination .pagination__controls .pagination {
+    justify-content: flex-end;
+    padding-right: 15px;
+}
+
+.tab-contenedor-3 .publicaciones_pagination .pagination__controls .pagination:before {
+    content: "Continua";
+    font-family: var(--fuente-2-bold);
+    font-size: 1.25rem;
+    margin-top: 0.3rem;
+    margin-right: 1rem;
+}
+/* ################################################## */
+
+.card{
+    background-color:transparent;
+}
+
+
+
+/* #####################LIBRO ABISEO############################# */
+
+.bg-black {
+    background: #000;
+}
+
+.descargar {
+    background-color: #d8a400 !important;
+    color: #000000;
+    font-family: Arial;
+    text-decoration: none;
+}
+
+
+/* #####################FANCYBOX############################# */
+
+.fancybox-content {
+    padding: 25px !important;
+}
+
+#landing.fancybox {
+    display: none;
+    max-width: 540px;
+}
+
+/* #####################MODAL DE DIRECTORES############################# */
+
+@media (min-width: 576px){
+    .modal-dialog_directores {
+        max-width: 900px;
+    }
+}
+
+
+.table-memorias td, .table-memorias th {
+    padding: 0;
+    vertical-align: top;
+    border-top: 0 solid transparent;
+}
+
+.table-memorias td {
+    padding-top: 1em;
+    text-align: right;
+}
+
+.esp-1{
+    width:15em; border-bottom:0 !important;
+    text-align: end;
+}
+
+.esp-2{
+    width:4em; border-bottom:0 !important;
+        text-align: end;
+}
+
+
+.btn_custom{
+    cursor:pointer;
+    min-width: 9rem !important;
+}
+
+ .texto__play--relative{
+       position:relative !important;
+       /*bottom:5px !important;*/
+       bottom: -20px !important;
+       
+  }
+
+.texto__play{
+     position:absolute;
+     bottom:5px;
+     z-index:9
+}
+
+
+
+
+
+@media (min-width: 576px){
+    .texto__play{
+       position:absolute;
+       bottom:5px;
+       z-index:9
+   }
+
+    
+    .texto__play--relative {
+        position: relative !important;
+        bottom: -5px !important;
+    }
+
+   
+}
+
+@media (min-width: 768px){
+    .texto__play--relative {
+        position: relative !important;
+        bottom: -25px !important;
+    }
+
+    .texto__play {
+        position: relative;
+        text-align: right;
+    }
+}
+
+@media (min-width: 992px){
+    .texto__play{
+       position:absolute;
+   }
+
+    .texto__play--relative {
+        position: relative !important;
+    }
+
+}
+/* #####################LISTA PROVEEDORES############################# */
+.lista__bottom li{
+    margin-bottom:1.1rem;
+
+}
+
+.iconRedes {
+    position:relative
+}
+
+.iconfb .st0{
+  fill:
+}
+
+.iconfb--hover {
+   display:none;
+   position:absolute;
+   top:0;
+   left:0;
+}
+
+
+
+.position__1 {
+    object-position: 15%;
+}
+
+.position__2 {
+    object-position: 60%;
+}
+
+.position__3 {
+    object-position: 20%;
+}
+
+.position__4 {
+    object-position: 70%;
+}
+
+.navbar-brand {
+    margin-top: -0.6em;
+}
+
+#trueModal {
+    display: none;
+    max-width: 600px;
+}
+
+.bg_black--p1 {
+    padding-top: 1rem !important;
+}
+
+.borderOverflow {
+    border: none;
+    overflow: hidden;
+}
+
+.paddingOverflow {
+    padding: 0;
+    overflow-y: hidden;
+}
+
+.mt--1 {
+    margin-top: 1.60rem;
+}
+
+.border--1 {
+    border: 1px solid #d6d4d4;
+}
+
+.mt--60 {
+    margin-top: 1.60rem;
+}
+
+.c1 {
+   font-family: 'HelveticaLTStd-BoldCond';line-height: 1.7rem;
+}
+
+.lista__bottom--lh {
+    line-height:0.8rem;
+}
+
+.footer__c {
+   color:#fff;font-family: var(--fuente-2-bold);
+}
+
+.mtl {
+    margin-top:10px; margin-left:0px;
+}
+
+
+
+
+/* #####################LANDING ############################# */
+.linea_dorada {
+    display: -ms-inline-flexbox !important;
+    display: inline-flex !important;
+    background-color: transparent;
+    border-radius: 0;
+    border-bottom: 5px solid var(--dorado);
+    padding: 0 0 1rem;
+    margin-bottom: 1rem !important;
+    height: 5px;
+    width: 20%;
+}
+
+.titulo{
+    font-family: var(--fuente-3);
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+}

@@ -1,0 +1,54 @@
+/* ################################################## */
+/* NOTICIA RESUMEN */
+/* PÁGINAS: noticias.php */
+.noticia-resumen{
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	height: 100%;
+}
+
+.noticia-resumen__img{
+	width: 100%;
+	height: auto;
+}
+.noticia-resumen__fecha{
+	font-family: var(--fuente-2-bold);
+	font-size: .85rem;
+	color: var(--dorado);
+	text-transform: uppercase;
+	margin-top: .5rem;
+}
+.noticia-resumen__h{
+	font-family: var(--fuente-2-bold);
+	font-size: 1.05rem;
+	color: var(--marron);
+	margin-top: .5rem;
+	margin-bottom: .5rem;
+}
+
+.noticia-resumen__h:hover{
+	color: var(--dorado);
+}
+
+
+
+/* ESTADOS */
+
+
+
+/* MEDIA QUERYS */
+@media(min-width: 576px){
+	
+}
+@media(min-width: 768px){
+	
+}
+@media(min-width: 992px){
+	
+}
+@media(min-width: 1200px){
+	
+}
+/* ################################################## */

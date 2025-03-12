@@ -1,0 +1,82 @@
+﻿/* ####################PLANNER############################# */
+
+
+.link {
+    
+	bottom: 2%;
+    
+	width: 100%;
+    
+	text-align: center;
+    
+	color: #fff;
+    
+	text-decoration: underline;
+    
+	display: block;
+    
+	position: fixed;
+
+}
+.video-banner__background{
+    height: 100vh;
+    background: url("../img/fondo-video-movil.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.video-planner video {
+      width:75%;
+      margin:0 auto;
+      display: block;
+}
+
+.video-planner {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    align-items: center;
+}
+
+.video-planner div{
+   margin-top: -5%;
+   width:100%
+ }   
+
+.video-banner__footer {
+     display: flex;
+    justify-content:center;
+    text-align:center;
+    align-content:center;
+    height:20%;
+}
+
+.video-planner img{
+    width:220px;
+}
+
+@media screen and (min-width: 768px) {
+     .video-planner div{
+      margin-top: 0;
+      
+    }   
+
+    .video-banner__background{
+        background: url("../img/fondo-video.jpg") no-repeat center center fixed;
+    }
+
+    .video-planner video {
+      width:50%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .video-planner video {
+         width:28%;
+         margin:0 auto;
+         display: block;
+    }  
+}

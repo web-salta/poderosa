@@ -1,0 +1,72 @@
+/* ################################################## */
+/* AUTOR: Jesus */
+/* DESCRIPCIÓN: tabla */
+/* PÁGINAS: accionistas.php */
+
+.tabla{
+	font-family: var(--fuente-2);
+	color: var(--marron);
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+.tabla:first-child{
+	margin-top: 0 !important;
+}
+.tabla:last-child{
+	margin-bottom: 0 !important;
+}
+
+.tabla thead,
+.tabla tfoot{
+	font-family: var(--fuente-2-bold);
+}
+.tabla thead{
+	background-color: var(--dorado);
+}
+.tabla tfoot{
+	background-color: var(--gris-oscuro-2);
+	color: var(--blanco);
+}
+
+.tabla tbody{
+	border-top: .75rem solid transparent;
+	display: block;
+}
+
+.tabla td,
+.tabla th {
+	padding: .5rem .25rem !important;
+	width: 35%;
+}
+
+.tabla tbody tr {
+	background-color: var(--gris-claro);
+}
+.tabla tbody tr:nth-of-type(odd) {
+	background-color: var(--gris-oscuro-1);
+}
+
+
+
+/* MEDIA QUERYS */
+@media(min-width: 576px){
+	.tabla td,
+	.tabla th {
+		padding: .5rem 1rem !important;
+		width: 30%;
+	}
+}
+@media(min-width: 768px){
+	.tabla td,
+	.tabla th {
+		padding: .75rem 2rem !important;
+		width: 25%;
+	}
+}
+@media(min-width: 992px){
+	
+}
+@media(min-width: 1200px){
+	
+}
+/* ################################################## */

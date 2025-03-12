@@ -1,0 +1,132 @@
+/* ################################################## */
+/* BANNER INTERNO */
+/* ################################################## */
+.banner-interno{
+	position: relative;
+	height: 200px;
+}
+
+.banner-interno__img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	font-family: 'object-fit: cover';	/* lo necesita el polyfill: ofi.min.js */
+}
+.banner-interno__img img{
+	width: 100%;
+	height: auto;
+	padding-top: 2rem;
+}
+.banner-interno:before {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+
+    -webkit-box-shadow: inset 0 -150px 300px -150px rgba(0,0,0,0.5);
+    		box-shadow: inset 0 -150px 300px -150px rgba(0,0,0,0.5);
+}
+.banner-interno__caja-texto{
+	width: 100%;
+
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+.banner-interno__h{
+	font-family: var(--fuente-2-bold);
+	font-size: 2.75rem;
+	line-height: .9;
+	color: var(--blanco);
+	margin-bottom: -.3rem;
+}
+
+
+
+/* ESTADOS */
+.banner-interno--solo-texto{
+	height: 100px;
+}
+.banner-interno--solo-texto:before{
+	content: none;
+}
+.banner-interno--solo-texto .banner-interno__h{
+	font-size: 2.5rem;
+	margin-bottom: -.2rem;
+}
+
+
+
+/* MEDIA QUERYS */
+@media(min-width: 576px){
+	.banner-interno{
+		height: 250px;
+	}
+	.banner-interno__h{
+		font-size: 3.5rem;
+		margin-bottom: -.35rem;
+	}
+
+	.banner-interno--solo-texto{
+		height: 120px;
+	}
+	.banner-interno--solo-texto .banner-interno__h{
+		font-size: 3rem;
+		margin-bottom: -.2rem;
+	}
+}
+@media(min-width: 768px){
+	.banner-interno{
+		height: 350px;
+	}
+	.banner-interno__h{
+		font-size: 4rem;
+		margin-bottom: -.4rem;
+	}
+
+	.banner-interno--solo-texto{
+		height: 140px;
+	}
+	.banner-interno--solo-texto .banner-interno__h{
+		font-size: 3.5rem;
+		margin-bottom: -.35rem;
+	}
+}
+@media(min-width: 992px){
+	.banner-interno{
+		height: 400px;
+	}
+	.banner-interno__h{
+		font-size: 4.5rem;
+		margin-bottom: -.45rem;
+	}
+
+	.banner-interno--solo-texto{
+		height: 180px;
+	}
+	.banner-interno--solo-texto .banner-interno__h{
+		font-size: 4rem;
+		margin-bottom: -.35rem;
+	}
+}
+@media(min-width: 1200px){
+	.banner-interno{
+		height: 450px;
+	}
+	.banner-interno__h{
+		font-size: 5rem;
+		margin-bottom: -.45rem;
+	}
+
+	.banner-interno--solo-texto{
+		height: 220px;
+	}
+	.banner-interno--solo-texto .banner-interno__h{
+		font-size: 4.5rem;
+		margin-bottom: -.35rem;
+	}
+}
+/* ################################################## */

@@ -1,0 +1,61 @@
+/**********************************************/
+/******** DOS BLOQUES BULLETS ****************/
+
+.contenedor-lista ul{
+    list-style-type: none; 
+  }
+  
+  .contenedor-lista ul li {
+    position: relative; 
+    padding-left: 1.5rem; 
+    padding-bottom: 1rem;
+
+  }
+  .contenedor-lista ul li::before{
+    content: "\25B6"; 
+    position: absolute; 
+    left: 0; 
+    top: 20%; 
+    transform: translateY(-50%); 
+    color: var(--dorado);
+    margin-right: 1rem;
+  }
+
+
+  .contenedor-lista-3__titulo h1{
+    word-wrap: break-word; /* Para asegurarse de que las palabras largas se rompan y no sobresalgan */
+    overflow-wrap: break-word;
+  }
+/**********************************************/
+/**************** TRES BLOQUES ****************/
+
+.contenedor-lista__izquierdo{
+  padding-right: 2rem;
+}
+  .contenedor-lista__derecho{
+    padding-left: 2rem;
+
+}
+
+/********************************************/
+/*               MEDIA QUERIES              */
+/*------------------------------------------*/
+/********************************************/
+  
+    @media(max-width:992px){
+      .contenedor-lista-3__titulo{
+        padding-bottom: 2rem;
+      }
+      .contenedor-lista__derecho{
+        padding-left: 1rem;
+    
+      }
+      
+    }
+    @media(max-width:576px){
+      .contenedor-lista-3{
+        padding: 3rem 1rem;
+      
+      }
+      
+    }

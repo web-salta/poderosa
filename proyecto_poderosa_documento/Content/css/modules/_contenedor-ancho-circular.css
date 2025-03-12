@@ -1,0 +1,233 @@
+  .underline-blanco {
+    list-style-type: none;
+    padding-left: 20px; 
+  }
+  
+  .underline-blanco li {
+    position: relative;
+    line-height: 1.2; 
+    color: white; 
+    text-decoration: underline; 
+  }
+  
+  .underline-blanco li::before {
+    content: ''; 
+    display: inline-block; 
+    width: 8px; 
+    height: 8px; 
+    border-radius: 50%;
+    background-color: #D9A100; 
+    position: absolute; 
+    left: -20px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+  }
+  
+  /* Estilo para el segundo conjunto de listas */
+  .underline-blanco li.underline-dorado {
+    color: #D9A100; 
+    text-decoration: underline; 
+  }
+
+   .underline-blanco--sinlinea li {
+    text-decoration: none; 
+  }
+  
+  
+  
+  /*********************************/
+
+
+  .contenedor-ancho-circular{
+    position: relative;
+    overflow: hidden;
+  }
+  .contenedor-gris__seccion-imagen{
+    border-radius: 50%;
+    position: relative;
+    object-fit: cover;
+    z-index: 2;
+  }
+
+  .contenedor-gris__seccion{
+    background: #524E43;
+    padding: 3rem 3rem 3rem 3rem;
+    border-radius: 0px 0px 0px 0px;
+    color: white;
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+   }
+ /******************************************************/
+ /************CONTENEDOR-IMAGEN*************************/
+
+ .contenedor-circular_img{
+  position: relative;
+  overflow: hidden;
+  padding: 0rem 0rem 0rem 0rem;
+}
+.contenedor-circular_img .img2{
+
+  border-radius:0px 0px 0px 0px;
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;   
+  object-position: center; 
+
+}
+
+
+
+
+.contenedor-circular_img .img1{
+  position: absolute;
+  z-index: 8;
+  left: -8rem;
+  bottom: 8rem;
+  opacity: 0.5;
+  height: 68%;
+
+ 
+}
+  /**************CIRCULOS TRANSPARENTES*****************/
+
+  .contenedor-gris__seccion-formaizquierda{
+    position: absolute;
+    z-index: 8;
+    left: -2rem;
+    bottom: -4rem;
+    opacity: 0.5;
+    width: 70%;
+   
+  }
+ 
+  .contenedor-gris__seccion-formaizdercha{
+    position: absolute;
+    right: -9rem;
+    z-index: 2;
+    object-fit: contain;
+    width: 70%;
+    
+    }
+    
+ /*************************************************/
+  /***********************************************/
+  /****contenedor-circular-gris-textos*************/
+   /***********************************************/
+
+
+   .contenedor-gris__seccion-textos{
+    background: #524E43;
+   padding: 4rem 12rem;
+   border-radius: 0px 400px 400px 0px;
+   color: white;
+   position: relative;
+   right: 3%;
+   overflow: hidden;
+   }
+   .contenedor-gris__seccion-imagen-textos img{
+   /*  width: 70%; */
+    /* padding-left: 4%; */
+   }
+
+/********************************************/
+/*               MEDIA QUERIES              */
+/*------------------------------------------*/
+/********************************************/
+@media(min-width:768px){
+  .contenedor-gris__seccion-formaizquierda{
+    width: 40%;
+  }
+  .contenedor-gris__seccion-formaizdercha{
+    width: 40%;
+    }
+    .contenedor-circular_img-forma{
+      left: -10rem;
+      bottom: 15rem;
+      width: 40%;
+     
+    }
+}
+
+@media(min-width:992px){
+  .contenedor-gris__seccion{
+    padding: 3rem 3rem 3rem 3rem;
+  
+    right: 3%;
+
+   }
+   .contenedor-gris__seccion-formaizquierda{
+    width: 35%;
+  }
+  .contenedor-gris__seccion-formaizdercha{
+    width: 35%;
+    }
+
+    .contenedor-circular_img{
+      padding: 0rem 0rem 0rem 6rem;
+    }
+
+    .contenedor-circular_img .img2{
+      border-radius: 800px 0px 0px 800px;
+    }
+    .contenedor-circular_img .img1{
+      left: -10rem;
+      bottom: 5rem;
+      height: 80%;
+    }
+
+
+}
+
+@media(min-width:1200px){
+  .contenedor-gris__seccion{
+    padding: 3rem 9rem 3rem 6rem;
+    border-radius: 0px 350px 350px 0px; 
+   }
+   .contenedor-gris__seccion-formaizquierda{
+    width: 30%;
+    z-index: 1;
+  }
+ 
+  .contenedor-gris__seccion-formaizdercha{
+    width: 30%;
+    }
+
+}
+
+@media(min-width:1320px){
+  .contenedor-gris__seccion-formaizquierda{
+    width: 25%;
+  }
+  .contenedor-gris__seccion-formaizdercha{
+    width: 25%;
+    }
+
+    .contenedor-circular_img-forma{
+      width: 25%;
+     
+    }
+}
+
+
+
+
+
+/* 
+   @media(max-width: 1140px){
+
+    .contenedor-gris__seccion-textos{
+     padding: 2rem 8rem;
+     border-radius: 0;
+     right:0;
+     }
+   }
+
+   @media(max-width: 540px){
+
+    .contenedor-gris__seccion-textos{
+      padding: 2rem 1rem;
+
+      }
+   }
+   */

@@ -1,0 +1,247 @@
+/******carousel banner**********/
+      #carouselBanner  {
+          margin-top: 13%;
+      }
+
+      #carouselBanner .carousel-caption {
+        left: 0% !important;
+        padding-top: 0 !important;
+        color: #000;
+        text-align: left;
+        padding-left: 3%;
+      }
+      .carouselBanner__titulo{
+        font-size: 3rem;
+        font-family: var(--fuente-gothan);
+        color:#fff;
+      }
+
+      .carouselBanner__parrafo{
+        font-size: 1.5rem;
+      }
+
+       #carouselBanner .carousel-caption{
+          width:25%;
+      }
+
+      .carouselBanner__circulo{
+        position: absolute;
+        top:0;
+        left:-10%;
+      }
+
+      #carouselBanner .carousel-indicators li.active {
+        background-color: white!important;
+      }
+
+      #carouselBanner .carousel-indicators li{       
+         background-color: #b2b2b2 !important;
+      }
+
+    
+     #carouselBanner .carousel-indicators {
+        position: absolute;
+        left: 0%;
+        right: initial;
+        margin-left:5%;
+        list-style: none;
+      }
+
+      #carouselBanner .carousel-indicators li { 
+       width:1.5rem;
+       height: 1.5rem;
+       margin-right: 0.2rem;
+       margin-left: 0.2rem;
+      }
+
+      #carouselBanner .button-flecha{
+         margin-top: 2rem;
+      }
+
+      .carouselBanner__img-movil{
+         display: none;
+      }
+
+      .carouselBanner__img-desktop{
+         display: block;
+      }
+
+       #carouselBanner .carousel-caption {
+       color: white;
+      }
+
+  /************************ @media*****************************************/
+ 
+  @media(min-width:576px){
+    #carouselBanner  {
+      margin-top: 9%;
+    }
+
+    .carouselBanner__titulo{
+      font-size: 3rem;
+      padding-top: 2rem;
+      color: white;
+      top:28%;
+    }
+
+    #carouselBanner .carousel-caption {
+       position: absolute;
+       width:70%;
+       bottom: 12%;
+       padding: 3rem;
+    }
+
+    #carouselBanner{
+        margin-left:0rem;
+    }
+
+   .carousel-caption {
+       position: static;
+       padding: 1rem;
+   }
+
+    #carouselBanner .carousel-indicators {
+      position: absolute;
+      bottom: -2%;
+      left: 0%;
+      transform: translateX(-50%);
+      list-style: none;
+      margin: 2rem 0rem 2rem 5rem;         
+    }
+
+    .carouselBanner__img-movil{
+     display: block;
+    }
+
+  .carouselBanner__img-desktop{
+     display: none;
+  }
+
+}
+
+@media(min-width:768px){
+  .carouselBanner__titulo{
+    font-size: 4rem;
+  }
+}
+
+@media(min-width:992px){
+  .carouselBanner__titulo {
+    font-size: 2.5rem;
+  }
+  
+  #carouselBanner{
+    margin-left:5%;
+    margin-top: 10.2% !important;
+  }
+
+  .carouselBanner__titulo{
+    color:#4c4a46;
+  }
+
+  #carouselBanner .carousel-caption {
+    color: #4c4a46;
+    position: absolute;
+    width: 39%;
+    padding: 0;
+    bottom: 12%;
+  }
+
+  #carouselBanner .carousel-indicators {
+    bottom: -3%;
+    margin: 0;
+  }
+
+  #carouselBanner .carousel-indicators li{       
+     background-color: var(--marron-20) !important;
+  }
+
+  #carouselBanner .carousel-indicators li.active{       
+     background-color: var(--marron-oscuro) !important;
+  }
+}
+
+   
+      
+  @media(min-width:1200px){
+    .carouselBanner__titulo {
+      font-size: 3rem;
+    }
+
+    #carouselBanner .carousel-caption {
+      width: 37%;
+    }
+  }
+
+  
+  @media(min-width:1400px){
+    .carouselBanner__titulo {
+      font-size: 4rem;
+    }
+
+    #carouselBanner {
+        margin-top: 8.2% !important;
+    }
+
+    #carouselBanner .carousel-caption {
+      bottom: 25%;
+      width: 35%;
+    }
+
+    #carouselBanner .carousel-indicators {
+        bottom: 5%;
+    }
+  }
+
+  
+  @media(min-width:1600px){
+    #carouselBanner {
+      margin-top: 7% !important;
+    }
+
+    #carouselBanner .carousel-caption {
+      top: 14%;
+      width: 35%;
+      bottom: 0;
+    }
+
+    #carouselBanner .carousel-indicators {
+      bottom: 5%;
+    }
+
+  }
+
+  @media(max-width:1320px){
+      #carouselBanner .button-flecha{
+       margin-top: 1rem;
+    }
+  }
+
+  @media(max-width:1024px){
+   #carouselBanner .button-flecha{
+      margin-top: 0rem;
+   }
+  }
+ 
+
+  @media (max-width: 768px) {
+
+  }
+
+  @media (max-width: 576px) {
+    .carousel-caption {
+      position: static;
+      padding: 1rem;
+    }
+    
+    #carouselBanner .carousel-caption {
+      position: absolute;
+      width:100%;
+      color: white;
+      padding: 3rem;
+    }
+    #carouselBanner .carousel-indicators {
+       
+      bottom: -2%;
+    }
+  }

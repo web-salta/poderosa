@@ -1,0 +1,101 @@
+/* ################################################## */
+/* FOOTER SIEMPRE ABAJO */
+/* ################################################## */
+html,
+body{
+    height: 100%;
+}
+body{
+	display: -ms-flexbox !important;
+	display: flex !important;
+
+	-ms-flex-direction: column !important;
+	    flex-direction: column !important;
+}
+footer{
+	margin-top: auto;
+}
+
+main {
+	flex-shrink: 0;
+}
+main > section:last-child{
+	padding-bottom: 3rem;
+}
+
+
+
+/* MEDIA QUERYS */
+@media(min-width: 576px){
+	
+}
+@media(min-width: 768px){
+	main section:last-child{
+		padding-bottom: 4rem;
+	}
+}
+@media(min-width: 992px){
+	main section:last-child{
+		padding-bottom: 5rem;
+	}
+}
+@media(min-width: 1200px){
+	main section:last-child{
+		padding-bottom: 6rem;
+	}
+}
+/* ################################################## */
+
+
+
+
+
+/* ################################################## */
+/* PADDING Y MARGIN GENERAL PARA LAS SECCIONES */
+/* ################################################## */
+.my-seccion{
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+.py-seccion{
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+
+
+
+/* MEDIA QUERYS */
+@media(min-width: 576px){
+	
+}
+@media(min-width: 768px){
+	.my-seccion{
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+	.py-seccion{
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+}
+@media(min-width: 992px){
+	.my-seccion{
+		margin-top: 2.5rem;
+		margin-bottom: 2.5rem;
+	}
+	.py-seccion{
+		padding-top: 2.5rem;
+		padding-bottom: 2.5rem;
+	}
+}
+@media(min-width: 1200px){
+	.my-seccion{
+		margin-top: 3rem;
+		margin-bottom: 3rem;
+	}
+	.py-seccion{
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+	}
+}
+/* ################################################## */

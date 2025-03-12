@@ -1,0 +1,241 @@
+/* ################################################## */
+/* BOTON-ICONO-FLECHA*/
+/* ################################################## */
+.button-flecha {
+	position: relative;
+	background: var(--gris-oscuro-3);
+	padding: 12px 70px 12px 30px;
+	color: white;
+	font-family: var(--fuente-Bold);
+	font-size: 20px;
+	cursor: pointer;
+	border: none;
+	border-radius: 0px 0px 20px 0px;
+	display: inline-block;
+  }
+
+.button-flecha_icon {
+	position: absolute;
+	right: 0px; 
+	top: 50%;
+	transform: translateY(-50%);
+	background-color:var(--blanco);
+	padding: 12px;
+	color:var(--gris-oscuro-3);
+	border: none;
+	border-radius: 0px 0px 20px 0px;
+  } 
+
+.button-flecha-dorado{
+	background-color:var(--dorado);
+	color:var(--blanco);
+}
+
+
+/******************************************************/
+/* BOTON-VER-MAS */
+/* ################################################## */
+ .button-ver-mas {
+	background-color: var(--blanco);
+	color: var(--dorado);
+	border: none;
+	background-color: #fff;
+	cursor: pointer;
+	letter-spacing: 1px;
+  }
+  
+  .button-ver-mas .icono {
+	margin-left: 10px; 
+  }
+  
+  .button-ver-mas img {
+	width: 10px;
+	height: auto; 
+  }
+
+
+ 
+  /* ################################################## */
+/* BOTON-ICONO-DESCARGA*/
+/* ################################################## */
+.btn-descarga {
+	position: relative;
+	background: var(--gris-oscuro-3);
+	padding: 12px 70px 12px 15px;
+	color: white;
+	font-family: var(--fuente-Bold);
+	font-size: 16px;
+	cursor: pointer;
+	border: none;
+	border-radius: 0px 0px 20px 0px;
+	display: inline-block;
+	width: 100%;
+  }
+
+.btn-descarga-icon {
+	position: absolute;
+	right: 0px; 
+	top: 50%;
+	transform: translateY(-50%);
+	background-color:var(--blanco);
+	padding: 3px;
+	color:var(--gris-oscuro-3);
+	border: none;
+	border-radius: 0px 0px 20px 0px;
+  } 
+
+.btn-descarga-dorado {
+	background-color:var(--dorado);
+	color:var(--blanco);
+}
+
+.btn-descarga-icon {
+	padding: 7px;
+  } 
+
+/* MEDIA QUERYS */
+@media(min-width: 576px){
+	
+}
+@media(min-width: 768px){
+	.btn-descarga-icon {
+		padding: 8px;
+	  } 
+}
+@media(min-width: 992px){
+	.btn-descarga {
+		font-size: 20px;
+		width: 80%;
+		padding: 12px 70px 12px 30px;
+	  }
+
+	  .btn-descarga-icon {
+		padding: 10px;
+	  } 
+}
+@media(min-width: 1200px){
+	
+}
+
+
+
+
+
+/* ################################################## */
+/* BOTON-ICONO-DESCARGA-LINK*/
+/* ################################################## */
+.btn-link {
+    display: inline-flex; 
+    align-items: center; 
+    text-decoration: none; 
+    color: var(--gris-oscuro-3); 
+    font-family: var(--fuente-Bold); 
+    font-size: 16px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.btn-link:hover {
+    color: var(--dorado); 
+}
+
+
+.btn-icon {
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.img-icon {
+    width: 30px; 
+    height: 30px; 
+    object-fit: contain; 
+}
+
+/******************************************************/
+/* BOTON-V */
+/* ################################################## */
+.button{
+
+		background-color: var(--dorado);
+		color: var(--blanco);
+		text-align: center;
+		font-size: 1.2em;
+		text-transform: uppercase;
+		display: inline-block;
+		min-width: 15rem;
+		padding: .7rem 1rem;
+		border: none;
+		border-radius: 1.5rem;
+}
+
+
+/* ################################################## */
+/* BOTONES */
+/* ################################################## */
+.boton{
+	background-color: var(--gris);
+	color: var(--blanco);
+	font-family: var(--fuente-2-bold);
+	text-align: center;
+	text-transform: uppercase;
+	
+	display: inline-block;
+	min-width: 15rem;
+	padding: .7rem 1rem;
+	
+	border-radius: 1.5rem;
+}
+.boton:hover{
+	text-decoration: none;
+
+	background-color: var(--negro);
+	color: var(--blanco);
+}
+
+
+
+/* ESTADOS */
+.boton--marron{
+	background-color: var(--marron);
+	color: var(--dorado);
+}
+.boton--marron:hover{
+	background-color: var(--dorado);
+	color: var(--marron);
+}
+
+.boton--dorado{
+	background-color: var(--dorado);
+	color: var(--marron);
+}
+.boton--dorado:hover{
+	background-color: var(--marron);
+	color: var(--dorado);
+}
+
+.boton--dorado--2{
+	background-color: var(--dorado);
+	color: var(--marron) !important;
+    font-size:1.4rem;
+}
+.boton--dorado--2:hover{
+	border: 1px solid var(--dorado) !important;
+	color: var(--dorado) !important;
+}
+
+
+
+/* MEDIA QUERYS */
+@media(min-width: 576px){
+	
+}
+@media(min-width: 768px){
+	
+}
+@media(min-width: 992px){
+	
+}
+@media(min-width: 1200px){
+	
+}

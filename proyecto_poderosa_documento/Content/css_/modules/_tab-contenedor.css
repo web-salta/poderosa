@@ -1,0 +1,63 @@
+/* ################################################## */
+/* TAB CONTENEDOR */
+/* PÁGINAS: (home, qs, ) */
+.tab-contenedor .nav-item:not(:last-child){
+	margin-right: 1rem;
+}
+
+.tab-contenedor .nav-tabs .nav-link.active,
+.tab-contenedor .nav-tabs .nav-link.active:focus,
+.tab-contenedor .nav-tabs .nav-link.active:hover {
+    /*re-escrito*/
+    color: var(--marron);
+    background-color: transparent;
+    
+    border-bottom: 8px solid var(--dorado);
+}
+
+.tab-contenedor .nav-tabs .nav-link:focus,
+.tab-contenedor .nav-tabs .nav-link:hover {
+    border-color: transparent;
+    color: var(--dorado);
+}
+
+.tab-contenedor .nav-tabs .nav-link{
+	font-family: var(--fuente-2-bold);
+	color: var(--marron);
+	padding: .5rem 0;
+	border: 0;
+}
+
+.tab-contenedor .nav-tabs{
+	/*re-escrito*/
+	border-bottom: transparent;
+}
+
+.tab-contenedor .tab-pane{
+	padding-top: 1rem;
+}
+
+
+
+/* ESTADOS */
+
+
+
+/* MEDIA QUERYS */
+@media(min-width: 576px){
+	.tab-contenedor .nav-item:not(:last-child){
+		margin-right: 2rem;
+	}
+}
+@media(min-width: 768px){
+	.tab-contenedor .nav-item:not(:last-child){
+		margin-right: 3rem;
+	}
+}
+@media(min-width: 992px){
+	
+}
+@media(min-width: 1200px){
+	
+}
+/* ################################################## */

@@ -1,0 +1,19 @@
+/* ################################################## */
+/* ZOOM HOVER PARA IMAGEN */
+/* ################################################## */
+.zoom{
+	overflow: hidden;
+	display: block;
+}
+.zoom__img{
+	-webkit-transition: all .75s ease;
+	-moz-transition: all .75s ease;
+	-ms-transition: all .75s ease;
+	-o-transition: all .75s ease;
+	transition: all .75s ease;
+}
+
+.zoom:hover .zoom__img{
+	transform: scale(1.05);
+}
+/* ################################################## */
