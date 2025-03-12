@@ -4,4 +4,4 @@
 /proyecto_poderosa_documento/*
 
 # Exceptuar la carpeta Properties
-!/proyecto_poderosa_documento/Properties/
+!/proyecto_poderosa_documento/System/
