@@ -1,0 +1,41 @@
+D:\PROYECTOS VISUAL\PROYECTO_PODEROSA_DOCUMENTO\www\proyecto_poderosa_documento\Helper\bin\Debug\Helper.dll
+D:\PROYECTOS VISUAL\PROYECTO_PODEROSA_DOCUMENTO\www\proyecto_poderosa_documento\Helper\bin\Debug\Helper.pdb
+D:\PROYECTOS VISUAL\PROYECTO_PODEROSA_DOCUMENTO\www\proyecto_poderosa_documento\Helper\obj\Debug\Helper.dll
+D:\PROYECTOS VISUAL\PROYECTO_PODEROSA_DOCUMENTO\www\proyecto_poderosa_documento\Helper\obj\Debug\Helper.pdb
+D:\PROYECTOS VISUAL\PROYECTO_PODEROSA_DOCUMENTO\www\proyecto_poderosa_documento\Helper\obj\Debug\Helper.csprojResolveAssemblyReference.cache
+D:\PROYECTOS VISUAL\PROYECTO_PODEROSA_DOCUMENTO\www\proyecto_poderosa_documento - copia\Helper\bin\Debug\Helper.dll
+D:\PROYECTOS VISUAL\PROYECTO_PODEROSA_DOCUMENTO\www\proyecto_poderosa_documento - copia\Helper\bin\Debug\Helper.pdb
+D:\PROYECTOS VISUAL\PROYECTO_PODEROSA_DOCUMENTO\www\proyecto_poderosa_documento - copia\Helper\obj\Debug\Helper.dll
+D:\PROYECTOS VISUAL\PROYECTO_PODEROSA_DOCUMENTO\www\proyecto_poderosa_documento - copia\Helper\obj\Debug\Helper.pdb
+C:\Users\ELIZABETH\Desktop\proyecto_poderosa_documento - copia\Helper\bin\Debug\Helper.dll
+C:\Users\ELIZABETH\Desktop\proyecto_poderosa_documento - copia\Helper\bin\Debug\Helper.pdb
+C:\Users\ELIZABETH\Desktop\proyecto_poderosa_documento - copia\Helper\obj\Debug\Helper.dll
+C:\Users\ELIZABETH\Desktop\proyecto_poderosa_documento - copia\Helper\obj\Debug\Helper.pdb
+C:\Users\ELIZABETH\Desktop\proyecto_poderosa_documento\Helper\bin\Debug\Helper.dll
+C:\Users\ELIZABETH\Desktop\proyecto_poderosa_documento\Helper\bin\Debug\Helper.pdb
+C:\Users\ELIZABETH\Desktop\proyecto_poderosa_documento\Helper\obj\Debug\Helper.dll
+C:\Users\ELIZABETH\Desktop\proyecto_poderosa_documento\Helper\obj\Debug\Helper.pdb
+C:\Users\ELIZABETH\Desktop\proyecto_poderosa_documento\Helper\obj\Debug\Helper.csprojResolveAssemblyReference.cache
+D:\proyecto_poderosa_documento\Helper\bin\Debug\Helper.dll
+D:\proyecto_poderosa_documento\Helper\bin\Debug\Helper.pdb
+D:\proyecto_poderosa_documento\Helper\obj\Debug\Helper.csprojResolveAssemblyReference.cache
+D:\proyecto_poderosa_documento\Helper\obj\Debug\Helper.dll
+D:\proyecto_poderosa_documento\Helper\obj\Debug\Helper.pdb
+C:\Users\SM - Elizabeth Ramos\PROYECTOS\PODEROSA\proyecto_poderosa_documento\Helper\bin\Debug\Helper.dll
+C:\Users\SM - Elizabeth Ramos\PROYECTOS\PODEROSA\proyecto_poderosa_documento\Helper\bin\Debug\Helper.pdb
+C:\Users\SM - Elizabeth Ramos\PROYECTOS\PODEROSA\proyecto_poderosa_documento\Helper\obj\Debug\Helper.csproj.AssemblyReference.cache
+C:\Users\SM - Elizabeth Ramos\PROYECTOS\PODEROSA\proyecto_poderosa_documento\Helper\obj\Debug\Helper.csproj.CoreCompileInputs.cache
+C:\Users\SM - Elizabeth Ramos\PROYECTOS\PODEROSA\proyecto_poderosa_documento\Helper\obj\Debug\Helper.dll
+C:\Users\SM - Elizabeth Ramos\PROYECTOS\PODEROSA\proyecto_poderosa_documento\Helper\obj\Debug\Helper.pdb
+C:\Users\SM - Elizabeth Ramos\Desktop\proyecto_poderosa_documento_2025\Helper\bin\Debug\Helper.dll
+C:\Users\SM - Elizabeth Ramos\Desktop\proyecto_poderosa_documento_2025\Helper\bin\Debug\Helper.pdb
+C:\Users\SM - Elizabeth Ramos\Desktop\proyecto_poderosa_documento_2025\Helper\obj\Debug\Helper.csproj.AssemblyReference.cache
+C:\Users\SM - Elizabeth Ramos\Desktop\proyecto_poderosa_documento_2025\Helper\obj\Debug\Helper.csproj.CoreCompileInputs.cache
+C:\Users\SM - Elizabeth Ramos\Desktop\proyecto_poderosa_documento_2025\Helper\obj\Debug\Helper.dll
+C:\Users\SM - Elizabeth Ramos\Desktop\proyecto_poderosa_documento_2025\Helper\obj\Debug\Helper.pdb
+C:\Users\SM - Elizabeth Ramos\PROYECTOS\PODEROSA\proyecto_poderosa_documento_2025\Helper\bin\Debug\Helper.dll
+C:\Users\SM - Elizabeth Ramos\PROYECTOS\PODEROSA\proyecto_poderosa_documento_2025\Helper\bin\Debug\Helper.pdb
+C:\Users\SM - Elizabeth Ramos\PROYECTOS\PODEROSA\proyecto_poderosa_documento_2025\Helper\obj\Debug\Helper.csproj.AssemblyReference.cache
+C:\Users\SM - Elizabeth Ramos\PROYECTOS\PODEROSA\proyecto_poderosa_documento_2025\Helper\obj\Debug\Helper.csproj.CoreCompileInputs.cache
+C:\Users\SM - Elizabeth Ramos\PROYECTOS\PODEROSA\proyecto_poderosa_documento_2025\Helper\obj\Debug\Helper.dll
+C:\Users\SM - Elizabeth Ramos\PROYECTOS\PODEROSA\proyecto_poderosa_documento_2025\Helper\obj\Debug\Helper.pdb

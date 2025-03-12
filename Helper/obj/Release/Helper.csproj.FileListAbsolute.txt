@@ -1,0 +1,25 @@
+D:\PROYECTOS VISUAL\PROYECTO_PODEROSA_DOCUMENTO\www\proyecto_poderosa_documento\Helper\bin\Release\Helper.dll
+D:\PROYECTOS VISUAL\PROYECTO_PODEROSA_DOCUMENTO\www\proyecto_poderosa_documento\Helper\bin\Release\Helper.pdb
+D:\PROYECTOS VISUAL\PROYECTO_PODEROSA_DOCUMENTO\www\proyecto_poderosa_documento\Helper\obj\Release\Helper.dll
+D:\PROYECTOS VISUAL\PROYECTO_PODEROSA_DOCUMENTO\www\proyecto_poderosa_documento\Helper\obj\Release\Helper.pdb
+D:\PROYECTOS VISUAL\PROYECTO_PODEROSA_DOCUMENTO\www\proyecto_poderosa_documento\Helper\obj\Release\Helper.csprojResolveAssemblyReference.cache
+D:\PROYECTOS VISUAL\PROYECTO_PODEROSA_DOCUMENTO\www\proyecto_poderosa_documento - copia\Helper\bin\Release\Helper.dll
+D:\PROYECTOS VISUAL\PROYECTO_PODEROSA_DOCUMENTO\www\proyecto_poderosa_documento - copia\Helper\bin\Release\Helper.pdb
+D:\PROYECTOS VISUAL\PROYECTO_PODEROSA_DOCUMENTO\www\proyecto_poderosa_documento - copia\Helper\obj\Release\Helper.csprojResolveAssemblyReference.cache
+D:\PROYECTOS VISUAL\PROYECTO_PODEROSA_DOCUMENTO\www\proyecto_poderosa_documento - copia\Helper\obj\Release\Helper.dll
+D:\PROYECTOS VISUAL\PROYECTO_PODEROSA_DOCUMENTO\www\proyecto_poderosa_documento - copia\Helper\obj\Release\Helper.pdb
+C:\Users\ELIZABETH\Desktop\proyecto_poderosa_documento\Helper\bin\Release\Helper.dll
+C:\Users\ELIZABETH\Desktop\proyecto_poderosa_documento\Helper\bin\Release\Helper.pdb
+C:\Users\ELIZABETH\Desktop\proyecto_poderosa_documento\Helper\obj\Release\Helper.dll
+C:\Users\ELIZABETH\Desktop\proyecto_poderosa_documento\Helper\obj\Release\Helper.pdb
+D:\proyecto_poderosa_documento\Helper\bin\Release\Helper.dll
+D:\proyecto_poderosa_documento\Helper\bin\Release\Helper.pdb
+D:\proyecto_poderosa_documento\Helper\obj\Release\Helper.csprojResolveAssemblyReference.cache
+D:\proyecto_poderosa_documento\Helper\obj\Release\Helper.dll
+D:\proyecto_poderosa_documento\Helper\obj\Release\Helper.pdb
+C:\Users\SM - Elizabeth Ramos\PROYECTOS\PODEROSA\proyecto_poderosa_documento\Helper\bin\Release\Helper.dll
+C:\Users\SM - Elizabeth Ramos\PROYECTOS\PODEROSA\proyecto_poderosa_documento\Helper\bin\Release\Helper.pdb
+C:\Users\SM - Elizabeth Ramos\PROYECTOS\PODEROSA\proyecto_poderosa_documento\Helper\obj\Release\Helper.csproj.AssemblyReference.cache
+C:\Users\SM - Elizabeth Ramos\PROYECTOS\PODEROSA\proyecto_poderosa_documento\Helper\obj\Release\Helper.csproj.CoreCompileInputs.cache
+C:\Users\SM - Elizabeth Ramos\PROYECTOS\PODEROSA\proyecto_poderosa_documento\Helper\obj\Release\Helper.dll
+C:\Users\SM - Elizabeth Ramos\PROYECTOS\PODEROSA\proyecto_poderosa_documento\Helper\obj\Release\Helper.pdb
