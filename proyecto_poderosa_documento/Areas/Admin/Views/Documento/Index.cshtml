@@ -1,0 +1,70 @@
+﻿@{
+    List<Model.anos> lista_ano = ViewBag.lista_ano;
+    List<Model.categoria> lista_categoria = ViewBag.lista_categoria;
+}
+<br /><br /><br /> <br />
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-sm-12">
+                <h3 class="titulo">Listado de Documentación</h3>
+                <br />
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    Buscar Año:&nbsp;
+                    <select id="seccion_cmb" name="seccion_cmb" class="cmbseccion form-control" onchange="buscar();">
+                        @foreach (var p in lista_ano)
+                        {
+                            <option value="@p.id">@p.ano </option>
+                        }
+                    </select>
+                </div>
+                <div class="col-sm-4">
+                    Buscar Trimestre:&nbsp;
+                    <select id="trimestre_cmb" name="trimestre_cmb" class="cmbseccion form-control" onchange="buscar();">
+                        <option value="0">Todos</option>
+                        <option value="1">Trimestre 1</option>
+                        <option value="2">Trimestre 2</option>
+                        <option value="3">Trimestre 3</option>
+                        <option value="4">Trimestre 4</option>
+                        <option value="5">Otros</option>
+                    </select>
+                </div>
+                <div class="col-sm-4">
+                    Buscar Categoría:&nbsp;
+                    <select id="categoria_cmb" name="categoria_cmb" class="cmbseccion form-control" onchange="buscar();">
+                        <option value="0">Todos</option>
+                        @foreach (var p in lista_categoria)
+                        {
+                            <option value="@p.id">@p.nombre </option>
+                        }
+                    </select>
+                </div>
+            </div>
+            <br />
+
+           <!-- <div style="margin:0 auto" class="tablecontainer">-->
+              <div  class="tablecontainer">
+                    <a class="popup btn btn-custom" role="button" href="~/admin/documento/Save/0">
+                        <span class="ui-button-text"><i class="ace-icon fa fa-plus bigger-110"></i>&nbsp; Nuevo Documento</span>
+                    </a>
+                    <br /><br />
+                    <div class="table-responsive"><table id="listGrid_documento"></table></div>
+                    <div id="pager"></div>
+                </div>
+
+
+                <div id="dialog-eliminar-documento" class="hide">
+                    <div class="alert alert-info bigger-110 del-table-bottom">
+                        Desea eliminar el siguiente registro?
+                    </div>
+                </div>
+                <br /><br />
+            </div>
+</div>
+
+
+
+

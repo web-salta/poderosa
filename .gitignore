@@ -1,3 +1,7 @@
 .git/
 .vs/
-proyecto_poderosa_documento/
+/proyecto_poderosa_documento/Content/
+/proyecto_poderosa_documento/obj/
+/proyecto_poderosa_documento/Views/
+/proyecto_poderosa_documento/Models/
+/proyecto_poderosa_documento/App_Start/

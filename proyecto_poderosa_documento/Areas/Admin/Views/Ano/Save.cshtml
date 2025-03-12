@@ -1,0 +1,39 @@
+﻿@model Model.anos
+<br /><br />
+@using (Html.BeginForm("save", "ano", FormMethod.Post, new { id = "formulario_ano" }))
+{   
+   
+    <br />
+    <div class="panel panel-default">
+        <div class="panel-body">
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="text-right">
+                        <button type="submit" class="btn btn-custom">
+                            <span class="ui-button-text"><i class="ace-icon fa fa-save bigger-110"></i>&nbsp; Guardar Año</span>
+                        </button>
+                    </div>
+                    <br />
+
+                    <ol class="breadcrumb breadcrumb-custom">
+                        <li><a href="~/admin/ano/index">Año</a></li>
+                        <li class="active"><b>Agregar Año</b></li>
+                    </ol>
+
+                    @if (ViewBag.mensaje != null)
+                    {
+                    <div class="alert alert-warning">@ViewBag.mensaje</div>
+                    <br />
+                    }
+
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.ano, "Valor del año")
+                        @Html.TextBoxFor(x => x.ano, new { @class = "form-control" })
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
