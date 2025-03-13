@@ -65,38 +65,49 @@
             <h1 class="fuente-3">
                 Lo último
             </h1>
-            <a href="@Url.Action("Index", "Noticias")" class="fuente-5 button-ver-mas d-flex align-items-center">
-                Ver más noticias <span class="icono"><img src="~/Content/img/home/icono.svg" alt="" class="img-fluid"></span>
+            <a href="@Url.Action("index", "noticias")" class="text-decoration-none" target="_blank">
+                <button class="fuente-5 button-ver-mas">
+                    Ver más noticias <span class="icono"><img src="~/Content/img/home/icono.svg" alt="" class="img-fluid"></span>
+                </button>
             </a>
         </div>
         <div class="row g-lg-4">
+
+            <div class="col-lg-4 col-sm-12">
+                <a href="@Url.Action("minera_poderosa_lamenta_fallecimiento_de_ing_juan_assereto", "noticias")" class="text-decoration-none" target="_blank">
+                    <img src="~/Content/noticias/minera-poderosa-lamenta-fallecimiento-de-ing-juan-assereto/resumen.png" alt="" class="img-fluid contenedor-noticias-img zoom-img border-coleccionables">
+                    <h5 class="fuente-3 mt-3">
+                        Lamentamos el fallecimiento del Ing. Assereto.
+                    </h5>
+                </a>
+                <p class="fuente-4">
+                    Pésame a su familia por irreparable pérdida
+                </p>
+            </div>
+
             <div class="col-lg-4 col-sm-12 mb-5">
-                <img src="~/Content/noticias/damos-un-nuevo-paso-en-la-transicion-energetica/resumen.jpg" alt="" class="img-fluid contenedor-noticias-img zoom-img border-coleccionables">
-                <h5 class="fuente-3 mt-3">
-                    Damos un nuevo paso en la transición energética
-                </h5>
+                <a href="@Url.Action("damos-un-nuevo-paso-en-la-transicion-energetica", "noticias")" class="text-decoration-none" target="_blank">
+                    <img src="~/Content/noticias/damos-un-nuevo-paso-en-la-transicion-energetica/resumen.jpg" alt="" class="img-fluid contenedor-noticias-img zoom-img border-coleccionables">
+                    <h5 class="fuente-3 mt-3">
+                        Damos un nuevo paso en la transición energética
+                    </h5>
+                </a>
                 <p class="fuente-4">
                     Llegó nuestra primera pickup 4x4 eléctrica.
                 </p>
             </div>
             <div class="col-lg-4 col-sm-12 mb-5">
-                <img src="~/Content/noticias/jimena-sologuren-tenemos-recursos-para-cambiar-vidas/resumen.jpg" alt="" class="img-fluid  contenedor-noticias-img zoom-img border-coleccionables">
-                <h5 class="fuente-3 mt-3">
-                    Jimena Sologuren tenemos recursos para cambiar vidas
-                </h5>
+                <a href="@Url.Action("jimena-sologuren-tenemos-recursos-para-cambiar-vidas", "noticias")" class="text-decoration-none" target="_blank">
+                    <img src="~/Content/noticias/jimena-sologuren-tenemos-recursos-para-cambiar-vidas/resumen.jpg" alt="" class="img-fluid  contenedor-noticias-img zoom-img border-coleccionables">
+                    <h5 class="fuente-3 mt-3">
+                        Jimena Sologuren tenemos recursos para cambiar vidas
+                    </h5>
+                </a>
                 <p class="fuente-4">
                     Falta inversión pública responsable y transparente.
                 </p>
             </div>
-            <div class="col-lg-4 col-sm-12">
-                <img src="~/Content/noticias/mineros-ilegales-dinamitan-otra-torre-de-alta-tension/2do-atentado-enero-lista.png" alt="" class="img-fluid contenedor-noticias-img zoom-img border-coleccionables">
-                <h5 class="fuente-3 mt-3">
-                    Mineros ilegales dinamitan otra torre de alta tensión
-                </h5>
-                <p class="fuente-4">
-                    Mineros ilegales dinamitan torre, afectan suministro eléctrico.
-                </p>
-            </div>
+
         </div>
     </div>
     <section>
@@ -236,7 +247,7 @@
                     <div class="contenedor-mostaza_der">
                         <div class="row  ">
                             <div class="col-lg-5 d-flex justify-content-center align-items-center mb-3 mb-lg-0">
-                                <img src="~/Content/img/Asset-18.png" alt="" class="img-fluid ">
+                                <img src="~/Content/img/home/circulo-logo-ap.png" alt="" class="img-fluid ">
                             </div>
                             <div class="col-lg-7 d-flex justify-content-center align-items-center">
                                 <div class="contenedor-mostaza_text">
@@ -261,31 +272,62 @@
 
         </div>
     </section>
-    <div class="container text-center py-5  px-3 px-lg-0">
-        <h1 class="fuente-3 dorado">
-            Lorem ipsum dolor sit amet <br>
-            <span class="marron-oscuro">nonummy nibh euismod</span>
-        </h1>
-        <div class="row my-lg-5 my-0  g-lg-4">
-            <div class="col-lg-1 col-md-12"></div>
-            <div class="col-lg-2 col-md-4 mb-3">
-                <img src="~/Content/img/home/Recurso-10.png" class="img-fluid">
+    <section>
+        <div class="container text-center pt-5  px-3 px-lg-0">
+            <h2 class="fuente-3">
+                Nuestras <span class=" dorado">Certificaciones</span>
+
+            </h2>
+
+            <div class="row mt-lg-5 my-0 g-3 justify-content-center">
+                <div class="col-lg-2 col-md-4 col-6 d-flex justify-content-center">
+                    <img src="~/Content/img/home/iso-14001.jpg" class="img-fluid w-100">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 d-flex justify-content-center">
+                    <img src="~/Content/img/home/iso-45001.jpg" class="img-fluid w-100">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 d-flex justify-content-center">
+                    <img src="~/Content/img/home/iso-9001.jpg" class="img-fluid w-100">
+                </div>
+                <div class="col-lg-2 col-md-6 col-6 d-flex justify-content-center">
+                    <img src="~/Content/img/home/certificado-iso-37301-2016.jpg" class="img-fluid w-100">
+                </div>
+                <div class="col-lg-2 col-md-6 col-6 d-flex justify-content-center">
+                    <img src="~/Content/img/home/certificado-iso-37301-2021.jpg" class="img-fluid w-100">
+                </div>
+                <div class="col-lg-2 col-md-6 col-6 d-flex justify-content-center">
+                    <img src="~/Content/img/home/empresarios-por-la-integridad.jpg" class="img-fluid w-100">
+                </div>
+
+
             </div>
-            <div class="col-lg-2 col-md-4 mb-3">
-                <img src="~/Content/img/home/Recurso-10.png" class="img-fluid">
-            </div>
-            <div class="col-lg-2 col-md-4 mb-3">
-                <img src="~/Content/img/home/Recurso-10.png" class="img-fluid">
-            </div>
-            <div class="col-lg-2 col-md-6 mb-3">
-                <img src="~/Content/img/home/Recurso-10.png" class="img-fluid">
-            </div>
-            <div class="col-lg-2 col-md-6 mb-3">
-                <img src="~/Content/img/home/Recurso-10.png" class="img-fluid">
-            </div>
-            <div class="col-lg-1"></div>
+
         </div>
-    </div>
+    </section>
+
+    <section>
+        <div class="container text-center   px-3 px-lg-0">
+            <h2 class="fuente-3 pt-5">
+                Nuestros <span class=" dorado">Distintivos y Reconocimientos</span>
+            </h2>
+
+
+            <div class="row my-lg-5 my-0  g-lg-4 justify-content-center">
+                <div class="col-md-4 col-md-4 mb-3">
+
+                    <img src="~/Content/img/home/empresa-gestion-sostenible.jpg" class="img-fluid">
+                </div>
+                <div class="col-md-4 col-md-4 mb-3">
+
+                    <img src="~/Content/img/home/abe.jpg" class="img-fluid">
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
     @Html.Partial("~/Views/Shared/_footer.cshtml")
 </body>
 @Html.Partial("~/Views/Shared/_foot.cshtml")

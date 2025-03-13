@@ -159,12 +159,22 @@
                                     <div class="col-4 col-lg-3 col-xl-4 d-none d-lg-block">
                                         <img src="~/Content/img/imagen-header.png" class="img-fluid imagen-menu d-none d-md-block">
                                     </div>
+                                    
                                     <div class="col col-lg-9 col-xl-8 d-flex align-items-start justify-content-center justify-content-lg-start" style="position: relative;">
                                         <ul class="dropdown-menu  lista_menu">
-                                            <li><a class="dropdown-item" href="@Url.Action("mejora_continua", "calidad_e_innovacion", new { accion = "introduccion" })"><img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline"> MEJORA CONTINUA</a></li>
-                                            <li><a class="dropdown-item" href="@Url.Action("gestion_de_calidad", "calidad_e_innovacion", new { accion = "introduccion" })"><img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline"> GESTIÓN DE CALIDAD</a></li>
-                                            <li><a class="dropdown-item" href="@Url.Action("colpa_5s", "calidad_e_innovacion", new { accion = "introduccion"})"><img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline"> COLPA - 5S</a></li>
-                                            <li><a class="dropdown-item" href="@Url.Action("calidad_total", "calidad_e_innovacion", new { accion = "introduccion"})"><img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline"> CALIDAD TOTAL</a></li>
+                                            
+                                            <li class="dropend nav-item dropdown">
+                                                <a href="#" class="dropdown-toggle-custom dropdown-item dropdown-toggle  d-flex align-items-center justify-content-center justify-content-lg-between" data-bs-toggle="dropdown">
+                                                    <span> <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline"> CALIDAD</span>
+                                                    <span class="dropdown-linea"></span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="@Url.Action("mejora_continua", "calidad_e_innovacion", new { accion = "introduccion" })"> Mejora Continua</a></li>
+                                                    <li><a class="dropdown-item" href="@Url.Action("gestion_de_calidad", "calidad_e_innovacion", new { accion = "introduccion" })"> Gestión de Calidad</a></li>
+                                                    <li><a class="dropdown-item" href="@Url.Action("colpa_5s", "calidad_e_innovacion", new { accion = "introduccion"})"> Colpa - 5S</a></li>
+                                                    <li><a class="dropdown-item" href="@Url.Action("calidad_total", "calidad_e_innovacion", new { accion = "introduccion"})"> Calidad Total</a></li>
+                                                </ul>
+                                            </li>
                                             <li class="dropend nav-item dropdown">
                                                 <a href="#" class="dropdown-toggle-custom dropdown-item dropdown-toggle  d-flex align-items-center justify-content-center justify-content-lg-between" data-bs-toggle="dropdown">
                                                     <span> <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline"> INNOVACIÓN</span>

@@ -1,0 +1,31 @@
+﻿@model proyecto_poderosa_documento.Models.Noticia
+
+@{
+    ViewBag.Title = "Crear Noticia";
+}
+
+<h2>Crear Noticia</h2>
+
+@using (Html.BeginForm("Create", "Noticias", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-group">
+        @Html.LabelFor(model => model.Titulo)
+        @Html.TextBoxFor(model => model.Titulo, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.Titulo)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Contenido)
+        @Html.TextAreaFor(model => model.Contenido, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.Contenido)
+    </div>
+
+    <!-- Campo para subir imagen -->
+    <div class="form-group">
+        @Html.LabelFor(model => model.Imagen)
+        <input type="file" name="Imagen" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar</button>
+}

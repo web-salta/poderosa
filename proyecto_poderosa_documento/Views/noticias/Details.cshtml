@@ -1,0 +1,16 @@
+﻿@model proyecto_poderosa_documento.Models.Noticia
+
+@{
+    ViewBag.Title = "Detalles de la Noticia";
+}
+
+<h2>@Model.Titulo</h2>
+<!-- Mostrar la imagen si existe -->
+@if (!string.IsNullOrEmpty(Model.Imagen))
+{
+    <img src="@Url.Content(Model.Imagen)" alt="Imagen de la noticia" class="img-fluid mb-3" />
+}
+<p><strong>Fecha de publicación:</strong> @Model.FechaPublicacion.ToString("dd 'de' MMMM 'de' yyyy")</p>
+<p>@Model.Contenido</p>
+<!-- Botón para regresar a la lista de noticias -->
+<a href="@Url.Action("Index", "Noticias")" class="btn btn-secondary">Volver al listado</a>
