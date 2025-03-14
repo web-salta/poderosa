@@ -28,7 +28,7 @@ namespace proyecto_poderosa_documento
             Server.ClearError();
             // Sanitize the exception message to remove newline characters
             string sanitizedMessage = exception.Message.Replace("\r", "").Replace("\n", " ");
-            Response.Redirect(String.Format("~/Error/?error={0}&mensaje={1}", error, exception.Message));
+            Response.Redirect(String.Format("~/Error/?error={0}&mensaje={1}", error, sanitizedMessage));
         }
     }
 }

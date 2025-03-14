@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using System.Web.Routing;
 
 namespace proyecto_poderosa_documento
@@ -13,22 +9,19 @@ namespace proyecto_poderosa_documento
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            /*routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
-            );*/
+            // Modificar la ruta de Noticias para aceptar un parámetro de ruta llamado "titulo"
+            routes.MapRoute(
+                name: "NoticiasDetalles",
+                url: "noticias/details/{titulo}",
+                defaults: new { controller = "Noticias", action = "Details" }
+            );
+
             routes.Add("default",
               new App_Start.FriendlyRoute(
                   "{controller}/{action}/{accion}/{id}", // URL con parámetros
                   new { controller = "Home", action = "Index", accion = "", id = UrlParameter.Optional }
               )
             );
-                 /* routes.MapRoute(
-                  name: "Default",
-                  url: "{controller}/{*action}",
-                  defaults: new { controller = "Home", action = "Index" }
-              );*/
 
         }
     }

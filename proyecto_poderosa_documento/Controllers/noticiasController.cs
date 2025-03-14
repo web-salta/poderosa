@@ -27,7 +27,7 @@ namespace proyecto_poderosa_documento.Controllers
         // Crear - Guardar una nueva noticia
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(Noticia noticia, HttpPostedFileBase Imagen)
+        public ActionResult Create(Noticia noticia, HttpPostedFileBase Imagen, HttpPostedFileBase ImagenResumen)
         {
             if (ModelState.IsValid)
             {
@@ -36,13 +36,27 @@ namespace proyecto_poderosa_documento.Controllers
                 {
                     // Generar un nombre único para la imagen
                     var fileName = Path.GetFileName(Imagen.FileName);
-                    var path = Path.Combine(Server.MapPath("~/Content/img"), fileName);
+                    var path = Path.Combine(Server.MapPath("~/Content/noticias/banner"), fileName);
 
                     // Guardar la imagen en el servidor
                     Imagen.SaveAs(path);
 
                     // Asignar la ruta de la imagen al modelo
-                    noticia.Imagen = "~/Content/img/" + fileName;
+                    noticia.Imagen = "~/Content/noticias/banner/" + fileName;
+                }
+
+                // Verificar si se ha subido una imagen resumen
+                if (ImagenResumen != null && ImagenResumen.ContentLength > 0)
+                {
+                    // Generar un nombre único para la imagen resumen
+                    var fileNameResumen = Path.GetFileName(ImagenResumen.FileName);
+                    var pathResumen = Path.Combine(Server.MapPath("~/Content/noticias/resumen"), fileNameResumen);
+
+                    // Guardar la imagen resumen en el servidor
+                    ImagenResumen.SaveAs(pathResumen);
+
+                    // Asignar la ruta de la imagen resumen al modelo
+                    noticia.ImagenResumen = "~/Content/noticias/resumen/" + fileNameResumen;
                 }
 
                 // Establecer la fecha actual
@@ -63,6 +77,14 @@ namespace proyecto_poderosa_documento.Controllers
             {
                 return HttpNotFound();
             }
+            // Obtener las 3 últimas noticias, ordenadas por fecha de publicación
+            var ultimasNoticias = db.Noticias
+                .OrderByDescending(n => n.FechaPublicacion)  // Ordenar por fecha de publicación
+                .Take(3)  // Limitar a las 3 últimas noticias
+                .ToList();
+
+            // Pasar tanto la noticia encontrada como las 3 últimas noticias a la vista
+            ViewBag.UltimasNoticias = ultimasNoticias;
             return View(noticia);  // Pasa la noticia encontrada a la vista
         }
     }
