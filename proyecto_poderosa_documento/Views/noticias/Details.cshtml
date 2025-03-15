@@ -65,47 +65,33 @@
                         Ver más noticias <img src="~/Content/img/home/icono.svg" alt="" class="icono img-fluid">
                     </a>
                 </div>
-                @if (ViewBag.UltimasNoticias != null)
-                {
-                    foreach (var noticia in ViewBag.UltimasNoticias)
+                <div class="row">
+                    @if (ViewBag.UltimasNoticias != null)
                     {
-                        <div class="col-12 col-md-6 col-lg-4 mb-5">
-                            <a href="@Url.Action("Details", "Noticias", new { titulo = noticia.Titulo.Replace(" ", "-").ToLower() })" class="text-decoration-none">
-                                <!-- Imagen de resumen -->
-                                @if (!string.IsNullOrEmpty(noticia.ImagenResumen))
-                                {
-                                    <img src="@Url.Content(noticia.ImagenResumen)" alt="@noticia.Titulo" class="img-fluid contenedor-noticias-img zoom-img">
-                                }
-                                <h5 class="fuente-3 mt-2">
-                                    @noticia.Titulo
-                                </h5>
-                            </a>
-                            <p class="fuente-4">
-                                @{
-                                    var descripcion = noticia.Descripcion;
-                                    var displayDescripcion = descripcion.Length > 150 ? descripcion.Substring(0, 150) + "..." : descripcion;
-                                }
-                                @displayDescripcion
-                            </p>
-                        </div>
+                        foreach (var noticia in ViewBag.UltimasNoticias)
+                        {
+                            <div class="col-12 col-md-6 col-lg-4 mb-5">
+                                <a href="@Url.Action("Details", "Noticias", new { titulo = noticia.Titulo.Replace(" ", "-").ToLower() })" class="text-decoration-none">
+                                    <!-- Imagen de resumen -->
+                                    @if (!string.IsNullOrEmpty(noticia.ImagenResumen))
+                                    {
+                                        <img src="@Url.Content(noticia.ImagenResumen)" alt="@noticia.Titulo" class="img-fluid contenedor-noticias-img zoom-img">
+                                    }
+                                    <h5 class="fuente-3 mt-2">
+                                        @noticia.Titulo
+                                    </h5>
+                                </a>
+                                <p class="fuente-4">
+                                    @{
+                                        var descripcion = noticia.Descripcion;
+                                        var displayDescripcion = descripcion.Length > 150 ? descripcion.Substring(0, 150) + "..." : descripcion;
+                                    }
+                                    @displayDescripcion
+                                </p>
+                            </div>
+                        }
                     }
-                }
-
-                <!--<div class="row  ">
-                    <div class="col-12 col-md-6 col-lg-4 mb-5">
-                        <a href="https://www2.poderosa.com.pe:8081/noticias/damos-un-nuevo-paso-en-la-transicion-energetica" class="text-decoration-none">
-                            <img src="~/Content/noticias/damos-un-nuevo-paso-en-la-transicion-energetica/resumen.jpg"
-                                 alt=""
-                                 class="img-fluid contenedor-noticias-img zoom-img">
-                            <h5 class="fuente-3 mt-2">
-                                Damos un nuevo paso en la transición energética
-                            </h5>
-                        </a>
-                        <p class="fuente-4">
-                            Llegó nuestra primera pickup 4x4 eléctrica
-                        </p>
-                    </div>
-                </div>-->
+                </div>
             </div>
         </div>
     </section>
