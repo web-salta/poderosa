@@ -3,42 +3,96 @@
 @{
     ViewBag.Title = "Crear Noticia";
 }
+@Html.Partial("~/Views/Shared/_head.cshtml")
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Crear Noticia - Proyecto Poderosa</title>
 
-<h2>Crear Noticia</h2>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="~/Content/css/custom.css">
 
-@using (Html.BeginForm("Create", "Noticias", FormMethod.Post, new { enctype = "multipart/form-data" }))
-{
-    @Html.AntiForgeryToken()
-    <div class="form-group">
-        @Html.LabelFor(model => model.Titulo)
-        @Html.TextBoxFor(model => model.Titulo, new { @class = "form-control" })
-        @Html.ValidationMessageFor(model => model.Titulo)
-    </div>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    <!-- Campo para subir imagen -->
-    <div class="form-group">
-        @Html.LabelFor(model => model.Imagen)
-        <input type="file" name="Imagen" class="form-control" />
-    </div>
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="@Url.Action("Index", "Noticias")">
+                                <i class="material-icons">article</i> Noticias
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <i class="material-icons">image</i> PopUps
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Login", "Account")">
+                                <i class="material-icons">exit_to_app</i> Logout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Main content -->
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+                <h2 class="my-4">Crear Noticia</h2>
 
-    <div class="form-group">
-        @Html.LabelFor(model => model.Descripcion, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            @Html.EditorFor(model => model.Descripcion, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.Descripcion, "", new { @class = "text-danger" })
+                @using (Html.BeginForm("Create", "Noticias", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                {
+                    @Html.AntiForgeryToken()
+
+                    <!-- Titulo -->
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Titulo)
+                        @Html.TextBoxFor(model => model.Titulo, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.Titulo, "", new { @class = "text-danger" })
+                    </div>
+
+                    <!-- Campo para subir imagen -->
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Imagen)
+                        <input type="file" name="Imagen" class="form-control" />
+                    </div>
+
+                    <!-- Descripción -->
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Descripcion)
+                        @Html.EditorFor(model => model.Descripcion, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Descripcion, "", new { @class = "text-danger" })
+                    </div>
+
+                    <!-- Contenido -->
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Contenido)
+                        @Html.TextAreaFor(model => model.Contenido, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.Contenido, "", new { @class = "text-danger" })
+                    </div>
+
+                    <!-- Imagen resumen -->
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.ImagenResumen)
+                        <input type="file" name="ImagenResumen" class="form-control" />
+                    </div>
+
+                    <!-- Botón para guardar -->
+                    <button type="submit" class="btn btn-success">Guardar</button>
+                }
+            </main>
         </div>
     </div>
-
-    <div class="form-group">
-        @Html.LabelFor(model => model.Contenido)
-        @Html.TextAreaFor(model => model.Contenido, new { @class = "form-control" })
-        @Html.ValidationMessageFor(model => model.Contenido)
-    </div>
-
-    <div class="form-group">
-        @Html.LabelFor(model => model.ImagenResumen)
-        <input type="file" name="ImagenResumen" class="form-control" />
-    </div>
-
-    <button type="submit" class="btn btn-primary">Guardar</button>
-}
+</body>

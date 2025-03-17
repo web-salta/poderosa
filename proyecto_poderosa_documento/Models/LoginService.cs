@@ -1,32 +1,35 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Data.SqlClient;
 
 namespace proyecto_poderosa_documento.Models
 {
-	public class LoginService
-	{
+    public class LoginService
+    {
         private readonly DatabaseHelper _databaseHelper;
 
         public LoginService()
         {
             _databaseHelper = new DatabaseHelper();
         }
-        public bool ValidarUsuario(string usuario, string contrasena)
+
+        // Método para validar usuario
+        public bool ValidarUsuario(string nombreUsuario, string contrasena)
         {
+            if (string.IsNullOrEmpty(nombreUsuario))
+            {
+                throw new ArgumentException("El nombre de usuario no puede ser nulo o vacío", nameof(nombreUsuario));
+            }
+
             try
             {
                 using (SqlConnection connection = _databaseHelper.GetConnection())
                 {
                     connection.Open();
-
-                    string query = "SELECT * FROM usuarios WHERE Usuario = @Usuario AND Contrasena = @Contrasena";
+                    string query = "SELECT * FROM Usuarios WHERE NombreUsuario = @NombreUsuario AND Contrasena = @Contrasena";
 
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
-                        command.Parameters.AddWithValue("@Usuario", usuario);
+                        command.Parameters.AddWithValue("@NombreUsuario", nombreUsuario);
                         command.Parameters.AddWithValue("@Contrasena", contrasena);
 
                         using (SqlDataReader reader = command.ExecuteReader())
@@ -42,7 +45,8 @@ namespace proyecto_poderosa_documento.Models
             }
         }
 
-        public bool RegistrarUsuario(string usuario, string contrasena)
+
+        public bool RegistrarUsuario(string NombreUsuario, string contrasena)
         {
             try
             {
@@ -50,20 +54,30 @@ namespace proyecto_poderosa_documento.Models
                 {
                     connection.Open();
 
-                    string query = "INSERT INTO usuarios (Usuario, Contrasena) VALUES (@Usuario, @Contrasena)";
+                    // El rol por defecto puede ser "Usuario" (con RolId = 2)
+                    int rolId = 2;  // Asegúrate de que este valor coincida con tu esquema de roles
+
+                    // Consulta para insertar el nuevo usuario
+                    string query = "INSERT INTO Usuarios (NombreUsuario, Contrasena, RolId) VALUES (@NombreUsuario, @Contrasena, @RolId)";
 
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
-                        command.Parameters.AddWithValue("@Usuario", usuario);
-                        command.Parameters.AddWithValue("@Contrasena", contrasena);
+                        // Asignar los parámetros a la consulta SQL
+                        command.Parameters.AddWithValue("@NombreUsuario", NombreUsuario);  // Cambiado a NombreUsuario
+                        command.Parameters.AddWithValue("@Contrasena", contrasena); // Asegúrate de encriptar la contraseña antes de insertarla
+                        command.Parameters.AddWithValue("@RolId", rolId); // Asignar el RolId
 
+                        // Ejecutar la consulta
                         int result = command.ExecuteNonQuery();
+
+                        // Si el resultado es mayor que 0, la inserción fue exitosa
                         return result > 0;
                     }
                 }
             }
             catch (Exception ex)
             {
+                // Lanza una excepción en caso de error
                 throw new Exception("Error al registrar el usuario", ex);
             }
         }

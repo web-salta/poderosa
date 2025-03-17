@@ -19,6 +19,7 @@ namespace proyecto_poderosa_documento.Controllers
         }
 
         // Crear - Vista para crear una nueva noticia
+        [Authorize]// Solo requerir autenticación para esta acción
         public ActionResult Create()
         {
             return View();
@@ -27,6 +28,7 @@ namespace proyecto_poderosa_documento.Controllers
         // Crear - Guardar una nueva noticia
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public ActionResult Create(Noticia noticia, HttpPostedFileBase Imagen, HttpPostedFileBase ImagenResumen)
         {
             if (ModelState.IsValid)
@@ -70,6 +72,7 @@ namespace proyecto_poderosa_documento.Controllers
             }
             return View(noticia);
         }
+        // Details - Ver detalles de una noticia
         public ActionResult Details(string titulo)
         {
             var noticia = db.Noticias.FirstOrDefault(n => n.Titulo.Replace(" ", "-").ToLower() == titulo.ToLower());

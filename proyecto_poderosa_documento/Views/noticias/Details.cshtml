@@ -1,5 +1,4 @@
 ﻿@model proyecto_poderosa_documento.Models.Noticia
-
 @{
     ViewBag.Title = "Detalles de la Noticia";
 }
@@ -17,7 +16,6 @@
 <meta property="og:url" content="@Url.Action("Details", "Noticias", new { titulo = Model.Titulo.Replace(" ", "-").ToLower() })" />
 <meta property="og:image" content="@Url.Content(Model.Imagen)" />
 </head>
-
 <body>
     <div class="menuSecuVelo"></div>
     @Html.Partial("~/Views/Shared/_header.cshtml")

@@ -1,5 +1,6 @@
 ﻿@{
     ViewBag.Title = "Login";
+    string returnUrl = ViewBag.ReturnUrl as string;
 }
 <!DOCTYPE html>
 <html lang="es">
@@ -7,12 +8,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login y Registro con HTML5 y CSS3</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <!-- Estilos CSS -->
+    <title>Login</title>
     <link rel="stylesheet" href="~/Content/css/modules/_login.css">
-    <!-- Favicon -->
     <link rel="shortcut icon" href="~/Content/img/favicon.png" type="image/x-icon">
 </head>
 <body>
@@ -20,16 +17,22 @@
     <article>
         <section>
             <form action="@Url.Action("Login", "Account")" method="POST">
-                <h1>Inicia Sesion</h1>
+                <h1>Inicia Sesión</h1>
 
-                <input type="text" name="usuario" placeholder="Correo electr&oacute;nico" required><br />
-                <input type="password" name="contrasena" placeholder="Contrase&ntilde;a" required><br />
+                <input type="text" name="NombreUsuario" placeholder="Correo electrónico" required><br />
+                <input type="password" name="contrasena" placeholder="Contraseña" required><br />
+
+                <!-- Agregar el token anti-forgery aquí -->
+                @Html.AntiForgeryToken()
+
+                <input type="hidden" name="returnUrl" value="@returnUrl" />  <!-- Campo oculto para la URL de retorno -->
+
                 <button type="submit">Entrar</button>
                 <button type="reset">Limpiar</button>
 
-                <p>Aun no tienes cuenta?</p>
+                <p>Aún no tienes cuenta?</p>
                 <p>
-                    <a href="@Url.Action("Register", "Account")">Registrate</a>
+                    <a href="@Url.Action("Register", "Account")">Regístrate</a>
                 </p>
             </form>
         </section>
