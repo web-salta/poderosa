@@ -1301,6 +1301,8 @@
     <Content Include="Views\Noticias\Create.cshtml" />
     <Content Include="Views\Noticias\Details.cshtml" />
     <Content Include="Views\Noticias\Index.cshtml" />
+    <Content Include="Views\Noticias\Dashboard.cshtml" />
+    <Content Include="Views\Noticias\Edit.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

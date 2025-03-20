@@ -11,11 +11,12 @@
 /* ################################################## */
 /* FUENTES NUEVAS */
 /* ################################################## */
-.fuente-3{
+.fuente-3 {
     font-family: var(--fuente-gothan);
 }
-.fuente-4{
+.fuente-4 {
     font-family: var(--fuente-Book);
+    font-size: 17px;
 }
 
 .fuente-5{

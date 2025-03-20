@@ -11,5 +11,14 @@ namespace proyecto_poderosa_documento.Models
         // DbSet para Roles (opcional)
         public DbSet<Rol> Roles { get; set; }
         public NoticiasDbContext() : base("name=DefaultConnection") { }
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Noticia>()
+                .HasRequired(n => n.Usuario) // La noticia debe tener un usuario
+                .WithMany() // Un usuario puede tener muchas noticias
+                .HasForeignKey(n => n.UsuarioId); // Relación con la clave foránea UsuarioId
+        }
     }
 }

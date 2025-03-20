@@ -1,98 +1,140 @@
 ﻿@model proyecto_poderosa_documento.Models.Noticia
-
 @{
     ViewBag.Title = "Crear Noticia";
 }
-@Html.Partial("~/Views/Shared/_head.cshtml")
+<!DOCTYPE html>
+<html lang="es" class="h-100">
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Crear Noticia - Proyecto Poderosa</title>
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="~/Content/css/custom.css">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-    <!-- Google Material Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="~/Content/css/estilo.css" rel="stylesheet">
 </head>
-<body>
-    <div class="container-fluid">
-        <div class="row">
-            <!-- Sidebar -->
-            <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
-                <div class="sidebar-sticky">
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="@Url.Action("Index", "Noticias")">
-                                <i class="material-icons">article</i> Noticias
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link">
-                                <i class="material-icons">image</i> PopUps
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="@Url.Action("Login", "Account")">
-                                <i class="material-icons">exit_to_app</i> Logout
-                            </a>
-                        </li>
-                    </ul>
+<body class="d-flex flex-column h-100">
+    <!-- Begin page content -->
+    <main class="flex-shrink-0">
+        <div class="container">
+            <h3 class="my-3" id="titulo">Crear Noticia</h3>
+
+            @using (Html.BeginForm("Create", "Noticias", FormMethod.Post, new { enctype = "multipart/form-data", id = "createForm" }))
+            {
+                @Html.AntiForgeryToken()
+
+                <!-- Titulo -->
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Titulo)
+                    @Html.TextBoxFor(model => model.Titulo, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.Titulo, "", new { @class = "text-danger" })
                 </div>
-            </nav>
-            <!-- Main content -->
-            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-                <h2 class="my-4">Crear Noticia</h2>
 
-                @using (Html.BeginForm("Create", "Noticias", FormMethod.Post, new { enctype = "multipart/form-data" }))
-                {
-                    @Html.AntiForgeryToken()
+                <!-- Campo para subir imagen -->
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Imagen)
+                    <input type="file" name="Imagen" class="form-control" />
+                </div>
 
-                    <!-- Titulo -->
-                    <div class="form-group">
-                        @Html.LabelFor(model => model.Titulo)
-                        @Html.TextBoxFor(model => model.Titulo, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(model => model.Titulo, "", new { @class = "text-danger" })
-                    </div>
+                <!-- Campo para establecer fecha de la noticia -->
+                <div class="form-group">
+                    @Html.LabelFor(model => model.FechaNoticia, "Fecha de la noticia")
+                    @Html.TextBoxFor(model => model.FechaNoticia, "{0:yyyy-MM-dd}", new { @class = "form-control", type = "date" })
+                    @Html.ValidationMessageFor(model => model.FechaNoticia, "", new { @class = "text-danger" })
+                </div>
 
-                    <!-- Campo para subir imagen -->
-                    <div class="form-group">
-                        @Html.LabelFor(model => model.Imagen)
-                        <input type="file" name="Imagen" class="form-control" />
-                    </div>
+                <!-- Descripción -->
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Descripcion)
+                    @Html.EditorFor(model => model.Descripcion, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Descripcion, "", new { @class = "text-danger" })
+                </div>
 
-                    <!-- Descripción -->
-                    <div class="form-group">
-                        @Html.LabelFor(model => model.Descripcion)
-                        @Html.EditorFor(model => model.Descripcion, new { htmlAttributes = new { @class = "form-control" } })
-                        @Html.ValidationMessageFor(model => model.Descripcion, "", new { @class = "text-danger" })
-                    </div>
+                <!-- Contenido -->
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Contenido)
+                    @Html.TextAreaFor(model => model.Contenido, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.Contenido, "", new { @class = "text-danger" })
+                </div>
 
-                    <!-- Contenido -->
-                    <div class="form-group">
-                        @Html.LabelFor(model => model.Contenido)
-                        @Html.TextAreaFor(model => model.Contenido, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(model => model.Contenido, "", new { @class = "text-danger" })
-                    </div>
+                <!-- Imagen resumen -->
+                <div class="form-group mb-3">
+                    @Html.LabelFor(model => model.ImagenResumen)
+                    <input type="file" name="ImagenResumen" class="form-control" />
+                </div>
 
-                    <!-- Imagen resumen -->
-                    <div class="form-group">
-                        @Html.LabelFor(model => model.ImagenResumen)
-                        <input type="file" name="ImagenResumen" class="form-control" />
-                    </div>
+                <!-- Botones -->
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success" onclick="submitForm(event)">Guardar</button>
+                    <a href="@Url.Action("Dashboard", "Noticias")" class="btn btn-secondary">Regresar</a>
+                </div>
+            }
+        </div>
+    </main>
 
-                    <!-- Botón para guardar -->
-                    <button type="submit" class="btn btn-success">Guardar</button>
-                }
-            </main>
+    <footer class="footer mt-auto py-3 bg-body-tertiary">
+        <div class="container">
+            <span class="text-body-secondary">2024</span>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="guardarModal" tabindex="-1" aria-labelledby="guardarModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="guardarModalLabel">Aviso</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>La noticia ha sido guardada exitosamente.</p>
+                    <p>¿Deseas agregar otra noticia?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="addAnother()">Sí</button>
+                    <button type="button" class="btn btn-primary" onclick="redirectToDashboard()">No</button>
+                </div>
+            </div>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+            const form = document.getElementById('createForm');
+            const formData = new FormData(form);
+
+            fetch(form.action, {
+                method: 'POST',
+                body: formData
+            }).then(response => {
+                if (response.ok) {
+                    showPopup();
+                } else {
+                    alert('Error al guardar la noticia.');
+                }
+            }).catch(error => {
+                console.error('Error:', error);
+                alert('Error al guardar la noticia.');
+            });
+        }
+
+        function showPopup() {
+            const guardarModal = new bootstrap.Modal(document.getElementById('guardarModal'))
+            guardarModal.show()
+        }
+
+        function addAnother() {
+            document.getElementById('createForm').reset();
+            const guardarModal = bootstrap.Modal.getInstance(document.getElementById('guardarModal'));
+            guardarModal.hide();
+        }
+
+        function redirectToDashboard() {
+            window.location.href = '@Url.Action("Dashboard", "Noticias")';
+        }
+    </script>
 </body>
+</html>

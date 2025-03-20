@@ -16,6 +16,14 @@ namespace proyecto_poderosa_documento
                 defaults: new { controller = "Noticias", action = "Details" }
             );
 
+            // Agregar una ruta específica para la acción Create
+            routes.MapRoute(
+                name: "NoticiasCreate",
+                url: "noticias/create",
+                defaults: new { controller = "Noticias", action = "Create" }
+            );
+
+
             routes.Add("default",
               new App_Start.FriendlyRoute(
                   "{controller}/{action}/{accion}/{id}", // URL con parámetros

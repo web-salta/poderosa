@@ -46,7 +46,7 @@ namespace proyecto_poderosa_documento.Controllers
                     if (usuarioDb.RolId == 1) // Si el rol es "Admin"
                     {
                         // Redirigir a Noticias/Create si es admin
-                        return RedirectToAction("Create", "Noticias");
+                        return RedirectToAction("Dashboard", "Noticias");
                     }
                     else
                     {
@@ -70,7 +70,7 @@ namespace proyecto_poderosa_documento.Controllers
         }
 
         [HttpPost]
-        public ActionResult Register(string usuario, string contrasena, string contrasena2)
+        public ActionResult Register(string NombreUsuario, string contrasena, string contrasena2)
         {
             if (contrasena != contrasena2)
             {
@@ -78,7 +78,7 @@ namespace proyecto_poderosa_documento.Controllers
                 return View();
             }
 
-            bool isRegistered = _loginService.RegistrarUsuario(usuario, contrasena);
+            bool isRegistered = _loginService.RegistrarUsuario(NombreUsuario, contrasena);
 
             if (isRegistered)
             {

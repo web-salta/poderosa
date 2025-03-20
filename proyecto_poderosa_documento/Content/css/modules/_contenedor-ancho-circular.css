@@ -13,17 +13,27 @@
   .underline-blanco li::before {
     content: ''; 
     display: inline-block; 
-    width: 8px; 
-    height: 8px; 
+    width: 10px; 
+    height: 10px; 
     border-radius: 50%;
     background-color: #D9A100; 
     position: absolute; 
     left: -20px; 
-    top: 50%; 
+    top: 19%; 
     transform: translateY(-50%); 
   }
-  
-  /* Estilo para el segundo conjunto de listas */
+
+
+    .underline-blanco li {
+        text-decoration: none; 
+    }
+
+.underline-dorado {
+    color: var(--dorado) !important;
+    text-decoration: underline;
+    text-decoration-color: var(--dorado) !important;
+}
+
   .underline-blanco li.underline-dorado {
     color: #D9A100; 
     text-decoration: underline; 
