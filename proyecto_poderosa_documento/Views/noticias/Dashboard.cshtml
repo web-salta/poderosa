@@ -1,4 +1,4 @@
-﻿@model IEnumerable<proyecto_poderosa_documento.Models.Noticia>
+﻿@model proyecto_poderosa_documento.Models.DashboardViewModel
 
 @{
     ViewBag.Title = "Dashboard - Administrador";
@@ -45,7 +45,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach (var noticia in Model)
+                    @foreach (var noticia in Model.Noticias)
                     {
                         <tr>
                             <td>@noticia.Titulo</td>
@@ -53,7 +53,6 @@
                             <td>
                                 <a href="@Url.Action("Edit", "Noticias", new { titulo = noticia.Titulo.Replace(" ", "-").ToLower() })" class="btn btn-warning btn-sm me-2">Editar</a>
                                 <a href="@Url.Action("Details", "Noticias", new { titulo = noticia.Titulo.Replace(" ", "-").ToLower() })" target="_blank" class="btn btn-info btn-sm me-2">Ver</a>
-                                <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#eliminaModal" data-bs-id="@noticia.Id">Eliminar</button>
                             </td>
                         </tr>
                     }
@@ -63,14 +62,59 @@
 
         <!-- PopUp Section -->
         <div id="popup-section" class="section" style="display: none;">
-            <h4>PopUp</h4>
-            <p>Hola, aquí puedes generar tu popup.</p>
+            <h3 class="my-3" id="titulo">PopUps</h3>
+
+            @if (User.Identity.IsAuthenticated)
+            {
+                <a href="@Url.Action("Create", "PopUp")" class="btn btn-success">Agregar PopUp</a>
+            }
+
+            <!-- Mostrar listado de PopUps -->
+            <table class="table table-hover table-bordered my-3">
+                <thead class="table-dark">
+                <tr>
+                    <th scope="col">Título</th>
+                    <th scope="col">URL</th>
+                    <th scope="col">Fecha de Creación</th>
+                    <th scope="col">Opciones</th>
+                </tr>
+                </thead>
+                <tbody>
+                @foreach (var popUp in Model.PopUps)
+                {
+                    <tr>
+                        <td>@popUp.NombrePopUp</td>
+                        <td>@popUp.Url</td>
+                        <td>@popUp.FechaCreacion.ToString("dd/MM/yyyy")</td>
+                        <td>
+                            <!-- Ver PopUp -->
+                            <a href="@Url.Action("Details", "PopUp", new { id = popUp.Id })" class="btn btn-info btn-sm">Ver</a>
+
+                            @if (popUp.IsActive)
+                            {
+                                <!-- Si el popup está activo, se muestra el botón de desactivar -->
+                                <form action="@Url.Action("Deactivate", "Noticias")" method="post" style="display:inline;">
+                                    @Html.AntiForgeryToken()
+                                    <input type="hidden" name="id" value="@popUp.Id" />
+                                    <button type="submit" class="btn btn-warning btn-sm">Desactivar</button>
+                                </form>
+                            }
+                            else
+                            {
+                                <!-- Si el popup está desactivado, mostrar mensaje -->
+                                <span class="text-muted">Desactivado</span>
+                            }
+                        </td>
+                    </tr>
+                }
+                </tbody>
+            </table>
         </div>
     </div>
 
     <footer class="footer mt-auto py-3 bg-body-tertiary">
         <div class="container">
-            <span class="text-body-secondary">2024 | Códigos de Programación</span>
+            <span class="text-body-secondary">2024</span>
         </div>
     </footer>
 

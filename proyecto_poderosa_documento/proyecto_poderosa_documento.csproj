@@ -81,6 +81,9 @@
       <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.4\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -1215,6 +1218,7 @@
     <Compile Include="Controllers\covid19__Controller.cs" />
     <Compile Include="Controllers\NoticiasController.cs" />
     <Compile Include="Controllers\operacionesController.cs" />
+    <Compile Include="Controllers\PopUpController.cs" />
     <Compile Include="Controllers\quienes_somosController.cs" />
     <Compile Include="Controllers\sostenibilidadController.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
@@ -1225,11 +1229,14 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\DashboardViewModel.cs" />
     <Compile Include="Models\DatabaseHelper.cs" />
     <Compile Include="Models\IdentityDbContext.cs" />
     <Compile Include="Models\LoginService.cs" />
     <Compile Include="Models\Noticia.cs" />
     <Compile Include="Models\NoticiasDbContext.cs" />
+    <Compile Include="Models\PopUp.cs" />
+    <Compile Include="Models\PopUpDbContext.cs" />
     <Compile Include="Models\Rol.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -1303,6 +1310,7 @@
     <Content Include="Views\Noticias\Index.cshtml" />
     <Content Include="Views\Noticias\Dashboard.cshtml" />
     <Content Include="Views\Noticias\Edit.cshtml" />
+    <Content Include="Views\PopUp\Create.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1327,7 +1335,9 @@
     <Folder Include="Content\img\noticias\resumen\" />
     <Folder Include="Content\noticias\banner\" />
     <Folder Include="Content\noticias\resumen\" />
+    <Folder Include="Content\popups\" />
     <Folder Include="Documentos\" />
+    <Folder Include="Views\Dashboard\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Helper\Helper.csproj">

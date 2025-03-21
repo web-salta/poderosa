@@ -1,17 +1,26 @@
-﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+﻿@model proyecto_poderosa_documento.Models.DashboardViewModel
+@Html.Partial("~/Views/Shared/_head.cshtml")
 <!-- METAS -->
 <title>Inicio | PODEROSA</title>
 <!-- Basic HTML Meta Tags -->
 <meta name='title' content='Inicio | PODEROSA' />
 <meta name='description' content='Empresa minera aurífera ubicada en el distrito y provincia de Pataz, a casi 320 Km de la ciudad de Trujillo, a una altura que va entre los 1,250 y 3,000 m.s.n.m. en la región La Libertad, Perú. Con oficinas administrativas y almacenes en Lima y Trujillo.' />
-<meta name='url' content='https://www.poderosa.com.pe/home/quienes-somos' />
+<meta name='url' content='http://www.poderosa.com.pe/home/index' />
 <meta name='keywords' content='minera poderosa, asociación pataz' />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- OpenGraph Meta Tags -->
 <meta property='og:type' content='website' />
 <meta property='og:title' content='Inicio | PODEROSA' />
 <meta property='og:description' content='Empresa minera aurífera ubicada en el distrito y provincia de Pataz, a casi 320 Km de la ciudad de Trujillo, a una altura que va entre los 1,250 y 3,000 m.s.n.m. en la región La Libertad, Perú. Con oficinas administrativas y almacenes en Lima y Trujillo.' />
-<meta property='og:url' content='https://www.poderosa.com.pe/home/quienes-somos' />
-<meta property='og:image' content='https://www.poderosa.com.pe/Content/img/compartir.jpg' />
+<meta property='og:url' content='http://www.poderosa.com.pe/home/index' />
+<meta property='og:image' content='http://www.poderosa.com.pe/Content/img/compartir.jpg' />
+<!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
     <div class="menuSecuVelo"></div>
@@ -28,34 +37,29 @@
                 <img src="~/Content/img/home/01.png" class="w-100 d-none d-lg-block" alt="...">
                 <img src="~/Content/img/home/01-movil.jpg" class="w-100 d-block d-lg-none" alt="...">
                 <div class="carousel-caption ">
-                    <h1 class="carouselBanner__titulo">Visión <br>Sostenible</h1>
+                    <h1 class="carouselBanner__titulo">Cumplimos <br>45 Años </h1>
                     <p class="fuente-4">
-                        Lorem ipsum dolor sit amet,
-                        consectetuer adipiscing elit, sed
-                        diam nonummy nibh euismod
-                        tincidunt ut lao
+                        El poder del esfuerzo conjunto.
                     </p>
-                    <div class="button-flecha ">
+                    <a href="@Url.Action("poderosa", "quienes-somos")" class="button-flecha" target="_blank">
                         Saber más
                         <span class="button-flecha_icon button-flecha-dorado">▶</span>
-                    </div>
+                    </a>
                 </div>
             </div>
+
             <div class="carousel-item">
                 <img src="~/Content/img/home/02.png" class="w-100 d-none d-lg-block" alt="...">
                 <img src="~/Content/img/home/02-movil.jpg" class="w-100 d-block d-lg-none" alt="...">
                 <div class="carousel-caption ">
-                    <h1 class="carouselBanner__titulo">Visión <br>Sostenible</h1>
+                    <h1 class="carouselBanner__titulo">Mineria <br>Sostenible</h1>
                     <p class="fuente-4">
-                        Lorem ipsum dolor sit amet,
-                        consectetuer adipiscing elit, sed
-                        diam nonummy nibh euismod
-                        tincidunt ut lao
+                        En PODEROSA, proteger el medioambiente es una prioridad.
                     </p>
-                    <div class="button-flecha">
+                    <a href="@Url.Action("gestion_ambiental", "sostenibilidad", new { accion = "introduccion" })" class="button-flecha" target="_blank">
                         Saber más
                         <span class="button-flecha_icon button-flecha-dorado">▶</span>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -72,8 +76,7 @@
             </a>
         </div>
         <div class="row g-lg-4">
-
-            <div class="col-lg-4 col-sm-12">
+            <div class="col-lg-4 col-sm-12 mb-5">
                 <a href="@Url.Action("minera_poderosa_lamenta_fallecimiento_de_ing_juan_assereto", "noticias")" class="text-decoration-none" target="_blank">
                     <img src="~/Content/noticias/minera-poderosa-lamenta-fallecimiento-de-ing-juan-assereto/resumen.png" alt="" class="img-fluid contenedor-noticias-img zoom-img border-coleccionables">
                     <h5 class="fuente-3 mt-3">
@@ -84,7 +87,6 @@
                     Pésame a su familia por irreparable pérdida
                 </p>
             </div>
-
             <div class="col-lg-4 col-sm-12 mb-5">
                 <a href="@Url.Action("damos-un-nuevo-paso-en-la-transicion-energetica", "noticias")" class="text-decoration-none" target="_blank">
                     <img src="~/Content/noticias/damos-un-nuevo-paso-en-la-transicion-energetica/resumen.jpg" alt="" class="img-fluid contenedor-noticias-img zoom-img border-coleccionables">
@@ -107,7 +109,6 @@
                     Falta inversión pública responsable y transparente.
                 </p>
             </div>
-
         </div>
     </div>
     <section>
@@ -115,23 +116,36 @@
             <div class=" contenedor-gris__seccion ">
                 <div class="col-12 ">
                     <img src="~/Content/img/forma-derecha-dorada.png" class="img-fluid contenedor-gris__seccion-formaizdercha ">
-                    <div class="row">
-                        <div class="col-xl-5 col-lg-6">
-                            <img src="~/Content/img/Asset 6.png" alt="" class="img-fluid contenedor-gris__seccion-imagen">
+                    <div class="row pt-5">
+                        <div class="col-xl-4 col-lg-6">
+                            <img src="~/Content/img/Asset 6.png" alt="" class="img-fluid contenedor-gris__seccion-imagen pb-5">
                             <img src="~/Content/img/icono-circulo-dorado.png" class="img-fluid contenedor-gris__seccion-formaizquierda ">
                         </div>
-                        <div class="col-xl-3  col-lg-6 ">
-                            <h1 class="fuente-3 pb-2 dorado">
-                                Ut wisi enim minim veniam nonummy
-                            </h1>
-                            <p class="fuente-4 pb-2"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        <div class="col-xl-4 col-lg-6">
+                            <h2 class="fuente-3 pb-2 dorado">
+                                Liderazgo responsable y transparente
+                            </h2>
+                            <p class="fuente-4 pb-2">Poderosa integra la sostenibilidad en cada proceso para asegurar una operación rentable y respetuosa con el medio ambiente y las comunidades.</p>
+
                             <ul class="underline-blanco fuente-4">
-                                <li>Ut wisi enim ad minim veniam, quis nostrud</li>
-                                <li>Exerci tation ullamcorper suscipit lobortis nisl ut.</li>
-                                <li class="underline-dorado">Duis autem vel eum iriure dolor in hendrerit in vulputate </li>
+                                <li>
+                                    Cumplimos con todas las leyes mineras locales e internacionales, promoviendo la ética y transparencia en todas las áreas de la empresa.
+                                    <a href="@Url.Action("gestion_de_cumplimiento", "sostenibilidad", new { accion = "introduccion" })" class=" underline-dorado" target="_blank">Conoce más</a>
+                                </li>
+                                <br>
+                                <li>
+                                    Minimizamos el impacto ambiental con un enfoque que incluye el monitoreo de la calidad del aire, agua y suelo, y la restauración ecológica de las áreas intervenidas.
+                                    <a href="@Url.Action("gestion_ambiental", "sostenibilidad", new { accion = "introduccion" })" class=" underline-dorado" target="_blank">Conoce más</a>
+                                </li>
+                                <br>
+                                <li>
+                                    Optimizamos el consumo de energía, diversificando nuestra matriz energética y modernizando equipos para reducir la huella de carbono.
+                                    <a href="@Url.Action("gestion_de_la-energia", "sostenibilidad", new { accion = "introduccion" })" class=" underline-dorado" target="_blank">Conoce más</a>
+                                </li>
+                                <br>
                             </ul>
                         </div>
-                        <div class="col-xl-4 col-lg-12 d-flex justify-content-center flex-column align-items-center  ">
+                        <div class="col-xl-4 col-lg-12 d-flex flex-column align-items-center ">
                             <div id="carousel-small" class="carousel slide">
                                 <div class="carousel-indicators ">
                                     <button type="button" data-bs-target="#carousel-small" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -140,20 +154,20 @@
                                 </div>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="~/Content/img/imagen-carousel.png" class="d-block img-fluid" alt="...">
+                                        <img src="~/Content/descargas/memorias/informe-anual-de-sostenibilidad-2023-principal.png" class="d-block img-fluid" alt="...">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="~/Content/img/imagen-carousel.png" class="d-block img-fluid" alt="...">
+                                        <img src="~/Content/descargas/memorias/informe-anual-de-sostenibilidad-2022-principal.jpg" class="d-block img-fluid" alt="...">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="~/Content/img/imagen-carousel.png" class="d-block img-fluid" alt="...">
+                                        <img src="~/Content/descargas/memorias/memoria2021-principal.png" class="d-block img-fluid" alt="...">
                                     </div>
                                 </div>
                             </div>
-                            <div class="button-flecha button-flecha-dorado ">
-                                Saber más
+                            <a href="@Url.Action("memorias", "publicaciones")" class="button-flecha button-flecha-dorado" target="_blank">
+                                Descargar Reportes
                                 <span class="button-flecha_icon">▶</span>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -161,78 +175,69 @@
         </div>
     </section>
 
-
-    <div class="container py-5 contenedor-cifra">
-        <div class="row">
-            <div class="col-lg-6 col-md-12  pr-4 mb-5 mb-xl-0">
-                <div class="linea-dorada">
-                    <h1 class="fuente-3 dorado">3 de cada 5</h1>
-                    <h3 class="fuente-3 pb-4">Texto de apoyo de la cifra destacada</h3>
-                    <div class="row ">
-                        <div class="col-4">
-                            <img src="~/Content/img/home/icono-1.png" alt="" class="img-fluid">
+    <section class="pt-5 mt-5">
+        <div class="container  contenedor-cifra">
+            <div class="row">
+                <div class="col-lg-6 col-md-12  pr-4 mb-5 mb-xl-0">
+                    <div class="linea-dorada">
+                        <h2 class="fuente-3 dorado">+500 capacitados en ética</h2>
+                        <h3 class="fuente-3 pb-4">Fortaleciendo una cultura </h3>
+                        <div class="row ">
+                            <div class="col-4">
+                                <img src="~/Content/img/home/icono-1.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-8">
+                                <p class="funte-4 ">
+                                    Brindamos formación continua en ética y anticorrupción para reforzar una cultura de transparencia, integridad y cumplimiento normativo.
+                                </p>
+                            </div>
                         </div>
-                        <div class="col-8">
-                            <p class="funte-4 ">
-                                Lorem ipsum dolor sit amet,
-                                consectetuer adipiscing elit, sed
-                                diam nonummy nibh euismod
-                                tincidunt ut laoreet dolore magna
-                                aliquam erat volutpat adipiscing.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="button-flecha  mt-5 ">
-                        Ir a Cumplimiento
-                        <span class="button-flecha_icon button-flecha-dorado">&#9654;</span>
+                        <a href="@Url.Action("gestion_de_cumplimiento", "sostenibilidad", new { accion = "introduccion" })" class="button-flecha mt-5" target="_blank">
+                            Ir a Cumplimiento
+                            <span class="button-flecha_icon button-flecha-dorado">&#9654;</span>
+                        </a>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-6 col-md-12  pr-4 mb-xl-0">
-                <div class="">
-                    <h1 class="fuente-3 dorado">45% de la producción</h1>
-                    <h3 class="fuente-3 pb-4">Texto de apoyo de la cifra destacada</h3>
-                    <div class="row">
-                        <div class="col-4">
-                            <img src="~/Content/img/home/icono-2.png" alt="" class="img-fluid">
+
+                <div class="col-lg-6 col-md-12  pr-4 mb-xl-0">
+                    <div class="">
+                        <h2 class="fuente-3 dorado">+20 años con 5S-Kaizen</h2>
+                        <h3 class="fuente-3 pb-4">Mejora continua y excelencia</h3>
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="~/Content/img/home/icono-2.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-8">
+                                <p class="fuente-4">
+                                    Desde 1999, implementamos la filosofía COLPA y hemos sido reconocidos con múltiples premios en el Premio Nacional 5S-Kaizen por nuestras prácticas de calidad y eficiencia.
+                                </p>
+                            </div>
                         </div>
-                        <div class="col-8">
-                            <p class="fuente-4">
-                                Lorem ipsum dolor sit amet,
-                                consectetuer adipiscing elit, sed
-                                diam nonummy nibh euismod
-                                tincidunt ut laoreet dolore magna
-                                aliquam erat volutpat adipiscing.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="button-flecha  mt-5">
-                        Ir a Calidad y Colpa
-                        <span class="button-flecha_icon button-flecha-dorado">&#9654;</span>
+                        <a href="@Url.Action("gestion_de_calidad", "calidad_e_innovacion", new { accion = "introduccion" })" class="button-flecha mt-5" target="_blank">
+                            Ir a Calidad y Colpa
+                            <span class="button-flecha_icon button-flecha-dorado">&#9654;</span>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container py-5">
+    </section>
+
+    <div class="container py-5 mb-5">
         <div class="row">
             <div class=" col-lg-6 col-md-12 pb-4 pb-lg-0">
                 <img src="~/Content/img/home/Recurso-9.png" alt="" class="img-fluid h-100 w-100 rounded-right-100">
             </div>
             <div class=" col-lg-6 col-md-12  ">
-                <h1 class="fuente-3 dorado">100% RESIDUOS</h1>
-                <h3 class="fuente-3">Texto de apoyo de la cifra destacada</h3>
+                <h2 class="fuente-3 dorado">+90% de agua reutilizada</h2>
+                <h3 class="fuente-3">Eficiencia hídrica en nuestras operaciones</h3>
                 <p class="fuente-4">
-                    Lorem ipsum dolor sit amet,
-                    consectetuer adipiscing elit, sed
-                    diam nonummy nibh euismod
-                    tincidunt ut laoreet dolore magna
-                    aliquam erat volutpat adipiscing.
+                    Optimizamos el uso del agua mediante reutilización y tecnologías sostenibles. Implementamos sistemas de micromedición y tratamiento avanzado para garantizar su calidad y reducir el impacto ambiental.
                 </p>
-                <div class="button-flecha mt-4 mt-lg-5 ">
+                <a href="@Url.Action("gestion_ambiental", "sostenibilidad", new { accion = "introduccion" })" class="button-flecha mt-4 mt-lg-4" target="_blank">
                     Ir a Sostenibilidad
                     <span class="button-flecha_icon button-flecha-dorado">&#9654;</span>
-                </div>
+                </a>
             </div>
         </div>
     </div>
@@ -241,7 +246,7 @@
         <div class="container-fluid px-0 contenedor-mostaza ">
             <div class="row g-0">
                 <div class="col-lg-6 ">
-                    <img src="~/Content/img/Asset 13.png" alt="" class="img-fluid h-100">
+                    <img src="~/Content/img/home/home-asociacion-pataz.jpg" alt="" class="img-fluid h-100">
                 </div>
                 <div class="col-lg-6 ">
                     <div class="contenedor-mostaza_der">
@@ -253,16 +258,12 @@
                                 <div class="contenedor-mostaza_text">
                                     <h1 class="fuente-3">El poder del esfuerzo conjunto</h1>
                                     <p class="fuente-4">
-                                        Lorem ipsum dolor sit amet,
-                                        consectetuer adipiscing elit, sed
-                                        diam nonummy nibh euismod
-                                        tincidunt ut laoreet dolore magna
-                                        aliquam erat volutpat adipiscing.
+                                        Una asociación sin fines de lucro comprometida con el desarrollo sostenible y el bienestar de las comunidades, promoviendo iniciativas responsables e innovadoras.
                                     </p>
-                                    <div class="button-flecha  mt-3">
+                                    <a href="https://www.asociacionpataz.org.pe/" class="button-flecha mt-3 " target="_blank">
                                         Ir a Asociación Pataz
                                         <span class="button-flecha_icon">▶</span>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -276,9 +277,7 @@
         <div class="container text-center pt-5  px-3 px-lg-0">
             <h2 class="fuente-3">
                 Nuestras <span class=" dorado">Certificaciones</span>
-
             </h2>
-
             <div class="row mt-lg-5 my-0 g-3 justify-content-center">
                 <div class="col-lg-2 col-md-4 col-6 d-flex justify-content-center">
                     <img src="~/Content/img/home/iso-14001.jpg" class="img-fluid w-100">
@@ -290,7 +289,7 @@
                     <img src="~/Content/img/home/iso-9001.jpg" class="img-fluid w-100">
                 </div>
                 <div class="col-lg-2 col-md-6 col-6 d-flex justify-content-center">
-                    <img src="~/Content/img/home/certificado-iso-37301-2016.jpg" class="img-fluid w-100">
+                    <img src="~/Content/img/home/certificado-iso-37001-2016.jpg" class="img-fluid w-100">
                 </div>
                 <div class="col-lg-2 col-md-6 col-6 d-flex justify-content-center">
                     <img src="~/Content/img/home/certificado-iso-37301-2021.jpg" class="img-fluid w-100">
@@ -298,10 +297,7 @@
                 <div class="col-lg-2 col-md-6 col-6 d-flex justify-content-center">
                     <img src="~/Content/img/home/empresarios-por-la-integridad.jpg" class="img-fluid w-100">
                 </div>
-
-
             </div>
-
         </div>
     </section>
 
@@ -321,14 +317,40 @@
 
                     <img src="~/Content/img/home/abe.jpg" class="img-fluid">
                 </div>
-
-
-
             </div>
         </div>
     </section>
 
-    @Html.Partial("~/Views/Shared/_footer.cshtml")
+    <!-- Modal -->
+    @if (ViewBag.PopUp != null && ViewBag.PopUp.IsActive)
+    {
+        <div class="modal fade" id="autoPopupModal" tabindex="-1" aria-labelledby="autoPopupModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body position-relative">
+                        <button type="button" class="btn-close position-absolute top-0 end-0 m-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                        @if (!string.IsNullOrEmpty(ViewBag.PopUp.Imagen))
+                        {
+                            <a href="@ViewBag.PopUp.Url" target="_blank">
+                                <img src="@Url.Content(ViewBag.PopUp.Imagen)" alt="PopUp Image" class="img-fluid" />
+                            </a>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+@Html.Partial("~/Views/Shared/_footer.cshtml")
 </body>
 @Html.Partial("~/Views/Shared/_foot.cshtml")
+<script>
+    $(document).ready(function () {
+        // Verifica si el PopUp está activo
+        @if (ViewBag.PopUp != null && ViewBag.PopUp.IsActive)
+        {
+            // Si está activo, muestra el modal
+            @:$('#autoPopupModal').modal('show');
+        }
+    });
+</script>
 </html>

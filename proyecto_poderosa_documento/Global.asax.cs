@@ -16,6 +16,7 @@ namespace proyecto_poderosa_documento
             System.Web.Routing.RouteTable.Routes.MapMvcAttributeRoutes();
         }
 
+
         protected void Application_Error(object sender, EventArgs e)
         {
             Exception exception = Server.GetLastError();

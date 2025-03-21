@@ -41,11 +41,12 @@
                     <h6 class="mayuscula mt-4 fuente-3">@Model.FechaPublicacion.ToString("dd 'de' MMMM 'de' yyyy")</h6>
                 </div>
                 <h5 class="dorado">@Model.Descripcion</h5>
-                <p>@Model.Contenido</p>
+                <!-- Mostrar contenido con formato HTML -->
+                <div>@Html.Raw(Model.Contenido)</div>  <!-- Usar Html.Raw para mostrar el contenido con formato -->
             </div>
         </div>
     </section>
-    <br/>
+    <br />
     <div class="d-flex justify-content-center mt-1">
         <div class="d-flex align-items-center gap-2">
             <p class="mb-2 text-center">Comparte en:</p>

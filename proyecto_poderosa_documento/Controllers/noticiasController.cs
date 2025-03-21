@@ -16,9 +16,13 @@ namespace proyecto_poderosa_documento.Controllers
         [Authorize]
         public ActionResult Dashboard()
         {
-            // Obtener todas las noticias para el panel de administración
-            var noticias = db.Noticias.OrderByDescending(n => n.FechaPublicacion).ToList();
-            return View(noticias); // Aquí se carga la vista Dashboard.cshtml
+            var model = new DashboardViewModel
+            {
+                Noticias = db.Noticias.OrderByDescending(n => n.FechaPublicacion).ToList(),
+                PopUps = db.PopUp.OrderByDescending(p => p.FechaCreacion).ToList()
+            };
+
+            return View(model);
         }
 
         // Index - Mostrar todas las noticias
@@ -51,12 +55,22 @@ namespace proyecto_poderosa_documento.Controllers
 
             if (ModelState.IsValid)
             {
-                // Obtener el ID del usuario actual (el que está logueado)
-                var usuarioId = User.Identity.GetUserId<int>();  // Cambia esto si estás usando otro sistema de autenticación.
+                // Obtener el nombre de usuario desde el sistema de autenticación (FormsAuthentication)
+                var usuarioNombre = User.Identity.Name;  // El nombre del usuario autenticado
 
-                // Asignar el UsuarioId al modelo
-                noticia.UsuarioId = usuarioId;
+                // Obtener el UsuarioId desde la base de datos con el nombre de usuario
+                var usuario = db.Usuarios.FirstOrDefault(u => u.NombreUsuario == usuarioNombre);
 
+                if (usuario != null)
+                {
+                    // Asignar el UsuarioId a la noticia
+                    noticia.UsuarioId = usuario.Id;
+                }
+                else
+                {
+                    // Si no se encuentra el usuario, puedes manejar el error o redirigir a una página de login
+                    return RedirectToAction("Login", "Account");
+                }
                 // Verificar si se ha subido una imagen
                 if (Imagen != null && Imagen.ContentLength > 0)
                 {
@@ -191,6 +205,25 @@ namespace proyecto_poderosa_documento.Controllers
                 db.SaveChanges();  // Guardar cambios en la base de datos
             }
             return RedirectToAction("Dashboard", "Noticias");  // Redirigir a la lista de noticias
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Deactivate(int id)
+        {
+            var popUp = db.PopUp.Find(id);
+            if (popUp == null)
+            {
+                return HttpNotFound();
+            }
+
+            // Desactivar el PopUp
+            popUp.IsActive = false;
+            db.Entry(popUp).State = EntityState.Modified;
+            db.SaveChanges();
+
+            // Redirigir al Dashboard de Noticias después de desactivar el PopUp
+            return RedirectToAction("Dashboard", "Noticias");
         }
     }
 }
