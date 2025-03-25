@@ -1,19 +1,20 @@
 
 .bannerInterno__small {
   position: absolute;
-  z-index: 9;
+  z-index: 0;
   bottom: 0;
   right: -16%;
   width: 145px;
 }
 
 .bannerInterno__texto {
-  position: absolute;
-  z-index: 3;
-  top: 50%;
-  left: 4%;
-  color: #fff;
-  width: 80%;
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 4%;
+    color: #fff;
+    width: 80%;
+    word-wrap: break-word
 }
 
 .bannerInterno__texto-largo {
@@ -46,10 +47,10 @@
   }
 
   .bannerInterno__titulo{
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
   .bannerInterno__titulo-largo{
-    font-size: 2.3rem;
+    font-size: 2.5rem;
   }
   
   .bannerInterno__indice{
@@ -139,6 +140,9 @@
   .bannerInterno__dorada {
     width: 45%;
 }
+    .bannerInterno__titulo {
+        font-size: 3.5rem;
+    }
  }
 
  @media(min-width:1200px){
@@ -170,6 +174,9 @@
 .bannerInterno__titulo-largo{
   font-size: 3rem;
 }
+    .bannerInterno__titulo {
+        font-size: 3.5rem;
+    }
  }
 
  @media(min-width:1600px){

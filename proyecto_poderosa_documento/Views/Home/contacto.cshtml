@@ -18,106 +18,109 @@
 
     <div class="menuSecuVelo"></div>
     @Html.Partial("~/Views/Shared/_header.cshtml")
-    <main>
-        <section>
-            <div class="bannerInterno__contenedor">
-                <img src="~/Content/img/cabeceras/06-contacto/01.jpg" class="img-fluid  h-auto w-100 d-none  d-lg-block" alt="">
-                <img src="~/Content/img/cabeceras/06-contacto/01-movil.jpg" class="img-fluid  h-auto d-none d-md-block d-sm-none d-lg-none" alt="">
-                <img src="~/Content/img/cabeceras/06-contacto/01-tablet.jpg" class="img-fluid  h-auto d-block d-md-none d-lg-none" alt="">
-                <img src="~/Content/img/pagina-interna/forma-dorada-transparente.png" class="img-fluid bannerInterno__dorada" alt="...">
-                <div class="bannerInterno__texto">
-                    <h1 class="bannerInterno__titulo fuente-3">Contacto</h1>
-                </div>
-                <img src="~/Content/img/pagina-interna/forma-dorada.png" class="img-fluid bannerInterno__small" alt="">
-            </div>
-        </section>
+<main>
+  
 
-        <section class="py-5">
-            <div class="contendor-iconos py-0 py-lg-5 d-flex align-items-center">
-                <div class="container">
-                    <div class="row">
-                        <!-- Columna de la imagen -->
-                        <div class="col-lg-5 pb-5">
-                            <img src="~/Content/img/contacto/grupo-fotos.jpg"
-                                 alt=""
-                                 class="img-fluid rounded-80" />
+    <div class="bannerInterno__contenedor">
+        <img src="~/Content/img/cabeceras/06-contacto/01.jpg" class="img-fluid  w-100 d-none  d-lg-block" alt="">
+        <img src="~/Content/img/cabeceras/06-contacto/01-tablet.jpg" class="img-fluid  d-none d-md-block d-sm-none d-lg-none" alt="">
+        <img src="~/Content/img/cabeceras/06-contacto/01-movil.jpg" class="img-fluid  d-block d-md-none d-lg-none" alt="">
+        <img src="~/Content/img/pagina-interna/forma-dorada-transparente.png" class="img-fluid bannerInterno__dorada" alt="...">
+        <div class="bannerInterno__texto">
+            <h3 class="bannerInterno__indice fuente-5"></h3>
+            <h1 class="bannerInterno__titulo-largo fuente-3"> Contacto</h1>
+        </div>
+        <img src="~/Content/img/pagina-interna/forma-dorada.png" class="img-fluid bannerInterno__small" alt="">
+    </div>
+
+
+    <div class="section-spacing ">
+        <div class="contendor-iconos  d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <!-- Columna de la imagen -->
+                    <div class="col-lg-5 pb-5 pb-lg-0 d-flex justify-content-center">
+                        <img src="~/Content/img/contacto/grupo-fotos.jpg"
+                             alt=""
+                             class="img-fluid rounded-80" />
+                    </div>
+
+                    <!-- Columna de los textos -->
+                    <div class="col-lg-7">
+                        <div class="container text-start">
+                            <div class="d-flex align-items-start">
+                                <div class="me-3">
+                                    <img src="~/Content/img/contacto/icono-01.jpg"
+                                         alt="Medalla"
+                                         class="img-fluid" />
+                                </div>
+                                <div class="columna-premio">
+                                    <h3 class="fuente-3 dorado">
+                                        Oficina Administrativa
+                                    </h3>
+                                    <p class="texto-premio">
+                                        Av. La Floresta Nro. 497 Int. 501<br />
+                                        Urb. Chacarilla del Estanque, San Borja, Lima - Perú<br />
+                                        T.(511) 617-2727
+                                    </p>
+                                </div>
+                            </div>
+                            <hr class="separador" />
                         </div>
 
-                        <!-- Columna de los textos -->
-                        <div class="col-lg-7">
-                            <div class="container text-start">
-                                <div class="d-flex align-items-start">
-                                    <div class="me-3">
-                                        <img src="~/Content/img/contacto/icono-01.jpg"
-                                             alt="Medalla"
-                                             class="img-fluid" />
-                                    </div>
-                                    <div class="columna-premio">
-                                        <h3 class="fuente-3 dorado">
-                                            Oficina Administrativa
-                                        </h3>
-                                        <p class="texto-premio">
-                                            Av. La Floresta Nro. 497 Int. 501<br />
-                                            Urb. Chacarilla del Estanque, San Borja, Lima - Perú<br />
-                                            T.(511) 617-2727
-                                        </p>
-                                    </div>
+                        <!-- Segunda dirección -->
+                        <div class="container text-start">
+                            <div class="d-flex align-items-start">
+                                <div class="me-3">
+                                    <img src="~/Content/img/contacto/icono-01.jpg"
+                                         alt="Medalla"
+                                         class="img-fluid" />
                                 </div>
-                                <hr class="separador" />
+                                <div class="columna-premio">
+                                    <h3 class="fuente-3 dorado text-nowrap">
+                                        Oficina Administrativa - Trujillo
+                                    </h3>
+                                    <p class="texto-premio">
+                                        Coronel Gómez 409.<br />
+                                        Trujillo La Libertad - Perú<br />
+                                        T.(5144) 473963<br />
+                                        F.(5144) 205064
+                                    </p>
+                                </div>
                             </div>
+                            <hr class="separador" />
+                        </div>
 
-                            <!-- Segunda dirección -->
-                            <div class="container text-start">
-                                <div class="d-flex align-items-start">
-                                    <div class="me-3">
-                                        <img src="~/Content/img/contacto/icono-01.jpg"
-                                             alt="Medalla"
-                                             class="img-fluid" />
-                                    </div>
-                                    <div class="columna-premio">
-                                        <h3 class="fuente-3 dorado text-nowrap">
-                                            Oficina Administrativa - Trujillo
-                                        </h3>
-                                        <p class="texto-premio">
-                                            Coronel Gómez 409.<br />
-                                            Trujillo La Libertad - Perú<br />
-                                            T.(5144) 473963<br />
-                                            F.(5144) 205064
-                                        </p>
-                                    </div>
+                        <!-- Tercera dirección -->
+                        <div class="container text-start">
+                            <div class="d-flex align-items-start">
+                                <div class="me-3">
+                                    <img src="~/Content/img/contacto/icono-01.jpg"
+                                         alt="Medalla"
+                                         class="img-fluid" />
                                 </div>
-                                <hr class="separador" />
-                            </div>
-
-                            <!-- Tercera dirección -->
-                            <div class="container text-start">
-                                <div class="d-flex align-items-start">
-                                    <div class="me-3">
-                                        <img src="~/Content/img/contacto/icono-01.jpg"
-                                             alt="Medalla"
-                                             class="img-fluid" />
-                                    </div>
-                                    <div class="columna-premio">
-                                        <h3 class="fuente-3 dorado text-nowrap">
-                                            Unidad Minera Vijus
-                                        </h3>
-                                        <p class="texto-premio">
-                                            Caserío Vijus s/n Pataz.<br />
-                                            Pataz, La Libertad - Perú.<br />
-                                            T.(511) 617-2727
-                                        </p>
-                                    </div>
+                                <div class="columna-premio">
+                                    <h3 class="fuente-3 dorado text-nowrap">
+                                        Unidad Minera Vijus
+                                    </h3>
+                                    <p class="texto-premio">
+                                        Caserío Vijus s/n Pataz.<br />
+                                        Pataz, La Libertad - Perú.<br />
+                                        T.(511) 617-2727
+                                    </p>
                                 </div>
-                                <hr class="separador" />
                             </div>
+                            <hr class="separador" />
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </div>
+</main>
 
     @Html.Partial("~/Views/Shared/_footer.cshtml")
+
 </body>
 @Html.Partial("~/Views/Shared/_foot.cshtml")
 <script src="~/Content/libro_rio_abiseo/landing/js/jquery.cookie.min.js"></script>

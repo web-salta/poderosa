@@ -34,9 +34,9 @@
 
     <section>
         <div class="container">
-            <div class=" py-5">
+            <div class="section-spacing ">
                 <div class="contenedor-tres-filas">
-                    <div class="row py-4">
+                    <div class="row">
                         <div class="col-lg-6 contenedor-tres-filas__img">
                             <img src="~/Content/img/01-quienes-somos/nuestra-historia/grupo-fotos.jpg" alt="" class="img-fluid rounded-80">
                         </div>
@@ -67,7 +67,7 @@
                                     anima a don Jesús Arias Dávila a entrar en esta
                                     aventura y conquistar el reto de Poderosa. Así surge una
                                     perdurable amistad y el 5 de mayo de 1980 se
-                                    funda <strong class="dorado">Compañía Minera Poderosa.</strong>
+                                    funda <strong class="dorado fuente-4">Compañía Minera Poderosa.</strong>
                                 </p>
                             </div>
                         </div>
@@ -83,11 +83,11 @@
                 <div class="col-12">
                     <img src="~/Content/img/forma-derecha-dorada.png" class="img-fluid contenedor-gris__seccion-formaizdercha">
                     <div class="row">
-                        <div class="col-xl-5 col-lg-6">
+                        <div class="col-xl-4 col-lg-6 pb-5  d-flex align-items-center justify-content-center">
                             <img src="~/Content/img/01-quienes-somos/nuestra-historia/circulo.png" alt="" class="img-fluid contenedor-gris__seccion-imagen img1">
                             <img src="~/Content/img/icono-circulo-dorado.png" class="img-fluid contenedor-gris__seccion-formaizquierda">
                         </div>
-                        <div class="col-xl-5 col-lg-6 d-flex align-items-center">
+                        <div class="col-xl-7 col-lg-6 d-flex align-items-center">
                             <p class="fuente-4 pb-3">
                                 Don Jesús Arias Dávila envía a dos geólogos para constatar la factibilidad y
                                 riqueza de Poderosa: Walter Sologuren y Alberto Samaniego, junto a los
@@ -111,23 +111,26 @@
         </div>
     </section>
 
-    <section class="position-relative py-5">
+    <section class="position-relative section-spacing ">
         <div class="container-custom2">
             <div class="row g-0 align-items-stretch">
                 <!-- Asegura altura igual en ambas columnas -->
                 <!-- Sección "Momentos en la Historia" (Ahora alineada con el carrusel) -->
-                <div class="offset-xxl-1 col-12 col-xxl-3 d-flex flex-column justify-content-center pe-xxl-5">
-                    <h2 class="fuente-3 dorado">
-                        Momentos en la Historia
-                    </h2>
-                    <p class="mt-1 fuente-4">
-                        <!-- Reduje el margen aquí -->
-                        Nuestra historia está llena de anécdotas e
-                        hitos. Nuestra historia ha sido construida por
-                        grandes hombres y mujeres que apostaron
-                        por una minería responsable y sostenible.
-                        Luego empezar con el hito.
-                    </p>
+                <div class="offset-xxl-1 col-12 col-xxl-3 d-flex flex-column pe-xxl-5">
+                    <div class="pb-5">
+                        <h2 class="fuente-3 dorado">
+                            Momentos en la Historia
+                        </h2>
+                        <p class="fuente-4">
+                            <!-- Reduje el margen aquí -->
+                            Nuestra historia está llena de anécdotas e
+                            hitos. Nuestra historia ha sido construida por
+                            grandes hombres y mujeres que apostaron
+                            por una minería responsable y sostenible.
+                            Luego empezar con el hito.
+                        </p>
+                    </div>
+                   
                 </div>
 
                 <div class="col-12 col-xxl-8 d-flex align-items-center">
@@ -155,7 +158,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex pt-4 pt-sm-0 pb-4">
+                        <div class="d-flex pt-4 pt-sm-0">
                             <button class="carousel-control-prev" type="button" data-bs-target="#carousel-items" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
@@ -171,6 +174,8 @@
             </div>
         </div>
     </section>
+
+
     @Html.Partial("~/Views/Shared/_footer.cshtml")
 
 </body>

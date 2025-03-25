@@ -26,20 +26,29 @@
 }
 
 @media (min-width: 992px) {
-    .container-custom2 {
-        max-width: 960px;
-        width: 100%;
-	    padding-right: 1.2rem;
-	    padding-left: 1.2rem;
-	    margin-right: auto;
-	    margin-left: auto;
-    }
+	.container-custom2 {
+		max-width: 1024px;
+		width: 100%;
+		padding-right: 1.2rem;
+		padding-left: 1.2rem;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.offset-lg-1 {
+		margin-left:0%; 
+	}
+
 }
 
 @media (min-width: 1200px) {
     .container-custom2 {
         max-width: 1140px;
     }
+	.offset-lg-1 {
+		margin-left: 8.33333333%;
+	}
+
 }
 
 @media (min-width: 1400px) {

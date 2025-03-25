@@ -13,13 +13,17 @@
 #reportes .btn-descarga{
     width: 100%;
 }
-#ult-coleccionables .btn-descarga{
-       width: 100%;
+#ult-coleccionables .btn-descarga {
+    width: 100%;
 }
 #ult-coleccionables p{
     width: 100%;
 }
-.publicaciones-bloque{
+
+#libros_y_publicaciones .btn-descarga {
+    width: 70%;
+}
+    .publicaciones-bloque {
     padding-top: 5rem;
 }
 .publicaciones-contenedor{
@@ -56,56 +60,83 @@ justify-content: center;
 
     width: 100%;
 }
+@media(min-width:576px) {
+
+    #ult-coleccionables .btn-descarga {
+        width: 75%;
+    }
+}
+
+
+
 @media(min-width:768px){
+  
+    #libros_y_publicaciones .btn-descarga {
+        width: 80%;
+    }
     #publicaciones .btn-descarga{
         width: 75%;
       } 
 
       #ult-coleccionables .btn-descarga{
-        width: 65%;
+        width: 75%;
  }
  #ult-coleccionables p{
-    width: 70%;
+    width: 100%;
 }
-}
-@media(min-width:992px){
-    #reportes .btn-descarga{
-        width: 80%;
-    }
-    #publicaciones .btn-descarga{
-      width: 100%;
-    }
-    .publicaciones-libros .btn-descarga{
-        width: 60%;
-    
-    }
-    #ult-coleccionables .btn-descarga{
-        width: 100%;
- 
-    }
-}
-@media(min-width:1200px){
-    #publicaciones .btn-descarga{
-     width: 85%;
-    }
-    #ult-coleccionables .btn-descarga{
-        width: 85%;
- 
-    }
 }
 
-@media(min-width:1200px){
-    #ult-coleccionables .btn-descarga{
-        width: 75%;
- 
+    @media(min-width:992px) {
+        #ult-coleccionables .btn-descarga {
+            width: 70%;
+        }
+        #ult-coleccionables p {
+            width: 70%;
+        }
+
+        #reportes .btn-descarga {
+            width: 100%;
+        }
+
+        #publicaciones .btn-descarga {
+            width: 100%;
+        }
+
+        .publicaciones-libros .btn-descarga {
+            width: 60%;
+        }
+
+      
     }
-}
 
-/********************************************************************************************/
-/************************BORDAR-IMAGEN-COLECCIONABLE*****************************************/
-/********************************************************************************************/
+    @media(min-width:1200px) {
+        #reportes .btn-descarga {
+            width: 80%;
+        }
 
-.border-coleccionables{
+        #publicaciones .btn-descarga {
+            width: 85%;
+        }
+
+        #ult-coleccionables .btn-descarga {
+            width: 85%;
+        }
+    }
+
+    @media(min-width:1200px) {
+        #ult-coleccionables .btn-descarga {
+            width: 75%;
+        }
+
+        #libros_y_publicaciones .btn-descarga {
+            width: 50%;
+        }
+    }
+    /********************************************************************************************/
+    /************************BORDAR-IMAGEN-COLECCIONABLE*****************************************/
+    /********************************************************************************************/
+
+    .border-coleccionables{
     border: 1px solid #cacaca;
     padding: 5px; 
     display: inline-block; 
@@ -138,7 +169,7 @@ justify-content: center;
 
 @media(min-width:768px){
     #libros .btn-descarga{
-        width: 80%;
+        width: 75%;
     }
     .libros-texto{
         padding-bottom: 1rem;
@@ -146,10 +177,16 @@ justify-content: center;
     #libros .libros-img img{
         width: 100%;
     }
+    #reportes .btn-descarga {
+        width: 70%;
+    }
   
 }
 
 @media(min-width: 992px){
+    #reportes .btn-descarga {
+        width: 100%;
+    }
     #libros .btn-descarga{
         width: 60%;
     }  
@@ -160,6 +197,9 @@ justify-content: center;
 
 
 @media(min-width:1200px){
+    #reportes .btn-descarga {
+        width: 80%;
+    }
      #libros .btn-descarga{
         width: 40%;
     }  

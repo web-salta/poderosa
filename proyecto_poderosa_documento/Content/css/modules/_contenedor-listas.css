@@ -26,11 +26,16 @@
     word-wrap: break-word; /* Para asegurarse de que las palabras largas se rompan y no sobresalgan */
     overflow-wrap: break-word;
   }
+
+
+.contenedor-lista-img {
+    width: 100%;
+    height: 20rem;
+}
 /**********************************************/
 /**************** TRES BLOQUES ****************/
-
-.contenedor-lista__izquierdo{
-  padding-right: 2rem;
+.contenedor-lista__izquierdo {
+    padding-right: 2rem;
 }
   .contenedor-lista__derecho{
     padding-left: 2rem;
@@ -59,3 +64,11 @@
       }
       
     }
+
+
+@media(min-width:1320px) {
+    .contenedor-lista-img {
+       
+        height: 100%;
+    }
+}

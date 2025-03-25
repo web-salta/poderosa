@@ -1,10 +1,10 @@
 .imagen-encima-bloque-texto {
     background: #834B6F;
-    padding-top: 4rem;
-    padding-bottom:4rem;
+   padding: 5rem 0rem;
     color: white;
     flex-direction: column;
     z-index: 2;
+    text-align:center;
   }
 
   .imagen-encima-bloque-texto-2{
@@ -30,20 +30,22 @@
   
   .imagen-encima-bloque-imagen img{
     object-fit: cover;
-    height: 30rem;      
+    height: 25rem;      
   }
  
   
   /************************ @media***********************/
 
    @media(min-width:992px){
-    .imagen-encima-bloque-texto{
-      position: absolute;
-      max-width: 600px;
-      margin-top: 4rem;
-      border-radius: 0px 0px 100px 0px;
-      padding: 1.5rem;
-      margin-right: -5%;
+    .imagen-encima-bloque-texto {
+        position: absolute;
+        max-width: 600px;
+        margin-top: 4rem;
+        border-radius: 0px 0px 100px 0px;
+        padding: 1.5rem;
+        margin-right: -30%;
+        padding: 4rem 4rem;
+        text-align:start;
     }
 
      .imagen-encima-bloque-imagen img{
@@ -52,8 +54,16 @@
   }
   
   @media(min-width:1200px){
-    .imagen-encima-bloque-texto{
-      padding: 3.5rem;
+    .imagen-encima-bloque-texto {
+        padding: 3.5rem;
+        margin-right: -25%;
+
     }
   }
+   @media(min-width:1320px){
+    .imagen-encima-bloque-texto {
+        padding: 3.5rem;
+        margin-right: -15%;
+    }
+   }
 
