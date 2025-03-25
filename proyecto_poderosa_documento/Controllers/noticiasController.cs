@@ -36,76 +36,66 @@ namespace proyecto_poderosa_documento.Controllers
         [Authorize]// Solo requerir autenticación para esta acción
         public ActionResult Create()
         {
-            return View();
+            var model = new Noticia();
+            return View(model);
         }
 
         // Crear - Guardar una nueva noticia
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize]
+        [ValidateInput(false)]
         public ActionResult Create(Noticia noticia, HttpPostedFileBase Imagen, HttpPostedFileBase ImagenResumen)
         {
             // Verificar si la fecha fue proporcionada por el usuario
             if (!noticia.FechaNoticia.HasValue)
             {
-                // Si no se proporciona una fecha, agregar un error en el modelo
                 ModelState.AddModelError("FechaNoticia", "¡La fecha es obligatoria!");
-                return View(noticia);  // Regresar a la vista con el mensaje de error
+                return View(noticia);
+            }
+
+            // Verificar si el contenido fue proporcionado
+            if (string.IsNullOrWhiteSpace(noticia.Contenido))
+            {
+                ModelState.AddModelError("Contenido", "¡El contenido es obligatorio!");
+                return View(noticia);
             }
 
             if (ModelState.IsValid)
             {
-                // Obtener el nombre de usuario desde el sistema de autenticación (FormsAuthentication)
-                var usuarioNombre = User.Identity.Name;  // El nombre del usuario autenticado
-
-                // Obtener el UsuarioId desde la base de datos con el nombre de usuario
+                var usuarioNombre = User.Identity.Name;
                 var usuario = db.Usuarios.FirstOrDefault(u => u.NombreUsuario == usuarioNombre);
 
                 if (usuario != null)
                 {
-                    // Asignar el UsuarioId a la noticia
                     noticia.UsuarioId = usuario.Id;
                 }
                 else
                 {
-                    // Si no se encuentra el usuario, puedes manejar el error o redirigir a una página de login
                     return RedirectToAction("Login", "Account");
                 }
-                // Verificar si se ha subido una imagen
+
                 if (Imagen != null && Imagen.ContentLength > 0)
                 {
-                    // Generar un nombre único para la imagen
                     var fileName = Path.GetFileName(Imagen.FileName);
                     var path = Path.Combine(Server.MapPath("~/Content/noticias/banner"), fileName);
-
-                    // Guardar la imagen en el servidor
                     Imagen.SaveAs(path);
-
-                    // Asignar la ruta de la imagen al modelo
                     noticia.Imagen = "~/Content/noticias/banner/" + fileName;
                 }
 
-                // Verificar si se ha subido una imagen resumen
                 if (ImagenResumen != null && ImagenResumen.ContentLength > 0)
                 {
-                    // Generar un nombre único para la imagen resumen
                     var fileNameResumen = Path.GetFileName(ImagenResumen.FileName);
                     var pathResumen = Path.Combine(Server.MapPath("~/Content/noticias/resumen"), fileNameResumen);
-
-                    // Guardar la imagen resumen en el servidor
                     ImagenResumen.SaveAs(pathResumen);
-
-                    // Asignar la ruta de la imagen resumen al modelo
                     noticia.ImagenResumen = "~/Content/noticias/resumen/" + fileNameResumen;
                 }
 
-                // Asignar la fecha proporcionada por el usuario
                 noticia.FechaPublicacion = noticia.FechaNoticia.Value;
-
                 db.Noticias.Add(noticia);
                 db.SaveChanges();
 
-                return RedirectToAction("Dashboard", "Noticias"); // Redirigir al Dashboard
+                return RedirectToAction("Dashboard", "Noticias");
             }
             return View(noticia);
         }

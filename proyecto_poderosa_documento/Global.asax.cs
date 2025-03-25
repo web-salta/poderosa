@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Web;
 using System.Web.Mvc;
+
 namespace proyecto_poderosa_documento
 {
     public class MvcApplication : System.Web.HttpApplication
@@ -11,11 +12,9 @@ namespace proyecto_poderosa_documento
             //WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(System.Web.Routing.RouteTable.Routes);
-
             // Habilitar enrutamiento por atributos
             System.Web.Routing.RouteTable.Routes.MapMvcAttributeRoutes();
         }
-
 
         protected void Application_Error(object sender, EventArgs e)
         {
@@ -29,7 +28,7 @@ namespace proyecto_poderosa_documento
             Server.ClearError();
             // Sanitize the exception message to remove newline characters
             string sanitizedMessage = exception.Message.Replace("\r", "").Replace("\n", " ");
-            Response.Redirect(String.Format("~/Error/?error={0}&mensaje={1}", error, sanitizedMessage));
+            Response.Redirect(String.Format("~/Error/?error={0}&mensaje={1}", error, exception.Message));
         }
     }
 }
