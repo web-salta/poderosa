@@ -2,14 +2,13 @@
     ViewBag.Title = "Register";
     Layout = null;
 }
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login y Registro con HTML5 y CSS3</title>
+    <title>Registro</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <!-- Estilos CSS -->
@@ -18,25 +17,24 @@
     <link rel="shortcut icon" href="~/Content/img/favicon.png" type="image/x-icon">
 </head>
 <body>
-    <main>
-        <article>
-            <section>
-                <form action="@Url.Action("Register", "Account")" method="POST" id="register">
-                    <h1>Registrate</h1>
+<main>
+    <div class="login">
+        <h1>Registrate</h1>
+        <form action="@Url.Action("Register", "Account")" method="POST" id="register">
+            <input type="text" name="usuario" placeholder="Usuario" required="required" />
+            <input type="password" name="contrasena" placeholder="Contraseña" required="required" />
+            <input type="password" name="contrasena2" placeholder="Repite la Contraseña" required="required" />
 
-                    <input type="text" name="usuario" placeholder="Usuario" required><br />
-                    <input type="password" name="contrasena" placeholder="Contrase&ntilde;a" required><br />
-                    <input type="password" name="contrasena2" placeholder="Repite la Contrase&ntilde;a" required><br />
-                    <button type="submit">Entrar</button>
-                    <button type="reset">Limpiar</button>
+            <!-- Agregar el token anti-forgery aquí -->
+            @Html.AntiForgeryToken()
 
-                    <p>Ya tienes cuenta ?</p>
-                    <p>
-                        <a href="@Url.Action("Login", "Account")">Inicia Sesion</a>
-                    </p>
-                </form>
-            </section>
-        </article>
-    </main>
+            <button type="submit" class="btn btn-primary btn-block btn-large">Registrarse</button>
+        </form>
+        <p>Ya tienes cuenta?</p>
+        <p>
+            <a href="@Url.Action("Login", "Account")">Inicia Sesión</a>
+        </p>
+    </div>
+</main>
 </body>
 </html>

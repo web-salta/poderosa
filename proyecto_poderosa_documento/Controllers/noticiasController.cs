@@ -133,6 +133,7 @@ namespace proyecto_poderosa_documento.Controllers
         // Acción para procesar el formulario de edición (POST)
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [ValidateInput(false)]
         public ActionResult Edit(Noticia noticia, HttpPostedFileBase Imagen, HttpPostedFileBase ImagenResumen)
         {
             if (ModelState.IsValid)
@@ -178,8 +179,6 @@ namespace proyecto_poderosa_documento.Controllers
             }
             return View(noticia);
         }
-
-
 
         // Eliminar una noticia
         [HttpPost, ActionName("Delete")]

@@ -206,11 +206,9 @@
     <Content Include="Content\css\modules\_banner-interno.css" />
     <Content Include="Content\css\modules\_bloque-de-4.css" />
     <Content Include="Content\css\modules\_bloque-video.css" />
-    <Content Include="Content\css\modules\_btns_ant.css" />
     <Content Include="Content\css\modules\_caja-pdf.css" />
     <Content Include="Content\css\modules\_cajaVideofullModal.css" />
     <Content Include="Content\css\modules\_carousel-banner.css" />
-    <Content Include="Content\css\modules\_carousel-banner_ant.css" />
     <Content Include="Content\css\modules\_carousel-items.css" />
     <Content Include="Content\css\modules\_carousel-small.css" />
     <Content Include="Content\css\modules\_contendor-iconos.css" />
@@ -1191,6 +1189,7 @@
     <Content Include="lib\node\package.json" />
     <Content Include="lib\node\README.md" />
     <Content Include="Content\participacion_ciudadana\descargas\triptico-informativo-etapa-antes-2meia-i.pdf" />
+    <Content Include="bundles.config" />
     <None Include="Properties\PublishProfiles\desarrollador sa.pubxml" />
     <None Include="Properties\PublishProfiles\desarrollador.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -1201,6 +1200,7 @@
     <Content Include="Areas\Admin\Assets\js\tabs\jquery-1.9.1.min.js" />
     <Content Include="Scripts\jquery-3.6.0.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Sitemap.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -1243,6 +1243,13 @@
     <Compile Include="Models\Rol.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sitemap.aspx.cs">
+      <DependentUpon>Sitemap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitemap.aspx.designer.cs">
+      <DependentUpon>Sitemap.aspx</DependentUpon>
+    </Compile>
     <Compile Include="System\Web\Mvc\RouteTable.cs" />
   </ItemGroup>
   <ItemGroup>

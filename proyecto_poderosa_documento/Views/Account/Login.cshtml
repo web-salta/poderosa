@@ -4,6 +4,8 @@
 }
 <!DOCTYPE html>
 <html lang="es">
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,29 +16,24 @@
 </head>
 <body>
 <main>
-    <article>
-        <section>
-            <form action="@Url.Action("Login", "Account")" method="POST">
-                <h1>Inicia Sesión</h1>
+    <div class="login">
+        <h1>Inicia Sesión</h1>
+        <form action="@Url.Action("Login", "Account")" method="POST">
+            <input type="text" name="NombreUsuario" placeholder="Correo electrónico" required="required" />
+            <input type="password" name="contrasena" placeholder="Contraseña" required="required" />
 
-                <input type="text" name="NombreUsuario" placeholder="Correo electrónico" required><br />
-                <input type="password" name="contrasena" placeholder="Contraseña" required><br />
+            <!-- Agregar el token anti-forgery aquí -->
+            @Html.AntiForgeryToken()
 
-                <!-- Agregar el token anti-forgery aquí -->
-                @Html.AntiForgeryToken()
+            <input type="hidden" name="returnUrl" value="@returnUrl" />  <!-- Campo oculto para la URL de retorno -->
 
-                <input type="hidden" name="returnUrl" value="@returnUrl" />  <!-- Campo oculto para la URL de retorno -->
-
-                <button type="submit">Entrar</button>
-                <button type="reset">Limpiar</button>
-
-                <p>Aún no tienes cuenta?</p>
-                <p>
-                    <a href="@Url.Action("Register", "Account")">Regístrate</a>
-                </p>
-            </form>
-        </section>
-    </article>
+            <button type="submit" class="btn btn-primary btn-block btn-large">Entrar</button>
+        </form>
+        <p>Aún no tienes cuenta?</p>
+        <p>
+            <a href="@Url.Action("Register", "Account")">Regístrate</a>
+        </p>
+    </div>
 </main>
 </body>
 </html>
