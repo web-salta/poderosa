@@ -57,6 +57,13 @@
 	    padding-right: 0;
 	    padding-left: 0;
 	}
+
+	#educacion .container-custom2 {
+		max-width: 100%;
+		padding-right: 0;
+		padding-left: 0;
+		width:75%
+	}
 }
 
 #accordion-politicas .card {
