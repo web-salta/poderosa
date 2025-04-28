@@ -1,0 +1,102 @@
+﻿/* ####################PLANNER############################# */
+
+.link{
+    bottom: 2%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-decoration: underline;
+    display: block;
+    position: fixed;
+}
+
+.link:hover {
+    color: #fff;
+}
+
+.video-banner__background{
+    height: 100vh;
+    background-color:#000;
+}
+
+.video-planner {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    align-items: flex-start;
+    position: relative;
+    overflow: hidden;
+}
+}
+
+.video-planner div{
+    width: 100%;
+ }   
+
+.logo_header{
+    width: 300px;
+    margin-top: 6%;
+}
+
+.video-planner video {
+    margin: 0 auto;
+    margin-top: 8%;
+    display: block;
+    width: 90%;
+}
+
+.logo_footer{
+    width: 40%;
+    margin-top: 8%;
+}
+
+@media screen and (min-width: 480px) {
+   .logo_header {
+    width: 70%;
+    margin-top: 6%;
+   }
+
+   .video-planner video {
+    width: 70%;
+    margin: 8% auto;
+   }
+}
+
+@media screen and (min-width: 576px) {
+    .video-planner video {
+        margin: 0 auto;
+        margin-top: 6%;
+    }
+}
+@media screen and (min-width: 768px) {
+     .logo_header {
+        margin-top: 4%;
+        width: 50%;
+    }
+
+    .video-planner video {
+       width: 50%;
+       margin: 8% auto;
+    }
+
+    .logo_footer{
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .video-planner video {
+         margin: 3% auto;
+    }  
+
+    .logo_footer {
+       width: 200px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .logo_header {
+        margin-top: 2.5%;
+    }
+}

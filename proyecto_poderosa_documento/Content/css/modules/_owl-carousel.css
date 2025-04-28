@@ -1,0 +1,159 @@
+/* ################################################## */
+/* OWL CARRUSEL - QUE SE ADECUA AL ALTO DE SU CONTENEDOR */
+/* ################################################## */
+.owl-carousel--h-100,
+.owl-carousel--h-100 .owl-stage-outer,
+.owl-carousel--h-100 .owl-stage-outer .owl-stage,
+.owl-carousel--h-100 .owl-stage-outer .owl-stage .owl-item,
+.owl-carousel--h-100 .owl-stage-outer .owl-stage .owl-item > div,
+.owl-carousel--h-100 .owl-stage-outer .owl-stage .owl-item figure,
+.owl-carousel--h-100 .owl-stage-outer .owl-stage .owl-item img{
+	height: 100%;
+}
+.owl-carousel--h-100 .owl-stage-outer .owl-stage .owl-item div img,
+.owl-carousel--h-100 .owl-stage-outer .owl-stage .owl-item figure img{
+	width: 100%;
+	object-fit: cover;
+	font-family: 'object-fit: cover';	/* lo necesita el polyfill: ofi.min.js */
+}
+/* ################################################## */
+
+
+
+
+
+/* ################################################## */
+/* OWL CARRUSEL */
+/* ################################################## */
+.owl-carousel {
+	padding-bottom: 2.75rem;
+	/*margin-bottom: 1.5rem;*/
+}
+.owl-carousel:not(:last-child) {
+	margin-bottom: 1.5rem;
+}
+.owl-dots {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    width: 100%;
+    text-align: center;
+}
+.owl-dot {
+	margin: 0 .25rem;
+	outline: 0 !important;
+	width: 1.2rem;
+	height: 1.2rem;
+	border-radius: 50%;
+	border: .4rem solid var(--gris-claro) !important;
+	background-color: var(--gris-claro) !important;
+}
+.owl-dot.active,
+.owl-dot:hover {
+	background-color: var(--dorado) !important;
+}
+
+.owl-prev,
+.owl-next {
+	position: absolute;
+	top: 50%;
+
+	outline: 0 !important;
+
+	-webkit-transform: translateY(-50%);
+	   -moz-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		 -o-transform: translateY(-50%);
+			transform: translateY(-50%);
+}
+.owl-prev {
+	left: 1rem;
+}
+.owl-next {
+	right: 1rem;
+}
+.owl-prev span,
+.owl-next span{
+	background-color: var(--blanco) !important;
+	color: var(--azul);
+	font-size: 2rem;
+    line-height: 1;
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+	border-radius: 50%;
+	opacity: 0.5;
+}
+
+.owl-prev span:hover,
+.owl-next span:hover {
+	opacity: .75;
+}
+
+
+
+/* ESTADOS */
+.owl-carousel--no-dots{
+	padding-bottom: 0;
+}
+.owl-carousel--no-dots .owl-dots{
+	display: none;
+}
+.owl-carousel--no-nav .owl-nav{
+	display: none;
+}
+
+.owl-carousel--dots-in {
+	padding-bottom: 0;
+}
+.owl-carousel--dots-in .owl-dots {
+    bottom: 1rem;
+}
+
+.dots-blanco .owl-dot{
+	border: .4rem solid var(--blanco) !important;
+	background-color: var(--blanco) !important;
+}
+.dots-blanco .owl-dot.active,
+.dots-blanco .owl-dot:hover {
+	background-color: var(--dorado) !important;
+}
+
+
+.owl-carousel-2 .owl-dot{
+	border: .4rem solid var(--durazno) !important;
+	background-color: var(--durazno) !important;
+}
+.owl-carousel-2 .owl-dot.active,
+.owl-carousel-2 .owl-dot:hover {
+	background-color: var(--dorado) !important;
+    border: .4rem solid var(--dorado) !important;
+}
+
+.owl-carousel-2 .owl-dots{
+    text-align:right;
+}
+
+
+/* MEDIA QUERYS */
+@media(min-width: 576px){
+	
+}
+@media(min-width: 768px){
+	.owl-carousel--no-dots-md{
+		padding-bottom: 0;
+	}
+	.owl-carousel--no-dots-md .owl-dots{
+		display: none;
+	}
+}
+@media(min-width: 992px){
+	
+}
+@media(min-width: 1200px){
+	
+}
+/* ################################################## */

@@ -1,0 +1,62 @@
+/* ################################################## */
+/* AUTOR: Jesus */
+/* DESCRIPCIÓN: Tab modelo 2 */
+/* PÁGINAS: accionistas.php */
+
+.tab-contenedor-2 {
+    margin-top: 3rem;
+}
+
+.tab-contenedor-2 .nav-tabs {
+    border-bottom: 1px solid transparent;
+}
+.tab-contenedor-2 .nav-item {
+    margin-right: 1rem;
+}
+.tab-contenedor-2 .nav-link {
+    background-color: var(--marron);
+    color: var(--dorado);
+    font-family: var(--fuente-2);
+    font-size: 1.75rem;
+    border: 0;
+    border-radius: 0;
+    padding: .5rem 2.5rem;
+}
+.tab-contenedor-2 .nav-link.active{
+    background-color: var(--blanco-40);
+    color: var(--marron);
+}
+.tab-contenedor-2 .nav-link:focus,
+.tab-contenedor-2 .nav-link:hover {
+    font-family: var(--fuente-2-bold);
+}
+
+.tab-contenedor-2 .tab-content{
+	margin-top: 1rem;
+}
+.tab-contenedor-2 .tab-pane{
+	padding: 1rem;
+}
+
+
+
+/* MEDIA QUERYS */
+@media(min-width: 576px){
+	.tab-contenedor-2 .tab-pane{
+        padding: 2rem;
+    }
+}
+@media(min-width: 768px){
+   .tab-contenedor-2 .tab-pane{
+        padding: 2.5rem;
+    }
+}
+@media(min-width: 992px){
+   .tab-contenedor-2 .tab-pane{
+        padding: 3rem;
+    }
+}
+@media(min-width: 1200px){
+	
+}
+/* ################################################## */

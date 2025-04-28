@@ -1,0 +1,71 @@
+/* ################################################## */
+/* AUTOR: Jesus */
+/* SECCION DE IMAGEN CON TEXTO */
+/* PÁGINAS: directorio-y-gerencia.php, */
+.directorio-txt{
+	text-align: left;
+}
+.directorio-txt__cargo{
+	font-family: var(--fuente-2-bold);
+	text-transform: uppercase;
+	color: var(--dorado);
+	margin-bottom: .3rem;
+}
+/*
+@media(min-width: 576px) {
+	.directorio-txt__cargo {
+		min-height: 41px;
+	}
+}
+
+@media(min-width: 992px) {
+	.directorio-txt__cargo {
+		min-height: 46px;
+	}
+}*/
+
+.directorio-txt__nombre{
+	font-family: var(--fuente-2-bold);
+}
+.directorio-txt__nombre:last-child{
+	margin-bottom: 0;
+}
+.directorio-txt__ul{
+	list-style: none;
+	padding-left: 0;
+}
+.directorio-txt__ul li{
+	color: var(--marron);
+}
+
+
+
+/* ESTADOS */
+.directorio-txt__borde-tb{
+	/*border-top: 2px solid var(--marron);*/
+	border-bottom: 2px solid var(--marron);
+	/*margin-bottom: -2px;*/
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	/*height: 100%;*/
+
+	/*-moz-transform: translateY(-2px);
+	-webkit-transform: translateY(-2px);
+	-o-transform: translateY(-2px);
+	-ms-transform: translateY(-2px);
+	transform: translateY(-2px);*/
+
+	/*position: relative;*/
+	height: 100%;
+}
+/*.directorio-txt__borde-tb:before,
+.directorio-txt__borde-tb:after{
+	content: "";
+	display: block;
+	width: 100%;
+	border-top: 2px solid var(--marron);
+	position: absolute;
+	top: 0;
+	left: 0;
+}*/
+/* ################################################## */

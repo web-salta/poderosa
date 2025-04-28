@@ -1,0 +1,301 @@
+/* ################################################## */
+/* BOTONES */
+/* ################################################## */
+.boton{
+	background-color: var(--gris);
+	color: var(--blanco);
+	font-family: var(--fuente-2-bold);
+	text-align: center;
+	text-transform: uppercase;
+	
+	display: inline-block;
+	min-width: 15rem;
+	padding: .7rem 1rem;
+	
+	border-radius: 1.5rem;
+}
+
+.boton-banner{
+	background-color: var(--gris);
+	color: var(--blanco);
+	font-family: var(--fuente-2-bold);
+	text-align: center;
+	text-transform: uppercase;
+	
+	display: inline-block;
+	min-width: 13rem;
+	padding: .7rem 1rem;
+	
+	border-radius: 1.5rem;
+}
+.boton:hover{
+	text-decoration: none;
+
+	background-color: var(--negro);
+	color: var(--blanco);
+}
+
+.boton-banner:hover{
+	text-decoration: none;
+
+	background-color: var(--negro);
+	color: var(--blanco);
+}
+
+
+
+/* ESTADOS */
+.boton--marron{
+	background-color: var(--marron);
+	color: var(--dorado);
+}
+.boton--marron:hover{
+	background-color: var(--dorado);
+	color: var(--marron);
+}
+.boton--marron--oscuro{
+	background-color: var(--marron);
+	color: var(--blanco);
+}
+
+.boton-banner--marron--oscuro{
+	background-color: var(--marron);
+	color: var(--blanco);
+}
+.boton--dorado{
+	background-color: var(--dorado);
+	color: var(--marron);
+}
+.boton--dorado:hover{
+	background-color: var(--marron);
+	color: var(--dorado);
+}
+
+.boton--dorado--2{
+	background-color: var(--dorado);
+	color: var(--marron) !important;
+    font-size:1.4rem;
+}
+.boton--dorado--2:hover{
+	border: 1px solid var(--dorado) !important;
+	color: var(--dorado) !important;
+}
+
+.boton--dorado--text-blanco{
+	color: #fff !important;
+}
+
+.boton--verde{
+	background-color: var(--verde);
+	color: var(--blanco) !important;
+}
+.boton--verde:hover{
+	background-color: var(--verde-oscuro);
+	color: var(--blanco);
+}
+
+.boton--verde--oscuro{
+	background-color: var(--verde-oscuro);
+	color: var(--blanco) !important;
+}
+.boton--verde-oscuro:hover{
+	background-color: var(--verde);
+	color: var(--blanco);
+}
+
+/* MEDIA QUERYS */
+@media(max-width: 600px){
+	.boton-banner{
+		min-width: 10rem;
+	}
+}
+@media(min-width: 768px){
+	
+}
+@media(min-width: 992px){
+	
+}
+@media(min-width: 1200px){
+	
+}
+/* ################################################## */
+
+
+
+
+
+/* ################################################## */
+/* BOTONES CON ICONO */
+/* ################################################## */
+.boton-icono{
+	display: inline-block;
+}
+.boton-icono__txt,
+.boton-icono__img{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.boton-icono__txt{
+	font-family: var(--fuente-2-bold);
+	margin-right: .5rem;
+	color: var(--gris);
+}
+.boton-icono__img{
+	width: 2.675rem;
+	height: 2.675rem;
+}
+.boton-icono__img .st0{
+	fill: var(--gris);
+}
+
+.boton-icono:hover{
+	text-decoration: none;
+}
+.boton-icono:hover .boton-icono__txt{
+	color: var(--negro);
+}
+.boton-icono:hover .st0{
+	fill: var(--negro);
+}
+
+
+
+/* ESTADOS */
+.boton-icono--sm .boton-icono__img{
+	width: 2rem;
+	height: 2rem;
+}
+.boton-icono--lg .boton-icono__img{
+	width: 3.5rem;
+	height: 3.5rem;
+}
+
+
+.boton-icono--dorado .boton-icono__txt{
+	color: var(--dorado);
+}
+.boton-icono--dorado .boton-icono__img .st0{
+	fill: var(--dorado);
+}
+
+.boton-icono--dorado:hover .boton-icono__txt{
+	color: var(--marron);
+}
+.boton-icono--dorado:hover .boton-icono__img .st0{
+	fill: var(--marron);
+}
+
+
+.boton-icono--marron .boton-icono__txt{
+	color: var(--marron);
+}
+.boton-icono--marron .boton-icono__img .st0{
+	fill: var(--marron);
+}
+.boton-icono--marron:hover .boton-icono__txt{
+	color: var(--dorado);
+}
+.boton-icono--marron:hover .boton-icono__img .st0{
+	fill: var(--dorado);
+}
+
+
+.boton-icono--blanco .boton-icono__txt{
+	color: var(--blanco);
+}
+.boton-icono--blanco .boton-icono__img .st0{
+	fill: var(--blanco);
+}
+.boton-icono--blanco:hover .boton-icono__txt{
+	color: var(--dorado);
+}
+.boton-icono--blanco:hover .boton-icono__img .st0{
+	fill: var(--dorado);
+}
+
+
+
+
+.boton-icono--narajando{
+	background-color: var(--naranjado);
+    min-width: 10rem;
+    padding: .2rem 0.7rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+}
+
+/*
+.boton-icono--narajando .boton-icono__txt{
+    color: var(--blanco) ;
+}
+
+.boton-icono--narajando:hover{
+	background-color: var(--blanco);
+	color: var(--naranjado) !important;
+    border: 3px solid var(--naranjado);
+}
+.boton-icono--narajando .boton-icono__img .st0{
+	fill: var(--blanco);
+}
+
+*/
+
+
+
+
+
+.boton-icono--narajando .boton-icono__txt{
+	color: var(--blanco);
+}
+.boton-icono--narajando .boton-icono__img .st0{
+	fill: var(--blanco);
+}
+.boton-icono--narajando:hover{
+    background-color:var(--blanco);
+    border:3px solid var(--naranjado);
+}
+.boton-icono--narajando:hover .boton-icono__txt{
+	color: var(--naranjado);
+    background-color:var(--blanco);
+}
+.boton-icono--narajando:hover .boton-icono__img .st0{
+	fill: var(--naranjado);
+}
+/*
+.iconoRedes__img .st0{
+	fill: var(--bl);
+}*/
+
+
+.iconoRedes:hover .st0{
+	fill: var(--dorado);
+}
+
+
+
+.boton-icono__txt--width{
+    width: 180px !important;
+}
+/* MEDIA QUERYS */
+@media(min-width: 576px){
+	
+}
+@media(min-width: 768px){
+	
+}
+@media(min-width: 992px){
+
+    
+.boton-icono__txt--width{
+    width: 200px !important;
+}
+ 
+	
+}
+@media(min-width: 1200px){
+	
+}
+/* ################################################## */
+
+

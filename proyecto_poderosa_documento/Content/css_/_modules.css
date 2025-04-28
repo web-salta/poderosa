@@ -1,0 +1,28 @@
+@import url("modules/_bootstrap-re-escrito.css");
+
+@import url("modules/_header.css");
+@import url("modules/_footer.css");
+
+@import url("modules/_btns.css");
+@import url("modules/_col-abs.css");
+@import url("modules/_zoom-img.css");
+@import url("modules/_video-banner-home.css");
+@import url("modules/_owl-carousel.css");
+@import url("modules/_noticia-resumen-home.css");
+@import url("modules/_noticia-resumen.css");
+@import url("modules/_caja-lista.css");
+@import url("modules/_tab-contenedor.css");
+@import url("modules/_marco-img-lupa.css");
+@import url("modules/_directorio-txt.css");
+@import url("modules/_mascara-video.css");
+
+@import url("modules/_accordeon.css");
+@import url("modules/_circulo-hover.css");
+@import url("modules/_fondo-imagen-detalle-imagen.css");
+@import url("modules/_banner-interno.css");
+@import url("modules/_sec-img-texto.css");
+@import url("modules/_tabla.css");
+@import url("modules/_tab-contenedor-2.css");
+@import url("modules/_tab-contenedor-3.css");
+
+
