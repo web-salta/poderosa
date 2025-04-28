@@ -1,0 +1,58 @@
+.forma-circulos-numeros{
+    padding-bottom: 5rem;
+}
+.forma-circulos-numeros__imagen{
+    position:relative;
+    height: 18rem;
+    overflow: hidden;
+    
+}
+
+.forma-circulos-numeros__imagen h1{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 7rem;
+}
+
+
+      
+      
+    
+    /************************ @media***********************/
+    
+    @media(max-width: 1320px){
+        .forma-circulos-numeros__imagen h1{
+            font-size: 6rem;
+            }   
+    }
+    
+    @media(max-width: 1199px){
+        .forma-circulos-numeros__imagen{
+   
+            height: 12rem;
+            
+        }
+        .forma-circulos-numeros__imagen h1{
+            top: 70%;
+            font-size: 5rem;
+            }   
+    }
+
+    @media(max-width:991px){
+        .forma-circulos-numeros__imagen{
+   
+            height: 17rem;
+            
+        }
+    }
+
+    
+    @media(max-width:573px){
+        .forma-circulos-numeros__imagen{
+   
+            height: 14rem;
+            
+        }
+    }

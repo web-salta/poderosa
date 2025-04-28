@@ -1,0 +1,40 @@
+﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+
+    <title>Mapa de Pendientes Lidar</title>
+
+    <!-- METAS EN CADA PÁGINA ############################# -->
+    <!-- Basic HTML Meta Tags -->
+    <meta name='title' content="Mapa de Pendientes Lidar" />
+    <meta name='description' content="Mapa de Pendientes Lidar" />
+    <meta name='url' content="@HttpContext.Current.Request.Url.AbsoluteUri" />
+    <meta name='keywords' content="Mapa de Pendientes Lidar, Poderosa" />
+    <!-- OpenGraph Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta property='og:title' content="Mapa de Pendientes Lidar" />
+    <meta property='og:description' content="Mapa de Pendientes Lidar" />
+    <meta property='og:url' content="@HttpContext.Current.Request.Url.AbsoluteUri" />
+    <meta property='og:image' content="~/Content/img/libro_rio_abiseo/video-mapa-pendientes.jpg" />
+
+</head>
+<body class="bg-black bg_black--p1">
+    <div class="container pb-4">
+        <img class="img-fluid" src="~/Content/img/web/logo.svg" alt="...">
+
+        <div class="row">
+            <div class="col-sm-12">
+                <br />
+                <div class="embed-responsive embed-responsive-16by9">
+                    <!--<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wEKbCPvSPUA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+
+                    <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/TR4oxnXEueE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <br />
+                <div class="text-right">
+                    <a href="https://www.poderosa.com.pe/" class="volver"> < Volver al Site de Poderosa </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

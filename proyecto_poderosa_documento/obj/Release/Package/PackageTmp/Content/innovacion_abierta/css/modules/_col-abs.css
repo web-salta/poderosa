@@ -1,0 +1,432 @@
+/* ################################################## */
+/* COLUMNA ABSOLUTA SECCION */
+/* ################################################## */
+.col-abs-seccion{
+	position: relative;
+}
+/* ################################################## */
+
+
+.col-abs-seccion__texto {
+	padding: 3rem 2rem;
+	font-size: 1.2rem;
+}
+
+.col-abs-seccion__ol {
+	padding-left: 1.3rem;
+}
+.col-abs-seccion__texto li {
+	/*font-size: 1.5rem;*/
+	padding-left: 1.4rem;
+}
+dd.marron {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
+
+
+/* ################################################## */
+/* COLUMNA ABSOLUTA DE 4 */
+/* ################################################## */
+.col-abs-4{
+	background-color: var(--gris);
+	width: 100%;
+	/*height: 300px;*/
+	
+	/*z-index: 1;*/
+	top: 0;
+}
+.col-abs-4--izq{
+	left: 0;
+}
+.col-abs-4--der{
+	right: 0;
+}
+
+@media(min-width: 576px){
+	.col-abs-4--sm{
+		width: calc((100% - 540px) / 2 + 165px);
+		height: 100%;
+		position: absolute;
+	}
+}
+@media(min-width: 768px){
+	.col-abs-4--sm,
+	.col-abs-4--md{
+		width: calc((100% - 720px) / 2 + 225px);
+		height: 100%;
+		position: absolute;
+	}
+
+
+
+}
+@media(min-width: 992px){
+	.col-abs-4--sm,
+	.col-abs-4--md,
+	.col-abs-4--lg{
+		width: calc((100% - 960px) / 2 + 304.98px);
+		height: 100%;
+		position: absolute;
+	}
+}
+@media(min-width: 1200px){
+	.col-abs-4--sm,
+	.col-abs-4--md,
+	.col-abs-4--lg,
+	.col-abs-4--xl{
+		width: calc((100% - 1140px) / 2 + 465px);
+		height: 100%;
+		position: absolute;
+	}
+}
+
+@media(min-width: 1600px) {
+	.col-abs-seccion__texto {
+		font-size: 1.3rem;
+	}
+}
+	/* ################################################## */
+
+
+
+
+
+	/* ################################################## */
+	/* COLUMNA ABSOLUTA DE 6 */
+	/* ################################################## */
+	.col-abs-6 {
+		background-color: var(--gris);
+		width: 100%;
+		/*height: 300px;*/
+		/*z-index: 1;*/
+		top: 0;
+	}
+
+	.col-abs-6--izq {
+		left: 0;
+	}
+
+	.col-abs-6--der {
+		right: 0;
+	}
+
+	@media(min-width: 576px) {
+		.col-abs-6--sm {
+			width: calc((100% - 540px) / 2 + 270px);
+			height: 100%;
+			position: absolute;
+		}
+	}
+
+	@media(min-width: 768px) {
+		.col-abs-6--sm,
+		.col-abs-6--md {
+			width: calc((100% - 720px) / 2 + 360px);
+			height: 100%;
+			position: absolute;
+		}
+
+
+		.col-abs-8--sm,
+		.col-abs-8--md {
+			width: calc((100% - 720px) / 2 + 360px);
+			height: 100%;
+			position: absolute;
+		}
+	}
+
+	@media(min-width: 992px) {
+		.col-abs-6--sm,
+		.col-abs-6--md,
+		.col-abs-6--lg {
+			width: calc((100% - 960px) / 2 + 480px);
+			height: 100%;
+			position: absolute;
+		}
+
+		.col-abs-8--sm,
+		.col-abs-8--md,
+		.col-abs-8--lg {
+			width: calc((100% - 960px) / 2 + 480px);
+			height: 100%;
+			position: absolute;
+		}
+	}
+
+	@media(min-width: 1200px) {
+		.col-abs-6--sm,
+		.col-abs-6--md,
+		.col-abs-6--lg,
+		.col-abs-6--xl {
+			width: calc((100% - 1140px) / 2 + 570px);
+			height: 100%;
+			position: absolute;
+		}
+
+		.col-abs-8--sm,
+		.col-abs-8--md,
+		.col-abs-8--lg,
+		.col-abs-8--xl {
+			width: calc((100% - 1140px) / 2 + 570px);
+			height: 100%;
+			position: absolute;
+		}
+	}
+	/* ################################################## */
+
+
+
+
+
+	/* ################################################## */
+	/* COLUMNA ABSOLUTA DE 8 */
+	/* ################################################## */
+	.col-abs-8 {
+		background-color: var(--gris);
+		width: 100%;
+		/*height: 300px;*/
+		/*z-index: 1;*/
+		top: 0;
+	}
+
+	.col-abs-8--izq {
+		left: 0;
+	}
+
+	.col-abs-8--der {
+		right: 0;
+	}
+
+	.col-abs-4--curva-marron-der,
+	.col-abs-4--curva-marron-izq,
+	.col-abs-4--curva-dorada-der,
+	.col-abs-4--curva-dorada-izq {
+		position: relative;
+		overflow: hidden;
+	}
+
+	.col-abs-8--curva-marron-der,
+	.col-abs-8--curva-marron-izq,
+	.col-abs-8--curva-dorada-der,
+	.col-abs-8--curva-dorada-izq {
+		position: relative;
+		overflow: hidden;
+	}
+
+		.col-abs-8--curva-marron-der:before,
+		.col-abs-8--curva-marron-izq:before,
+		.col-abs-8--curva-dorada-der:before,
+		.col-abs-8--curva-dorada-izq:before {
+			content: "";
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: 50% 105%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			width: 100.5%;
+			height: 100%;
+		}
+
+
+	.col-abs-4--curva-marron-der:before,
+	.col-abs-4--curva-marron-izq:before,
+	.col-abs-4--curva-dorada-der:before,
+	.col-abs-4--curva-dorada-izq:before {
+		content: "";
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: 50% 105%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100.5%;
+		height: 100%;
+	}
+
+
+	.col-abs-8--curva-marron-der:before,
+	.col-abs-8--curva-marron-izq:before {
+		background-image: url(../../img/web/curva-marron-abajo.svg);
+	}
+
+	.col-abs-8--curva-dorada-der:before,
+	.col-abs-8--curva-dorada-izq:before {
+		background-image: url(../../img/web/curva-dorada-abajo.svg);
+	}
+
+	.col-abs-4--curva-dorada-der:before,
+	.col-abs-4--curva-dorada-izq:before {
+		background-image: url(../../img/curva-dorada-der.svg);
+	}
+
+
+
+	/* MEDIA QUERYS */
+	@media(min-width: 576px) {
+		.col-abs-8--sm {
+			width: calc((100% - 540px) / 2 + 345px);
+			height: 100%;
+			position: absolute;
+		}
+	}
+
+	@media(min-width: 768px) {
+		.col-abs-8--curva-marron-der:before,
+		.col-abs-8--curva-dorada-der:before {
+			background-position: 0% 50%;
+			left: -5px;
+		}
+
+		.col-abs-8--curva-marron-izq:before,
+		.col-abs-8--curva-dorada-izq:before {
+			background-position: 100% 50%;
+			right: -5px;
+		}
+
+		.col-abs-4--curva-marron-izq:before,
+		.col-abs-4--curva-dorada-izq:before {
+			background-position: 100% 50%;
+			right: -5px;
+		}
+
+		.col-abs-8--curva-marron-der:before {
+			background-image: url(../../img/web/curva-marron-der.svg);
+		}
+
+		.col-abs-8--curva-marron-izq:before {
+			background-image: url(../../img/web/curva-marron-izq.svg);
+		}
+
+		.col-abs-8--curva-dorada-der:before {
+			background-image: url(../../img/web/curva-dorada-der.svg);
+		}
+
+		.col-abs-8--curva-dorada-izq:before {
+			background-image: url(../../img/web/curva-dorada-izq.svg);
+		}
+
+		.col-abs-8--curva-dorada-izq:before {
+			background-image: url(../../img/web/curva-dorada-izq.svg);
+		}
+
+		.col-abs-4--curva-dorada-izq:before {
+			background-image: url(../../img/forma-arco-01.svg);
+		}
+
+		.col-abs-8--curva-dorada-izq:before {
+			background-image: url(../../img/forma-arco-01.svg);
+		}
+
+
+
+
+		.col-abs-8--sm,
+		.col-abs-8--md {
+			width: calc((100% - 720px) / 2 + 465px);
+			height: 100%;
+			position: absolute;
+		}
+
+		.col-abs-4--sm,
+		.col-abs-4--md {
+			width: calc((100% - 720px) / 2 + 465px);
+			height: 100%;
+			position: absolute;
+		}
+	}
+
+	@media(min-width: 992px) {
+		.col-abs-8--sm,
+		.col-abs-8--md,
+		.col-abs-8--lg {
+			width: calc((100% - 960px) / 2 + 624.98px);
+			height: 100%;
+			position: absolute;
+		}
+
+		.col-abs-4--sm,
+		.col-abs-4--md,
+		.col-abs-4--lg {
+			width: calc((100% - 960px) / 2 + 624.98px);
+			height: 100%;
+			position: absolute;
+		}
+	}
+
+	@media(min-width: 1200px) {
+		.col-abs-8--sm,
+		.col-abs-8--md,
+		.col-abs-8--lg,
+		.col-abs-8--xl {
+			width: calc((100% - 1140px) / 2 + 745px);
+			height: 100%;
+			position: absolute;
+		}
+
+		.col-abs-4--sm,
+		.col-abs-4--md,
+		.col-abs-4--lg,
+		.col-abs-4--xl {
+			width: calc((100% - 1140px) / 2 + 345px);
+			height: 100%;
+			position: absolute;
+		}
+	}
+	/* ################################################## */
+
+
+
+
+
+	/* ################################################## */
+	/* COLUMNA ABSOLUTA Y RELATIVA */
+	/* ################################################## */
+	.pos-abs {
+		position: absolute;
+	}
+
+	.pos-rel {
+		position: relative;
+	}
+
+	.left-50 {
+		left: 50% !important;
+	}
+
+	.w-50 {
+		width: 50% !important;
+	}
+
+	@media(min-width: 576px) {
+	}
+
+	@media(min-width: 768px) {
+		.pos-md-abs {
+			position: absolute;
+		}
+
+		.pos-md-rel {
+			position: relative;
+		}
+
+		.left-md-50 {
+			left: 50% !important;
+		}
+
+		.w-md-50 {
+			width: 50% !important;
+		}
+	}
+
+	@media(min-width: 992px) {
+	}
+
+	@media(min-width: 1200px) {
+	}
+	/* ################################################## */
+

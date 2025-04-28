@@ -1,0 +1,180 @@
+/* ################################################## */
+/* AUTOR: Elizabeth */
+/* DESCRIPCIÓN: El módulo consiste en una imagen grande usado como fondo y encima otra imagen pequeña, donde la posición puede variar de derecha a izquierda */
+/* PÁGINAS: presentación.php */
+
+
+.fondo-imagen-detalle-imagen{
+    height: 210px;
+    position: relative;
+}
+.fondo-imagen-detalle-imagen__detalle img{
+	width: 175px !important;
+	height: 175px !important;
+	/*width: auto !important;*/
+}
+
+.fondo-imagen-detalle-imagen__velo{
+	background-color: var(--negro-30);
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.fondo-imagen-detalle-imagen__detalle{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.fondo-imagen-detalle-image__detalle-container{
+	position: relative;
+}
+
+.fondo-imagen-detalle-imagen__contenido{
+	margin-bottom: 0;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+
+	width: 75%;
+	text-align: center;
+
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-o-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.fondo-imagen-detalle-imagen__texto1{
+	font-family: var(--fuente-2-bold);
+	font-size: 1.75rem;
+	line-height: 1.15;
+
+    margin-bottom: 0;
+    color: var(--blanco);	
+}
+.fondo-imagen-detalle-imagen__texto2{
+	font-family: var(--fuente-2-bold);
+	font-size: 0.8rem;
+	color: var(--marron);	
+}
+.fondo-imagen-detalle-imagen__texto2 h4{
+	font-size: 1.25rem;
+}
+
+.fondo-imagen-detalle-imagen__texto2 div{
+	font-size: 1.6rem;
+}
+.fondo-imagen-detalle-imagen__texto3{
+	font-family: var(--fuente-2-bold);
+	font-size: 0.9rem;
+	color: var(--blanco);	
+}
+
+
+/*.fondo-imagen-detalle-image__detalle-container--alto img{
+	height: 170px;
+}*/
+
+
+
+.fondo-imagen-detalle-image__detalle-container:hover .fondo-imagen-detalle-imagen__texto2{
+	color: var(--blanco);
+}
+.fondo-imagen-detalle-image__detalle-container:hover .boton-icono--marron .boton-icono__img .st0{
+	fill: var(--blanco);
+}
+
+.fondo-imagen-detalle-image__detalle-container:hover .fondo-imagen-detalle-imagen__texto3{
+	color: var(--marron);
+}
+.fondo-imagen-detalle-image__detalle-container:hover .boton-icono--blanco .boton-icono__img .st0{
+	fill: var(--marron);
+}
+
+
+
+/* MEDIA QUERYS */
+@media(min-width: 576px){
+	/*.fondo-imagen-detalle-image__detalle-container img{
+		height: 280px;
+	}*/	
+
+	.fondo-imagen-detalle-imagen{
+		height: 250px;
+	}
+	.fondo-imagen-detalle-imagen__detalle img{
+		width: 200px !important;
+		height: 200px !important;
+	}
+
+	.fondo-imagen-detalle-imagen__texto1{
+		font-size: 2rem;
+	}
+	.fondo-imagen-detalle-imagen__texto2{
+		font-size: .9rem;
+	}
+}
+@media(min-width: 768px){
+	.fondo-imagen-detalle-imagen{
+		height: 300px;
+	}
+	.fondo-imagen-detalle-imagen__detalle img{
+		width: 225px !important;
+		height: 225px !important;
+	}
+
+	.fondo-imagen-detalle-imagen__texto1{
+	    font-size: 2.25rem;
+	}
+	/*.fondo-imagen-detalle-imagen__texto2{
+		font-size: 1rem;
+	}*/
+	
+	.fondo-imagen-detalle-imagen__texto3{
+		font-size: 1.1rem;
+	}
+}
+@media(min-width: 992px){
+	.fondo-imagen-detalle-imagen{
+		height: 350px;
+	}
+	.fondo-imagen-detalle-imagen__detalle img{
+		width: 250px !important;
+		height: 250px !important;
+	}
+
+	.fondo-imagen-detalle-imagen__texto1{
+	    font-size: 2.35rem;
+	}
+	/*.fondo-imagen-detalle-imagen__texto2{
+		font-size: 1.1rem;
+	}*/
+}
+@media(min-width: 1200px){
+	.fondo-imagen-detalle-imagen{
+		height: 400px;
+	}
+	.fondo-imagen-detalle-imagen__detalle img{
+		width: 300px !important;
+		height: 300px !important;
+	}
+
+	.fondo-imagen-detalle-imagen__texto1{
+	    font-size: 2.5rem;
+	}
+	/*.fondo-imagen-detalle-imagen__texto2{
+		font-size: 1.1rem;
+	}*/
+	.fondo-imagen-detalle-imagen__texto3{
+		font-size: 1.2rem;
+	}
+}
+/* ################################################## */

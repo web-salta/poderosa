@@ -1,0 +1,68 @@
+/* ################################################## */
+/* AUTOR: Elizabeth */
+/* DESCRIPCIÓN: imagen con texto*/
+/* PÁGINAS: operaciones.php */
+
+.sec-img-texto{
+	background-color: var(--blanco);
+}
+.sec-img-texto__img{
+	display: inline !important;
+	/*width: auto !important;*/
+	max-width: 100%;
+    height: auto;
+    /*margin-bottom: 1rem;*/
+
+    /*border-radius: 50%;*/		/* al final se podría quitar */
+    max-width: 450px;		/* al final se podría quitar */
+}
+.sec-img-texto__titulo{
+	color: var(--dorado);
+}
+
+
+.sec-img-texto--fondo-dorado{
+	background-color: var(--dorado);
+}
+.sec-img-texto--fondo-dorado .sec-img-texto__titulo{
+	color: var(--blanco);
+}
+
+
+.sec-img-texto--fondo-gris-claro{
+	background-color: var(--gris-claro);
+}
+.sec-img-texto--fondo-gris-claro .sec-img-texto__titulo{
+	color: var(--gris);
+}
+
+
+.sec-img-texto--fondo-marron{
+	background-color: var(--marron);
+	color: var(--blanco);
+}
+.sec-img-texto--fondo-marron .sec-img-texto__titulo{
+	color: var(--dorado);
+}
+
+
+@media (min-width: 576px){
+	.sec-img-texto{
+		text-align: left;
+	}
+
+	.sec-img-texto--invertido .row > div:first-child {
+		-ms-flex-order: 2;
+		order: 2;
+	}
+	.sec-img-texto--invertido .row > div:last-child {
+		-ms-flex-order: 1;
+		order: 1;
+	}
+
+	.sec-img-texto--fondo-gris-claro .row > div:first-child{ 
+	    margin-top: 3rem !important; 
+    }
+}
+
+/* ################################################## */

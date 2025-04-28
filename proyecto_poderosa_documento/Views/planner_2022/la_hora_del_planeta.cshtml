@@ -1,0 +1,34 @@
+﻿<!
+@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title>Planner 2022 | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='Planner 2022 | PODEROSA' />
+<meta name='description' content='Planner 2022' />
+<meta name='url' content='https://www.poderosa.com.pe/planner-2022/la_hora_del_planeta' />
+<link href="~/Content/planner/la-hora-del-planeta/css/style.css" rel="stylesheet" />
+</head>
+<body class="planner__body">
+    <main>
+        <section>
+            <div class="video-banner__background">
+                <div class="video-planner container">
+                    <div>
+                        <img src="~/Content/planner/la-hora-del-planeta/img/header-hora-del-planeta.jpg" class="img-fluid logo_header" />
+                        <!--muted loop playsinline-->
+                        <video width="auto" height="auto" muted autoplay controls loop playsinline>
+                            <source src="~/Content/planner/la-hora-del-planeta/la-hora-del-planeta.mp4" type="video/mp4" codecs="avc1.4D401E, mp4a.40.2">
+                            <p>Su navegador no soporta la etiqueta de vídeo.</p>
+                        </video>
+                        <img src="~/Content/planner/logo-poderosa.png" class="img-fluid logo_footer" />
+                        
+                    </div>
+                    <a class="link" href="@Url.Action("historico", "planner_2022")">Ver anteriores</a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>
+

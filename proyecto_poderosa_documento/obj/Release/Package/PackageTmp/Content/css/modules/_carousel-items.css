@@ -1,0 +1,41 @@
+
+#carousel-items .carousel-control-next-icon, #carousel-items .carousel-control-prev-icon {
+    border: 2px solid var(--marron);
+    border-radius: 3rem;
+    padding: 1.2rem;
+    background-size: 50% 50%;
+}
+
+#carousel-items .carousel-control-next, #carousel-items .carousel-control-prev {
+    bottom: -15% !important;
+    top: auto;
+    width: auto;
+}
+
+#carousel-items .carousel-control-next {
+    /* right: 0; */
+    left: 0;
+    right: 0;
+}
+
+.carousel-control-prev {
+    left: 0;
+}
+
+
+
+
+#carousel-items .carousel-control-prev-icon {
+    background-image: url(../../img/flecha-no-desplegada-dorada.jpg);
+    transform: rotate(90deg);
+}
+
+#carousel-items .carousel-control-next-icon {
+    background-image: url(../../img/flecha-no-desplegada-dorada.jpg);
+    transform: rotate(-90deg);
+}
+
+#carousel-items .carousel-control-next, #carousel-items .carousel-control-prev {
+    position: relative;
+    margin-right: 15px;
+}

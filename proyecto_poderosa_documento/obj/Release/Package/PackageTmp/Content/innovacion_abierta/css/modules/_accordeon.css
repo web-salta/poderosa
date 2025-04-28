@@ -1,0 +1,192 @@
+
+/* ################################################## */
+/* AUTOR: Elizabeth */
+/* DESCRIPCIÓN: Acordeon */
+/* PÁGINAS: presentación.php */
+
+#accordion-politicas .card {
+	margin-bottom: 1rem;	
+
+	border: 0; 
+    border-radius: 0;
+}	
+    
+#accordion-politicas .card-header {
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    background-color: #494941;
+    padding: 0 1rem;
+    
+    border-radius: 0;
+}
+
+#accordion-politicas [data-toggle="collapse"]:after {  
+	content: "";
+	float: right;
+	width: 27px;
+	height:16px;
+
+	/*border-width: 0 25px 25px;
+	border-style: solid;
+	border-color: transparent transparent var(--dorado);*/
+	background-image:  url("../../img/web/flecha-lineal-blanca-arriba.svg");
+}
+
+#accordion-politicas [data-toggle="collapse"].collapsed:after {
+	float: right;
+	width: 27px;
+	height:16px;
+
+	/*border-width: 25px 25px 0;
+	border-style: solid;
+	border-color: var(--dorado) transparent transparent;*/
+	background-image:  url("../../img/web/flecha-lineal-blanca-abajo.svg");
+	
+}
+
+#accordion-politicas .card-body {
+    padding: 1.25rem 1.2rem;
+    background-color: #F2E1AA;
+}
+
+#accordion-politicas .accordionToggle[data-toggle="collapse"]{
+	cursor: pointer;
+	font-family: 'HelveticaLTStd-BoldCond';
+}
+
+#accordion-politicas .accordionToggle[data-toggle="collapse"]:hover{
+	color: rgb(var(--naranja));
+}
+
+#accordion-politicas .accordionToggle{
+	padding: 1rem 0;
+}
+
+
+
+
+
+#accordion-2 .card{
+	background-color: transparent;
+	border:0;
+	border-top: 2px solid #fff;
+	border-radius: 0;
+}
+
+#accordion-2 .card:last-child{
+	border-bottom: 2px solid #fff;
+}
+
+#accordion-2 .card-header {
+    background-color: transparent; 
+    border-bottom: none;
+    text-transform: uppercase;
+    padding-left: 0;
+}
+
+#accordion-2 [data-toggle="collapse"]:after {  
+	content: "";
+	float: right;
+	width: 27px;
+	height:16px;
+
+	/*border-width: 0 25px 25px;
+	border-style: solid;
+	border-color: transparent transparent var(--blanco);*/
+	background-image:  url("../../img/web/flecha-lineal-blanca-arriba.svg");
+}
+
+#accordion-2 [data-toggle="collapse"].collapsed:after {
+	float: right;
+	width: 27px;
+	height:16px;
+
+	/*border-width: 25px 25px 0;
+	border-style: solid;
+	border-color: var(--blanco) transparent transparent;*/
+
+	background-image:  url("../../img/web/flecha-lineal-blanca-abajo.svg");
+}
+
+#accordion-2 .card-body {
+   padding: 0.2rem 0;
+   padding-bottom: 1rem;
+   color: var(--blanco);
+}
+
+#accordion-2 ul li, #accordion-2 ul li p{
+    color: var(--blanco);
+}
+
+#accordion-2 .accordionToggle[data-toggle="collapse"]{
+	cursor: pointer;
+	font-family: 'HelveticaLTStd-BoldCond';
+}
+
+
+
+
+
+#accordion-3 .card{
+	background-color: transparent;
+	border:0;
+	border-top: 2px solid var(--gris);
+	border-radius: 0;
+}
+
+#accordion-3 .card:last-child{
+	border-bottom: 2px solid var(--gris);
+}
+
+#accordion-3 .card-header {
+    background-color: transparent; 
+    border-bottom: none;
+    text-transform: uppercase;
+    padding-left: 0;
+}
+
+#accordion-3 [data-toggle="collapse"]:after {  
+	content: "";
+	float: right;
+	width: 27px;
+	height:16px;
+
+	/*border-width: 0 25px 25px;
+	border-style: solid;*/
+	/*border-color: transparent transparent var(--dorado);*/
+	background-image:  url("../../img/web/flecha-lineal-dorada-arriba.svg");
+}
+
+#accordion-3 [data-toggle="collapse"].collapsed:after {
+	float: right;
+	width: 27px;
+	height:16px;
+
+	/*border-width: 25px 25px 0;
+	border-style: solid;
+	border-color: var(--dorado) transparent transparent;*/
+
+	background-image:  url("../../img/web/flecha-lineal-dorada-abajo.svg");
+}
+
+#accordion-3 .card-body {
+   padding: 0.2rem 0;
+   padding-bottom: 1rem;
+   color: var(--gris);
+}
+
+#accordion-3 ul li{
+    color: var(--dorado);
+}
+
+#accordion-3 ul li p{
+    color: var(--gris);
+}
+
+#accordion-3 .accordionToggle[data-toggle="collapse"]{
+	cursor: pointer;
+	font-family: 'HelveticaLTStd-BoldCond';
+}
+/* ################################################## */
