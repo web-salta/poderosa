@@ -319,9 +319,9 @@ header {
         color: #fff;
         margin: 0;
         padding-left: 1rem !important;
-        transform: translateX(-9999px); /* oculto inicialmente */
+        transform: translateX(-50px); /* oculto inicialmente */
         transition: transform 0.3s ease;
-        height: 85%;
+        height: auto + 10px;
         position: absolute;
         z-index: 1050;
         min-width: 250px;
