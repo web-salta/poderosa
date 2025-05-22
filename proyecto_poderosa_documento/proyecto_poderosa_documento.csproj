@@ -160,6 +160,7 @@
     <Compile Include="Controllers\NoticiasController.cs" />
     <Compile Include="Controllers\operacionesController.cs" />
     <Compile Include="Controllers\planner_2022Controller.cs" />
+    <Compile Include="Controllers\politicasController.cs" />
     <Compile Include="Controllers\PopUpController.cs" />
     <Compile Include="Controllers\publicacionesController.cs" />
     <Compile Include="Controllers\quienes_somosController.cs" />
@@ -249,6 +250,7 @@
     <Content Include="Content\css\modules\_contenedor-noticias.css" />
     <Content Include="Content\css\modules\_contenedor-numeros.css" />
     <Content Include="Content\css\modules\_contenodor-pueba.css" />
+    <Content Include="Content\css\modules\_cookies.css" />
     <Content Include="Content\css\modules\_directorio-txt.css" />
     <Content Include="Content\css\modules\_fondo-imagen-detalle-imagen.css" />
     <Content Include="Content\css\modules\_footer.css" />
@@ -2144,6 +2146,7 @@
     <Content Include="Views\Shared\_redes.cshtml" />
     <Content Include="Views\PopUp\Create.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\politicas\politica_cookies.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

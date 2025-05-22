@@ -1,0 +1,127 @@
+/* Coding with update academy */
+.cookiebg {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    width: 400px;
+    background: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font: 0.9em sans-serif;
+    line-height: 1.5;
+    border-radius: 10px;
+    transition: 0.5s;
+    transform: translateX(-500px);
+    z-index: 9999;
+    border: 2px solid #d8a400;
+    display: none;
+    box-shadow: 0 12px 36px rgba(0,0,0,0.50), 0 4px 16px rgba(0,0,0,0.18);
+}
+
+.hd {
+    display: flex;
+    align-items: center;
+}
+
+.hd img {
+    width: 50px;
+}
+
+    .hd span {
+        font-size: 2em;
+        font-weight: 500;
+        margin-left: 5px;
+        color: #4c4a46;
+    }
+
+.cookiebg a {
+    color: #4c4a46;
+}
+
+.cookiebg button {
+    padding: 13px 0;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #4c4a46;
+    border-radius: 3px;
+    color: #4c4a46;
+}
+
+    .cookiebg button.f1 {
+        border: none;
+        background: #d8a400;
+        color: #fff;
+    }
+
+.cookiebg.appear {
+    transform: translateX(0);
+    display: flex;
+}
+
+.close-cookie {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #d8a400;
+    cursor: pointer;
+    z-index: 10000;
+    line-height: 1;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
+    .close-cookie:hover,
+    .close-cookie:focus {
+        background: rgba(216, 164, 0, 0.08);
+        outline: none;
+        border-radius: 50%;
+    }
+
+.cookie-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(44, 44, 44, 0.45);
+    z-index: 9998;
+    display: none;
+}
+
+    .cookie-overlay.active {
+        display: block;
+    }
+
+.underline-dorado {
+    color: #d8a400;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+    .underline-dorado:hover,
+    .underline-dorado:focus {
+        color: #b38a00;
+        text-decoration: underline;
+    }
+
+@media (max-width: 421px) {
+    .cookiebg {
+        left: 0;
+        bottom: 0;
+        width: 100vw;
+        max-width: 100vw;
+        border-radius: 0;
+        padding: 16px 8px;
+        transform: translateX(0); /* Asegura que aparezca correctamente */
+    }
+}

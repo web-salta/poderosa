@@ -20,6 +20,83 @@
                 <img src="~/Content/img/youtube.png" class="img-fluid">
             </a>
         </div>
-
     </div>
 </footer>
+
+<div class="cookie-overlay"></div>
+<div class="cookiebg">
+    <button class="close-cookie" aria-label="Cerrar">&times;</button>
+    <div class="hd">
+        <img src="~/Content/img/cookie-fill.png" alt="">
+        <span>
+            Valoramos tu privacidad
+        </span>
+    </div>
+    <p>
+        Al hacer clic en "Aceptar todas las cookies", aceptas que se puede guardar cookies en tu dispositivo y divulgar información de acuerdo con nuestra
+        <a href="@Url.Action("politica-cookies", "politicas", new { accion = "" })" class=" underline-dorado">Política de cookies</a>.
+    </p>
+    <button class="f1">Aceptar todas las cookies</button>
+    <button class="reject">Rechazar</button>
+</div>
+
+<script>
+    // Función para cargar Google Analytics solo si se aceptan cookies
+    function loadGtag() {
+        if (window.gtagLoaded) return; // Evita cargarlo más de una vez
+        window.gtagLoaded = true;
+        var gtagScript = document.createElement('script');
+        gtagScript.async = true;
+        gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=G-MS5NDVFNMB";
+        document.head.appendChild(gtagScript);
+
+        gtagScript.onload = function () {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            window.gtag = gtag;
+            gtag('js', new Date());
+            gtag('config', 'G-MS5NDVFNMB');
+        };
+    }
+
+    // Función para mostrar/ocultar el overlay
+    function showCookieOverlay(show) {
+        var overlay = document.querySelector('.cookie-overlay');
+        if (show) {
+            overlay.classList.add('active');
+        } else {
+            overlay.classList.remove('active');
+        }
+    }
+
+    // Mostrar el popup y el overlay solo si no se ha aceptado ni rechazado antes
+    if (!localStorage.getItem('cookiesAccepted')) {
+        setTimeout(() => {
+            document.querySelector(".cookiebg").classList.add("appear");
+            showCookieOverlay(true);
+        }, 0);
+    } else if (localStorage.getItem('cookiesAccepted') === 'true') {
+        loadGtag();
+    }
+
+    // Botón Rechazar
+    document.querySelector(".reject").addEventListener("click", e => {
+        document.querySelector(".cookiebg").classList.remove("appear");
+        showCookieOverlay(false); // Oculta el overlay
+        localStorage.setItem('cookiesAccepted', 'false');
+    });
+
+    // Botón Aceptar
+    document.querySelector(".f1").addEventListener("click", e => {
+        document.querySelector(".cookiebg").classList.remove("appear");
+        showCookieOverlay(false); // Oculta el overlay
+        localStorage.setItem('cookiesAccepted', 'true');
+        loadGtag();
+    });
+
+    // Botón Cerrar (X)
+    document.querySelector(".close-cookie").addEventListener("click", function () {
+        document.querySelector(".cookiebg").classList.remove("appear");
+        showCookieOverlay(false); // Oculta el overlay
+    });
+</script>
