@@ -2131,8 +2131,6 @@
     <Content Include="Views\calidad_e_innovacion\innovacion\nuestras-principales-iniciativas-en-innovacion.cshtml" />
     <Content Include="Views\calidad_e_innovacion\mejora_continua\introduccion.cshtml" />
     <Content Include="Views\covid19\Index.cshtml" />
-    <Content Include="Scripts\tinymce\license.md" />
-    <Content Include="Scripts\tinymce\langs\README.md" />
     <Content Include="Views\Home\contacto.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\proveedores.cshtml" />
@@ -2147,6 +2145,8 @@
     <Content Include="Views\PopUp\Create.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\politicas\politica_cookies.cshtml" />
+    <Content Include="Scripts\tinymce\license.md" />
+    <Content Include="Scripts\tinymce\langs\README.md" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -2179,10 +2179,10 @@
     <Content Include="Scripts\jquery-3.7.0.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="Scripts\tinymce\tinymce.d.ts" />
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+    <TypeScriptCompile Include="Scripts\tinymce\tinymce.d.ts" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -2216,14 +2216,14 @@
     <PropertyGroup>
       <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\TinyMCE.7.8.0\build\TinyMCE.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\TinyMCE.7.8.0\build\TinyMCE.targets'))" />
     <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.props'))" />
     <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.targets'))" />
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets'))" />
+    <Error Condition="!Exists('..\packages\TinyMCE.7.9.0\build\TinyMCE.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\TinyMCE.7.9.0\build\TinyMCE.targets'))" />
   </Target>
-  <Import Project="..\packages\TinyMCE.7.8.0\build\TinyMCE.targets" Condition="Exists('..\packages\TinyMCE.7.8.0\build\TinyMCE.targets')" />
   <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" />
+  <Import Project="..\packages\TinyMCE.7.9.0\build\TinyMCE.targets" Condition="Exists('..\packages\TinyMCE.7.9.0\build\TinyMCE.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

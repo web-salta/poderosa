@@ -23,6 +23,8 @@ namespace proyecto_poderosa_documento.Models
         // Propiedad de relación con el usuario que subió la noticia
         public int UsuarioId { get; set; } // Aquí se almacena el ID del usuario
         public virtual Usuario Usuario { get; set; } // Propiedad de navegación
+        [Required(ErrorMessage = "El campo Tipo es obligatorio.")]
+        public int Tipo { get; set; }
 
         public string GetSanitizedTitulo()
         {

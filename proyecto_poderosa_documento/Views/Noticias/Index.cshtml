@@ -35,10 +35,15 @@
     <!-- Noticias Section -->
     <section class="py-5" id="publicaciones">
         <div class="container py-5">
+            <div class="mb-4 text-center">
+                <button type="button" class="btn btn-outline-primary filtro-btn active" data-tipo="">Todos</button>
+                <button type="button" class="btn btn-outline-primary filtro-btn" data-tipo="1">Noticias</button>
+                <button type="button" class="btn btn-outline-primary filtro-btn" data-tipo="2">Notas</button>
+            </div>
             <div class="publicaciones_pagination row">
                 @foreach (var noticia in Model)
                 {
-                    <div class="col-lg-3 col-md-6 col-6 pb-5">
+                    <div class="col-lg-3 col-md-6 col-6 pb-5 noticia-item" data-tipo="@noticia.Tipo">
                         <!-- Enlace para ver los detalles de la noticia -->
                         <a href="@Url.Action("Details", "Noticias", new { slug = noticia.Slug })" class="text-decoration-none" target="_blank">
 
@@ -82,5 +87,19 @@
 <script>
     $('.publicaciones_pagination').paginate({
         items_per_page: 20
+    });
+
+    $(document).ready(function () {
+        $('.filtro-btn').click(function () {
+            var tipo = $(this).data('tipo');
+            $('.filtro-btn').removeClass('active');
+            $(this).addClass('active');
+            if (tipo === "" || tipo === undefined) {
+                $('.noticia-item').show();
+            } else {
+                $('.noticia-item').hide();
+                $('.noticia-item[data-tipo="' + tipo + '"]').show();
+            }
+        });
     });
 </script>

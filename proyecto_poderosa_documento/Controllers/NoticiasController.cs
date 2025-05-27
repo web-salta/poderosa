@@ -52,6 +52,13 @@ namespace proyecto_poderosa_documento.Controllers
         [ValidateInput(false)]
         public ActionResult Create(Noticia noticia, HttpPostedFileBase Imagen, HttpPostedFileBase ImagenResumen, IEnumerable<HttpPostedFileBase> ImagenesCarrusel, HttpPostedFileBase ImagenesCompartir)
         {
+            // Validar que el campo Tipo sea obligatorio y válido
+            if (noticia.Tipo != 1 && noticia.Tipo != 2)
+            {
+                ModelState.AddModelError("Tipo", "Debe seleccionar un tipo válido.");
+                return View(noticia);
+            }
+
             // Verificar si la fecha fue proporcionada por el usuario
             if (!noticia.FechaNoticia.HasValue)
             {
@@ -242,6 +249,13 @@ namespace proyecto_poderosa_documento.Controllers
         [ValidateInput(false)]
         public ActionResult Edit(Noticia noticia, HttpPostedFileBase Imagen, HttpPostedFileBase ImagenResumen, IEnumerable<HttpPostedFileBase> ImagenesCarrusel, HttpPostedFileBase ImagenesCompartir)
         {
+            // Validar que el campo Tipo sea obligatorio y válido
+            if (noticia.Tipo != 1 && noticia.Tipo != 2)
+            {
+                ModelState.AddModelError("Tipo", "Debe seleccionar un tipo válido.");
+                return View(noticia);
+            }
+
             if (ModelState.IsValid)
             {
                 var existingNoticia = db.Noticias.Find(noticia.Id);
@@ -272,6 +286,7 @@ namespace proyecto_poderosa_documento.Controllers
                 existingNoticia.Descripcion = noticia.Descripcion;
                 existingNoticia.Contenido = noticia.Contenido;
                 existingNoticia.Slug = noticia.Slug;
+                existingNoticia.Tipo = noticia.Tipo;
 
                 // Actualizar la fecha de publicación si se proporciona
                 if (noticia.FechaNoticia.HasValue)
