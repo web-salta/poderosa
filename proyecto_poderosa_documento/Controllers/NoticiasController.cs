@@ -34,6 +34,13 @@ namespace proyecto_poderosa_documento.Controllers
             return View(noticias);
         }
 
+        // Redirxección desde /Noticias/{slug} a /Noticias/Details/{slug}
+        [Route("Noticias/{slug:regex(^((?!Index|Create|Edit|Delete|Dashboard|Details).)*$)}")]
+        public ActionResult RedirectToDetails(string slug)
+        {
+            return RedirectToActionPermanent("Details", new { slug = slug });
+        }
+
         // Crear - Vista para crear una nueva noticia
         [Authorize]// Solo requerir autenticación para esta acción
         public ActionResult Create()

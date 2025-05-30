@@ -252,6 +252,7 @@
     <Content Include="Content\css\modules\_contenodor-pueba.css" />
     <Content Include="Content\css\modules\_cookies.css" />
     <Content Include="Content\css\modules\_directorio-txt.css" />
+    <Content Include="Content\css\modules\_filtro-panel.css" />
     <Content Include="Content\css\modules\_fondo-imagen-detalle-imagen.css" />
     <Content Include="Content\css\modules\_footer.css" />
     <Content Include="Content\css\modules\_forma-circulos-numeros.css" />
@@ -1307,6 +1308,7 @@
     <Content Include="Content\noticias\compartir\Ecosistem_Minero_Entrevista_a_Jimena_Sologuren_compartir.jpg" />
     <Content Include="Content\noticias\compartir\Ecosistem_Minero_Entrevista_a_Jimena_Sologuren__banner.jpg" />
     <Content Include="Content\noticias\compartir\Poderosa-recibe-certificación-GEI_compartir.jpg" />
+    <Content Include="Content\noticias\filter-svgrepo-com.svg" />
     <Content Include="Content\noticias\resumen\02-movil.jpg" />
     <Content Include="Content\noticias\resumen\Ecosistem_Minero_Entrevista_a_Jimena_Sologuren_resumen.jpg" />
     <Content Include="Content\noticias\resumen\Poderosa-recibe-certificación-GEI_resumen.jpg" />

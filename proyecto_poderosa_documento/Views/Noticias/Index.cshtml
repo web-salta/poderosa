@@ -5,6 +5,7 @@
 @Html.Partial("~/Views/Shared/_head.cshtml")
 <!-- METAS -->
 <title>Noticias | PODEROSA</title>
+<link rel="stylesheet" href="~/Content/css/modules/_filtro-panel.css" />
 <meta name="title" content="Noticias | PODEROSA" />
 <meta name="description" content="Conoce nuestras últimas noticias." />
 <meta name="url" content="https://www.poderosa.com.pe/noticias/index" />
@@ -35,10 +36,19 @@
     <!-- Noticias Section -->
     <section class="py-5" id="publicaciones">
         <div class="container py-5">
-            <div class="mb-4 text-center">
-                <button type="button" class="btn btn-outline-primary filtro-btn active" data-tipo="">Todos</button>
-                <button type="button" class="btn btn-outline-primary filtro-btn" data-tipo="1">Noticias</button>
-                <button type="button" class="btn btn-outline-primary filtro-btn" data-tipo="2">Notas</button>
+            <div class="mb-4 text-end" style="position: relative;">
+                <span id="btnFiltroContainer" class="filtro-container">
+                    <img src="~/Content/noticias/filter-svgrepo-com.svg"
+                         id="btnFiltro"
+                         class="filtro-icono"
+                         alt="Filtrar noticias" />
+                    <span class="filtro-texto">Filtrar</span>
+                </span>
+                <div id="filtroPanel">
+                    <button class="btn btn-link filtro-btn" data-tipo="">Todas</button>
+                    <button class="btn btn-link filtro-btn" data-tipo="1">Noticias</button>
+                    <button class="btn btn-link filtro-btn" data-tipo="2">Notas de Prensa</button>
+                </div>
             </div>
             <div class="publicaciones_pagination row">
                 @foreach (var noticia in Model)
@@ -85,21 +95,60 @@
 @Html.Partial("~/Views/Shared/_foot.cshtml")
 <script type="text/javascript" src="~/Content/js/pagination/jQuery.paginate.js"></script>
 <script>
-    $('.publicaciones_pagination').paginate({
-        items_per_page: 20
-    });
-
     $(document).ready(function () {
-        $('.filtro-btn').click(function () {
+        var $container = $('.publicaciones_pagination');
+        var $allItems = $container.children('.noticia-item').clone(); // Clonar todos los items para poder restaurarlos
+
+        function inicializarPaginacion() {
+            if ($container.data('paginate')) {
+                $container.paginate('destroy');
+            }
+            $container.paginate({
+                items_per_page: 20
+            });
+        }
+
+        function mostrarItemsFiltrados(tipo) {
+            $container.empty(); // Limpiar contenedor
+
+            var $filtered;
+            if (!tipo) {
+                $filtered = $allItems;
+            } else {
+                $filtered = $allItems.filter('[data-tipo="' + tipo + '"]');
+            }
+
+            $container.append($filtered);
+
+            inicializarPaginacion();
+        }
+
+        // Inicializar paginación con todos los items al cargar la página
+        mostrarItemsFiltrados();
+
+        // Mostrar/ocultar el panel de filtro al hacer clic en el icono
+        $('#btnFiltroContainer').on('click', function (e) {
+            $('#filtroPanel').toggle();
+            e.stopPropagation();
+        });
+
+        // Ocultar el panel si se hace clic fuera de él
+        $(document).on('click', function (e) {
+            if (!$(e.target).closest('#filtroPanel, #btnFiltro').length) {
+                $('#filtroPanel').hide();
+            }
+        });
+
+        // Lógica de filtrado con los botones dentro del panel
+        $('.filtro-btn').on('click', function () {
             var tipo = $(this).data('tipo');
             $('.filtro-btn').removeClass('active');
             $(this).addClass('active');
-            if (tipo === "" || tipo === undefined) {
-                $('.noticia-item').show();
-            } else {
-                $('.noticia-item').hide();
-                $('.noticia-item[data-tipo="' + tipo + '"]').show();
-            }
+
+            mostrarItemsFiltrados(tipo);
+
+            // Oculta el panel después de seleccionar
+            $('#filtroPanel').hide();
         });
     });
 </script>

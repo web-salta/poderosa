@@ -9,6 +9,21 @@ namespace proyecto_poderosa_documento
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            // Rutas específicas para evitar conflictos con la redirección de slug
+            routes.MapRoute(
+                name: "NoticiasIndex",
+                url: "Noticias/Index",
+                defaults: new { controller = "Noticias", action = "Index" }
+            );
+            routes.MapRoute(
+                name: "NoticiasRoot",
+                url: "Noticias",
+                defaults: new { controller = "Noticias", action = "Index" }
+            );
+
+
+            routes.MapMvcAttributeRoutes(); // Habilita rutas por atributo
+
             // Ruta personalizada para Noticias/Details/{slug}
             routes.MapRoute(
                 name: "NoticiasDetails",
