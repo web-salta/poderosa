@@ -15,7 +15,7 @@
 <meta property="og:title" content="@System.Text.RegularExpressions.Regex.Replace(Model.Titulo.Normalize(System.Text.NormalizationForm.FormD), @"[^a-zA-Z0-9\s]", "") | PODEROSA" />
 <meta property="og:description" content="@System.Text.RegularExpressions.Regex.Replace(Model.Descripcion.Normalize(System.Text.NormalizationForm.FormD), @"[^a-zA-Z0-9\s,\.áéíóúÁÉÍÓÚñÑ]", "")" />
 <meta property="og:url" content="@($"{Request.Url.Scheme}://{Request.Url.Authority}{Url.Action("Details", "Noticias", new { slug = Model.Slug })}")" />
-<meta property="og:image" content="https://www.poderosa.com.pe/content/noticias/comparti/@System.IO.Path.GetFileName(Model.ImagenesCompartir)">
+<meta property="og:image" content="https://www.poderosa.com.pe/content/noticias/compartir/@System.IO.Path.GetFileName(Model.ImagenesCompartir)">
 
 </head>
 <body>
