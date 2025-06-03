@@ -1,0 +1,87 @@
+﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title> PODEROSA recibe Distintivo Recicla 2023 | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='PODEROSA recibe Distintivo Recicla 2023  | PODEROSA' />
+<meta name='description' content='En una significativa ceremonia PODEROSA recibió el Distintivo Recicla 2023 por haber sumado esfuerzos a través del programa Yo reciclo, yo soy Claro en la gestión y manejo de Residuos de Aparatos Eléctricos y Electrónicos (RAEE) de Claro Perú.' />
+<meta name='url' content='http://www.poderosa.com.pe/noticias/poderosa-recibe-distintivo-recicla-2023/' />
+<meta name='keywords' content='Poderosa, Distintivo, recicla, cáncer, yo soy, claro, reciclo' />
+<!-- OpenGraph Meta Tags -->
+<meta property='og:type' content='website' />
+<meta property='og:title' content='PODEROSA recibe Distintivo Recicla 2023 | PODEROSA' />
+<meta property='og:description' content='En una significativa ceremonia PODEROSA recibió el Distintivo Recicla 2023 por haber sumado esfuerzos a través del programa Yo reciclo, yo soy Claro en la gestión y manejo de Residuos de Aparatos Eléctricos y Electrónicos (RAEE) de Claro Perú.' />
+<meta property='og:url' content='http://www.poderosa.com.pe/noticias/poderosa-recibe-distintivo-recicla-2023/' />
+<meta property='og:image' content='http://www.poderosa.com.pe/Content/noticias/poderosa-recibe-distintivo-recicla-2023/compartir.jpg' />
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+
+    <main>
+
+        <section class="bg-dorado">
+            <div class="banner-interno banner-interno--solo-texto">
+                <div class="container   banner-interno__caja-texto">
+                    <h1 class="banner-interno__h">NOTICIAS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-seccion">
+            <div class="container">
+                <img class="object-fit-cover" src="~/Content/noticias/poderosa-recibe-distintivo-recicla-2023/banner.jpg" alt="imagen">
+                <div class="h6 mayuscula mt-4">Abril 19 de 2024</div>
+                <h1 class="h3 dorado">PODEROSA recibe Distintivo Recicla 2023</h1>
+
+                <div class="d-flex justify-content-center justify-content-sm-start">
+                    @Html.Partial("~/Views/Shared/_redes.cshtml")
+                </div>
+                <br />
+
+
+
+                <p>En una significativa ceremonia PODEROSA recibió el Distintivo Recicla 2023 por haber sumado esfuerzos a través del programa Yo reciclo, yo soy Claro en la gestión y manejo de Residuos de Aparatos Eléctricos y Electrónicos (RAEE) de Claro Perú.</p>
+
+                <p><i>“Yo reciclo, yo soy Claro”</i>, tiene el propósito de que los colaboradores participen activamente en la correcta disposición final de sus Residuos de Aparatos Eléctricos y Electrónicos (RAEE), dándole un correcto destino final a sus aparatos electrónicos en desuso como: celulares. Por ello nos enorgullece haber manejado y gestionado 32 kg de Residuos de Aparatos Eléctricos y Electrónicos (RAEE) contribuyendo de esta manera con nuestro compromiso ambiental.</p>
+
+                <p>York Dueñas, Subgerente de Tecnologías de la Información manifestó <i>“PODEROSA está comprometida con la preservación del medio ambiente a través de las acciones que se despliegan gracias al programa “Yo reciclo, yo soy Claro”, el cual busca promover una cultura de segregación y reciclaje de los RAEE”.</i></p>
+
+                <p><i>“Las empresas tenemos la oportunidad de contribuir con el medio ambiente a través de programas que ayuden en la segregación y reciclaje de los RAEE. Por ello en el año 2023, se ha logrado manejar y gestionar 32 kg. de Residuos de Aparatos Eléctricos y Electrónicos (RAEE) con el Sistema Individual de Manejo de RAEE de América Móvil Perú SAC. cumpliendo con el marco normativo D.S. 009-2019-MINAM. Nos emociona que este programa de reciclaje contribuya con nuestro compromiso ambiental, y sume en la gestión correcta de RAEE con el objetivo de darle una adecuada disposición final a los aparatos eléctricos y electrónicos en desuso”,</i> manifestó Dueñas.</p>
+
+                <p> De esta forma, PODEROSA continúa trabajando de forma conjunta con sus aliados en el desarrollo de diversas acciones de carácter ambiental que promueven la segregación y reciclaje de los RAEE.</p>
+
+
+
+                    <br />
+                    <div class="row justify-content-center my-4">
+                        <div class="col-lg-8">
+                            <div class="owl-carousel    js-owl-carousel-fotos   owl-carousel--no-nav    dots-gris">
+                                <div class="">
+                                    <img class="img-fluid w-100" src="~/Content/noticias/poderosa-recibe-distintivo-recicla-2023/01.jpg" alt="imagen">
+                                </div>
+
+                                <div class="">
+                                    <img class="img-fluid w-100" src="~/Content/noticias/poderosa-recibe-distintivo-recicla-2023/02.jpg" alt="imagen">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mt-4  flex-column flex-sm-row align-items-center align-items-md-start justify-content-sm-center">
+                        <div class="flex-fill mb-4 mb-sm-0">
+                            @Html.Partial("~/Views/Shared/_redes.cshtml")
+
+                        </div>
+                        <div class="flex-fill text-center text-sm-right">
+                            <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias" )">VER MÁS NOTICIAS</a>
+                        </div>
+                    </div>
+</div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>

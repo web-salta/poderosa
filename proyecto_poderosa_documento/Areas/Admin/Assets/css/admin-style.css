@@ -1,0 +1,181 @@
+@import url('bootstrap.min.css');
+@import url('font-awesome.min.css');
+@import url('login.css');
+html,body{
+    height:100%;
+}
+
+form{position:relative;}
+.block-loading {z-index:9999;background: url(../images/ajax-loader.gif) #ddd center center no-repeat;position: absolute;width:100%;height:100%;z-index:999;opacity:0.4;}
+
+#popupForm .mensaje-alert {
+    font-size: 0.8em;
+}
+
+.archivo_subido {
+    font-size: 0.8em  !important;
+    color: #bf2e2a !important;
+}
+.div-inline{
+    display:inline-block;
+}
+.margin-bottom{
+    margin-bottom:15px;
+}
+
+/*PANELES*/
+.panel-default {
+    background: #ffffff;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.panel-default {
+    border-color: #fff; 
+}
+
+.panel{
+    border-radius: 0;
+    box-shadow:1px 1px 2px 1px rgba(1,1,1,0.3);
+}
+
+
+.titulo{
+    font-family: 'Rubik', sans-serif;
+    margin: 0px 0px 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.form-control{
+   border: 1px solid #e4e7ea;
+}
+
+.navbar-inverse {
+    background-color: #d5a110;
+    border-color: #d5a110;
+}
+
+/*grid*/
+.ui-widget-header {
+    background: #574f4a !important;
+    border: 1px solid transparent !important;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+    /*border:none !important;*/
+    border:1px solid #d0d6da !important;
+    color: #3c3b3b !important;
+    background: #ece9e7 !important;
+}
+
+.ui-widget-content {
+    /*background:#fff !important;*/
+    border: 1px solid #d2d3d4 !important;
+}
+
+
+
+/*botones*/
+
+.ui-widget-content a{
+    color:#fff !important;
+}
+
+.btn-custom{
+    background-color:#d5a110;
+    color:white;
+}
+
+/*menu*/
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-collapse {
+    border-color: #fff;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #fbfbfb;
+}
+
+.navbar-inverse .navbar-nav>.open>a{
+    background:#574f4a;
+}
+
+@media (max-width: 767px) {
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+        color: #ffffff;
+    }
+}
+
+
+
+#popupForm{
+    font-family: 'Rubik', sans-serif;
+    margin: 0px 0px 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bolder;
+    background: #fff;
+}
+
+.header-poput{    
+    border: 1px solid #cabfb8;
+    padding: 15px;
+    background-color: #fff9f5;
+    margin-top:15px;
+    margin-bottom:25px;
+}
+
+.ui-corner-all{
+    border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+/**panel*/
+.panel-default {
+    padding: 25px 10px;
+}
+
+@media (max-width: 480px) {
+    .panel-default {
+        padding: 25px 0px;
+    }
+}
+
+/*** breadcrumb*/
+.breadcrumb-custom{
+    background:#8c8a84;
+}
+
+.breadcrumb-custom a{
+    color:#fff;
+}
+
+.breadcrumb-custom>.active {
+    color: #fff;
+}
+
+.breadcrumb-custom>li+li:before {
+    padding: 0 5px;
+    color: #fff;
+    content: "/\00a0";
+}    
+
+/*dialog*/
+.ui-dialog .ui-dialog-buttonpane {
+    margin-top: 0 !important;
+}
+
+#popupForm .error{
+    text-transform: lowercase;
+}
+
+.navbar-fixed-top {
+    z-index: 1;
+}

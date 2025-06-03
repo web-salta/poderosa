@@ -1,0 +1,175 @@
+/******carousel banner**********/
+      #carouselBanner{
+        margin-left:5%;
+      }
+
+      #carouselBanner .carousel-caption {
+          left: 0% !important;
+          padding-top: 0 !important;
+          color: #000;
+          text-align: left;
+          top: 15%;
+          padding-left: 3%;
+      }
+      .carouselBanner__titulo{
+          font-size: 4.5rem;
+          font-family: var(--fuente-gothan);
+          color:#4c4a46;
+      }
+
+      .carouselBanner__parrafo{
+         font-size: 1.5rem;
+      }
+
+       #carouselBanner .carousel-caption{
+          width:25%;
+      }
+
+      .carouselBanner__circulo{
+        position: absolute;
+        top:0;
+        left:-10%;
+      }
+
+      #carouselBanner .carousel-indicators li{       
+         background-color: var(--marron-20) !important;
+      }
+
+      #carouselBanner .carousel-indicators li.active{       
+         background-color: var(--marron-oscuro) !important;
+      }
+
+     #carouselBanner .carousel-indicators {
+        position: absolute;
+       /*  bottom: 7%; */
+        left: 0%;
+        right: initial;
+        margin-left:0;
+        list-style: none;
+      }
+
+      #carouselBanner .carousel-indicators li { 
+       width:1.5rem;
+       height: 1.5rem;
+       margin-right: 0.2rem;
+       margin-left: 0.2rem;
+      }
+
+      #carouselBanner .button-flecha{
+         margin-top: 2rem;
+      }
+      .carouselBanner__img-movil{
+         display: none;
+      }
+      .carouselBanner__img-desktop{
+         display: block;
+      }
+
+  /************************ @media*****************************************/
+ 
+  @media(max-width:1440px){
+   .carouselBanner__titulo{
+      font-size: 4rem;
+
+  }
+
+   #carouselBanner .carousel-caption{
+      width:35%;
+  }
+  }
+
+  @media(max-width:1320px){
+
+   .carouselBanner__titulo{
+      font-size: 3rem;
+  }
+
+  #carouselBanner .button-flecha{
+   margin-top: 1rem;
+}
+
+  }
+
+  @media(max-width:1024px){
+   #carouselBanner .carousel-caption{
+      top: 0px;
+   }
+   #carouselBanner .button-flecha{
+      margin-top: 0rem;
+   }
+   #carouselBanner .carousel-indicators {
+       bottom: -10%; 
+   }
+
+  }
+ 
+
+  @media (max-width: 768px) {
+   .carouselBanner__titulo{
+      padding-top: 2rem;
+      color: white;
+  }
+
+  #carouselBanner .carousel-caption {
+   position: absolute;
+   width:70%;
+   top: 23%;
+   color: white;
+   padding: 3rem;
+
+
+}
+#carouselBanner{
+   margin-left:0rem;
+}
+
+   .carousel-caption {
+       position: static;
+       padding: 1rem;
+   }
+#carouselBanner .carousel-indicators {
+      position: absolute;
+      bottom: 20%;
+      left: 0%;
+      transform: translateX(-50%);
+      list-style: none;
+      margin: 2rem 0rem 2rem 5rem; 
+     
+  }
+  #carouselBanner .carousel-indicators li.active {
+   background-color: white!important;
+}
+
+#carouselBanner .carousel-indicators li{       
+   background-color: #b2b2b2 !important;
+}
+
+
+
+  .carouselBanner__img-movil{
+   display: block;
+}
+.carouselBanner__img-desktop{
+   display: none;
+}
+
+
+}
+@media (max-width: 576px) {
+   .carousel-caption {
+      position: static;
+      padding: 1rem;
+  }
+  
+  #carouselBanner .carousel-caption {
+   position: absolute;
+   width:100%;
+   top: 0%;
+   color: white;
+   padding: 3rem;
+}
+#carouselBanner .carousel-indicators {
+   
+   bottom: -2%;
+}
+}
