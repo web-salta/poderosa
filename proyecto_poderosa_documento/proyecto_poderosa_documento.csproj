@@ -382,11 +382,8 @@
     <Content Include="Content\descargas\batolito-comunitario\62-BatolitoComunitario-home.jpg" />
     <Content Include="Content\descargas\batolito-comunitario\62-BatolitoComunitario-principal.jpg" />
     <Content Include="Content\descargas\batolito-comunitario\62-BatolitoComunitario.jpg" />
-<<<<<<< HEAD
-=======
     <Content Include="Content\descargas\batolito-comunitario\63-BatolitoComunitario-principal.png" />
     <Content Include="Content\descargas\batolito-comunitario\63-BatolitoComunitario.png" />
->>>>>>> v3.0_github
     <Content Include="Content\descargas\batolito\Batolito_30.jpg" />
     <Content Include="Content\descargas\batolito\Batolito_31.jpg" />
     <Content Include="Content\descargas\batolito\Batolito_32.jpg" />
