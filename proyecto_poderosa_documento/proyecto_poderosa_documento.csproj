@@ -608,11 +608,8 @@
     <Content Include="Content\img\01-quienes-somos\quienes-somos\firma2.png" />
     <Content Include="Content\img\01-quienes-somos\quienes-somos\icono-01.jpg" />
     <Content Include="Content\img\01-quienes-somos\quienes-somos\icono-02.jpg" />
-<<<<<<< HEAD
-=======
     <Content Include="Content\img\01-quienes-somos\quienes-somos\manual-lineamientos-para-la-gestion-de-equidad.jpg" />
     <Content Include="Content\img\01-quienes-somos\quienes-somos\manual-de-hostigamiento-sexual.jpg" />
->>>>>>> v3.0_github
     <Content Include="Content\img\02-operaciones\02.jpg" />
     <Content Include="Content\img\02-operaciones\03.jpg" />
     <Content Include="Content\img\02-operaciones\04.png" />
