@@ -17,6 +17,7 @@
 <meta property="og:image" content="https://www.poderosa.com.pe/Content/noticias/compartir.jpg" />
 </head>
 <body>
+    <div class="menuSecuVelo"></div>
     @Html.Partial("~/Views/Shared/_header.cshtml")
     <!-- Banner Section -->
     <div class="pt-4 ">
@@ -36,7 +37,7 @@
     <!-- Noticias Section -->
     <section class="py-5" id="publicaciones">
         <div class="container py-5">
-            <!--<div class="mb-4 text-end" style="position: relative;">
+            <div class="mb-4 text-end" style="position: relative;">
                 <span id="btnFiltroContainer" class="filtro-container">
                     <img src="~/Content/noticias/filter-svgrepo-com.svg"
                          id="btnFiltro"
@@ -49,7 +50,7 @@
                     <button class="btn btn-link filtro-btn" data-tipo="1">Noticias</button>
                     <button class="btn btn-link filtro-btn" data-tipo="2">Notas de Prensa</button>
                 </div>
-            </div>-->
+            </div>
             <div class="publicaciones_pagination row">
                 @foreach (var noticia in Model)
                 {
