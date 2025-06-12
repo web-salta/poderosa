@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿@model IEnumerable<proyecto_poderosa_documento.Models.Noticia>
 @{
     ViewBag.Title = "Noticias";
@@ -151,4 +152,160 @@
             $('#filtroPanel').hide();
         });
     });
+=======
+﻿@model IEnumerable<proyecto_poderosa_documento.Models.Noticia>
+@{
+    ViewBag.Title = "Noticias";
+}
+@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title>Noticias | PODEROSA</title>
+<link rel="stylesheet" href="~/Content/css/modules/_filtro-panel.css" />
+<meta name="title" content="Noticias | PODEROSA" />
+<meta name="description" content="Conoce nuestras últimas noticias." />
+<meta name="url" content="https://www.poderosa.com.pe/noticias/index" />
+<meta name="keywords" content="noticias, poderosa" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Noticias | PODEROSA" />
+<meta property="og:description" content="Conoce nuestras últimas noticias." />
+<meta property="og:url" content="https://www.poderosa.com.pe/noticias/index" />
+<meta property="og:image" content="https://www.poderosa.com.pe/Content/noticias/compartir.jpg" />
+</head>
+<body>
+    <div class="menuSecuVelo"></div>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+    <!-- Banner Section -->
+    <div class="pt-4 ">
+        <div class="bannerInterno__contenedor">
+            <img src="~/Content/img/cabeceras/07-noticias/banner-home.jpg" class="img-fluid w-100 d-none d-lg-block" alt="">
+            <img src="~/Content/img/cabeceras/07-noticias/banner-home-tablet.jpg" class="img-fluid d-none d-md-block d-sm-none d-lg-none" alt="">
+            <img src="~/Content/img/cabeceras/07-noticias/banner-home-movil.jpg" class="img-fluid d-block d-md-none d-lg-none" alt="">
+            <img src="~/Content/img/pagina-interna/forma-dorada-transparente.png" class="img-fluid bannerInterno__dorada" alt="...">
+            <div class="bannerInterno__texto">
+                <h1 class="bannerInterno__titulo fuente-3">
+                    Noticias
+                </h1>
+            </div>
+            <img src="~/Content/img/pagina-interna/forma-dorada.png" class="img-fluid bannerInterno__small" alt="">
+        </div>
+    </div>
+    <!-- Noticias Section -->
+    <section class="py-5" id="publicaciones">
+        <div class="container py-5">
+            <div class="mb-4 text-end" style="position: relative;">
+                <span id="btnFiltroContainer" class="filtro-container">
+                    <img src="~/Content/noticias/filter-svgrepo-com.svg"
+                         id="btnFiltro"
+                         class="filtro-icono"
+                         alt="Filtrar noticias" />
+                    <span class="filtro-texto">Filtrar</span>
+                </span>
+                <div id="filtroPanel">
+                    <button class="btn btn-link filtro-btn" data-tipo="">Todas</button>
+                    <button class="btn btn-link filtro-btn" data-tipo="1">Noticias</button>
+                    <button class="btn btn-link filtro-btn" data-tipo="2">Notas de Prensa</button>
+                </div>
+            </div>
+            <div class="publicaciones_pagination row">
+                @foreach (var noticia in Model)
+                {
+                    <div class="col-lg-3 col-md-6 col-6 pb-5 noticia-item" data-tipo="@noticia.Tipo">
+                        <!-- Enlace para ver los detalles de la noticia -->
+                        <a href="@Url.Action("Details", "Noticias", new { slug = noticia.Slug })" class="text-decoration-none" target="_blank">
+
+                            <!-- Imagen de resumen -->
+                            @if (!string.IsNullOrEmpty(noticia.ImagenResumen))
+                            {
+                                <img src="@Url.Content(noticia.ImagenResumen)" alt="@noticia.Titulo" class="img-fluid contenedor-noticias-img zoom-img border-coleccionables">
+                            }
+
+                            <!-- Título de la noticia -->
+                            <h6 class="fuente-3 mt-3">@noticia.Titulo</h6>
+
+                            <!-- Fecha de publicación -->
+                            <span class="fuente-3 dorado">
+                                @{
+                                    var fechaPublicacion = noticia.FechaPublicacion.ToString("dd 'DE' MMMM 'DE' yyyy", new System.Globalization.CultureInfo("es-ES"));
+                                    var partesFecha = fechaPublicacion.Split(' ');
+                                    var fechaConMesMayusculas = $"{partesFecha[0]} {partesFecha[1]} {partesFecha[2].ToUpper()} {partesFecha[3]} {partesFecha[4]}";
+                                }
+                                @fechaConMesMayusculas
+                            </span>
+                        </a>
+
+                        <!-- Mostrar la descripción de la noticia -->
+                        <p class="mt-2">
+                            @{
+                                var descripcion = noticia.Descripcion;
+                                var displayDescripcion = descripcion.Length > 150 ? descripcion.Substring(0, 150) + "..." : descripcion;
+                            }
+                            @displayDescripcion
+                        </p>
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+<script type="text/javascript" src="~/Content/js/pagination/jQuery.paginate.js"></script>
+<script>
+    $(document).ready(function () {
+        var $container = $('.publicaciones_pagination');
+        var $allItems = $container.children('.noticia-item').clone(); // Clonar todos los items para poder restaurarlos
+
+        function inicializarPaginacion() {
+            if ($container.data('paginate')) {
+                $container.paginate('destroy');
+            }
+            $container.paginate({
+                items_per_page: 20
+            });
+        }
+
+        function mostrarItemsFiltrados(tipo) {
+            $container.empty(); // Limpiar contenedor
+
+            var $filtered;
+            if (!tipo) {
+                $filtered = $allItems;
+            } else {
+                $filtered = $allItems.filter('[data-tipo="' + tipo + '"]');
+            }
+
+            $container.append($filtered);
+
+            inicializarPaginacion();
+        }
+
+        // Inicializar paginación con todos los items al cargar la página
+        mostrarItemsFiltrados();
+
+        // Mostrar/ocultar el panel de filtro al hacer clic en el icono
+        $('#btnFiltroContainer').on('click', function (e) {
+            $('#filtroPanel').toggle();
+            e.stopPropagation();
+        });
+
+        // Ocultar el panel si se hace clic fuera de él
+        $(document).on('click', function (e) {
+            if (!$(e.target).closest('#filtroPanel, #btnFiltro').length) {
+                $('#filtroPanel').hide();
+            }
+        });
+
+        // Lógica de filtrado con los botones dentro del panel
+        $('.filtro-btn').on('click', function () {
+            var tipo = $(this).data('tipo');
+            $('.filtro-btn').removeClass('active');
+            $(this).addClass('active');
+
+            mostrarItemsFiltrados(tipo);
+
+            // Oculta el panel después de seleccionar
+            $('#filtroPanel').hide();
+        });
+    });
+>>>>>>> v3.0_github
 </script>

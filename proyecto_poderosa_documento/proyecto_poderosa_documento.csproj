@@ -382,6 +382,11 @@
     <Content Include="Content\descargas\batolito-comunitario\62-BatolitoComunitario-home.jpg" />
     <Content Include="Content\descargas\batolito-comunitario\62-BatolitoComunitario-principal.jpg" />
     <Content Include="Content\descargas\batolito-comunitario\62-BatolitoComunitario.jpg" />
+<<<<<<< HEAD
+=======
+    <Content Include="Content\descargas\batolito-comunitario\63-BatolitoComunitario-principal.png" />
+    <Content Include="Content\descargas\batolito-comunitario\63-BatolitoComunitario.png" />
+>>>>>>> v3.0_github
     <Content Include="Content\descargas\batolito\Batolito_30.jpg" />
     <Content Include="Content\descargas\batolito\Batolito_31.jpg" />
     <Content Include="Content\descargas\batolito\Batolito_32.jpg" />
@@ -606,6 +611,11 @@
     <Content Include="Content\img\01-quienes-somos\quienes-somos\firma2.png" />
     <Content Include="Content\img\01-quienes-somos\quienes-somos\icono-01.jpg" />
     <Content Include="Content\img\01-quienes-somos\quienes-somos\icono-02.jpg" />
+<<<<<<< HEAD
+=======
+    <Content Include="Content\img\01-quienes-somos\quienes-somos\manual-lineamientos-para-la-gestion-de-equidad.jpg" />
+    <Content Include="Content\img\01-quienes-somos\quienes-somos\manual-de-hostigamiento-sexual.jpg" />
+>>>>>>> v3.0_github
     <Content Include="Content\img\02-operaciones\02.jpg" />
     <Content Include="Content\img\02-operaciones\03.jpg" />
     <Content Include="Content\img\02-operaciones\04.png" />
@@ -1874,6 +1884,12 @@
     <Content Include="Content\publicaciones\07-coleccionables\tips-de-prevencion-104x104.pdf" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Content\descargas\cumplimiento\declaracion-de-sostenibilidad.pdf" />
+<<<<<<< HEAD
+=======
+    <Content Include="Content\descargas\cumplimiento\Manual-de-Politica-de-Hostigamiento-Sexual.pdf" />
+    <Content Include="Content\descargas\cumplimiento\Manual-lineamientos-para-la-gestion-de-equidad.pdf" />
+    <Content Include="Content\descargas\batolito-comunitario\63-BatolitoComunitario.pdf" />
+>>>>>>> v3.0_github
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -2066,6 +2082,10 @@
     <Content Include="Scripts\tinymce\themes\silver\theme.min.js" />
     <Content Include="Scripts\tinymce\tinymce.js" />
     <Content Include="Scripts\tinymce\tinymce.min.js" />
+<<<<<<< HEAD
+=======
+    <Content Include="sitemap.xml" />
+>>>>>>> v3.0_github
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -2226,10 +2246,18 @@
   <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" />
   <Import Project="..\packages\TinyMCE.7.9.0\build\TinyMCE.targets" Condition="Exists('..\packages\TinyMCE.7.9.0\build\TinyMCE.targets')" />
+<<<<<<< HEAD
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
   <Target Name="AfterBuild">
+=======
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+>>>>>>> v3.0_github
   </Target> -->
 </Project>

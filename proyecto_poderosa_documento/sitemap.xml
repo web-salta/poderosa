@@ -11,9 +11,6 @@
   <loc>https://www.poderosa.com.pe/home/contacto</loc>
 </url>
 <url>
-  <loc>https://www.poderosa.com.pe/home/index</loc>
-</url>
-<url>
   <loc>https://www.poderosa.com.pe/quienes-somos/poderosa</loc>
 </url>
 <url>
@@ -29,16 +26,70 @@
   <loc>https://www.poderosa.com.pe/quienes-somos/premios-y-reconocimientos</loc>
 </url>
 <url>
+  <loc>https://www.poderosa.com.pe/quienes-somos/nuestras-certificaciones</loc>
+</url>
+<url>
   <loc>https://www.poderosa.com.pe/operaciones/introduccion</loc>
 </url>
 <url>
-  <loc>https://www.poderosa.com.pe/comunidad/poblaciones-vecinas</loc>
+  <loc>https://www.poderosa.com.pe/sostenibilidad/gestion-ambiental/introduccion</loc>
 </url>
 <url>
-  <loc>https://www.poderosa.com.pe/comunidad/desarrollo-social</loc>
+  <loc>https://www.poderosa.com.pe/sostenibilidad/gestion-ambiental/nuestro-aporte</loc>
 </url>
 <url>
-  <loc>https://www.poderosa.com.pe/comunidad/asociacion-pataz</loc>
+  <loc>https://www.poderosa.com.pe/sostenibilidad/gestion-de-la-energia/introduccion</loc>
+</url>
+<url>
+  <loc>https://www.poderosa.com.pe/sostenibilidad/gestion-de-la-energia/nuestros-avances-con-energias-limpias</loc>
+</url>
+<url>
+  <loc>https://www.poderosa.com.pe/sostenibilidad/gestion-de-la-energia/nuestros-avances-con-energias-limpias</loc>
+</url>
+<url>
+  <loc>https://www.poderosa.com.pe/sostenibilidad/gestion-de-cumplimiento/introduccion</loc>
+</url>
+<url>
+  <loc>https://www.poderosa.com.pe/sostenibilidad/gestion-de-cumplimiento/canal-de-etica</loc>
+</url>
+<url>
+  <loc>https://www.poderosa.com.pe/sostenibilidad/gestion-de-talento/introduccion</loc>
+</url>
+<url>
+  <loc>https://www.poderosa.com.pe/sostenibilidad/gestion-de-talento/capacitacion</loc>
+</url>
+<url>
+  <loc>https://www.poderosa.com.pe/sostenibilidad/gestion-de-talento/reclutamiento-y-seleccion</loc>
+</url>
+<url>
+  <loc>https://www.poderosa.com.pe/sostenibilidad/comunidad/desarrollo-social</loc>
+</url>
+<url>
+  <loc>https://www.poderosa.com.pe/sostenibilidad/comunidad/asociacion-pataz</loc>
+</url>
+<url>
+  <loc>https://www.poderosa.com.pe/sostenibilidad/comunidad/poblaciones-vecinas</loc>
+</url>
+<url>
+  <loc>https://www.poderosa.com.pe/calidad-e-innovacion/mejora-continua/introduccion</loc>
+</url>
+<url>
+  <loc>https://www.poderosa.com.pe/calidad-e-innovacion/gestion-de-calidad/introduccion</loc>
+</url>
+<url>
+  <loc>https://www.poderosa.com.pe/calidad-e-innovacion/colpa-5s/introduccion</loc>
+</url>
+<url>
+  <loc>https://www.poderosa.com.pe/calidad-e-innovacion/calidad-total/introduccion</loc>
+</url>
+<url>
+  <loc>https://www.poderosa.com.pe/calidad-e-innovacion/innovacion/introduccion</loc>
+</url>
+<url>
+  <loc>https://www.poderosa.com.pe/calidad-e-innovacion/innovacion/nuestras-principales-iniciativas-en-innovacion</loc>
+</url>
+<url>
+  <loc>https://www.poderosa.com.pe/Noticias/Index</loc>
 </url>
 <url>
   <loc>https://www.poderosa.com.pe/Noticias/Details/dia-mundial-del-medio-ambiente</loc>
@@ -119,19 +170,13 @@
   <loc>https://www.poderosa.com.pe/Noticias/Details/feliz-aniversario-poderosa</loc>
 </url>
 <url>
-  <loc>https://www.poderosa.com.pe/Noticias/Details/noticiassaludo-dia-de-la-papa</loc>
+  <loc>https://www.poderosa.com.pe/Noticias/Details/saludo-dia-de-la-papa</loc>
 </url>
 <url>
   <loc>https://www.poderosa.com.pe/Noticias/Details/proyectos-de-investigacion-en-papa-y-maiz-morado-ganan-premio-caral-2020</loc>
 </url>
 <url>
-  <loc>https://www.poderosa.com.pe/Noticias/Details/distanciamiento-social-inteligente-asegura-cosecha-de-valiosos-experimentos-de-papa-en-la-libertad</loc>
-</url>
-<url>
   <loc>https://www.poderosa.com.pe/Noticias/Details/seamos-responsables-juntos-contra-el-covid-19</loc>
-</url>
-<url>
-  <loc>https://www.poderosa.com.pe/Noticias/Details/ganadores-del-distintivo-empresa-socialmente-responsable-ix</loc>
 </url>
 <url>
   <loc>https://www.poderosa.com.pe/Noticias/Details/minera-poderosa-informa</loc>
@@ -149,7 +194,7 @@
   <loc>https://www.poderosa.com.pe/Noticias/Details/premio-desarrollo-sostenible-2020</loc>
 </url>
 <url>
-  <loc>https://www.poderosa.com.pe/Noticias/Details/codecos-de-chagual-vijus-y-pueblo-nuevo-ganan-ix-concurso-de-fondo-concursable-convocado-por-asociacion-pataz</loc>
+  <loc>https://www.poderosa.com.pe/Noticias/Details/codecos-de-chagual-vijus-y-pueblo-nuevo-ganan-ix-concurso</loc>
 </url>
 <url>
   <loc>https://www.poderosa.com.pe/Noticias/Details/poderosa-dona-planta-de-oxigeno-para-el-hospital-regional-de-trujillo</loc>
@@ -162,9 +207,6 @@
 </url>
 <url>
   <loc>https://www.poderosa.com.pe/Noticias/Details/pataz-camino-a-ser-el-distrito-mas-innovador</loc>
-</url>
-<url>
-  <loc>https://www.poderosa.com.pe/Noticias/Details/esfuerzo-conjunto-periodismo-responsable-y-construccion-de-la-reputacion</loc>
 </url>
 <url>
   <loc>https://www.poderosa.com.pe/Noticias/Details/poderosa-concluye-con-exito-primer-seguimiento</loc>
@@ -428,9 +470,6 @@
   <loc>https://www.poderosa.com.pe/Noticias/Details/precisiones-sobre-situacion-en-pataz</loc>
 </url>
 <url>
-  <loc>https://www.poderosa.com.pe/noticias/index</loc>
-</url>
-<url>
   <loc>https://www.poderosa.com.pe/noticias/poderosa-concluye-con-exito-primer-seguimiento</loc>
 </url>
 <url>
@@ -566,13 +605,52 @@
   <loc>https://www.poderosa.com.pe/noticias/poderosa-recibe-distintivo-empresa-socialmente-responsable-esr-de-peru-2021</loc>
 </url>
 <url>
-  <loc>https://www.poderosa.com.pe/Content/noticias/cierre-contable-2020-poderosa/cierre-contable-2020.pdf</loc>
+  <loc>https://www.poderosa.com.pe/publicaciones/index</loc>
 </url>
 <url>
-  <loc>https://www.poderosa.com.pe/Content/noticias/cierre-contable-2020-poderosa/cierre-contable-mina-2020.pdf</loc>
+  <loc>https://www.poderosa.com.pe/publicaciones/memorias</loc>
 </url>
 <url>
-  <loc>https://www.poderosa.com.pe/Content/noticias/comunicado-para-realizar-negociaciones-via-factoring-o-confirming/comunicado-para-realizar-negociaciones-via-factoring-o-confirming.pdf</loc>
+  <loc>https://www.poderosa.com.pe/publicaciones/batolito</loc>
+</url>
+<url>
+  <loc>https://www.poderosa.com.pe/publicaciones/batolito-comunitario</loc>
+</url>
+<url>
+  <loc>https://www.poderosa.com.pe/publicaciones/libros</loc>
+</url>
+<url>
+  <loc>https://www.poderosa.com.pe/publicaciones/coleccionables</loc>
+</url>
+<url>
+  <loc>https://www.poderosa.com.pe/publicaciones/boletines-informativos</loc>
+</url>
+<url>
+  <loc>https://www.poderosa.com.pe/publicaciones/publicaciones-no-periodicas</loc>
+</url>
+<url>
+  <loc>https://www.poderosa.com.pe/publicaciones/memoria-2018</loc>
+</url>
+<url>
+  <loc>https://www.poderosa.com.pe/libro-rio-abiseo/landing</loc>
+</url>
+<url>
+  <loc>https://www.poderosa.com.pe/planner_2022/</loc>
+</url>
+<url>
+  <loc>https://www.poderosa.com.pe/planner-2022/historico</loc>
+</url>
+<url>
+  <loc>https://www.poderosa.com.pe/planner-2022/la-hora-del-planeta</loc>
+</url>  
+<url>
+  <loc>https://www.poderosa.com.pe/planner-2022/dia-de-la-mujer</loc>
+</url>
+<url>
+  <loc>https://www.poderosa.com.pe/planner-2022/reglas-de-oro-por-la-vida</loc>
+</url>
+<url>
+  <loc>https://www.poderosa.com.pe/planner-2022/saludo-2022</loc>
 </url>
 <url>
   <loc>https://www.poderosa.com.pe/Content/descargas/proveedores/poderosa-inicia-homologacion-de-proveedores-de-servicios-u-obra-es.pdf</loc>
@@ -598,7 +676,6 @@
 <url>
   <loc>https://www.poderosa.com.pe/Content/descargas/accionistas/estatuto-social-poderosa.pdf</loc>
 </url>
-
 <url>
   <loc>https://www.poderosa.com.pe/Content/descargas/premios-y-reconocimientos/premios-y-reconocimientos-2019-2.pdf</loc>
 </url>
@@ -618,16 +695,10 @@
   <loc>https://www.poderosa.com.pe/Content/descargas/nuestro-aporte/arboles-forestados-2018.pdf</loc>
 </url>
 <url>
-  <loc>https://www.poderosa.com.pe/Content/noticias/cierre-contable-2020-poderosa/cierre-contable-2020.pdf</loc>
+  <loc>https://www.poderosa.com.pe/Content/descargas/batolito/Batolito_56.pdf</loc>
 </url>
 <url>
-  <loc>https://www.poderosa.com.pe/Content/noticias/cierre-contable-2020-poderosa/cierre-contable-mina-2020.pdf</loc>
-</url>
-<url>
-  <loc>https://www.poderosa.com.pe/Content/noticias/comunicado-para-realizar-negociaciones-via-factoring-o-confirming/comunicado-para-realizar-negociaciones-via-factoring-o-confirming.pdf</loc>
-</url>
-<url>
-  <loc>https://www.poderosa.com.pe/publicaciones/batolito</loc>
+  <loc>https://www.poderosa.com.pe/Content/descargas/batolito/Batolito_55.pdf</loc>
 </url>
 <url>
   <loc>https://www.poderosa.com.pe/Content/descargas/batolito/Batolito_55.pdf</loc>
@@ -708,7 +779,25 @@
   <loc>https://www.poderosa.com.pe/Content/descargas/batolito/Batolito_30.pdf</loc>
 </url>
 <url>
-  <loc>https://www.poderosa.com.pe/publicaciones/batolito-comunitario</loc>
+  <loc>https://www.poderosa.com.pe/Content/descargas/batolito-comunitario/62-BatolitoComunitario.pdf</loc>
+</url>
+<url>
+  <loc>https://www.poderosa.com.pe/Content/descargas/batolito-comunitario/61-BatolitoComunitario.pdf</loc>
+</url>
+<url>
+  <loc>https://www.poderosa.com.pe/Content/descargas/batolito-comunitario/60-BatolitoComunitario.pdf</loc>
+</url>
+<url>
+  <loc>https://www.poderosa.com.pe/Content/descargas/batolito-comunitario/59-BatolitoComunitario.pdf</loc>
+</url>
+<url>
+  <loc>https://www.poderosa.com.pe/Content/descargas/batolito-comunitario/58-BatolitoComunitario.pdf</loc>
+</url>
+<url>
+  <loc>https://www.poderosa.com.pe/Content/descargas/batolito-comunitario/57-BatolitoComunitario.pdf</loc>
+</url>
+<url>
+  <loc>https://www.poderosa.com.pe/Content/descargas/batolito-comunitario/56-BatolitoComunitario.pdf</loc>
 </url>
 <url>
   <loc>https://www.poderosa.com.pe/Content/descargas/batolito-comunitario/56-BatolitoComunitario.pdf</loc>
@@ -798,9 +887,6 @@
   <loc>https://www.poderosa.com.pe/Content/descargas/batolito-comunitario/28-BatolitoComunitario.pdf</loc>
 </url>
 <url>
-  <loc>https://www.poderosa.com.pe/publicaciones/memorias</loc>
-</url>
-<url>
   <loc>https://www.poderosa.com.pe/Content/descargas/memorias/principios-buen-gobierno-2021.pdf</loc>
 </url>
 <url>
@@ -832,9 +918,6 @@
 </url>
 <url>
   <loc>https://www.poderosa.com.pe/Content/descargas/memorias/2018.pdf</loc>
-</url>
-<url>
-  <loc>https://www.poderosa.com.pe/publicaciones/memoria-2018</loc>
 </url>
 <url>
   <loc>https://www.poderosa.com.pe/Content/descargas/memorias/2018-bgc.pdf</loc>
@@ -885,9 +968,6 @@
   <loc>https://www.poderosa.com.pe/Content/descargas/memorias/2006.pdf</loc>
 </url>
 <url>
-  <loc>https://www.poderosa.com.pe/publicaciones/libros</loc>
-</url>
-<url>
   <loc>https://www.poderosa.com.pe/Content/descargas/libros/la-mamita-de-otuzco.pdf</loc>
 </url>
 <url>
@@ -900,19 +980,7 @@
   <loc>https://www.poderosa.com.pe/Content/descargas/libros/catalogo-de-variedades-de-papa-nativa.pdf</loc>
 </url>
 <url>
-  <loc>https://www.poderosa.com.pe/libro-rio-abiseo/landing</loc>
-</url>
-<url>
-  <loc>https://www.poderosa.com.pe/publicaciones/publicaciones-no-periodicas</loc>
-</url>
-<url>
   <loc>https://www.poderosa.com.pe/Content/descargas/publicaciones-no-periodicas/triptico-energia-electrica.pdf</loc>
-</url>
-<url>
-  <loc>https://www.poderosa.com.pe/Content/descargas/publicaciones-no-periodicas/afiche-de-buenas-practicas_g.pdf</loc>
-</url>
-<url>
-  <loc>https://www.poderosa.com.pe/publicaciones/boletines-informativos</loc>
 </url>
 <url>
   <loc>https://www.poderosa.com.pe/Content/descargas/boletines-informativos/manual-de-prevencion-de-tormentas-electricas.pdf</loc>
@@ -963,7 +1031,7 @@
   <loc>https://www.poderosa.com.pe/Content/descargas/boletines-informativos/triptico-vih.pdf</loc>
 </url>
 <url>
-  <loc>https://www.poderosa.com.pe/publicaciones/coleccionables</loc>
+  <loc>https://www.poderosa.com.pe/Content/descargas/coleccionables/manual-de-prevencion-de-tormentas-electricas.pdf</loc>
 </url>
 <url>
   <loc>https://www.poderosa.com.pe/Content/descargas/coleccionables/stickers-104x104.pdf</loc>
@@ -997,75 +1065,6 @@
 </url>
 <url>
   <loc>https://www.poderosa.com.pe/Content/descargas/coleccionables/coleccionable-01-rio-abiseo-eng.pdf</loc>
-</url>
-<url>
-  <loc>https://www.poderosa.com.pe/planner_2022/</loc>
-</url>
-<url>
-  <loc>https://www.poderosa.com.pe/planner-2022/historico</loc>
-</url>
-<url>
-  <loc>https://www.poderosa.com.pe/planner-2022/la-hora-del-planeta</loc>
-</url>  
-<url>
-  <loc>https://www.poderosa.com.pe/planner-2022/dia-de-la-mujer</loc>
-</url>
-<url>
-  <loc>https://www.poderosa.com.pe/planner-2022/reglas-de-oro-por-la-vida</loc>
-</url>
-<url>
-  <loc>https://www.poderosa.com.pe/planner-2022/saludo-2022</loc>
-</url>
-<url>
-  <loc>https://www.poderosa.com.pe/Content/img/Artboard-15.png</loc>
-</url>
-<url>
-  <loc>https://www.poderosa.com.pe/Content/img/Asset-10.png</loc>
-</url>
-<url>
-  <loc>https://www.poderosa.com.pe/Content/img/Asset-11.png</loc>
-</url>
-<url>
-  <loc>https://www.poderosa.com.pe/Content/img/Asset-13.png</loc>
-</url>
-<url>
-  <loc>https://www.poderosa.com.pe/Content/img/Asset-14.png</loc>
-</url>
-<url>
-  <loc>https://www.poderosa.com.pe/Content/img/Asset-15.png</loc>
-</url>
-<url>
-  <loc>https://www.poderosa.com.pe/Content/img/Asset-16.png</loc>
-</url>
-<url>
-  <loc>https://www.poderosa.com.pe/Content/img/Asset-17.png</loc>
-</url>
-<url>
-  <loc>https://www.poderosa.com.pe/Content/img/Asset-18.png</loc>
-</url>
-<url>
-  <loc>https://www.poderosa.com.pe/Content/img/Asset-2.png</loc>
-</url>
-<url>
-  <loc>https://www.poderosa.com.pe/Content/img/Asset-3.png</loc>
-</url>
-<url>
-  <loc>https://www.poderosa.com.pe/Content/img/Asset-4.png</loc>
-</url>
-<url>
-  <loc>https://www.poderosa.com.pe/Content/img/Asset-5.png</loc>
-</url>
-<url>
-  <loc>https://www.poderosa.com.pe/Content/img/Asset-6.png</loc>
-</url>
-<url>
-  <loc>https://www.poderosa.com.pe/Content/img/Asset-7.png</loc>
-</url>
-<url>
-  <loc>https://www.poderosa.com.pe/Content/img/Asset-8.png</loc>
-</url>
-<url>
-  <loc>https://www.poderosa.com.pe/Content/img/Asset-9.png</loc>
 </url>
 <url>
   <loc>https://www.poderosa.com.pe/Content/img/Asset-18.png</loc>

@@ -1,0 +1,47 @@
+name: Despliegue CI/CD
+
+# El flujo de trabajo se activará en cualquier rama que comience con "v"
+on:
+  push:
+    branches:
+      - 'v*'  # Se ejecutará para cualquier rama que empiece con "v" (v1.0, v2.0, v3.0, v4.0, etc.)
+  pull_request:
+    branches:
+      - 'v*'  # También se ejecutará para cualquier PR hacia ramas que empiecen con "v"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Paso 1: Comprobar el código
+      - name: Checkout code
+        uses: actions/checkout@v2  # Clona el código de tu repositorio
+
+      # Paso 2: Configurar .NET
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '6.0'  # Asegúrate de usar la versión de .NET que estás usando
+
+      # Paso 3: Restaurar dependencias
+      - name: Restore dependencies
+        run: dotnet restore proyecto_poderosa_documento/proyecto_poderosa_documento.csproj
+
+      # Paso 4: Compilar el proyecto
+      - name: Build the project
+        run: dotnet build proyecto_poderosa_documento/proyecto_poderosa_documento.csproj --configuration Release
+
+      # Paso 5: Ejecutar pruebas
+      - name: Run tests
+        run: dotnet test proyecto_poderosa_documento/proyecto_poderosa_documento.csproj
+
+      # Paso 6: Sincronizar con Bitbucket
+      - name: Add Bitbucket remote
+        run: |
+          git remote add bitbucket https://x-token-auth:${{ secrets.BITBUCKET_TOKEN }}@bitbucket.org/usuario/repositorio.git
+
+      # Paso 7: Sincronizar con Bitbucket (esto empuja todos los cambios al repositorio de Bitbucket)
+      - name: Push to Bitbucket
+        run: |
+          git push --mirror bitbucket
