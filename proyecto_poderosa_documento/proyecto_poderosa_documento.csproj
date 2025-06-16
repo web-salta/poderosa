@@ -508,6 +508,8 @@
     <Content Include="Content\descargas\memorias\informe-anual-de-sostenibilidad-2023-home-eng.png" />
     <Content Include="Content\descargas\memorias\informe-anual-de-sostenibilidad-2023-home.png" />
     <Content Include="Content\descargas\memorias\informe-anual-de-sostenibilidad-2023-principal.png" />
+    <Content Include="Content\descargas\memorias\informe-anual-de-sostenibilidad-2024-home.png" />
+    <Content Include="Content\descargas\memorias\informe-anual-de-sostenibilidad-2024-principal.png" />
     <Content Include="Content\descargas\memorias\memoria2018-principal.jpg" />
     <Content Include="Content\descargas\memorias\memoria2019-principal.jpg" />
     <Content Include="Content\descargas\memorias\memoria2020-principal.jpg" />
@@ -1881,6 +1883,8 @@
     <Content Include="Content\descargas\cumplimiento\Manual-de-Politica-de-Hostigamiento-Sexual.pdf" />
     <Content Include="Content\descargas\cumplimiento\Manual-lineamientos-para-la-gestion-de-equidad.pdf" />
     <Content Include="Content\descargas\batolito-comunitario\63-BatolitoComunitario.pdf" />
+    <Content Include="Content\descargas\memorias\EEFF-Compañía-Minera-Poderosa-2024.pdf" />
+    <Content Include="Content\descargas\memorias\principios-buen-gobierno-2024.pdf" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
