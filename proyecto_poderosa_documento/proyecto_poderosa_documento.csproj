@@ -1886,6 +1886,12 @@
     <Content Include="Content\descargas\memorias\estados-financieros-2024.pdf" />
     <Content Include="Content\descargas\memorias\principios-buen-gobierno-2024-eng.pdf" />
     <Content Include="Content\descargas\memorias\principios-buen-gobierno-2024.pdf" />
+    <Content Include="Content\libro_rio_abiseo\landing\fonts\Gotham-Black.otf" />
+    <Content Include="Content\libro_rio_abiseo\landing\fonts\Gotham-Bold.otf" />
+    <Content Include="Content\libro_rio_abiseo\landing\fonts\Gotham-Book.otf" />
+    <Content Include="Content\libro_rio_abiseo\landing\fonts\Gotham-BookItalic.otf" />
+    <Content Include="Content\libro_rio_abiseo\landing\fonts\Gotham-Medium.otf" />
+    <Content Include="Content\libro_rio_abiseo\landing\fonts\Gotham-Book-Italic.ttf" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
