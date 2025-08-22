@@ -20,7 +20,7 @@ namespace proyecto_poderosa_documento.Controllers
         {
             var model = new DashboardViewModel
             {
-                Noticias = db.Noticias.OrderByDescending(n => n.FechaPublicacion).ToList(),
+                Noticias = db.Noticias.OrderByDescending(n => n.FechaPublicacion).ThenByDescending(n => n.Id).ToList(),
                 PopUps = db.PopUp.OrderByDescending(p => p.FechaCreacion).ToList()
             };
 
@@ -30,7 +30,7 @@ namespace proyecto_poderosa_documento.Controllers
         // Index - Mostrar todas las noticias
         public ActionResult Index()
         {
-            var noticias = db.Noticias.OrderByDescending(n => n.FechaPublicacion).ToList();
+            var noticias = db.Noticias.OrderByDescending(n => n.FechaPublicacion).ThenByDescending(n => n.Id).ToList();
             return View(noticias);
         }
 
@@ -231,6 +231,7 @@ namespace proyecto_poderosa_documento.Controllers
             // Obtener las 3 últimas noticias, ordenadas por fecha de publicación
             var ultimasNoticias = db.Noticias
                 .OrderByDescending(n => n.FechaPublicacion)  // Ordenar por fecha de publicación
+                .ThenByDescending(n => n.Id)
                 .Take(3)  // Limitar a las 3 últimas noticias
                 .ToList();
 
@@ -334,7 +335,7 @@ namespace proyecto_poderosa_documento.Controllers
                 }
 
                 // Validar y guardar ImagenesCarrusel
-                if (ImagenesCarrusel != null && ImagenesCarrusel.Any())
+                if (ImagenesCarrusel != null && ImagenesCarrusel.Any(ic => ic != null && ic.ContentLength > 0))
                 {
                     var imagenesCarruselList = new List<string>();
                     foreach (var imagen in ImagenesCarrusel)
@@ -354,7 +355,10 @@ namespace proyecto_poderosa_documento.Controllers
                             imagenesCarruselList.Add("~/Content/noticias/carrusel/" + fileNameCarrusel);
                         }
                     }
-                    existingNoticia.ImagenesCarrusel = string.Join(",", imagenesCarruselList);
+                    if (imagenesCarruselList.Any())
+                    {
+                        existingNoticia.ImagenesCarrusel = string.Join(",", imagenesCarruselList);
+                    }
                 }
 
                 // Validar y guardar ImagenesCompartir

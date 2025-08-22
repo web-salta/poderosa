@@ -508,6 +508,7 @@
     <Content Include="Content\descargas\memorias\informe-anual-de-sostenibilidad-2023-home-eng.png" />
     <Content Include="Content\descargas\memorias\informe-anual-de-sostenibilidad-2023-home.png" />
     <Content Include="Content\descargas\memorias\informe-anual-de-sostenibilidad-2023-principal.png" />
+    <Content Include="Content\descargas\memorias\informe-anual-de-sostenibilidad-2024-home-eng.png" />
     <Content Include="Content\descargas\memorias\informe-anual-de-sostenibilidad-2024-home.png" />
     <Content Include="Content\descargas\memorias\informe-anual-de-sostenibilidad-2024-principal.png" />
     <Content Include="Content\descargas\memorias\memoria2018-principal.jpg" />
@@ -1892,6 +1893,7 @@
     <Content Include="Content\libro_rio_abiseo\landing\fonts\Gotham-BookItalic.otf" />
     <Content Include="Content\libro_rio_abiseo\landing\fonts\Gotham-Medium.otf" />
     <Content Include="Content\libro_rio_abiseo\landing\fonts\Gotham-Book-Italic.ttf" />
+    <Content Include="Content\descargas\memorias\reporte-sostenibilidad-eng-2024.pdf" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />

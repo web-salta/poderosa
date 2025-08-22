@@ -17,6 +17,7 @@ namespace proyecto_poderosa_documento.Controllers
             // Obtener las tres últimas noticias
             var ultimasNoticias = noticiasDb.Noticias
                 .OrderByDescending(n => n.FechaPublicacion)
+                .ThenByDescending(n => n.Id)
                 .Take(3)
                 .ToList();
             ViewBag.UltimasNoticias = ultimasNoticias; // Pasarlas a la vista
