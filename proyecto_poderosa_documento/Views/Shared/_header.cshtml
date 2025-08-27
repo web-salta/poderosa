@@ -16,11 +16,23 @@
             <a class="nav-link active" aria-current="page" href="@Url.Action("proveedores", "home", new { accion = "" })">Proveedores</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#" data-fancybox="" data-src="#trueModal" data-modal="true" href="javascript:;">Webmail</a>
+            <a class="nav-link" href="#" data-fancybox data-src="#trueModal" data-modal="true">Webmail</a>
+            <div id="trueModal" class="p-5 text-center" style="display: none; max-width: 600px;">
+                <p>
+                    <a class="boton boton--dorado" target="_blank" href="https://mail.poderosa.com.pe/owa/">Lima</a>
+                </p>
+                <p>
+                    <a class="boton boton--dorado" target="_blank" href="https://mailmina.poderosa.com.pe/owa/">Mina</a>
+                </p>
+                <p>
+                    <a class="" data-fancybox-close href="#">Cerrar</a>
+                </p>
+            </div>
         </li>
         <li class="nav-item">
             <a class="nav-link" target="_blank" href="https://extranet.poderosa.com.pe/sesion/auth/login">Portal SST</a>
         </li>
+
     </ul>
     <nav class="navbar_ navbar-expand-lg_  py-0_  navbar navbar-expand-lg  py-0    nav-pri    js-nav-pri py-2  py-md-2">
         <div class="container-fluid">
@@ -365,6 +377,9 @@
         </div>
     </nav>
     <script>
+        $(document).ready(function () {
+            $('[data-fancybox]').fancybox();
+        });
         document.getElementById('marronSection').addEventListener('click', function (event) {
             event.stopPropagation();
         });
