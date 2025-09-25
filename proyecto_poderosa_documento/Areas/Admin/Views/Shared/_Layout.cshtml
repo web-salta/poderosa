@@ -67,8 +67,8 @@
     {
         <div id="contenedor-login">
             <div class="container" id="container-login">
-                <div class="row">                   
-                    @RenderBody()                   
+                <div class="row">
+                    @RenderBody()
                 </div>
             </div>
         </div>
@@ -89,10 +89,64 @@
 
     <script src="~/Areas/Admin/Assets/js/main.js"></script>
 
+    <!-- Accessibility Code for "www.poderosa.com.pe" -->
+    <script>
+        /*
+        Want to customize your button? visit our documentation page:
+        https://login.equalweb.com/custom-button
+        */
+       console.log("Cargando EqualWeb ...")
+        window.interdeal = {
+            get sitekey() { return "3bda4d327dbf20c2cc14fa0e4483e549" },
+            get domains() {
+                return {
+                    "js": "https://cdn.equalweb.com/",
+                    "acc": "https://access.equalweb.com/"
+                }
+            },
+            "Position": "right",
+            "Menulang": "ES-MX",
+            "draggable": true,
+            "btnStyle": {
+                "vPosition": [
+                    "100%",
+                    "80%"
+                ],
+                "margin": [
+                    "0",
+                    "0"
+                ],
+                "scale": [
+                    "0.5",
+                    "0.5"
+                ],
+                "color": {
+                    "main": "#0a51f2",
+                    "second": "#ffffff"
+                },
+                "icon": {
+                    "outline": false,
+                    "outlineColor": "#ffffff",
+                    "type": 11,
+                    "shape": "circle"
+                }
+            },
 
+        };
+
+        (function (doc, head, body) {
+            var coreCall = doc.createElement('script');
+            coreCall.src = interdeal.domains.js + 'core/5.2.0/accessibility.js';
+            coreCall.defer = true;
+            coreCall.integrity = 'sha512-fHF4rKIzByr1XeM6stpnVdiHrJUOZsKN2/Pm0jikdTQ9uZddgq15F92kUptMnyYmjIVNKeMIa67HRFnBNTOXsQ==';
+            coreCall.crossOrigin = 'anonymous';
+            coreCall.setAttribute('data-cfasync', true);
+            body ? body.appendChild(coreCall) : head.appendChild(coreCall);
+        })(document, document.head, document.body);
+    </script>
 
     <script type="text/javascript">
-   
+
 
     ////////////////VARIABLES DE URL//////////////////////////////////////////////
     function base_url(url) { return '@(Url.Content("~/"))' + url; }
@@ -125,7 +179,7 @@
         params.ano = ano;
         params.trimestre = trimestre;
 
-     
+
         $.ajax({
             type: "POST",
             contentType: "application/json; charset=utf-8",
@@ -160,7 +214,7 @@
         params.ano = $("#seccion_cmb").val();
 
         if (trimestre != 0 && categoria == 0) {
-            url_detalle_documento_buscar = 'admin/documento/buscarporano_semestre';
+            url_detalle_documento_buscar = 'admin/documento/buscarporano_semestrae';
             params.trimestre = trimestre
         } else if (trimestre == 0 && categoria != 0) {
             url_detalle_documento_buscar = 'admin/documento/buscarporano_cat';
@@ -172,7 +226,7 @@
         } else if (trimestre == 0 && categoria == 0) {
             url_detalle_documento_buscar = 'admin/documento/buscarporano';
         }
-       
+
         $.ajax({
             type: "POST",
             contentType: "application/json; charset=utf-8",
@@ -199,7 +253,7 @@
         });
     }
 
-   
+
     //////////////////FN buscarporano_trimestre/////////////////////////////
 
     $(document).ready(function () {
@@ -363,7 +417,7 @@
             }
             */
 
-       
+
         var params = new Object();
         params.ano = $("#seccion_cmb").val();
         $grid_documento.jqGrid({
@@ -372,9 +426,9 @@
            // url: base_url(url_grid_documento),
             data: JSON.stringify(params),
             datatype: "json",
-            async: false,           
+            async: false,
             contentType: "application/json;",
-            
+
             colNames: ['id', 'Año', 'Trimestre', 'Categoría', 'Nombre del Archivo', 'Fecha', '', ''],
             colModel: [
                    { key: true, hidden: true, name: 'id', index: 'id', editable: false, align: "center", sortable: true },
@@ -425,9 +479,9 @@
                 else title.text($title);
             }
         }));
-      
+
     });
-    
+
 
     function Recargar_grilla(grilla,url) {
         grilla.jqGrid({
@@ -487,7 +541,7 @@
             ]
         });
     }
-   
+
     //////////////////POPUT ELIMINAR CATEGORIA///////////////////////////////////////////
     function AbrirEliminarcategoria(valoreditcliente) {
         $("#dialog-eliminar-categoria").removeClass('hide').dialog({
@@ -581,135 +635,136 @@
         });
     }
 
-</script>
+    </script>
     @{
         if (controlador == "documento")
         {
             <script type="text/javascript">
-            ////////////////al cargar buscar por año///////////////////////////
+                ////////////////al cargar buscar por año///////////////////////////
                 $(document).ready(function () {
-                   buscar();
+                    buscar();
                 })
-            ////////////////al cargar buscar por año///////////////////////////
+                ////////////////al cargar buscar por año///////////////////////////
             </script>
         }
     }
-<script>
+    <script>
 
-    function mostrar_trimestre(cellvalue) {
-        switch (cellvalue) {
-            case 1:
-                return "Trimestre 1"
-                break;
-            case 2:
-                return "Trimestre 2"
-                break;
-            case 3:
-                return "Trimestre 3"
-                break;
-            case 4:
-                return "Trimestre 4"
-                break;
-            case 5:
-                return "Otros"
-                break;
-            default:
-        }
-    }
-
-   /* function mostrar_ano(cellvalue) {
-        var value = "";
-        $.ajax({
-            type: 'post',
-            dataType: "json",
-            url: base_url(url_mostrar_ano),
-            data: { anoId: cellvalue },
-            async: false,
-            beforeSend: function () {
-            },
-            success: function (myResult) {
-                value = myResult;
-            },
-            error: function (xhr, ajaxOptions, thrownError) {
-                alert(xhr.status + ' ' + thrownError);
+        function mostrar_trimestre(cellvalue) {
+            switch (cellvalue) {
+                case 1:
+                    return "Trimestre 1"
+                    break;
+                case 2:
+                    return "Trimestre 2"
+                    break;
+                case 3:
+                    return "Trimestre 3"
+                    break;
+                case 4:
+                    return "Trimestre 4"
+                    break;
+                case 5:
+                    return "Otros"
+                    break;
+                default:
             }
+        }
+
+        /* function mostrar_ano(cellvalue) {
+             var value = "";
+             $.ajax({
+                 type: 'post',
+                 dataType: "json",
+                 url: base_url(url_mostrar_ano),
+                 data: { anoId: cellvalue },
+                 async: false,
+                 beforeSend: function () {
+                 },
+                 success: function (myResult) {
+                     value = myResult;
+                 },
+                 error: function (xhr, ajaxOptions, thrownError) {
+                     alert(xhr.status + ' ' + thrownError);
+                 }
+             });
+             return value;
+         }*/
+
+        function mostrar_resultado(resulteditcliente) {
+            //alert(resulteditcliente);
+            return '1';
+        }
+        // on window resize run function
+        $(window).resize(function () {
+            fluidDialog();
         });
-        return value;       
-    }*/
 
-    function mostrar_resultado(resulteditcliente) {
-        //alert(resulteditcliente);
-        return '1';
-    }
-    // on window resize run function
-    $(window).resize(function () {
-        fluidDialog();
-    });
+        // catch dialog if opened within a viewport smaller than the dialog width
+        $(document).on("dialogopen", ".ui-dialog", function (event, ui) {
+            fluidDialog();
+        });
 
-    // catch dialog if opened within a viewport smaller than the dialog width
-    $(document).on("dialogopen", ".ui-dialog", function (event, ui) {
-        fluidDialog();
-    });
-
-    function fluidDialog() {
-        var $visible = $(".ui-dialog:visible");
-        // each open dialog
-        $visible.each(function () {
-            var $this = $(this);
-            var dialog = $this.find(".ui-dialog-content").data("ui-dialog");
-            // if fluid option == true
-            if (dialog.options.fluid) {
-                var wWidth = $(window).width();
-                // check window width against dialog width
-                if (wWidth < (parseInt(dialog.options.maxWidth) + 50)) {
-                    // keep dialog from filling entire screen
-                    $this.css("max-width", "90%");
-                } else {
-                    // fix maxWidth bug
-                    $this.css("max-width", dialog.options.maxWidth + "px");
+        function fluidDialog() {
+            var $visible = $(".ui-dialog:visible");
+            // each open dialog
+            $visible.each(function () {
+                var $this = $(this);
+                var dialog = $this.find(".ui-dialog-content").data("ui-dialog");
+                // if fluid option == true
+                if (dialog.options.fluid) {
+                    var wWidth = $(window).width();
+                    // check window width against dialog width
+                    if (wWidth < (parseInt(dialog.options.maxWidth) + 50)) {
+                        // keep dialog from filling entire screen
+                        $this.css("max-width", "90%");
+                    } else {
+                        // fix maxWidth bug
+                        $this.css("max-width", dialog.options.maxWidth + "px");
+                    }
+                    //reposition dialog
+                    dialog.option("position", dialog.options.position);
                 }
-                //reposition dialog
-                dialog.option("position", dialog.options.position);
+            });
+
+        }
+
+
+
+        ////////////////VALIDACIONES DE LOS MODULOS///////////////////////////
+        $('#formulario_categoria').validate({
+            required: true,
+            ignore: [],
+            rules: {
+                nombre: {
+                    required: true,
+                }
+            },
+            errorPlacement: function (error, element) {
+                error.insertBefore(element);
             }
         });
 
-    }
-
-
-
-    ////////////////VALIDACIONES DE LOS MODULOS///////////////////////////
-    $('#formulario_categoria').validate({
-        required: true,
-        ignore: [],
-        rules: {
-            nombre: {
-                required: true,
+        $('#formulario_ano').validate({
+            required: true,
+            ignore: [],
+            rules: {
+                ano: {
+                    required: true
+                }
+            },
+            errorPlacement: function (error, element) {
+                error.insertBefore(element);
             }
-        },
-        errorPlacement: function (error, element) {
-            error.insertBefore(element);
-        }
-    });
-
-    $('#formulario_ano').validate({
-        required: true,
-        ignore: [],
-        rules: {
-            ano: {
-                required: true
-            }
-        },
-        errorPlacement: function (error, element) {
-            error.insertBefore(element);
-        }
-    });
+        });
 
 
 
 
-    ////////////////FN VALIDACIONES DE LOS MODULOS///////////////////////////
+        ////////////////FN VALIDACIONES DE LOS MODULOS///////////////////////////
     </script>
     @RenderSection("scripts", false)
+
 
 </body>
 </html>

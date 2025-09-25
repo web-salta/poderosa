@@ -39,3 +39,9 @@ C:\Users\SM - Elizabeth Ramos\PROYECTOS\PODEROSA\proyecto_poderosa_documento_202
 C:\Users\SM - Elizabeth Ramos\PROYECTOS\PODEROSA\proyecto_poderosa_documento_2025\Helper\obj\Debug\Helper.csproj.CoreCompileInputs.cache
 C:\Users\SM - Elizabeth Ramos\PROYECTOS\PODEROSA\proyecto_poderosa_documento_2025\Helper\obj\Debug\Helper.dll
 C:\Users\SM - Elizabeth Ramos\PROYECTOS\PODEROSA\proyecto_poderosa_documento_2025\Helper\obj\Debug\Helper.pdb
+E:\Trabajo Infinitech\Webs\PODEROSA\Helper\bin\Debug\Helper.dll
+E:\Trabajo Infinitech\Webs\PODEROSA\Helper\bin\Debug\Helper.pdb
+E:\Trabajo Infinitech\Webs\PODEROSA\Helper\obj\Debug\Helper.csproj.AssemblyReference.cache
+E:\Trabajo Infinitech\Webs\PODEROSA\Helper\obj\Debug\Helper.csproj.CoreCompileInputs.cache
+E:\Trabajo Infinitech\Webs\PODEROSA\Helper\obj\Debug\Helper.dll
+E:\Trabajo Infinitech\Webs\PODEROSA\Helper\obj\Debug\Helper.pdb

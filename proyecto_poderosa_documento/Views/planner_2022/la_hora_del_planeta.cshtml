@@ -1,4 +1,6 @@
-﻿<!
+﻿@{
+    Layout = "~/Views/Shared/_CustomLayout.cshtml";
+}
 @Html.Partial("~/Views/Shared/_head.cshtml")
 <!-- METAS -->
 <title>Planner 2022 | PODEROSA</title>
@@ -21,7 +23,7 @@
                             <p>Su navegador no soporta la etiqueta de vídeo.</p>
                         </video>
                         <img src="~/Content/planner/logo-poderosa.png" class="img-fluid logo_footer" />
-                        
+
                     </div>
                     <a class="link" href="@Url.Action("historico", "planner_2022")">Ver anteriores</a>
                 </div>

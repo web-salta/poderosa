@@ -1,4 +1,7 @@
-﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+﻿@{
+    Layout = "~/Views/Shared/_CustomLayout.cshtml";
+}
+@Html.Partial("~/Views/Shared/_head.cshtml")
 <!-- METAS -->
 <title>Agradecemos la Solidaridad | PODEROSA</title>
 <!-- Basic HTML Meta Tags -->
@@ -46,11 +49,11 @@
                 <p>Confiamos en el poder del esfuerzo conjunto para continuar aportando al desarrollo del país.</p>
 
 
-                
+
                 <p class="text-right ">Pataz, 5 de diciembre de 2023</p><br />
 
                 <p class="text-right mb-2">Marcelo Santillana Salas<br />Gerente General</p>
-                <p class="text-right mb-2"><strong>COMPAÑÍA MINERA PODEROSA S.A.</strong></p>                                                                      
+                <p class="text-right mb-2"><strong>COMPAÑÍA MINERA PODEROSA S.A.</strong></p>
 
 
 
@@ -59,7 +62,7 @@
                         @Html.Partial("~/Views/Shared/_redes.cshtml")
                     </div>
                     <div class="flex-fill text-center text-sm-right">
-                        <a class="boton boton--marron" target="_blank" href="@Url.Action("index", "noticias")">VER MÁS NOTICIAS</a>
+                        <a class="boton boton--marron" target="_blank" href="@Url.Action(" index", "noticias" )">VER MÁS NOTICIAS</a>
                     </div>
                 </div>
             </div>

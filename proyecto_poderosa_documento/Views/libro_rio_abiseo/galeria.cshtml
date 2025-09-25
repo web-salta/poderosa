@@ -1,23 +1,27 @@
-﻿@Html.Partial("~/Views/Shared/_head.cshtml")
-    <title>PDF Galería Poderosa</title>
+﻿@{
+    Layout = "~/Views/Shared/_CustomLayout.cshtml";
+}
+
+@Html.Partial("~/Views/Shared/_head.cshtml")
+<title>PDF Galería Poderosa</title>
 
 
-    <!-- METAS EN CADA PÁGINA ############################# -->
-    <!-- Basic HTML Meta Tags -->
-    <meta name='title' content="PDF Galería Poderosa" />
-    <meta name='description' content="" />
-    <meta name='url' content="@HttpContext.Current.Request.Url.AbsoluteUri" />
-    <meta name='keywords' content="PDF Galería Poderosa" />
-    <!-- OpenGraph Meta Tags -->
-    <meta property="og:type" content="website" />
-    <meta property='og:title' content="PDF Galería Poderosa" />
-    <meta property='og:description' content="PDF Galería Poderosa" />
-    <meta property='og:url' content="@HttpContext.Current.Request.Url.AbsoluteUri" />
-    <meta property='og:image' content="~/Content/img/libro_rio_abiseo/imagen_galeria.jpg" />
+<!-- METAS EN CADA PÁGINA ############################# -->
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content="PDF Galería Poderosa" />
+<meta name='description' content="" />
+<meta name='url' content="@HttpContext.Current.Request.Url.AbsoluteUri" />
+<meta name='keywords' content="PDF Galería Poderosa" />
+<!-- OpenGraph Meta Tags -->
+<meta property="og:type" content="website" />
+<meta property='og:title' content="PDF Galería Poderosa" />
+<meta property='og:description' content="PDF Galería Poderosa" />
+<meta property='og:url' content="@HttpContext.Current.Request.Url.AbsoluteUri" />
+<meta property='og:image' content="~/Content/img/libro_rio_abiseo/imagen_galeria.jpg" />
 
 
 </head>
-<body class="bg-black  bg-black--p1" >
+<body class="bg-black  bg-black--p1">
     <div class="container pb-4">
         <div class="row justify-content-center">
             <div class="col-sm-12">
@@ -38,7 +42,7 @@
                 <div>
                     <a class="btn descargar  " href="~/Content/libro_rio_abiseo/galeria_poderosa.pdf" target="_blank">Descargar</a>
                 </div>
-               <br>
+                <br>
                 <div class="text-right">
                     <a href="https://www.poderosa.com.pe/" class="volver"> < Volver al Site de Poderosa </a>
                 </div>

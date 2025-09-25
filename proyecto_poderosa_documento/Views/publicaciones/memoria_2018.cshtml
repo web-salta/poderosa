@@ -1,4 +1,7 @@
-﻿<!doctype html>
+﻿@{
+    Layout = "~/Views/Shared/_CustomLayout.cshtml";
+}
+<!doctype html>
 <html lang="es">
 <head>
     <!-- Required meta tags -->
@@ -25,20 +28,19 @@
     <meta property='og:type' content='website' />
     <meta property='og:title' content='MEMORIA 2018 PODEROSA' />
     <meta property='og:description' content='Memoria digital 2018 PODEROSA' />
-    <meta property='og:url' content='http://www.poderosa.com.pe/publicaciones/memoria_2018/'/>
+    <meta property='og:url' content='http://www.poderosa.com.pe/publicaciones/memoria_2018/' />
     <meta property='og:image' content='http://www.poderosa.com.pe/Content/memoria2018/img/compartir.jpg' />
     <!-- Metas - FIN -->
-
-     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-61351657-1"></script>
     <script>
-     window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-      gtag('config', 'UA-61351657-1');
+        gtag('config', 'UA-61351657-1');
     </script>
-        
+
 </head>
 <body id="menu_0" class="body--nav-pri">
     <header>
@@ -78,14 +80,14 @@
                     </a>
                 </li>
 
-                   <!--<li>
+                <!--<li>
                     <a class="nav-link    nav-pri__a nav-pri__a--2" href="#menu_2">
                         <img class="svg" src="~/Content/memoria2018/img/ico-nav-2.svg" alt="ico">
                         <span class="nav-pri__a-txt">Indicadores <br>relevantes</span>
                     </a>
                 </li>-->
 
-             <li>
+                <li>
                     <a class="nav-link    nav-pri__a nav-pri__a--2" href="#menu_2">
                         <img class="svg" src="~/Content/memoria2018/img/ico-nav-2.svg" alt="ico">
                         <span class="nav-pri__a-txt">Indicadores <br>relevantes</span>
@@ -668,13 +670,11 @@
     <!-- jquery - INICIO -->
     <script src="~/Content/memoria2018/js/jquery.min.js"></script>
     <!-- jquery - FIN -->
-
     <!-- bootstrap - INICIO -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="~/Content/memoria2018/js/popper-1.14.0.min.js"></script>
     <script src="~/Content/memoria2018/js/bootstrap.min.js"></script>
     <!-- bootstrap - FIN -->
-
     <!-- css-vars-ponyfill - INICIO -->
     <!-- <script src="https://unpkg.com/css-vars-ponyfill@1"></script> -->
     <script src="~/Content/memoria2018/js/polyfills/css-vars-ponyfill.min.js"></script>
@@ -689,21 +689,15 @@
         picturefill();
     </script>
     <!-- picturefill.min - FIN -->
-
-
     <!-- object-fit-images - INICIO -->
     <script src="~/Content/memoria2018/js/polyfills/ofi.min.js"></script>
     <script>
         objectFitImages();
     </script>
     <!-- object-fit-images - FIN -->
-
-
     <!-- svg - INICIO -->
     <script src="~/Content/memoria2018/js/polyfills/svg.js"></script>
     <!-- svg - FIN -->
-
-
     <!-- Font Awesome - INICIO -->
     <script src="~/Content/js/fontawesome-all.min.js"></script>
 
@@ -712,7 +706,6 @@
     <link href="~/Content/memoria2018/js/plugins/fancybox/jquery.fancybox.min.css" rel="stylesheet" />
     <script src="~/Content/memoria2018/js/plugins/fancybox/jquery.fancybox.min.js"></script>
     <!-- fancybox - FIN -->
-
     <!-- slick - INICIO -->
     <link href="~/Content/memoria2018/js/plugins/slick/slick.css" rel="stylesheet" />
 

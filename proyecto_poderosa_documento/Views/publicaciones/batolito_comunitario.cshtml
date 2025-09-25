@@ -1,4 +1,7 @@
-﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+﻿@{
+    Layout = "~/Views/Shared/_CustomLayout.cshtml";
+}
+@Html.Partial("~/Views/Shared/_head.cshtml")
 <!-- METAS -->
 <title>Batolito comunitario | PODEROSA</title>
 <!-- Basic HTML Meta Tags -->
@@ -608,7 +611,7 @@
             </div>
         </section>
     </main>
-@Html.Partial("~/Views/Shared/_footer.cshtml")
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
 </body>
 @Html.Partial("~/Views/Shared/_foot.cshtml")
 
