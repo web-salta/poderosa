@@ -3,6 +3,9 @@
     var imagenesCarruselList = Model.ImagenesCarrusel?.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries).ToList();
     ViewBag.Title = "Detalles de la Noticia";
 }
+@{
+    Layout = "~/Views/Shared/_CustomLayout.cshtml";
+}
 @Html.Partial("~/Views/Shared/_head.cshtml")
 
 <title>@System.Text.RegularExpressions.Regex.Replace(Model.Titulo.Normalize(System.Text.NormalizationForm.FormD), @"[^a-zA-Z0-9\s]", "") | PODEROSA</title>

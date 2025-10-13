@@ -2170,6 +2170,7 @@
     <Content Include="Views\politicas\politica_cookies.cshtml" />
     <Content Include="Scripts\tinymce\license.md" />
     <Content Include="Scripts\tinymce\langs\README.md" />
+    <Content Include="Views\Shared\_CustomLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

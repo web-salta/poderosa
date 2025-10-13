@@ -1,4 +1,8 @@
 ﻿@model proyecto_poderosa_documento.Models.DashboardViewModel
+
+@{
+    Layout = "~/Views/Shared/_CustomLayout.cshtml";
+}
 @Html.Partial("~/Views/Shared/_head.cshtml")
 <!-- METAS -->
 <title>Inicio | PODEROSA</title>
@@ -264,27 +268,31 @@
             <h2 class="fuente-3">
                 Nuestras <span class=" dorado">Certificaciones</span>
             </h2>
-            <div class="row mt-lg-5 my-0 g-3 justify-content-center">
-                <div class="col-lg-2 col-md-4 col-6 d-flex justify-content-center">
-                    <img src="~/Content/img/home/iso-14001.jpg" class="img-fluid w-100">
+            <div class="row row-cols-2 row-cols-md-4 row-cols-lg-7 g-3 justify-content-center">
+                <div class="col d-flex justify-content-center">
+                    <img src="~/Content/img/home/iso-14001.jpg" class="img-fluid">
                 </div>
-                <div class="col-lg-2 col-md-4 col-6 d-flex justify-content-center">
-                    <img src="~/Content/img/home/iso-45001.jpg" class="img-fluid w-100">
+                <div class="col d-flex justify-content-center">
+                    <img src="~/Content/img/home/iso-45001.jpg" class="img-fluid">
                 </div>
-                <div class="col-lg-2 col-md-4 col-6 d-flex justify-content-center">
-                    <img src="~/Content/img/home/iso-9001.jpg" class="img-fluid w-100">
+                <div class="col d-flex justify-content-center">
+                    <img src="~/Content/img/home/iso-9001.jpg" class="img-fluid">
                 </div>
-                <div class="col-lg-2 col-md-6 col-6 d-flex justify-content-center">
-                    <img src="~/Content/img/home/certificado-iso-37301-2021.jpg" class="img-fluid w-100">
+                <div class="col d-flex justify-content-center">
+                    <img src="~/Content/img/home/certificado-iso-37301-2021.jpg" class="img-fluid">
                 </div>
-                <div class="col-lg-2 col-md-6 col-6 d-flex justify-content-center">
-                    <img src="~/Content/img/home/certificado-iso-37001-2016.jpg" class="img-fluid w-100">
+                <div class="col d-flex justify-content-center">
+                    <img src="~/Content/img/home/certificado-iso-37001-2016.jpg" class="img-fluid">
                 </div>
-                <div class="col-lg-2 col-md-6 col-6 d-flex justify-content-center">
-                    <img src="~/Content/img/home/empresarios-por-la-integridad.jpg" class="img-fluid w-100">
+                <div class="col d-flex justify-content-center">
+                    <img src="~/Content/img/home/empresarios-por-la-integridad.jpg" class="img-fluid">
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <img src="~/Content/img/home/Sello-Inclusivo .jpg" class="img-fluid" style="max-height:120px">
                 </div>
             </div>
         </div>
+   
     </section>
 
     <section>
@@ -301,6 +309,33 @@
 
                     <img src="~/Content/img/home/abe.jpg" class="img-fluid">
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container py-5">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 pb-4 pb-lg-0">
+                <div class="ratio ratio-16x9 rounded-right-100">
+                    <iframe src="https://www.youtube.com/embed/Q8tb9AzfCXo"
+                            title="Video inclusivo de PODEROSA en Lengua de Señas Peruana"
+                            frameborder="0"
+                            allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <h1 class="fuente-3 dorado">INCLUSIÓN DIGITAL</h1>
+                <h3 class="fuente-3">Comunicación accesible para todos</h3>
+                <p class="fuente-4">
+                    En Minera Poderosa nos comprometemos con la inclusión. Este video en
+                    Lengua de Señas Peruana garantiza que las personas sordas puedan conocer
+                    nuestra empresa, valores y compromiso con el desarrollo sostenible.
+                </p>
+                <p class="fuente-4">
+                    Demostramos que la verdadera innovación tecnológica es aquella que
+                    elimina barreras y construye puentes de comunicación para toda la comunidad.
+                </p>
             </div>
         </div>
     </section>
