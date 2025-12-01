@@ -292,7 +292,7 @@
                 </div>
             </div>
         </div>
-   
+
     </section>
 
     <section>
@@ -340,42 +340,67 @@
         </div>
     </section>
 
-    <!-- Modal -->
-    @if (ViewBag.PopUp != null && ViewBag.PopUp.IsActive)
-    {
-        <div class="modal fade" id="autoPopupModal" tabindex="-1" aria-labelledby="autoPopupModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-body position-relative">
-                        <button type="button" class="btn-close position-absolute top-0 end-0 m-2" data-bs-dismiss="modal" aria-label="Close"></button>
-                        @if (!string.IsNullOrEmpty(ViewBag.PopUp.Documento))
-                        {
-                            <a href="@Url.Content(ViewBag.PopUp.Documento)" target="_blank">
-                                <img src="@Url.Content(ViewBag.PopUp.Imagen)" alt="PopUp Image" class="img-fluid" />
-                            </a>
-                        }
-                        else if (!string.IsNullOrEmpty(ViewBag.PopUp.Url))
-                        {
-                            <a href="@ViewBag.PopUp.Url" target="_blank">
-                                <img src="@Url.Content(ViewBag.PopUp.Imagen)" alt="PopUp Image" class="img-fluid" />
-                            </a>
-                        }
-                    </div>
+    <!-- Popup para el landing del libro -->
+    <div class="modal fade" id="landingModal" tabindex="-1" aria-labelledby="autoPopupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body position-relative">
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-2" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    <a href="@Url.Content("~/Content/popups/documento/fb533a9c-788f-42f4-a34a-2a2eef635069.pdf")" target="_blank" rel="noopener" onclick="ir(); return true;">
+                        <img class="img-fluid" src="@Url.Content("~/Content/popups/imagen/junta-accionistas.png")" alt="Junta de Accionistas" />
+                    </a>
                 </div>
             </div>
         </div>
-    }
-    @Html.Partial("~/Views/Shared/_footer.cshtml")
-</body>
-@Html.Partial("~/Views/Shared/_foot.cshtml")
+    </div>
+
+    @*<!-- Modal -->
+            @if (ViewBag.PopUp != null && ViewBag.PopUp.IsActive)
+            {
+                <div class="modal fade" id="autoPopupModal" tabindex="-1" aria-labelledby="autoPopupModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body position-relative">
+                                <button type="button" class="btn-close position-absolute top-0 end-0 m-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                                @if (!string.IsNullOrEmpty(ViewBag.PopUp.Documento))
+                                {
+                                    <a href="@Url.Content(ViewBag.PopUp.Documento)" target="_blank">
+                                        <img src="@Url.Content(ViewBag.PopUp.Imagen)" alt="PopUp Image" class="img-fluid" />
+                                    </a>
+                                }
+                                else if (!string.IsNullOrEmpty(ViewBag.PopUp.Url))
+                                {
+                                    <a href="@ViewBag.PopUp.Url" target="_blank">
+                                        <img src="@Url.Content(ViewBag.PopUp.Imagen)" alt="PopUp Image" class="img-fluid" />
+                                    </a>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        *@
+            @Html.Partial("~/Views/Shared/_footer.cshtml")
+        </body>
+        @Html.Partial("~/Views/Shared/_foot.cshtml")
 <script>
-    $(document).ready(function () {
-        // Verifica si el PopUp está activo
-        @if (ViewBag.PopUp != null && ViewBag.PopUp.IsActive)
-        {
-            // Si está activo, muestra el modal
-            @:$('#autoPopupModal').modal('show');
-        }
-    });
+            $(document).ready(function () {
+                // Verifica si el PopUp está activo
+                @if (ViewBag.PopUp != null && ViewBag.PopUp.IsActive)
+                {
+                    // Si está activo, muestra el modal
+                    @:$('#autoPopupModal').modal('show');
+                }
+            });
+                $(function () {
+    // Mostrar el modal al cargar
+    $('#landingModal').modal('show');
+});
+
+function ir() {
+    // Lógica opcional después de abrir el PDF o enlace
+    // Ejemplo: redirigir a una página interna
+    // window.location.href = '@Url.Action("memorias", "publicaciones")';
+}
 </script>
-</html>
+        </html>

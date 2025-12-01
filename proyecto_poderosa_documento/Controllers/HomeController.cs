@@ -10,7 +10,7 @@ namespace proyecto_poderosa_documento.Controllers
         private readonly NoticiasDbContext noticiasDb = new NoticiasDbContext(); // Contexto para Noticias
         public ActionResult Index()
         {
-            var popUp = db.PopUp.Where(p => p.IsActive).OrderByDescending(p => p.FechaCreacion).FirstOrDefault(); // Obtener el último PopUp insertado
+            /*var popUp = db.PopUp.Where(p => p.IsActive).OrderByDescending(p => p.FechaCreacion).FirstOrDefault(); // Obtener el último PopUp insertado
             ViewBag.PopUp = popUp; // Pasarlo a la vista
 
 
@@ -21,6 +21,7 @@ namespace proyecto_poderosa_documento.Controllers
                 .Take(3)
                 .ToList();
             ViewBag.UltimasNoticias = ultimasNoticias; // Pasarlas a la vista
+            return View();*/
             return View();
         }
         public ActionResult proveedores()
