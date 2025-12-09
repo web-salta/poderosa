@@ -114,5 +114,23 @@ namespace proyecto_poderosa_documento.Controllers
             var popUpsActivos = db.PopUp.Where(p => p.IsActive).OrderByDescending(p => p.FechaCreacion).ToList();
             return View(popUpsActivos);
         }
+
+        // Acción para desactivar un PopUp (GET para evitar 404 del enlace actual; considera usar POST+AntiForgery)
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Authorize]
+        public ActionResult Deactivate(int id)
+        {
+            var popup = db.PopUp.FirstOrDefault(p => p.Id == id);
+            if (popup == null)
+            {
+                return HttpNotFound();
+            }
+
+            popup.IsActive = false;
+            db.SaveChanges();
+
+            return RedirectToAction("Dashboard", "Noticias");
+        }
     }
 }

@@ -200,13 +200,11 @@
                             <td>@popUp.Url</td>
                             <td>@popUp.FechaCreacion.ToString("dd/MM/yyyy")</td>
                             <td>
-                                <!-- Ver PopUp -->
                                 <a href="@Url.Action("Index", "Home")" class="btn btn-info btn-sm">Ver</a>
 
                                 @if (popUp.IsActive)
                                 {
-                                    <!-- Si el popup está activo, se muestra el botón de desactivar -->
-                                    <form action="@Url.Action("Deactivate", "Noticias")" method="post" style="display:inline;">
+                                    <form action="@Url.Action("Deactivate", "PopUp")" method="post" style="display:inline;">
                                         @Html.AntiForgeryToken()
                                         <input type="hidden" name="id" value="@popUp.Id" />
                                         <button type="submit" class="btn btn-warning btn-sm">Desactivar</button>
@@ -214,7 +212,6 @@
                                 }
                                 else
                                 {
-                                    <!-- Si el popup está desactivado, mostrar mensaje -->
                                     <span class="text-muted">Desactivado</span>
                                 }
                             </td>
