@@ -1,4 +1,4 @@
-﻿using proyecto_poderosa_documento.Models;
+using proyecto_poderosa_documento.Models;
 using System.Linq;
 using System.Web.Mvc;
 
