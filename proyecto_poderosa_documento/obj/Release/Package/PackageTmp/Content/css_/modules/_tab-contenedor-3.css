@@ -1,0 +1,85 @@
+
+
+/* ################################################## */
+/* TAB CONTENEDOR */
+/* PÁGINAS: (home, qs, ) */
+.tab-contenedor-3 .nav-item:not(:last-child){
+	margin-right: 0.4rem;
+}
+
+.tab-contenedor-3 .nav-tabs .nav-link.active,
+.tab-contenedor-3 .nav-tabs .nav-link.active:focus,
+.tab-contenedor-3 .nav-tabs .nav-link.active:hover {
+    /*re-escrito*/
+    color: var(--marron);
+    background-color: transparent;
+    
+    /*border-bottom: 8px solid var(--dorado);*/
+}
+
+.tab-contenedor-3 .nav-tabs .nav-link:focus,
+.tab-contenedor-3 .nav-tabs .nav-link:hover {
+    /*border-color: transparent;*/
+    border: 2px solid #d8a400;
+    color: var(--marron);
+
+}
+
+.tab-contenedor-3 .nav-tabs .nav-link{
+	padding: 1rem 0.5rem;
+    border: 2px solid #d8a400;
+    border-top-right-radius: 25px;
+    background-color: var(--dorado);
+    font-size: 1rem;
+    color: var(--marron);
+}
+
+.tab-contenedor-3 .nav-tabs .nav-link:hover {
+    color: var(--marron);
+}
+.tab-contenedor-3 .nav-tabs{
+	/*re-escrito*/
+	border-bottom: transparent;
+}
+
+.tab-contenedor-3 .tab-pane{
+	padding-top: 1rem;
+}
+
+.tab-contenedor-3 .tab-content{
+	border-top: 2px solid var(--dorado);
+}
+
+/*
+.tab-contenedor-3 .nav-tabs .nav-item {
+    padding: 0.5rem 2rem;
+    border: 2px solid #d8a400;
+    border-top-right-radius: 30px;
+}*/
+/* ESTADOS */
+
+
+
+/* MEDIA QUERYS */
+@media(min-width: 576px){
+	.tab-contenedor-3 .nav-tabs .nav-link{
+	    font-family: var(--fuente-2-bold);
+	    /*color: var(--marron);*/
+	    padding: .5rem 0;
+	    border: 0;
+        padding: 1rem 2rem;
+        border: 2px solid #d8a400;
+   }
+}
+@media(min-width: 768px){
+	/*.tab-contenedor-3 .nav-item:not(:last-child){
+		margin-right: 3rem;
+	}*/
+}
+@media(min-width: 992px){
+	
+}
+@media(min-width: 1200px){
+	
+}
+/* ################################################## */

@@ -1,0 +1,54 @@
+/* ################################################## */
+/* BATOLITO */
+/* PÁGINAS: batolito.php, batolito-comunitario.php */
+.caja-lista{
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	height: 100%;
+}
+
+.caja-lista__caja-img{
+	background-color: var(--gris-claro-50);
+	/*padding: 1.5rem;*/
+	border: 1px solid #dee2e6;
+}
+
+.caja-lista__img{
+	width: 100%;
+	height: auto;
+}
+.caja-lista__h{
+	font-family: var(--fuente-2-bold);
+	font-size: .95rem;
+	color: var(--marron);
+	margin-bottom: .5rem;
+}
+
+.caja-lista__h:hover{
+	color: var(--dorado);
+}
+
+
+
+/* ESTADOS */
+
+
+
+/* MEDIA QUERYS */
+@media(min-width: 576px){
+	
+}
+@media(min-width: 768px){
+	
+}
+@media(min-width: 992px){
+	
+}
+@media(min-width: 1200px){
+	.caja-lista__h{
+		font-size: 1rem;
+	}
+}
+/* ################################################## */

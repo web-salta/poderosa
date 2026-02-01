@@ -1,0 +1,49 @@
+/* ################################################## */
+/* BOOTSTRAP CLASES RE-ESCRITAS */
+/* ################################################## */
+
+
+
+/* ################################################## */
+/* MEDIA */
+/* ################################################## */
+.media{
+	margin-bottom: 1rem;
+}
+.media:last-child{
+	margin-bottom: 0;
+}
+.media-body {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+/* ################################################## */
+
+
+
+
+
+/* ################################################## */
+/* CARRUSEL */
+/* ################################################## */
+.carousel-indicators li {
+	width: 2rem;
+	height: 2rem;
+	margin-right: .5rem;
+	margin-left: .5rem;
+	border-radius: 50%;
+	background-color: var(--amarillo);
+	border: .35rem solid var(--amarillo);
+	cursor: pointer;
+
+	/*-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;*/
+}
+.carousel-indicators li:hover,
+.carousel-indicators li.active {
+	background-color: var(--azul);
+}
+/* ################################################## */

@@ -1,0 +1,90 @@
+/* ################################################## */
+/* TAB CONTENEDOR */
+
+.contenedor-desafios{
+	width: 100%;
+}
+.contenedor-desafios img{
+	width: 100%;
+	height: 15rem;
+	background-position: center;
+    background-size: cover;
+	object-fit: cover;
+}
+.contenedor-desafios-textos{
+	padding: 4rem 4rem;
+}
+.contenedor-desafios-textos p{
+	font-size: 1.2rem;
+}
+
+
+
+
+
+/* PÁGINAS: (home, qs, ) */
+.tab-contenedor .nav-item:not(:last-child){
+	margin-right: 1rem;
+}
+
+.tab-contenedor .nav-tabs .nav-link.active,
+.tab-contenedor .nav-tabs .nav-link.active:focus,
+.tab-contenedor .nav-tabs .nav-link.active:hover {
+    /*re-escrito*/
+    color: var(--marron);
+    background-color: transparent;
+    
+    border-bottom: 8px solid var(--dorado);
+}
+
+.tab-contenedor .nav-tabs .nav-link:focus,
+.tab-contenedor .nav-tabs .nav-link:hover {
+    border-color: transparent;
+    color: var(--dorado);
+}
+
+.tab-contenedor .nav-tabs .nav-link{
+	font-family: var(--fuente-2-bold);
+	color: var(--marron);
+	padding: .5rem 0;
+	border: 0;
+}
+
+.tab-contenedor .nav-tabs{
+	/*re-escrito*/
+	border-bottom: transparent;
+}
+
+.tab-contenedor .tab-pane{
+	padding-top: 1rem;
+}
+
+
+
+/* ESTADOS */
+
+
+
+/* MEDIA QUERYS */
+@media(min-width: 576px){
+	.tab-contenedor .nav-item:not(:last-child){
+		margin-right: 2rem;
+	}
+}
+@media(min-width: 768px){
+	.tab-contenedor .nav-item:not(:last-child){
+		margin-right: 3rem;
+	}
+}
+@media(min-width: 992px){
+	
+}
+@media(max-width: 1200px){
+	.contenedor-desafios-textos{
+		padding: 4rem 2rem;
+	}
+}
+/* ################################################## */
+.contenedor_oportudidades {
+    width: 100%;
+}

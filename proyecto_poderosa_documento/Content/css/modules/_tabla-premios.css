@@ -1,0 +1,62 @@
+﻿/* Estilo específico para los iconos */
+
+.texto-fecha {
+    font-family: var(--fuente-gothan);
+    font-size: 1.5rem;
+    color: #4A4A42;
+}
+
+.img {
+    height: 20px;
+}
+
+/* Estilo específico para los iconos */
+
+.img1 {
+    width: 25px;
+    height: 25px;
+}
+
+/* Estilo específico para icono de titulo*/
+.img2 {
+    width: 30px;
+    height: 30px;
+    margin-left:10px;
+}
+
+/* Estilo específico para icono de titulo*/
+.img_crisol {
+    display: flex;
+    align-items: flex-end; /* Alinea todo al fondo */
+    gap: 8px;
+}
+
+/* Estilo específico para los span de los premios */
+
+.columna-premio {
+    width: 80%;
+    vertical-align: top;
+    text-align: start;
+}
+
+.titulo-premio {
+    font-family: var(--fuente-gothan);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #a07302; /* Color dorado */
+}
+
+/* Estilo específico para los p de los premios */
+.texto-premio {
+    font-size: 0.9rem;
+    display: inline;
+    margin: 0;
+}
+
+/* Estilo específico para los separadores */
+
+.separador {
+    border: 2px solid;
+    color: #a07302
+}
+    

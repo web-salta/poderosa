@@ -1,0 +1,717 @@
+﻿@{
+    <!-- captura el controlador actual -->
+    string controlador = ViewContext.RouteData.Values["Controller"].ToString().ToLower();
+ /*   Model.usuario usuario = new Model.usuario().Obtener(Helper.SessionHelper.GetUser());*/
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador de Contenido | PODEROSA</title>
+
+    <link href="~/Areas/Admin/Assets/css/admin-style.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/Assets/css/jqgrid/themes/base/jquery-ui.min.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/Assets/css/jqueryValidate/stylesheet.css" rel="stylesheet" />
+
+    <link href="~/Areas/Admin/Assets/css/jqgrid/themes/base/jquery-ui-custom.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/Assets/css/jqgrid/themes/base/ui.jqgrid.css" rel="stylesheet" />
+</head>
+<body>
+    @if (controlador != "login")
+    {
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="#" style="margin-top: -0.6em"><img class="img-responsive" src="~/Areas/Admin/Assets/img/logo-negativo.svg" alt="..."></a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Año", "Index", "ano")</li>
+                        <li>@Html.ActionLink("Categoría", "Index", "categoria")</li>
+                        <li>@Html.ActionLink("Documentación", "Index", "documento")</li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <!-- ~/Uploads/yo.jpg-->
+                                <b>Hola</b>, Admin <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="~/admin/login/Logout">Finalizar Sesión</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <!--<footer>
+                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            </footer>-->
+        </div>
+    }
+
+
+    @if (controlador == "login")
+    {
+        <div id="contenedor-login">
+            <div class="container" id="container-login">
+                <div class="row">                   
+                    @RenderBody()                   
+                </div>
+            </div>
+        </div>
+    }
+
+    <script src="~/Areas/Admin/Assets/js/jquery11.min.js"></script>
+    <script src="~/Areas/Admin/Assets/js/jqueryValidate/jquery.js"></script>
+
+    <script src="~/Areas/Admin/Assets/js/jqueryValidate/jquery.validate.js"></script>
+    <script src="~/Areas/Admin/Assets/js/jqueryValidate/additional-methods.js"></script>
+    <script src="~/Areas/Admin/Assets/js/bootstrap.min.js"></script>
+    <script src="~/Areas/Admin/Assets/js/jquery.form.js"></script>
+    <script src="~/Areas/Admin/Assets/js/ini.js"></script>
+    <script src="~/Areas/Admin/Assets/js/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Areas/Admin/Assets/js/jqgrid/i18n/grid.locale-es.js"></script>
+    <script src="~/Areas/Admin/Assets/js/jqgrid/jquery.jqGrid.min.js"></script>
+    <script src="~/Areas/Admin/Assets/js/jqgrid/jquery-ui.min.js"></script>
+
+    <script src="~/Areas/Admin/Assets/js/main.js"></script>
+
+
+
+    <script type="text/javascript">
+   
+
+    ////////////////VARIABLES DE URL//////////////////////////////////////////////
+    function base_url(url) { return '@(Url.Content("~/"))' + url; }
+        /***************seccion********************************/
+    var $grid_documento = $("#listGrid_documento");
+    var $grid_ano = $("#listGrid_ano");
+    var $grid_categoria = $("#listGrid_categoria");
+    var url_grid_documento = 'admin/documento/GetTodoLists_documento';
+    var url_grid_ano = 'admin/ano/GetTodoLists_ano';
+    var url_grid_categoria = 'admin/categoria/GetTodoLists_categoria';
+    var url_eliminar_ano = 'admin/ano/eliminar';
+    var url_eliminar_categoria = 'admin/categoria/eliminar';
+    var url_eliminar_documento = 'admin/documento/eliminar';
+
+    var url_grid_crud = 'admin/documento/save/';
+    var url_grid_crud_cat = 'admin/categoria/save/';
+
+    var url_detalle_documento_buscar = 'admin/documento/buscarporano_semestre';
+
+    var url_mostrar_ano = 'admin/documento/mostrar_ano';
+    ////////////////FN-VARIABLES DE URL//////////////////////////////////////////////
+
+
+
+
+    //////////////////buscarporano_trimestre/////////////////////////////
+    function buscarporano_trimestre(ano, trimestre) {
+        //  alert(trimestre + "  "+ano);
+        var params = new Object();
+        params.ano = ano;
+        params.trimestre = trimestre;
+
+     
+        $.ajax({
+            type: "POST",
+            contentType: "application/json; charset=utf-8",
+            url: base_url(url_detalle_documento_buscar),
+            data: JSON.stringify(params),
+            dataType: "json",
+            async: false,
+            success: function (data, textStatus) {
+                if (textStatus == "success") {
+                    $grid_documento[0].addJSONData({
+                        total: data.total,
+                        page: data.page,
+                        records: data.rows.length,
+                        rows: data.rows
+                    });
+                } else {
+                    alert(JSON.parse(data.responseText).Message);
+                }
+            },
+            error: function (request, status, error) {
+                alert(jQuery.parseJSON(request.responseText).Message);
+            }
+        });
+    }
+    //////////////////FN buscarporano_trimestre//////////////////////
+
+    //////////////////buscarportrimestre/////////////////////////////
+    function buscar() {
+        var trimestre = $("#trimestre_cmb").val();
+        var categoria = $("#categoria_cmb").val();
+        var params = new Object();
+        params.ano = $("#seccion_cmb").val();
+
+        if (trimestre != 0 && categoria == 0) {
+            url_detalle_documento_buscar = 'admin/documento/buscarporano_semestre';
+            params.trimestre = trimestre
+        } else if (trimestre == 0 && categoria != 0) {
+            url_detalle_documento_buscar = 'admin/documento/buscarporano_cat';
+            params.categoria = categoria
+        } else if (trimestre != 0 && categoria != 0) {
+            url_detalle_documento_buscar = 'admin/documento/buscarporano_tri_cat';
+            params.trimestre = trimestre
+            params.categoria = categoria
+        } else if (trimestre == 0 && categoria == 0) {
+            url_detalle_documento_buscar = 'admin/documento/buscarporano';
+        }
+       
+        $.ajax({
+            type: "POST",
+            url: base_url(url_detalle_documento_buscar),
+            data: JSON.stringify(params),
+            dataType: "json",
+            async: false,
+            success: function (data, textStatus) {
+                console.log(data);
+                if (textStatus == "success") {
+                    $grid_documento[0].addJSONData({
+                        total: data.total,
+                        page: data.page,
+                        records: data.rows.length,
+                        rows: data.rows
+                    });
+                } else {
+                    alert(JSON.parse(data.responseText).Message);
+                }
+            },
+            error: function (request, status, error) {
+                alert(jQuery.parseJSON(request.responseText).Message);
+            }
+        });
+    }
+
+
+   
+    //////////////////FN buscarporano_trimestre/////////////////////////////
+
+    $(document).ready(function () {
+        ////////////////poput//////////////////////////////////////////////
+        $('.tablecontainer').on('click', 'a.popup', function (e) {
+            //saber si estoy en un boton editar o guardar validar por accion
+            if ($(this).attr("id") == "btn_editar") {
+                OpenPopup($(this).attr('href')); e.preventDefault();
+            } else {
+                if ($("#trimestre_cmb").val() != 0 && $("#categoria_cmb").val() != 0) {
+                    OpenPopup($(this).attr('href')); e.preventDefault();
+                } else if ($("#trimestre_cmb").val() == 0 && $("#categoria_cmb").val() == 0) {
+                    alert("Seleccione un trimestre y una categoría");
+                } else if ($("#trimestre_cmb").val() == 0 && $("#categoria_cmb").val() != 0) {
+                    alert("Seleccione un trimestre");
+                } else if ($("#categoria_cmb").val() == 0 && $("#trimestre_cmb").val() != 0) {
+                    alert("Seleccione una categoría");
+                }
+            }
+
+            e.preventDefault();
+        })
+        function OpenPopup(pageUrl) {
+            var $pageContent = $('<div/>');
+            $pageContent.load(pageUrl, function () {
+
+            });
+            $dialog = $('<div class="popupWindow"></div>')
+                .html($pageContent)
+                      .dialog({
+                          width:800,
+                          maxWidth: 980,
+                          height: 580,
+                          modal: true,
+                          fluid: true, //new option
+                          resizable: false,
+                          title: 'Detalle del Documento',
+                          close: function () {
+                              $dialog.dialog('destroy').remove();
+                          }
+                      })
+
+            $('.popupWindow').on('submit', '#popupForm', function (e) {
+                var url = $('#popupForm')[0].action;
+                /****************************************/
+                var f = $(this);
+                var formData = new FormData(document.getElementById("popupForm"));
+                formData.append("dato", "valor");
+                /****/
+                $.ajax({
+                    type: "POST",
+                    url: url,
+                    // data: $('#popupForm').serialize(),
+                    data: formData,
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+                    success: function (data) {
+                        if (data.status) {
+                            $dialog.dialog('close');
+                            buscar($("#seccion_cmb").val(), $("#trimestre_cmb").val(), $("#categoria_cmb").val());
+                        }
+                    }
+                })
+                e.preventDefault();
+            })
+            $dialog.dialog('open');
+
+
+        }
+        //////////////////fn-poput///////////////////////////////////////////
+
+
+
+
+        //////////////////QGRID///////////////////////////////////////////
+
+        $grid_ano.jqGrid({
+            caption: "Listado de Años",
+            url: base_url(url_grid_ano),
+            datatype: "json",
+            // contentType: "application/json;",
+            mtype: 'GET',
+            colNames: ['id', 'Año', ''],
+            colModel: [
+                   { key: true, hidden: true, name: 'id', index: 'id', editable: false, align: "center", width: 5, sortable: true },
+                   { key: false, name: 'ano', index: 'ano', align: "center", editable: false, width: 19 },
+                   {
+                       name: 'btneliminar', index: 'btneliminar', align: "center", width: 5, sortable: false,
+                       formatter: function (cellvalue, options, rowObject) {
+                           return "<a href='#'  class='btn btn-xs  btn-custom' onclick='AbrirEliminarano(" + rowObject.id + ")' > <span class='ui-button-text'><i class='ace-icon fa fa-trash-o bigger-110'></i>&nbsp; Eliminar</span></a>";
+                       }
+                   }
+            ],
+            rownumbers: true,
+           // pager: '#pager',
+            viewrecords: true,
+            rowNum: 1000,
+            //rowList: [30, 40, 50, 10000],
+            emptyrecords: 'No hay registros disponibles para mostrar',
+            height: "100%",
+            width: "1070",
+            sortable: false,
+            loadonce: false,
+        });
+
+        $grid_categoria.jqGrid({
+            caption: "Listado de Categorías",
+            url: base_url(url_grid_categoria),
+            datatype: "json",
+            // contentType: "application/json;",
+            mtype: 'GET',
+            colNames: ['id', 'Categoría', '',''],
+            colModel: [
+                   { key: true, hidden: true, name: 'id', index: 'id', editable: false, align: "center", width: 5, sortable: true },
+                   { key: false, name: 'nombre', index: 'nombre', align: "center", editable: false},
+                   {
+                       name: 'btneditar', index: 'btneditar', width: 15, align: "center", sortable: false,
+                       formatter: function (cellvalue, options, rowObject) {
+                           return "<a id='btn_editar' href='" + base_url(url_grid_crud_cat) + rowObject.id + "' class='btn btn-xs  btn-custom' role='button'><span class='ui-button-text'><i class='ace-icon fa fa-pencil bigger-110'></i>&nbsp; Editar</span></a>";
+                       }
+                   },
+                   {
+                       name: 'btneliminar', index: 'btneliminar', align: "center", width: 17, sortable: false,
+                       formatter: function (cellvalue, options, rowObject) {
+                           return "<a href='#'  class='btn btn-xs  btn-custom' onclick='AbrirEliminarcategoria(" + rowObject.id + ")' ><span class='ui-button-text'><i class='ace-icon fa fa-trash-o bigger-110'></i>&nbsp; Eliminar</span></a>";
+                       }
+                   }
+            ],
+            rownumbers: true,
+         //   pager: '#pager',
+            viewrecords: true,
+            rowNum: 500,
+            rowList: [30, 40, 50, 10000],
+            /*sortname: 'id',*/
+            emptyrecords: 'No hay registros disponibles para mostrar',
+            height: "100%",
+            width: "1080",
+            loadonce: false,
+            pgbuttons: false,
+        });
+
+
+        /*
+        type: "POST",
+        url: base_url(url_detalle_documento_buscar),
+        data: JSON.stringify(params),
+        dataType: "json",
+        async: false,
+        success: function (data, textStatus) {
+            console.log(data);
+            if (textStatus == "success") {
+                $grid_documento[0].addJSONData({
+                    total: data.total,
+                    page: data.page,
+                    records: data.rows.length,
+                    rows: data.rows
+                });
+            } else {
+                alert(JSON.parse(data.responseText).Message);
+            }
+            */
+
+       
+        var params = new Object();
+        params.ano = $("#seccion_cmb").val();
+        $grid_documento.jqGrid({
+            type: "POST",
+            caption: "Listado de Documentación",
+            url: base_url(url_grid_documento),
+            data: JSON.stringify(params),
+            datatype: "json",
+            async: false,           
+            contentType: "application/json;",
+            
+            colNames: ['id', 'Año', 'Trimestre', 'Categoría', 'Nombre del Archivo', 'Fecha', '', ''],
+            colModel: [
+                   { key: true, hidden: true, name: 'id', index: 'id', editable: false, align: "center", sortable: true },
+                  // { key: false, name: 'valor_ano', index: 'valor_ano', align: "center", editable: false, width:10},
+                  { key: false, name: 'anoId', index: 'anoId', align: "center", editable: false, width: 10, formatter: function (cellvalue, options, rowObject) { return mostrar_ano(cellvalue); } },
+                   { key: false, name: 'trimestre', index: 'trimestre', align: "center", editable: false, width: 25, formatter: function (cellvalue, options, rowObject) {return  mostrar_trimestre(cellvalue);}},
+                   { key: false, name: 'nombre', index: 'nombre', align: "center", editable: false, width: 30 },
+                   { key: false, name: 'nombre_archivo', index: 'nombre_archivo', align: "center", editable: false },
+                   { key: false, name: 'fecha', index: 'fecha', align: "center", editable: false, width: 25, formatter: 'date', formatoptions: { srcformat: 'd/m/Y', newformat: 'd/m/Y'}},
+                   {
+                        name: 'btneditar', index: 'btneditar', width: 22, align: "center", sortable: false,
+                        formatter: function (cellvalue, options, rowObject) {
+                            return "<a id='btn_editar' href='" + base_url(url_grid_crud) + rowObject.id + "' class='popup btn btn-xs  btn-custom' role='button'><span class='ui-button-text'><i class='ace-icon fa fa-edit bigger-110'></i>&nbsp; Editar</span></a>";
+                        }
+                    },
+                    {
+                        name: 'btneliminar', index: 'btneliminar', align: "center", width: 22, sortable: false,
+                        formatter: function (cellvalue, options, rowObject) {
+                            return "<a href='#'  class='btn btn-xs  btn-custom' onclick='AbrirEliminardocumento(" + rowObject.id + ")' ><span class='ui-button-text'><i class='ace-icon fa fa-trash-o bigger-110'></i>&nbsp; Eliminar</span></a>";
+                        }
+                    }
+            ],
+            rownumbers: true,
+            pager: '#pager',
+            viewrecords: true,
+            rowNum: 5,
+            rowList: [30, 40, 50, 10000],
+            /*sortname: 'id',*/
+            emptyrecords: 'No hay registros disponibles para mostrar',
+            height: "100%",
+            width: "1080",
+            loadonce: false,
+        });
+
+
+
+
+
+
+        //////////////////fn-JQGRID///////////////////////////////////////////
+
+        //////////////////PARA EL HEADER DE LOS DIALOGOS///////////////////////////////////////////
+        $.widget("ui.dialog", $.extend({}, $.ui.dialog.prototype, {
+            _title: function (title) {
+                var $title = this.options.title || '&nbsp;'
+                if (("title_html" in this.options) && this.options.title_html == true)
+                    title.html($title);
+                else title.text($title);
+            }
+        }));
+      
+    });
+    
+
+    function Recargar_grilla(grilla,url) {
+        grilla.jqGrid({
+            page: 1,
+            url: base_url(url),
+            datatype: "json"
+        }).trigger("reloadGrid");
+
+        return [true, ''];
+    }
+
+
+    //////////////////POPUT ELIMINAR AÑO///////////////////////////////////////////
+    function AbrirEliminarano(valoreditcliente) {
+        $("#dialog-eliminar-ano").removeClass('hide').dialog({
+            resizable: false,
+            width: '320',
+            modal: true,
+            title: "<div class='widget-header'><h4 class='smaller'><i class='ace-icon fa fa-exclamation-triangle red'></i> Eliminar Año</h4></div>",
+            title_html: true,
+            buttons: [
+                {
+                    html: "<i class='ace-icon fa fa-trash-o bigger-110'></i>&nbsp; Eliminar",
+                    "class": "btn btn-danger btn-minier",
+                    click: function () {
+                        $.ajax({
+                            type: 'post',
+                            dataType: 'text',
+                            url: base_url(url_eliminar_ano) + '/?id=' + valoreditcliente,
+                            beforeSend: function () {
+                            },
+                            success: function (resulteditcliente) {
+                                if (resulteditcliente == 2) {
+                                    $("#dialog-eliminar-ano").dialog("close");
+                                    Recargar_grilla($grid_ano);
+                                } else {
+                                    $("#dialog-eliminar-ano").dialog("close");
+                                    alert("Esta año tiene registros, por favor elimine los registros, para poder realizar su eliminación, gracias.");
+                                }
+                            },
+
+                            error: function (xhr, ajaxOptions, thrownError) {
+                                alert(xhr.status + ' ' + thrownError);
+                            }
+                        });
+
+                    }
+                }
+                ,
+                {
+                    html: "<i class='ace-icon fa fa-times bigger-110'></i>&nbsp; Cancelar",
+                    "class": "btn btn-minier",
+                    click: function () {
+                        $(this).dialog("close");
+                    }
+                }
+            ]
+        });
+    }
+   
+    //////////////////POPUT ELIMINAR CATEGORIA///////////////////////////////////////////
+    function AbrirEliminarcategoria(valoreditcliente) {
+        $("#dialog-eliminar-categoria").removeClass('hide').dialog({
+            resizable: false,
+            width: '320',
+            modal: true,
+            title: "<div class='widget-header'><h4 class='smaller'><i class='ace-icon fa fa-exclamation-triangle red'></i> Eliminar Categoría</h4></div>",
+            title_html: true,
+            buttons: [
+                {
+                    html: "<i class='ace-icon fa fa-trash-o bigger-110'></i>&nbsp; Eliminar",
+                    "class": "btn btn-danger btn-minier",
+                    click: function () {
+                        $.ajax({
+                            type: 'post',
+                            dataType: 'text',
+                            url: base_url(url_eliminar_categoria) + '/?id=' + valoreditcliente,
+                            beforeSend: function () {
+                            },
+                            success: function (resulteditcliente) {
+                                if (resulteditcliente == 2) {
+                                    $("#dialog-eliminar-categoria").dialog("close");
+                                    Recargar_grilla($grid_categoria);
+                                } else {
+                                    $("#dialog-eliminar-categoria").dialog("close");
+                                    alert("Esta categoría tiene registros, por favor elimine los registros en el módulo de Períodos, para poder realizar su eliminación, gracias.");
+                                }
+                            },
+
+                            error: function (xhr, ajaxOptions, thrownError) {
+                                alert(xhr.status + ' ' + thrownError);
+                            }
+                        });
+
+                    }
+                }
+                ,
+                {
+                    html: "<i class='ace-icon fa fa-times bigger-110'></i>&nbsp; Cancelar",
+                    "class": "btn btn-minier",
+                    click: function () {
+                        $(this).dialog("close");
+                    }
+                }
+            ]
+        });
+    }
+
+        //////////////////POPUT ELIMINAR DOCUMENTO///////////////////////////////////////////
+
+    function AbrirEliminardocumento(valoreditcliente) {
+        $("#dialog-eliminar-documento").removeClass('hide').dialog({
+            resizable: false,
+            width: '320',
+            modal: true,
+            title: "<div class='widget-header'><h4 class='smaller'><i class='ace-icon fa fa-exclamation-triangle red'></i> Eliminar</h4></div>",
+            title_html: true,
+            buttons: [
+                {
+                    html: "<i class='ace-icon fa fa-trash-o bigger-110'></i>&nbsp; Eliminar",
+                    "class": "btn btn-danger btn-minier",
+                    click: function () {
+                        $.ajax({
+                            type: 'post',
+                            dataType: 'text',
+                            url: base_url(url_eliminar_documento) + '/?id=' + valoreditcliente,
+                            beforeSend: function () {
+                            },
+                            success: function (resulteditcliente) {
+                                $("#dialog-eliminar-documento").dialog("close");
+                                //  buscarporseccion($(".cmbseccion").val());
+                                buscar();
+                               // Recargar_grilla($grid_documento, url_grid_documento);
+                            },
+
+                            error: function (xhr, ajaxOptions, thrownError) {
+                                alert(xhr.status + ' ' + thrownError);
+                            }
+                        });
+                    }
+                }
+                ,
+                {
+                    html: "<i class='ace-icon fa fa-times bigger-110'></i>&nbsp; Cancelar",
+                    "class": "btn btn-minier",
+                    click: function () {
+                        $(this).dialog("close");
+                    }
+                }
+            ]
+        });
+    }
+
+</script>
+    @{
+        if (controlador == "documento")
+        {
+            <script type="text/javascript">
+            ////////////////al cargar buscar por año///////////////////////////
+                $(document).ready(function () {
+                   // buscar();
+                })
+            ////////////////al cargar buscar por año///////////////////////////
+            </script>
+        }
+    }
+<script>
+
+    function mostrar_trimestre(cellvalue) {
+        switch (cellvalue) {
+            case 1:
+                return "Trimestre 1"
+                break;
+            case 2:
+                return "Trimestre 2"
+                break;
+            case 3:
+                return "Trimestre 3"
+                break;
+            case 4:
+                return "Trimestre 4"
+                break;
+            case 5:
+                return "Otros"
+                break;
+            default:
+        }
+    }
+
+    function mostrar_ano(cellvalue) {
+        var value = "";
+        $.ajax({
+            type: 'post',
+            dataType: "json",
+            url: base_url(url_mostrar_ano),
+            data: { anoId: cellvalue },
+            async: false,
+            beforeSend: function () {
+            },
+            success: function (myResult) {
+               // var myObject = myResult[0];
+                value = myResult;
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+                alert(xhr.status + ' ' + thrownError);
+            }
+        });
+        return value;       
+    }
+
+    function mostrar_resultado(resulteditcliente) {
+        //alert(resulteditcliente);
+        return '1';
+    }
+    // on window resize run function
+    $(window).resize(function () {
+        fluidDialog();
+    });
+
+    // catch dialog if opened within a viewport smaller than the dialog width
+    $(document).on("dialogopen", ".ui-dialog", function (event, ui) {
+        fluidDialog();
+    });
+
+    function fluidDialog() {
+        var $visible = $(".ui-dialog:visible");
+        // each open dialog
+        $visible.each(function () {
+            var $this = $(this);
+            var dialog = $this.find(".ui-dialog-content").data("ui-dialog");
+            // if fluid option == true
+            if (dialog.options.fluid) {
+                var wWidth = $(window).width();
+                // check window width against dialog width
+                if (wWidth < (parseInt(dialog.options.maxWidth) + 50)) {
+                    // keep dialog from filling entire screen
+                    $this.css("max-width", "90%");
+                } else {
+                    // fix maxWidth bug
+                    $this.css("max-width", dialog.options.maxWidth + "px");
+                }
+                //reposition dialog
+                dialog.option("position", dialog.options.position);
+            }
+        });
+
+    }
+
+
+
+    ////////////////VALIDACIONES DE LOS MODULOS///////////////////////////
+    $('#formulario_categoria').validate({
+        required: true,
+        ignore: [],
+        rules: {
+            nombre: {
+                required: true,
+            }
+        },
+        errorPlacement: function (error, element) {
+            error.insertBefore(element);
+        }
+    });
+
+    $('#formulario_ano').validate({
+        required: true,
+        ignore: [],
+        rules: {
+            ano: {
+                required: true
+            }
+        },
+        errorPlacement: function (error, element) {
+            error.insertBefore(element);
+        }
+    });
+
+
+
+
+    ////////////////FN VALIDACIONES DE LOS MODULOS///////////////////////////
+    </script>
+    @RenderSection("scripts", false)
+
+</body>
+</html>
+

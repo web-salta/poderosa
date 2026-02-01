@@ -1,0 +1,96 @@
+/* ################################################## */
+/* NOTICIA RESUMEN HOME */
+/* PÁGINAS: (home, ) */
+.noticia-resumen-home{
+	position: relative;
+	overflow: hidden;
+}
+
+.noticia-resumen-home__img{
+	width: 100%;
+	height: auto;
+}
+.noticia-resumen-home__caja-texto{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -1px;
+	
+	color: var(--blanco);
+	padding: 12% .75rem .75rem;
+
+	/*background-image: url(https://place-hold.it/730x500);*/
+	background-image: url(../../img/web/noticia-resumen-home__caja-texto-bg.svg);
+	background-repeat: no-repeat;
+	background-position: 50% 0%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	-webkit-box-shadow: inset 0 -150px 150px -150px rgba(0,0,0,0.5);
+			box-shadow: inset 0 -150px 150px -150px rgba(0,0,0,0.5);
+}
+
+.noticia-resumen-home__fecha{
+	font-family: var(--fuente-2);
+	text-transform: uppercase;
+	font-size: .65rem;
+	margin-bottom: .25rem;
+}
+.noticia-resumen-home__h{
+	font-family: var(--fuente-2);
+	font-size: 1rem;
+	margin-bottom: .25rem;
+}
+
+
+
+/* ESTADOS */
+
+
+
+/* MEDIA QUERYS */
+@media(min-width: 576px){
+	.noticia-resumen-home__caja-texto,
+	.noticia-resumen-home--1 .noticia-resumen-home__caja-texto{
+		padding: 12% 1rem 1rem;
+	}
+	.noticia-resumen-home__fecha,
+	.noticia-resumen-home--1 .noticia-resumen-home__fecha{
+		font-size: .8rem;
+	}
+	.noticia-resumen-home__h,
+	.noticia-resumen-home--1 .noticia-resumen-home__h{
+		font-size: 1.35rem;
+	}
+}
+@media(min-width: 768px){
+	.noticia-resumen-home__caja-texto{
+		padding: 12% .75rem .75rem;
+	}
+
+	.noticia-resumen-home__fecha{
+		font-size: .65rem;
+	}
+	.noticia-resumen-home__h{
+		font-size: 0.9rem;
+
+	}
+
+	.noticia-resumen-home--1{
+		margin-bottom: 30px;
+	}
+}
+@media(min-width: 992px){
+	.noticia-resumen-home--1{
+		margin-bottom: 0;
+	}
+	.noticia-resumen-home--2{
+		margin-bottom: 21px;
+	}
+}
+@media(min-width: 1200px){
+	
+}
+/* ################################################## */

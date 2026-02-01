@@ -1,0 +1,438 @@
+﻿<header class="js-header    js-header-fixed-top">
+    <ul class="nav justify-content-end    nav-sec    js-nav-sec">
+        <li class="nav-item">
+            <a class="nav-link" href="@Url.Action("index", "publicaciones", new { accion = "" })">Publicaciones</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://poderosacompe.sharepoint.com/sites/Intranet_corporativa">Intranet</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://extranet.poderosa.com.pe/extranet/">Extranet</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://minerapoderosa.hiringroom.com/jobs">Trabaja con nosotros</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="@Url.Action("proveedores", "home", new { accion = "" })">Proveedores</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://outlook.office.com/mail/">Webmail</a>
+            <!--<a class="nav-link" href="https://outlook.office.com/mail/" data-fancybox data-src="#trueModal" data-modal="true">Webmail</a>-->
+            <!--<div id="trueModal" class="p-5 text-center" style="display: none; max-width: 600px;">
+        <p>
+            <a class="boton boton--dorado" target="_blank" href="https://outlook.office.com/mail/">Lima</a>
+        </p>
+        <p>
+            <a class="boton boton--dorado" target="_blank" href="https://outlook.office.com/mail/">Mina</a>
+        </p>
+        <p>
+            <a class="" data-fancybox-close href="#">Cerrar</a>
+        </p>
+    </div>-->
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://extranet.poderosa.com.pe/sesion/auth/login">Portal SST</a>
+        </li>
+    </ul>
+    <nav class="navbar_ navbar-expand-lg_  py-0_  navbar navbar-expand-lg  py-0    nav-pri    js-nav-pri py-2  py-md-2">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="@Url.Action("Index", "Home")"><img class="img-fluid" width="220" src="~/Content/img/logo.svg" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse js-navbar-collapse" id="navbarSupportedContent">
+                <ul id="lista" class="navbar-nav flex-row_ flex-wrap ms-md-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="@Url.Action("index", "home", new { accion = "" })">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle menu-drow" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                            QUIÉNES SOMOS<span class="puntero"></span>
+                        </a>
+                        <div class="MultiLevelMenu depth-2 bg-lg-marron blanco dropdown-menu-container" id="marronSection">
+                            <div class="container p-lg-4">
+                                <div class="row ">
+                                    <div class="col-4 col-lg-3 col-xl-4 d-none d-lg-block">
+                                        <img src="~/Content/img/header/quienes-somos.jpg" class="img-fluid imagen-menu d-none d-md-block">
+                                    </div>
+                                    <div class="col col-lg-9 col-xl-8 d-flex align-items-start justify-content-center justify-content-lg-start" style="position: relative;">
+                                        <ul class="dropdown-menu  lista_menu">
+                                            <li>
+                                                <a class="dropdown-item" href="@Url.Action("poderosa", "quienes_somos", new { accion = "" })">
+                                                    <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline">PODEROSA
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="@Url.Action("directorio_y_gerencia", "quienes_somos", new { accion = "" })">
+                                                    <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline">DIRECTORIO Y GERENCIA
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="@Url.Action("accionistas", "quienes_somos", new { accion = "" })">
+                                                    <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline">ACCIONISTAS
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="@Url.Action("nuestra_historia", "quienes_somos", new { accion = "" })">
+                                                    <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline">NUESTRA HISTORIA
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="@Url.Action("nuestras_certificaciones", "quienes_somos", new { accion = "" })">
+                                                    <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline">NUESTRAS CERTIFICACIONES
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="@Url.Action("premios_y_reconocimientos", "quienes_somos", new { accion = "" })">
+                                                    <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline">PREMIOS Y RECONOCIMIENTOS
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("introduccion", "operaciones", new { accion = "" })">OPERACIONES</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle menu-drow" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                            SOSTENIBILIDAD<span class="puntero"></span>
+                        </a>
+                        <div class="MultiLevelMenu depth-2 bg-lg-marron blanco dropdown-menu-container" id="sostenibilidadSection">
+                            <div class="container p-lg-4">
+                                <div class="row ">
+                                    <div class="col-4 col-lg-3 col-xl-4 d-none d-lg-block">
+                                        <img src="~/Content/img/header/sostenibilidad.jpg" class="img-fluid imagen-menu d-none d-md-block">
+                                    </div>
+                                    <div class="col col-lg-9 col-xl-8 align-items-start justify-content-center justify-content-lg-start" style="position: relative;">
+                                        <ul class="dropdown-menu  lista_menu w-100">
+                                            <li class="dropend nav-item">
+                                                <a href="#" class="dropdown-toggle-custom dropdown-item dropdown-toggle  d-flex align-items-center justify-content-center justify-content-lg-between">
+                                                    <span> <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline"> GESTIÓN AMBIENTAL</span>
+                                                    <span class="dropdown-linea"></span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a class="dropdown-item" href="@Url.Action("gestion_ambiental", "sostenibilidad", new { accion = "introduccion" })">
+                                                            <span>
+                                                                <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline">
+                                                            </span>
+                                                            Sistema de Gestión Ambiental
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="@Url.Action("gestion_ambiental", "sostenibilidad", new { accion = "nuestro-aporte" })">
+                                                            <span>
+                                                                <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline">
+                                                            </span>
+                                                            Nuestro Aporte
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropend nav-item dropdown">
+                                                <a href="#" class="dropdown-toggle-custom dropdown-item dropdown-toggle  d-flex align-items-center justify-content-center justify-content-lg-between">
+                                                    <span> <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline"> GESTIÓN DE LA ENERGÍA</span>
+                                                    <span class="dropdown-linea"></span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a class="dropdown-item" href="@Url.Action("gestion_de_la_energia", "sostenibilidad", new { accion = "introduccion" })">
+                                                            <span>
+                                                                <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline">
+                                                            </span>
+                                                            Sistema de Gestión de la Energía
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="@Url.Action("gestion_de_la_energia", "sostenibilidad", new { accion = "nuestros-avances-con-energias-limpias" })">
+                                                            <span>
+                                                                <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline">
+                                                            </span>
+                                                            Nuestro Plan Energético
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropend nav-item dropdown">
+                                                <a href="#" class="dropdown-toggle-custom dropdown-item dropdown-toggle  d-flex align-items-center justify-content-center justify-content-lg-between">
+                                                    <span> <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline"> GESTIÓN DEL CUMPLIMIENTO</span>
+                                                    <span class="dropdown-linea"></span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a class="dropdown-item" href="@Url.Action("gestion_de_cumplimiento", "sostenibilidad", new { accion = "introduccion" })">
+                                                            <span>
+                                                                <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline">
+                                                            </span>
+                                                            Sistema de Gestión de Cumplimiento
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="@Url.Action("gestion_de_cumplimiento", "sostenibilidad", new { accion = "canal-de-etica" })">
+                                                            <span>
+                                                                <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline">
+                                                            </span>
+                                                            Canal de Ética Poderosa
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item">
+                                                            <span>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropend nav-item dropdown">
+                                                <a href="#" class="dropdown-toggle-custom dropdown-item dropdown-toggle  d-flex align-items-center justify-content-center justify-content-lg-between">
+                                                    <span> <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline"> GESTIÓN DEL TALENTO</span>
+                                                    <span class="dropdown-linea"></span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a class="dropdown-item" href="@Url.Action("gestion_de_talento", "sostenibilidad", new { accion = "introduccion" })">
+                                                            <span>
+                                                                <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline">
+                                                            </span>
+                                                            Gestión Estratégica de Talento
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="@Url.Action("gestion_de_talento", "sostenibilidad", new { accion = "capacitacion" })">
+                                                            <span>
+                                                                <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline">
+                                                            </span>
+                                                            Nuestro Plan de capacitación
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="@Url.Action("gestion_de_talento", "sostenibilidad", new { accion = "reclutamiento-y-seleccion" })">
+                                                            <span>
+                                                                <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline">
+                                                            </span>
+                                                            Reclutamiento y selección
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item">
+                                                            <span>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropend nav-item dropdown">
+                                                <a href="#" class="dropdown-toggle-custom dropdown-item dropdown-toggle  d-flex align-items-center justify-content-center justify-content-lg-between">
+                                                    <span> <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline"> COMUNIDAD</span>
+                                                    <span class="dropdown-linea"></span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a class="dropdown-item" href="@Url.Action("comunidad","sostenibilidad", new { accion = "asociacion-pataz" })">
+                                                            <span>
+                                                                <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline">
+                                                            </span>
+                                                            Asociación Pataz
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="@Url.Action("comunidad", "sostenibilidad", new { accion = "desarrollo-social" })">
+                                                            <span>
+                                                                <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline">
+                                                            </span>
+                                                            Desarrollo social
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="@Url.Action("comunidad", "sostenibilidad", new { accion = "poblaciones-vecinas" })">
+                                                            <span>
+                                                                <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline">
+                                                            </span>
+                                                            Poblaciones vecinas
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item">
+                                                            <span>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item">
+                                                            <span>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle menu-drow" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                            CALIDAD E INNOVACIÓN<span class="puntero"></span>
+                        </a>
+                        <div class="MultiLevelMenu depth-2 bg-lg-marron blanco dropdown-menu-container" id="calidadInnovacionSection">
+                            <div class="container p-lg-4">
+                                <div class="row ">
+                                    <div class="col-4 col-lg-3 col-xl-4 d-none d-lg-block">
+                                        <img src="~/Content/img/header/calidad-innovacion.jpg" class="img-fluid imagen-menu d-none d-md-block">
+                                    </div>
+
+                                    <div class="col col-lg-9 col-xl-8 d-flex align-items-start justify-content-center justify-content-lg-start" style="position: relative;">
+                                        <ul class="dropdown-menu  lista_menu">
+
+                                            <li class="dropend nav-item dropdown">
+                                                <a href="#" class="dropdown-toggle-custom dropdown-item dropdown-toggle  d-flex align-items-center justify-content-center justify-content-lg-between">
+                                                    <span> <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline"> CALIDAD</span>
+                                                    <span class="dropdown-linea"></span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a class="dropdown-item" href="@Url.Action("mejora_continua", "calidad_e_innovacion", new { accion = "introduccion" })">
+                                                            <span>
+                                                                <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline">
+                                                            </span>
+                                                            Mejora continua
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="@Url.Action("gestion_de_calidad", "calidad_e_innovacion", new { accion = "introduccion" })">
+                                                            <span>
+                                                                <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline">
+                                                            </span>
+                                                            Gestión de calidad
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="@Url.Action("colpa_5s", "calidad_e_innovacion", new { accion = "introduccion"})">
+                                                            <span>
+                                                                <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline">
+                                                            </span>
+                                                            Colpa - 5S
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="@Url.Action("calidad_total", "calidad_e_innovacion", new { accion = "introduccion"})">
+                                                            <span>
+                                                                <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline">
+                                                            </span>
+                                                            Calidad total
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropend nav-item dropdown">
+                                                <a href="#" class="dropdown-toggle-custom dropdown-item dropdown-toggle  d-flex align-items-center justify-content-center justify-content-lg-between">
+                                                    <span> <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline"> INNOVACIÓN</span>
+                                                    <span class="dropdown-linea"></span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a class="dropdown-item" href="@Url.Action("innovacion", "calidad_e_innovacion", new { accion = "introduccion" })">
+                                                            <span>
+                                                                <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline">
+                                                            </span>
+                                                            Introducción
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="@Url.Action("innovacion", "calidad_e_innovacion", new { accion = "nuestras-principales-iniciativas-en-innovacion" })">
+                                                            <span>
+                                                                <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline">
+                                                            </span>
+                                                            Nuestras principales iniciativas en innovación
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://ingenio-poderosa.idslatam.com/login" class="dropdown-item" target="_blank">
+                                                            <span>
+                                                                <img src="~/Content/img/icono-flecha-derecha.png" class="flecha-menu d-none d-lg-inline">
+                                                            </span>
+                                                            Plataforma Ideas De Oro
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Index", "Noticias")">NOTICIAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("contacto", "home", new { accion = "" })">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script>
+        $(document).ready(function () {
+            $('[data-fancybox]').fancybox();
+        });
+        document.getElementById('marronSection').addEventListener('click', function (event) {
+            event.stopPropagation();
+        });
+
+        document.getElementById('sostenibilidadSection').addEventListener('click', function (event) {
+            event.stopPropagation();
+        });
+
+        document.getElementById('calidadInnovacionSection').addEventListener('click', function (event) {
+            event.stopPropagation();
+        });
+    </script>
+    <script>
+    const toggles = document.querySelectorAll('.lista_menu .dropdown-toggle');
+
+    toggles.forEach(toggle => {
+        toggle.addEventListener('click', function (e) {
+            e.preventDefault(); // ⛔ bloqueamos el comportamiento predeterminado de Bootstrap
+            e.stopPropagation();
+
+            const submenu = this.nextElementSibling;
+
+            if (!this.classList.contains('active-toggle')) {
+                // Cerramos otros
+                toggles.forEach(other => {
+                    if (other !== this) {
+                        other.classList.remove('active-toggle');
+                        const otherMenu = other.nextElementSibling;
+                        if (otherMenu && otherMenu.classList.contains('dropdown-menu')) {
+                            otherMenu.classList.remove('show');
+                        }
+                    }
+                });
+
+                // Abrimos este
+                if (submenu && submenu.classList.contains('dropdown-menu')) {
+                    submenu.classList.add('show');
+                    this.classList.add('active-toggle');
+                }
+            }
+            // Si ya está activo, no hace nada (bloquea segundo clic)
+        });
+    });
+
+    // Clic fuera: cerrar todo
+    document.addEventListener('click', function () {
+        toggles.forEach(toggle => {
+            toggle.classList.remove('active-toggle');
+            const submenu = toggle.nextElementSibling;
+            if (submenu && submenu.classList.contains('dropdown-menu')) {
+                submenu.classList.remove('show');
+            }
+        });
+    });
+    </script>
+</header>

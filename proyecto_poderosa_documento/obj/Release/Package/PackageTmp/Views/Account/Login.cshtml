@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Login";
+    string returnUrl = ViewBag.ReturnUrl as string;
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="~/Content/css/modules/_login.css">
+    <link rel="shortcut icon" href="~/Content/img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <div class="login">
+            <h1>Inicia Sesión</h1>
+            <form action="@Url.Action("Login", "Account")" method="POST">
+                @Html.AntiForgeryToken() <!-- Token antifalsificación -->
+                <input type="text" name="NombreUsuario" placeholder="Correo electrónico" required="required" />
+                <input type="password" name="contrasena" placeholder="Contraseña" required="required" />
+                <!-- Captcha -->
+                <div>
+                    <img src="@Url.Action("CaptchaImage", "Account")" alt="Captcha" class="form-control" />
+                    <input type="text" name="CaptchaCode" placeholder="Ingrese el texto de la imagen" required="required" />
+                </div>
+                <button type="submit" class="btn btn-primary btn-block btn-large">Entrar</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
