@@ -1,0 +1,115 @@
+﻿/* Estilo general del menú */
+.sidebar {
+    height: 100vh;
+    background: linear-gradient(180deg, #1e1e2f, #2a2a40); /* Degradado moderno */
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidad */
+    transition: transform 0.3s ease-in-out; /* Transición para mostrar/ocultar */
+}
+
+    .sidebar.hidden {
+        transform: translateX(-100%); /* Ocultar el menú */
+    }
+
+    .sidebar h4 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+        color: #f0db4f; /* Amarillo vibrante */
+        text-align: center;
+    }
+
+    /* Opciones del menú */
+    .sidebar .nav-link {
+        color: #cfcfcf;
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+        padding: 12px 15px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        transition: all 0.3s ease;
+    }
+
+        .sidebar .nav-link:hover {
+            background-color: #f0db4f; /* Resaltado amarillo */
+            color: #1e1e2f; /* Texto oscuro */
+            transform: scale(1.05); /* Efecto de zoom */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra al pasar el cursor */
+        }
+
+        .sidebar .nav-link i {
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+
+/* Cierre de sesión */
+.menu-footer {
+    position: absolute;
+    bottom: 15px;
+    width: 85%;
+}
+
+    .menu-footer .nav-link {
+        color: #ff4d4d; /* Rojo para destacar */
+        font-weight: bold;
+        padding: 12px 15px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        transition: background-color 0.3s ease, color 0.3s ease; /* Solo transición de color y fondo */
+    }
+
+        .menu-footer .nav-link:hover {
+            background-color: #ff6666; /* Color al pasar el puntero */
+            color: #fff;
+        }
+
+/* Contenido principal */
+.main-content {
+    transition: margin-left 0.3s ease-in-out; /* Transición suave */
+    margin-left: 0; /* Por defecto, sin margen */
+    margin-top: 20px; /* Evita que el título choque con el botón */
+}
+
+    .main-content.shifted {
+        margin-left: 250px; /* Desplazar el contenido cuando el menú esté visible */
+    }
+
+/* Estilo base del botón */
+#menuToggleBtn {
+    background-color: #ffffff;
+    color: #000;
+    border: none;
+}
+
+    /* Cuando el menú está oculto */
+    #menuToggleBtn.menu-hidden {
+        background-color: #1e1e2f; /* Azul oscuro del menú */
+        color: #fff;
+    }
+
+/* Ajuste de ancho para la primera columna (Título) */
+.col-titulo {
+    width: 40%; /* reduce ancho */
+    max-width: 320px; /* evita crecer demasiado */
+    white-space: nowrap; /* una sola línea */
+    overflow: hidden;
+    text-overflow: ellipsis; /* elipsis si se desborda */
+}
+/* Asegura mismo comportamiento en celdas del body */
+td.col-titulo {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* Opcional: permitir que las demás columnas usen el espacio */
+th:not(.col-titulo), td:not(.col-titulo) {
+    white-space: normal;
+}
