@@ -57,7 +57,7 @@
     preloadindex = true
 
 [pull]
-    # Use rebase instead of merge when pulling
+    # Use merge instead of rebase when pulling (safer for beginners)
     rebase = false
 
 [push]

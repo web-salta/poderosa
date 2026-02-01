@@ -5,6 +5,14 @@
 
 set -e
 
+# Function to display SSH key setup instructions
+show_ssh_setup_instructions() {
+    echo "You may need to set up SSH keys:"
+    echo "1. Generate SSH key: ssh-keygen -t ed25519 -C \"your_email@example.com\""
+    echo "2. Add to ssh-agent: ssh-add ~/.ssh/id_ed25519"
+    echo "3. Add public key to GitHub: https://github.com/settings/keys"
+}
+
 echo "==================================="
 echo "Git Authentication Fix Utility"
 echo "==================================="
@@ -50,10 +58,7 @@ if [[ "$CURRENT_URL" == https://* ]]; then
             else
                 echo "⚠ SSH authentication test failed."
                 echo ""
-                echo "You may need to set up SSH keys:"
-                echo "1. Generate SSH key: ssh-keygen -t ed25519 -C \"your_email@example.com\""
-                echo "2. Add to ssh-agent: ssh-add ~/.ssh/id_ed25519"
-                echo "3. Add public key to GitHub: https://github.com/settings/keys"
+                show_ssh_setup_instructions
                 echo ""
                 echo "After setting up SSH, try: git push origin main"
             fi
@@ -98,10 +103,7 @@ elif [[ "$CURRENT_URL" == git@* ]]; then
     else
         echo "⚠ SSH authentication test failed."
         echo ""
-        echo "You may need to set up SSH keys:"
-        echo "1. Generate SSH key: ssh-keygen -t ed25519 -C \"your_email@example.com\""
-        echo "2. Add to ssh-agent: ssh-add ~/.ssh/id_ed25519"
-        echo "3. Add public key to GitHub: https://github.com/settings/keys"
+        show_ssh_setup_instructions
     fi
 else
     echo "Unknown remote URL format."
