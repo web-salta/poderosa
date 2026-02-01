@@ -1,0 +1,98 @@
+# Git Configuration Template for Poderosa Project
+# 
+# This file provides recommended Git configuration settings
+# to avoid authentication issues and improve your workflow.
+#
+# Usage:
+#   Copy relevant sections to your ~/.gitconfig or use:
+#   git config --global <key> <value>
+
+# ============================================
+# User Identity
+# ============================================
+[user]
+    name = Your Name
+    email = your.email@example.com
+
+# ============================================
+# Authentication - Option 1: Force SSH for GitHub
+# ============================================
+# This automatically converts HTTPS URLs to SSH
+# Recommended if you have SSH keys set up
+[url "git@github.com:"]
+    insteadOf = https://github.com/
+
+# ============================================
+# Authentication - Option 2: Credential Helper
+# ============================================
+# Use this if you prefer HTTPS with Personal Access Token
+
+# For macOS
+[credential]
+    helper = osxkeychain
+
+# For Windows
+# [credential]
+#     helper = wincred
+
+# For Linux (stores in memory for 1 hour)
+# [credential]
+#     helper = cache --timeout=3600
+
+# For Linux (stores permanently in plaintext - use with caution)
+# [credential]
+#     helper = store
+
+# ============================================
+# General Settings
+# ============================================
+[core]
+    # Use VSCode as default editor (change as needed)
+    editor = code --wait
+    
+    # Better cross-platform line ending handling
+    autocrlf = input
+    
+    # Improve performance on large repositories
+    preloadindex = true
+
+[pull]
+    # Use merge instead of rebase when pulling (safer for beginners)
+    rebase = false
+
+[push]
+    # Push only the current branch
+    default = current
+    
+    # Automatically set up tracking for new branches
+    autoSetupRemote = true
+
+[color]
+    # Enable colors in terminal
+    ui = auto
+
+[alias]
+    # Useful shortcuts
+    st = status
+    co = checkout
+    br = branch
+    ci = commit
+    unstage = reset HEAD --
+    last = log -1 HEAD
+    visual = log --graph --oneline --all
+
+# ============================================
+# Security
+# ============================================
+[protocol]
+    # Only allow secure protocols
+    version = 2
+
+[transfer]
+    fsckobjects = true
+
+[fetch]
+    fsckobjects = true
+
+[receive]
+    fsckobjects = true
