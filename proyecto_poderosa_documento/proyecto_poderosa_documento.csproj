@@ -198,6 +198,7 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\css\dashboard.css" />
     <Content Include="Content\css\js\bootstrap.bundle.min.js" />
     <Content Include="Content\css\js\bootstrap.js" />
     <Content Include="Content\css\js\bootstrap.min.js" />
