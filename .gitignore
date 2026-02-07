@@ -1,1 +1,52 @@
+# Archivos y carpetas de Visual Studio
 .vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build output
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+
+# Archivos de publicación / deployment
+*.Publish.xml
+*.pubxml
+*.pubxml.user
+*.PublishSettings
+
+# Paquetes restaurables
+packages/
+*.nupkg
+project.lock.json
+project.fragment.lock.json
+
+# Caché de VS / diagnósticos
+.vscode/
+*.svclog
+*.etl
+
+# Archivos generados por IIS Express
+/IISExpress/
+/App_Data/Logs/
+/App_Data/Temporary/
+
+# Archivos de usuario de Resharper, Rider, etc.
+_ReSharper*/
+*.DotSettings.user
+.idea/
+
+# Otros temporales
+*.tmp
+*.bak
+*.log
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+
+# Archivos específicos que ya tenías
+.brantch.swp
+UpgradeLog.htm

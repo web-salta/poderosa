@@ -1,9 +1,11 @@
 ﻿using proyecto_poderosa_documento.Models;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Diagnostics;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Threading;
 using System.Web;
 using System.Web.Mvc;
@@ -35,7 +37,7 @@ namespace proyecto_poderosa_documento.Controllers
         }
 
         // Redirxección desde /Noticias/{slug} a /Noticias/Details/{slug}
-        [Route("Noticias/{slug:regex(^((?!Index|Create|Edit|Delete|Dashboard|Details).)*$)}")]
+        [Route("Noticias/{slug:regex(^((?!Index|Create|Edit|Delete|Dashboard|Details|ToggleNoticiaHome).)*$)}")]
         public ActionResult RedirectToDetails(string slug)
         {
             return RedirectToActionPermanent("Details", new { slug = slug });
@@ -405,6 +407,34 @@ namespace proyecto_poderosa_documento.Controllers
                 db.SaveChanges();  // Guardar cambios en la base de datos
             }
             return RedirectToAction("Dashboard", "Noticias");  // Redirigir a la lista de noticias
+        }
+
+        [HttpPost]
+        [Authorize]
+        //[ValidateAntiForgeryToken]
+        public ActionResult ToggleNoticiaHome(string slug, bool activo)
+        {
+            if (string.IsNullOrWhiteSpace(slug))
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest, "Slug inválido.");
+            }
+
+            var normalizedSlug = slug.Trim().ToLower();
+            var noticia = db.Noticias.FirstOrDefault(n => n.Slug.ToLower() == normalizedSlug);
+            if (noticia == null)
+            {
+                return HttpNotFound();
+            }
+
+            Debug.WriteLine($"ANTES: {noticia.Titulo} - NoticiaHome: {noticia.NoticiaHome}");
+
+            noticia.NoticiaHome = activo;
+            db.Entry(noticia).State = EntityState.Modified;
+            db.SaveChanges();
+
+            Debug.WriteLine($"DESPUÉS: {noticia.Titulo} - NoticiaHome: {noticia.NoticiaHome}");
+
+            return Json(new { success = true });
         }
 
         [HttpPost]

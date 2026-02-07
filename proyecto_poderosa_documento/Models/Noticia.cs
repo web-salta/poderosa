@@ -25,7 +25,8 @@ namespace proyecto_poderosa_documento.Models
         public virtual Usuario Usuario { get; set; } // Propiedad de navegación
         [Required(ErrorMessage = "El campo Tipo es obligatorio.")]
         public int Tipo { get; set; }
-
+        [Display(Name = "Mostrar en Home")]
+        public bool NoticiaHome { get; set; } = true;
         public string GetSanitizedTitulo()
         {
             return new string(Titulo.Where(c => char.IsLetterOrDigit(c) || char.IsWhiteSpace(c)).ToArray());
