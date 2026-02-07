@@ -1,6 +1,7 @@
 ﻿using proyecto_poderosa_documento.Models;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Diagnostics;
 using System.Globalization;
 using System.IO;
 using System.Linq;
@@ -36,7 +37,7 @@ namespace proyecto_poderosa_documento.Controllers
         }
 
         // Redirxección desde /Noticias/{slug} a /Noticias/Details/{slug}
-        [Route("Noticias/{slug:regex(^((?!Index|Create|Edit|Delete|Dashboard|Details).)*$)}")]
+        [Route("Noticias/{slug:regex(^((?!Index|Create|Edit|Delete|Dashboard|Details|ToggleNoticiaHome).)*$)}")]
         public ActionResult RedirectToDetails(string slug)
         {
             return RedirectToActionPermanent("Details", new { slug = slug });
@@ -410,7 +411,7 @@ namespace proyecto_poderosa_documento.Controllers
 
         [HttpPost]
         [Authorize]
-        [ValidateAntiForgeryToken]
+        //[ValidateAntiForgeryToken]
         public ActionResult ToggleNoticiaHome(string slug, bool activo)
         {
             if (string.IsNullOrWhiteSpace(slug))
@@ -425,11 +426,15 @@ namespace proyecto_poderosa_documento.Controllers
                 return HttpNotFound();
             }
 
+            Debug.WriteLine($"ANTES: {noticia.Titulo} - NoticiaHome: {noticia.NoticiaHome}");
+
             noticia.NoticiaHome = activo;
             db.Entry(noticia).State = EntityState.Modified;
             db.SaveChanges();
 
-            return Json(new { success = true, estado = noticia.NoticiaHome });
+            Debug.WriteLine($"DESPUÉS: {noticia.Titulo} - NoticiaHome: {noticia.NoticiaHome}");
+
+            return Json(new { success = true });
         }
 
         [HttpPost]

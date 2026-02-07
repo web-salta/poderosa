@@ -1,6 +1,7 @@
 using proyecto_poderosa_documento.Models;
 using System.Linq;
 using System.Web.Mvc;
+using System.Data.Entity;
 
 namespace proyecto_poderosa_documento.Controllers
 {
@@ -15,9 +16,11 @@ namespace proyecto_poderosa_documento.Controllers
 
             // Obtener las tres últimas noticias
             var ultimasNoticias = db.Noticias
-                .OrderByDescending(n => n.FechaPublicacion)
+                .Where(n => n.NoticiaHome)
+                .OrderByDescending(n => n.FechaNoticia ?? n.FechaPublicacion)
                 .ThenByDescending(n => n.Id)
                 .Take(3)
+                .AsNoTracking()
                 .ToList();
             ViewBag.UltimasNoticias = ultimasNoticias; // Pasarlas a la vista
             return View();
