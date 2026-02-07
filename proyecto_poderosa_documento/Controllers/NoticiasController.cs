@@ -4,6 +4,7 @@ using System.Data.Entity;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Threading;
 using System.Web;
 using System.Web.Mvc;
@@ -405,6 +406,30 @@ namespace proyecto_poderosa_documento.Controllers
                 db.SaveChanges();  // Guardar cambios en la base de datos
             }
             return RedirectToAction("Dashboard", "Noticias");  // Redirigir a la lista de noticias
+        }
+
+        [HttpPost]
+        [Authorize]
+        [ValidateAntiForgeryToken]
+        public ActionResult ToggleNoticiaHome(string slug, bool activo)
+        {
+            if (string.IsNullOrWhiteSpace(slug))
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest, "Slug inválido.");
+            }
+
+            var normalizedSlug = slug.Trim().ToLower();
+            var noticia = db.Noticias.FirstOrDefault(n => n.Slug.ToLower() == normalizedSlug);
+            if (noticia == null)
+            {
+                return HttpNotFound();
+            }
+
+            noticia.NoticiaHome = activo;
+            db.Entry(noticia).State = EntityState.Modified;
+            db.SaveChanges();
+
+            return Json(new { success = true, estado = noticia.NoticiaHome });
         }
 
         [HttpPost]

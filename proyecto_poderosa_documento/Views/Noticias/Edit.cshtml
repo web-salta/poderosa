@@ -14,7 +14,7 @@
     @Html.HiddenFor(model => model.Id)
 
     <!-- Campo para el slug -->
-    <div class="form-group">
+    <div class="form-group mb-3">
         @Html.LabelFor(model => model.Slug)
         @Html.TextBoxFor(model => model.Slug, new { @class = "form-control" })
         @Html.ValidationMessageFor(model => model.Slug, "", new { @class = "text-danger" })
@@ -27,7 +27,7 @@
     </div>
 
     <!-- Titulo -->
-    <div class="form-group">
+    <div class="form-group mb-3">
         @Html.LabelFor(model => model.Titulo)
         @Html.TextBoxFor(model => model.Titulo, new { @class = "form-control" })
         @Html.ValidationMessageFor(model => model.Titulo, "", new { @class = "text-danger" })
@@ -44,27 +44,27 @@
     </div>
 
     <!-- Campo para subir imagen -->
-    <div class="form-group">
+    <div class="form-group mb-3">
         @Html.LabelFor(model => model.Imagen)
         <input type="file" name="Imagen" class="form-control" />
     </div>
 
     <!-- Campo para establecer fecha de la noticia -->
-    <div class="form-group">
+    <div class="form-group mb-3">
         @Html.LabelFor(model => model.FechaNoticia, "Fecha de la noticia")
         @Html.TextBoxFor(model => model.FechaNoticia, "{0:yyyy-MM-dd}", new { @class = "form-control", type = "date" })
         @Html.ValidationMessageFor(model => model.FechaNoticia, "", new { @class = "text-danger" })
     </div>
 
     <!-- Descripción -->
-    <div class="form-group">
+    <div class="form-group mb-3">
         @Html.LabelFor(model => model.Descripcion)
         @Html.EditorFor(model => model.Descripcion, new { htmlAttributes = new { @class = "form-control" } })
         @Html.ValidationMessageFor(model => model.Descripcion, "", new { @class = "text-danger" })
     </div>
 
     <!-- Contenido -->
-    <div class="form-group">
+    <div class="form-group mb-3">
         @Html.LabelFor(model => model.Contenido)
         @Html.TextAreaFor(model => model.Contenido, new { @class = "form-control", id = "contenido" })
         @Html.ValidationMessageFor(model => model.Contenido, "", new { @class = "text-danger" })
