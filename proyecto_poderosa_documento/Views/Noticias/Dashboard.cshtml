@@ -74,6 +74,9 @@
                     }
                 </tbody>
             </table>
+            <form id="toggleNoticiaHomeForm" class="d-none">
+                @Html.AntiForgeryToken()
+            </form>
         </div>
 
         <!-- PopUp Section -->
@@ -161,6 +164,7 @@
             toggleBtn.classList.toggle('menu-hidden', isHidden);
         }
 
+        const toggleUrl = '@Url.Action("ToggleNoticiaHome", "Noticias")';  // ← Usa Url.Action para la ruta correcta
         const toggleTokenInput = document.querySelector('#toggleNoticiaHomeForm input[name="__RequestVerificationToken"]');
 
         document.addEventListener('change', function (event) {
@@ -169,32 +173,46 @@
                 const slug = checkbox.getAttribute('data-slug');
                 const estado = checkbox.checked;
 
+                if (!toggleTokenInput) {
+                    alert('No se encontró el token antifalsificación.');
+                    checkbox.checked = !estado;
+                    return;
+                }
+
                 checkbox.disabled = true;
 
                 const formData = new URLSearchParams();
+                formData.append('__RequestVerificationToken', toggleTokenInput.value);
                 formData.append('slug', slug);
                 formData.append('activo', estado ? 'true' : 'false');
 
-                fetch('@Url.Action("ToggleNoticiaHome", "Noticias")', {
+                fetch(toggleUrl, {
                     method: 'POST',
+                    credentials: 'include',
                     headers: {
-                        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
-                        'RequestVerificationToken': toggleTokenInput ? toggleTokenInput.value : ''
+                        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
                     },
                     body: formData.toString()
                 })
                     .then(response => {
+                        if (response.redirected) {
+                            window.location = response.url;
+                            return Promise.reject('Sesión expirada o sin autorización.');
+                        }
                         if (!response.ok) {
-                            throw new Error('Error al actualizar');
+                            return response.text().then(text => {
+                                throw new Error(text || 'Error al actualizar');
+                            });
                         }
                         return response.json();
                     })
                     .then(data => {
                         if (!data.success) {
-                            throw new Error('Respuesta inválida');
+                            throw new Error('Respuesta inválida del servidor.');
                         }
                     })
-                    .catch(() => {
+                    .catch(err => {
+                        console.error(err);
                         checkbox.checked = !estado;
                         alert('No se pudo actualizar la visibilidad en el Home.');
                     })
